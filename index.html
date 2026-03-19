@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CEO Daily Briefing — March 18, 2026 | West Point Thoroughbreds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #171614;
+    --bg-card: #1e1d1b;
+    --bg-card-hover: #242320;
+    --border: #2a2926;
+    --border-subtle: #222120;
+    --text: #CDCCCA;
+    --text-muted: #8a8986;
+    --text-dim: #6b6966;
+    --teal: #01696F;
+    --teal-light: #4F98A3;
+    --teal-glow: rgba(1, 105, 111, 0.15);
+    --red: #D94F4F;
+    --red-bg: rgba(217, 79, 79, 0.08);
+    --red-border: rgba(217, 79, 79, 0.25);
+    --gold: #D4A843;
+    --gold-bg: rgba(212, 168, 67, 0.08);
+    --gold-border: rgba(212, 168, 67, 0.25);
+    --green: #4CAF7D;
+    --green-bg: rgba(76, 175, 125, 0.08);
+    --green-border: rgba(76, 175, 125, 0.25);
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    --radius: 8px;
+    --radius-sm: 4px;
+  }
+
+  html { font-size: 15px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    min-height: 100vh;
+  }
+
+  /* ===== LAYOUT ===== */
+  .wrapper {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+  }
+
+  .header-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--teal-light);
+    margin-bottom: 6px;
+  }
+
+  .header h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+  }
+
+  .header-meta {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+  }
+
+  .header-meta span {
+    color: var(--text-dim);
+    margin: 0 6px;
+  }
+
+  /* ===== SECTIONS ===== */
+  .section {
+    margin-bottom: 24px;
+  }
+
+  .section-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+  }
+
+  .section-card.alert-card {
+    border-color: var(--red-border);
+    background: var(--red-bg);
+  }
+
+  .section-title {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--teal-light);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ===== SCHEDULE ===== */
+  .schedule-day {
+    margin-bottom: 16px;
+  }
+
+  .schedule-day:last-child { margin-bottom: 0; }
+
+  .schedule-day-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--teal-light);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .schedule-day-label .location {
+    font-weight: 400;
+    color: var(--text-dim);
+    font-size: 0.72rem;
+  }
+
+  .schedule-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 5px 0;
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .schedule-time {
+    flex-shrink: 0;
+    width: 64px;
+    font-variant-numeric: tabular-nums;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+  }
+
+  .schedule-desc {
+    flex: 1;
+  }
+
+  .schedule-desc .done {
+    color: var(--green);
+    font-size: 0.75rem;
+    margin-left: 4px;
+  }
+
+  .schedule-desc strong {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .schedule-attendees {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    margin-top: 1px;
+  }
+
+  /* ===== ALERTS ===== */
+  .alert-item {
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 10px;
+    border-left: 3px solid var(--red);
+    background: rgba(217, 79, 79, 0.05);
+  }
+
+  .alert-item:last-child { margin-bottom: 0; }
+
+  .alert-horse {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--red);
+    margin-bottom: 3px;
+  }
+
+  .alert-detail {
+    font-size: 0.8rem;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  .alert-detail strong {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  /* ===== SALES ===== */
+  .sales-group {
+    margin-bottom: 16px;
+  }
+
+  .sales-group:last-child { margin-bottom: 0; }
+
+  .sales-group-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .sale-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 4px 0;
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .sale-bullet {
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--teal);
+    margin-top: 6px;
+  }
+
+  .sale-text { flex: 1; }
+
+  .sale-text .new-badge {
+    display: inline-block;
+    background: var(--green);
+    color: var(--bg);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 1px 5px;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-left: 2px;
+  }
+
+  .sale-text .rep {
+    color: var(--text-dim);
+    font-size: 0.75rem;
+  }
+
+  /* ===== TABLES ===== */
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 8px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.78rem;
+  }
+
+  th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 7px 10px;
+    color: var(--text);
+    border-bottom: 1px solid var(--border-subtle);
+    vertical-align: top;
+  }
+
+  tr:nth-child(even) td {
+    background: rgba(255,255,255,0.015);
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  td strong { color: #fff; font-weight: 600; }
+
+  .win-badge {
+    display: inline-block;
+    background: var(--green);
+    color: var(--bg);
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 1px 5px;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-left: 3px;
+  }
+
+  /* ===== TEAM PULSE ===== */
+  .pulse-item {
+    padding: 10px 14px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 8px;
+    background: rgba(255,255,255,0.02);
+    border-left: 3px solid var(--border);
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .pulse-item:last-child { margin-bottom: 0; }
+
+  .pulse-item .author {
+    font-weight: 600;
+    color: var(--teal-light);
+  }
+
+  .pulse-item .channel {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    font-style: italic;
+  }
+
+  .pulse-item .quote {
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  .pulse-item strong {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  /* ===== ACTIVITY LOG ===== */
+  .activity-item {
+    display: flex;
+    gap: 10px;
+    padding: 6px 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .activity-time {
+    flex-shrink: 0;
+    width: 80px;
+    color: var(--text-dim);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.75rem;
+  }
+
+  .activity-desc { flex: 1; }
+
+  /* ===== BARN REPORTS ===== */
+  .barn-group {
+    margin-bottom: 14px;
+  }
+
+  .barn-group:last-child { margin-bottom: 0; }
+
+  .barn-name {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--teal-light);
+    margin-bottom: 4px;
+  }
+
+  .barn-detail {
+    font-size: 0.8rem;
+    line-height: 1.55;
+    color: var(--text);
+  }
+
+  .barn-detail strong {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  /* ===== DECISIONS ===== */
+  .decision-item {
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .decision-item:last-child { margin-bottom: 0; }
+
+  .decision-item.urgent {
+    background: var(--red-bg);
+    border-left: 3px solid var(--red);
+  }
+
+  .decision-item.attention {
+    background: var(--gold-bg);
+    border-left: 3px solid var(--gold);
+  }
+
+  .decision-indicator {
+    flex-shrink: 0;
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .decision-text {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .decision-text strong {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    margin-top: 36px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    line-height: 1.7;
+  }
+
+  .footer a {
+    color: var(--teal-light);
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 600px) {
+    html { font-size: 14px; }
+
+    .wrapper {
+      padding: 16px 12px 36px;
+    }
+
+    .header h1 {
+      font-size: 1.25rem;
+    }
+
+    .section-card {
+      padding: 14px 14px;
+    }
+
+    .schedule-time {
+      width: 56px;
+      font-size: 0.73rem;
+    }
+
+    table {
+      font-size: 0.73rem;
+    }
+
+    th, td {
+      padding: 6px 7px;
+    }
+
+    .decision-item {
+      padding: 10px 12px;
+    }
+  }
+
+  /* ===== PRINT ===== */
+  @media print {
+    :root {
+      --bg: #fff;
+      --bg-card: #fff;
+      --border: #ddd;
+      --border-subtle: #eee;
+      --text: #222;
+      --text-muted: #666;
+      --text-dim: #999;
+      --teal-light: #01696F;
+      --red: #c0392b;
+      --gold: #b8860b;
+      --green: #27ae60;
+    }
+
+    body {
+      background: #fff;
+      color: #222;
+      font-size: 11pt;
+    }
+
+    .wrapper {
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .header h1 {
+      color: #000;
+    }
+
+    .section-card {
+      border: 1px solid #ddd;
+      break-inside: avoid;
+    }
+
+    .alert-card {
+      background: #fff !important;
+    }
+
+    .alert-item {
+      background: #fff5f5 !important;
+    }
+
+    .decision-item.urgent {
+      background: #fff5f5 !important;
+    }
+
+    .decision-item.attention {
+      background: #fffbf0 !important;
+    }
+
+    td, th {
+      color: #222 !important;
+    }
+
+    td strong, .alert-detail strong, .decision-text strong, .barn-detail strong, .schedule-desc strong {
+      color: #000 !important;
+    }
+
+    .footer {
+      font-size: 8pt;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-eyebrow">West Point Thoroughbreds</div>
+    <h1>CEO Daily Briefing — Wednesday, March 18, 2026</h1>
+    <div class="header-meta">7:47 PM ET<span>|</span>Prepared for Terry Finley</div>
+  </header>
+
+  <!-- SCHEDULE -->
+  <section class="section">
+    <div class="section-title">Schedule</div>
+    <div class="section-card">
+      <div class="schedule-day">
+        <div class="schedule-day-label">Today (Wed 3/18) <span class="location">— Florida</span></div>
+        <div class="schedule-item">
+          <span class="schedule-time">6:00 AM</span>
+          <div class="schedule-desc">Workout with Dale <span class="done">✅</span></div>
+        </div>
+        <div class="schedule-item">
+          <span class="schedule-time">8:30 AM</span>
+          <div class="schedule-desc">Drive to Boca Raton <span class="done">✅</span></div>
+        </div>
+        <div class="schedule-item">
+          <span class="schedule-time">9:00 AM</span>
+          <div class="schedule-desc">Call with Rick Vuono <span class="done">✅</span></div>
+        </div>
+        <div class="schedule-item">
+          <span class="schedule-time">11:30 AM</span>
+          <div class="schedule-desc">
+            Sync on Rick Vuono + Richard Woodruff (Zoom) <span class="done">✅</span>
+            <div class="schedule-attendees">Danielle, Joe Bianca, Tom Murphy, Jason, Tom Bellhouse</div>
+          </div>
+        </div>
+      </div>
+      <div class="schedule-day">
+        <div class="schedule-day-label">Tomorrow (Thu 3/19) <span class="location">— Florida</span></div>
+        <div class="schedule-item">
+          <span class="schedule-time">9:00 AM</span>
+          <div class="schedule-desc">Casey + Terry Daily Sync (Zoom)</div>
+        </div>
+        <div class="schedule-item">
+          <span class="schedule-time">9:30 AM</span>
+          <div class="schedule-desc">
+            <strong>The Jockey Club Stewards Meeting</strong> (Teams)
+            <div class="schedule-attendees">Stuart Janney III, Bill Farish Jr., Marc Holliday, Jim Gagliano + others</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALERTS -->
+  <section class="section">
+    <div class="section-title" style="color: var(--red);">⚠ Alerts</div>
+    <div class="section-card alert-card">
+      <div class="alert-item">
+        <div class="alert-horse">Curtain Call</div>
+        <div class="alert-detail">RH sesamoid fracture (X-ray at Palm Meadows). Heading to Ocala. No surgery but <strong>6+ months sideline</strong>. Joe recommends slow-playing partner comms while OBS signings continue.</div>
+      </div>
+      <div class="alert-item">
+        <div class="alert-horse">The Process</div>
+        <div class="alert-detail">Bled from nose galloping. Cherie DeVaux leaning toward <strong>retirement</strong> as show horse / sport horse stallion. Placement: Erin Hurley (donation), James Keogh, Rosie Napravnik NY contact.</div>
+      </div>
+      <div class="alert-item">
+        <div class="alert-horse">Super Corredora</div>
+        <div class="alert-detail">Fever came down but Sadler concerned about recurring illness. Won't ship East until comfortable. Bramlage to evaluate.</div>
+      </div>
+      <div class="alert-item">
+        <div class="alert-horse">Flightline/England's Rose filly</div>
+        <div class="alert-detail">Hind leg issue, did not ship as planned. Eisaman to update.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SALES PIPELINE -->
+  <section class="section">
+    <div class="section-title">Sales Pipeline</div>
+    <div class="section-card">
+      <div class="sales-group">
+        <div class="sales-group-title">Today's Sales</div>
+        <div class="sale-item">
+          <div class="sale-bullet"></div>
+          <div class="sale-text">Sylvia Kossel — 2.5% Jimmy Creed filly <span class="rep">(Joe Bianca)</span></div>
+        </div>
+        <div class="sale-item">
+          <div class="sale-bullet"></div>
+          <div class="sale-text">Brian Scherer — 5% Yaupon colt <span class="rep">(Tom Bellhouse)</span></div>
+        </div>
+      </div>
+
+      <div class="sales-group">
+        <div class="sales-group-title">Yesterday's Sales</div>
+        <div class="sale-item">
+          <div class="sale-bullet"></div>
+          <div class="sale-text">Dan Cline — 2.5% Jimmy Creed filly <span class="new-badge">NEW PARTNER</span> <span class="rep">(Tom Murphy)</span></div>
+        </div>
+        <div class="sale-item">
+          <div class="sale-bullet"></div>
+          <div class="sale-text">Mark Counides — 5% Jimmy Creed filly <span class="rep">(Tom Murphy)</span></div>
+        </div>
+        <div class="sale-item">
+          <div class="sale-bullet"></div>
+          <div class="sale-text">Wilfong backed down to 7.5% Epicenter filly so Jim Salmon gets 2.5% and Andy gets 7.5% <span class="rep">(Jason)</span></div>
+        </div>
+      </div>
+
+      <div class="sales-group">
+        <div class="sales-group-title">Active Pipeline — Modified This Week</div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Rep</th>
+                <th>Picking Horses</th>
+                <th>Talking</th>
+                <th>Unlikely</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Jason Blewitt</strong></td>
+                <td>Sanderson, Myers</td>
+                <td>Hartman, Tayao, Orlandi, Gardiner, Pennington, Dean</td>
+                <td>Stern, VanWinkle</td>
+              </tr>
+              <tr>
+                <td><strong>Tom Bellhouse</strong></td>
+                <td>Stillman</td>
+                <td>Sandbrook, Tim Davis</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>Joe Bianca</strong></td>
+                <td>—</td>
+                <td>Helling, Decas</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>Dawn Lenert</strong></td>
+                <td>—</td>
+                <td>—</td>
+                <td>Kaiser</td>
+              </tr>
+              <tr>
+                <td><strong>Ali Finley</strong></td>
+                <td>D. Normandie</td>
+                <td>—</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM PULSE -->
+  <section class="section">
+    <div class="section-title">Team Pulse (Slack)</div>
+    <div class="section-card">
+      <div class="pulse-item">
+        <span class="author">Erin B.</span> re: dashboard — <span class="quote">"Cannot click into the dashboard. I can the other one you shared."</span> <span class="channel">#sales</span>
+      </div>
+      <div class="pulse-item">
+        <span class="author">Dawn Lenert</span> — recommends changing prospect release subject line. Last Friday open rate was <strong>under 6%</strong> (webinar subject). Suggests simpler copy like last year's "New OBS March 2-Year-Olds" which drew 8%. <span class="channel">#prospectcomms</span>
+      </div>
+      <div class="pulse-item">
+        <span class="author">Erin B.</span> — prospect release going out in the AM. <span class="channel">#prospectcomms</span>
+      </div>
+      <div class="pulse-item">
+        <span class="author">Executive Dashboard</span> posted to <span class="channel">#exec-team</span> — YTD sales, purses, racing stats, horses on payroll, inventory, weekly leads.
+      </div>
+    </div>
+  </section>
+
+  <!-- PERPLEXITY COMPUTER SLACK ACTIVITY -->
+  <section class="section">
+    <div class="section-title">Perplexity Computer — Slack Activity</div>
+    <div class="section-card">
+      <div class="activity-item">
+        <span class="activity-time">8:04 AM ET</span>
+        <div class="activity-desc">Morning CEO briefing delivered to Terry's Slack DM. Covered schedule, racing entries/results. Flagged Salesforce not connected and low Slack activity overnight.</div>
+      </div>
+      <div class="activity-item">
+        <span class="activity-time">12:25 PM ET</span>
+        <div class="activity-desc">Updated midday briefing to Slack DM. Full Slack intelligence: Curtain Call fracture, The Process retirement, Brian Scherer sale, Salesforce connection update from Dawn, Casse barn report, all entries/results.</div>
+      </div>
+      <div class="activity-item">
+        <span class="activity-time">7:32 PM ET</span>
+        <div class="activity-desc">Test messages posted to #ceo-dashboards-reports and #sales to verify notification delivery.</div>
+      </div>
+      <div class="activity-item">
+        <span class="activity-time">7:11 PM ET</span>
+        <div class="activity-desc">Executive Dashboard link posted to #exec-team.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RACING -->
+  <section class="section">
+    <div class="section-title">Racing</div>
+    <div class="section-card">
+
+      <!-- Upcoming Entries -->
+      <div class="sales-group">
+        <div class="sales-group-title">Upcoming Entries</div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Horse</th>
+                <th>Track</th>
+                <th>Race</th>
+                <th>Post</th>
+                <th>Type</th>
+                <th>Jockey</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>3/19</td>
+                <td>Walking in Memphis</td>
+                <td>Gulfstream</td>
+                <td>R5</td>
+                <td>2:54 ET</td>
+                <td>Clm 35k NW2L</td>
+                <td>Castellano</td>
+              </tr>
+              <tr>
+                <td>3/20</td>
+                <td>Legalize</td>
+                <td>Fair Grounds</td>
+                <td>R8</td>
+                <td>5:15 CT</td>
+                <td>NW3X Alw</td>
+                <td>Concepcion</td>
+              </tr>
+              <tr>
+                <td>3/20</td>
+                <td>Bullard</td>
+                <td>Turfway</td>
+                <td>R5</td>
+                <td>7:55 ET</td>
+                <td>NW2X Alw</td>
+                <td>Kimura</td>
+              </tr>
+              <tr>
+                <td>3/21</td>
+                <td>Intricate Spirit</td>
+                <td>Gulfstream</td>
+                <td>R10</td>
+                <td>5:25 ET</td>
+                <td>TX Glitter Stk</td>
+                <td>Alvarado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Barn Reports -->
+      <div class="sales-group">
+        <div class="sales-group-title">Barn Reports</div>
+        <div class="barn-group">
+          <div class="barn-name">Casse</div>
+          <div class="barn-detail">Casino (easy 3/8 tomorrow), Chapman (first breeze any day), <strong>Counting Stars</strong> (thriving, enters the Fantasy), Epicenter filly ("She could be really good" — breeze Fri/Sat)</div>
+        </div>
+        <div class="barn-group">
+          <div class="barn-name">Dale Romans</div>
+          <div class="barn-detail">Absolutely Hot (work wknd, Keeneland turf sprint), <strong>Find No Fault</strong> (bullet 5/8 in :59.36, race 3/28 GP 6F dirt), Into the Beast (work wknd), Ivory and Ebony (50.23 half, on track 4/16), Keep it Easy (Keeneland 4/18), Maui Strong (ships to CD soon), <strong>Miss Enchanted</strong> (47.69 half, GP $125k tag next wk — keeps condition if she wins), Task Force O (looking good Ocala)</div>
+        </div>
+        <div class="barn-group">
+          <div class="barn-name">Reagan's Honor</div>
+          <div class="barn-detail">Ships to Keeneland Sunday after big work this weekend</div>
+        </div>
+      </div>
+
+      <!-- Recent Results -->
+      <div class="sales-group">
+        <div class="sales-group-title">Recent Results</div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Horse</th>
+                <th>Track</th>
+                <th>Finish</th>
+                <th>Earnings</th>
+                <th>Beyer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>3/14</td>
+                <td><strong>Vibe</strong></td>
+                <td>Gulfstream</td>
+                <td>1st <span class="win-badge">WIN</span></td>
+                <td>$42,000</td>
+                <td>91</td>
+              </tr>
+              <tr>
+                <td>3/14</td>
+                <td>Statesman</td>
+                <td>Gulfstream</td>
+                <td>3rd</td>
+                <td>$7,700</td>
+                <td>85</td>
+              </tr>
+              <tr>
+                <td>3/12</td>
+                <td><strong>Prototype</strong></td>
+                <td>Turfway</td>
+                <td>1st <span class="win-badge">WIN</span></td>
+                <td>$13,344</td>
+                <td>53</td>
+              </tr>
+              <tr>
+                <td>3/7</td>
+                <td><strong>Final Boss</strong></td>
+                <td>Santa Anita (Kilroe G2)</td>
+                <td>1st <span class="win-badge">WIN</span></td>
+                <td>$120,000</td>
+                <td>98</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DECISIONS NEEDED -->
+  <section class="section">
+    <div class="section-title" style="color: var(--gold);">Decisions Needed</div>
+    <div class="section-card">
+      <div class="decision-item urgent">
+        <span class="decision-indicator">🔴</span>
+        <div class="decision-text"><strong>Curtain Call comms</strong> — how/when to message partners about 6-month sideline? Joe recommends slow-playing it.</div>
+      </div>
+      <div class="decision-item urgent">
+        <span class="decision-indicator">🔴</span>
+        <div class="decision-text"><strong>The Process retirement</strong> — approve direction and placement (Erin Hurley donation? James Keogh? Rosie Napravnik NY contact?)</div>
+      </div>
+      <div class="decision-item urgent">
+        <span class="decision-indicator">🔴</span>
+        <div class="decision-text"><strong>Prospect release subject line</strong> — Dawn flagging low open rate (6%). Needs new subject line before Erin sends in AM.</div>
+      </div>
+      <div class="decision-item attention">
+        <span class="decision-indicator">🟠</span>
+        <div class="decision-text"><strong>Dashboard fix for Erin</strong> — she can't click into the dashboard shared in #sales.</div>
+      </div>
+      <div class="decision-item attention">
+        <span class="decision-indicator">🟠</span>
+        <div class="decision-text"><strong>Jockey Club Stewards Meeting prep</strong> — tomorrow 9:30 AM, major attendee list.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>Sources: westpointtb.com/daily-entries, westpointtb.com/racing/results, Google Calendar, Salesforce, Slack</div>
+    <div style="margin-top: 6px;">
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Generated by Perplexity Computer</a>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
