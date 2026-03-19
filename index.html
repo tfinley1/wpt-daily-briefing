@@ -29,26 +29,26 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg: #171614;
-    --bg-card: #1e1d1b;
-    --bg-card-hover: #242320;
-    --border: #2a2926;
-    --border-subtle: #222120;
-    --text: #CDCCCA;
-    --text-muted: #8a8986;
-    --text-dim: #6b6966;
+    --bg: #FFFFFF;
+    --bg-card: #FAFAF9;
+    --bg-card-hover: #F5F5F3;
+    --border: #E5E4E0;
+    --border-subtle: #EEEDEA;
+    --text: #28251D;
+    --text-muted: #7A7974;
+    --text-dim: #9A9994;
     --teal: #01696F;
-    --teal-light: #4F98A3;
-    --teal-glow: rgba(1, 105, 111, 0.15);
-    --red: #D94F4F;
-    --red-bg: rgba(217, 79, 79, 0.08);
-    --red-border: rgba(217, 79, 79, 0.25);
-    --gold: #D4A843;
-    --gold-bg: rgba(212, 168, 67, 0.08);
-    --gold-border: rgba(212, 168, 67, 0.25);
-    --green: #4CAF7D;
-    --green-bg: rgba(76, 175, 125, 0.08);
-    --green-border: rgba(76, 175, 125, 0.25);
+    --teal-light: #01696F;
+    --teal-glow: rgba(1, 105, 111, 0.08);
+    --red: #B93535;
+    --red-bg: rgba(185, 53, 53, 0.05);
+    --red-border: rgba(185, 53, 53, 0.2);
+    --gold: #9A7B1A;
+    --gold-bg: rgba(154, 123, 26, 0.05);
+    --gold-border: rgba(154, 123, 26, 0.2);
+    --green: #2D7A3A;
+    --green-bg: rgba(45, 122, 58, 0.05);
+    --green-border: rgba(45, 122, 58, 0.2);
     --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
     --radius: 8px;
     --radius-sm: 4px;
@@ -63,6 +63,8 @@
     line-height: 1.55;
     min-height: 100vh;
   }
+
+  a { color: var(--teal); }
 
   /* ===== LAYOUT ===== */
   .wrapper {
@@ -90,7 +92,7 @@
   .header h1 {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #fff;
+    color: #1a1a1a;
     letter-spacing: -0.02em;
     line-height: 1.3;
   }
@@ -193,7 +195,7 @@
   }
 
   .schedule-desc strong {
-    color: #fff;
+    color: #1a1a1a;
     font-weight: 600;
   }
 
@@ -228,7 +230,7 @@
   }
 
   .alert-detail strong {
-    color: #fff;
+    color: #1a1a1a;
     font-weight: 600;
   }
 
@@ -271,7 +273,7 @@
   .sale-text .new-badge {
     display: inline-block;
     background: var(--green);
-    color: var(--bg);
+    color: #fff;
     font-size: 0.62rem;
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -319,17 +321,17 @@
   }
 
   tr:nth-child(even) td {
-    background: rgba(255,255,255,0.015);
+    background: rgba(0,0,0,0.02);
   }
 
   tr:last-child td { border-bottom: none; }
 
-  td strong { color: #fff; font-weight: 600; }
+  td strong { color: #1a1a1a; font-weight: 600; }
 
   .win-badge {
     display: inline-block;
     background: var(--green);
-    color: var(--bg);
+    color: #fff;
     font-size: 0.6rem;
     font-weight: 700;
     padding: 1px 5px;
@@ -343,7 +345,7 @@
     padding: 10px 14px;
     border-radius: var(--radius-sm);
     margin-bottom: 8px;
-    background: rgba(255,255,255,0.02);
+    background: rgba(0,0,0,0.02);
     border-left: 3px solid var(--border);
     font-size: 0.8rem;
     line-height: 1.5;
@@ -368,7 +370,7 @@
   }
 
   .pulse-item strong {
-    color: #fff;
+    color: #1a1a1a;
     font-weight: 600;
   }
 
@@ -412,7 +414,7 @@
   }
 
   .barn-detail strong {
-    color: #fff;
+    color: #1a1a1a;
     font-weight: 600;
   }
 
@@ -451,7 +453,7 @@
   }
 
   .decision-text strong {
-    color: #fff;
+    color: #1a1a1a;
     font-weight: 600;
   }
 
