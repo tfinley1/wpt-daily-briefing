@@ -3,409 +3,463 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WPT CEO Daily Briefing — Sat, March 21, 2026</title>
+  <title>WPT CEO Daily Briefing — Sunday, March 22, 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
       --bg:#ffffff;
       --text:#28251D;
-      --muted:#6b675c;
-      --card:#fbfbfa;
-      --border:#ece9e2;
+      --muted:#6b655a;
       --teal:#01696F;
-      --urgent:#b42318;
-      --attention:#b54708;
-      --win:#027a48;
+      --line:#e7e3da;
+      --chip:#f6f3ee;
+      --red:#B42318;
+      --gold:#A15C00;
+      --green:#067647;
     }
     *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.35}
-    .wrap{max-width:1080px;margin:0 auto;padding:24px 16px 40px}
-    header{display:flex;gap:16px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;padding-bottom:14px;border-bottom:2px solid var(--border)}
-    h1{font-size:20px;margin:0}
-    .meta{color:var(--muted);font-size:12px}
-    nav{display:flex;flex-wrap:wrap;gap:10px}
-    nav a{font-size:12px;color:var(--teal);text-decoration:none;border:1px solid var(--border);padding:6px 10px;border-radius:999px;background:#fff}
-    section{margin-top:18px}
-    .card{border:1px solid var(--border);background:var(--card);border-radius:12px;padding:14px}
-    h2{margin:0 0 10px 0;font-size:14px;letter-spacing:.02em;text-transform:uppercase;color:var(--teal)}
-    h3{margin:12px 0 6px 0;font-size:13px}
-    ul{margin:6px 0 0 18px;padding:0}
-    li{margin:4px 0}
-    table{width:100%;border-collapse:collapse;font-size:12px;background:#fff;border:1px solid var(--border);border-radius:10px;overflow:hidden}
-    th,td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
-    th{background:#f5f8f8;color:#0b3b3f;text-align:left;font-weight:600}
-    tr:last-child td{border-bottom:none}
-    .pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:2px 8px;font-size:11px;font-weight:600}
-    .urgent{background:#fff1f0;color:var(--urgent);border:1px solid #ffcdc9}
-    .attention{background:#fff6ed;color:var(--attention);border:1px solid #ffd7aa}
-    .win{background:#ecfdf3;color:var(--win);border:1px solid #abefc6}
-    .muted{color:var(--muted)}
-    .grid{display:grid;gap:14px}
-    @media (min-width: 900px){
-      .grid.two{grid-template-columns:1.15fr .85fr}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    a{color:var(--teal);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .page{max-width:1080px;margin:0 auto;padding:20px 16px 48px}
+    header{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;border-bottom:2px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+    h1{font-size:20px;line-height:1.2;margin:0;font-weight:800;letter-spacing:-0.02em}
+    .sub{color:var(--muted);font-size:12px;margin-top:6px}
+    .pill{display:inline-flex;align-items:center;gap:8px;background:var(--chip);border:1px solid var(--line);padding:8px 10px;border-radius:999px;font-size:12px;color:var(--muted);white-space:nowrap}
+
+    .grid{display:grid;grid-template-columns:1fr;gap:14px}
+
+    section{border:1px solid var(--line);border-radius:14px;padding:14px 14px 10px}
+    section h2{margin:0 0 10px 0;font-size:14px;font-weight:800;letter-spacing:-0.01em}
+
+    .meta{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 0 0}
+    .tag{display:inline-flex;align-items:center;gap:6px;background:var(--chip);border:1px solid var(--line);padding:4px 8px;border-radius:999px;font-size:12px;color:var(--muted)}
+
+    .indicator{display:inline-flex;align-items:center;gap:8px;font-weight:700}
+    .dot{width:10px;height:10px;border-radius:50%}
+    .dot.red{background:var(--red)}
+    .dot.gold{background:var(--gold)}
+    .dot.green{background:var(--green)}
+
+    .list{margin:0;padding-left:18px}
+    .list li{margin:6px 0}
+
+    table{width:100%;border-collapse:collapse;margin:0 0 8px 0}
+    th,td{padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+    th{font-size:12px;color:var(--muted);text-align:left;font-weight:700}
+    td{font-size:13px}
+
+    .two-col{display:grid;grid-template-columns:1fr;gap:12px}
+
+    .channel{margin:10px 0 0 0}
+    .channel h3{margin:0 0 6px 0;font-size:13px;font-weight:800;color:var(--teal)}
+    .msg{border:1px solid var(--line);border-radius:12px;padding:10px 10px;margin:8px 0;background:#fff}
+    .msg-head{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between}
+    .who{font-weight:800}
+    .when{color:var(--muted);font-size:12px}
+    .msg-body{margin-top:6px;color:var(--text);font-size:13px;white-space:pre-wrap}
+
+    .right{float:right}
+
+    footer{margin-top:14px;color:var(--muted);font-size:12px}
+
+    @media (min-width: 920px){
+      .grid{grid-template-columns:1.2fr 0.8fr}
+      .span-2{grid-column:1 / -1}
+      .two-col{grid-template-columns:1fr 1fr}
     }
-    .k{font-weight:700}
-    .small{font-size:11px}
-    .link{color:var(--teal);text-decoration:none}
-    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
-    .print-note{display:none}
-    .channel-tag{display:inline-block;background:#e8f5f5;color:var(--teal);font-size:10px;font-weight:600;padding:2px 6px;border-radius:4px;margin-right:4px}
+
     @media print{
-      nav{display:none}
-      body{background:#fff}
-      .card{break-inside:avoid}
-      .print-note{display:block}
-      a{color:inherit;text-decoration:none}
+      header{position:sticky;top:0;background:#fff}
+      a{text-decoration:underline}
+      .pill{border:1px solid #bbb}
+      section{break-inside:avoid}
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <div class="page">
     <header>
       <div>
-        <h1>WPT CEO Daily Briefing — Sat, March 21, 2026</h1>
-        <div class="meta">Prepared for Terry Finley (America/New_York) • Updated 1:28 PM ET</div>
-        <div class="meta print-note">Print-friendly view</div>
+        <h1>WPT CEO Daily Briefing — Sunday, March 22, 2026</h1>
+        <div class="sub">Prepared for <strong>Terry Finley</strong> (ET). Updated 6:06 AM ET.</div>
       </div>
-      <nav>
-        <a href="#schedule">Schedule</a>
-        <a href="#alerts">Alerts</a>
-        <a href="#inventory">2026 Inventory</a>
-        <a href="#pulse">Team Pulse</a>
-        <a href="#racing">Racing</a>
-        <a href="#decisions">Decisions Needed</a>
-        <a href="#pipeline">Sales Pipeline</a>
-        <a href="#perplexity">Perplexity Computer</a>
-      </nav>
+      <div class="pill">Public link: <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a></div>
     </header>
 
-    <section id="schedule" class="card">
-      <h2>Schedule (All events)</h2>
+    <div class="grid">
 
-      <h3>Today — Sat, Mar 21 (Location: <span class="k">DC</span>)</h3>
-      <table>
-        <thead>
-          <tr>
-            <th style="width:120px">Time (ET)</th>
-            <th>Event</th>
-            <th style="width:260px">Where / Link</th>
-            <th style="width:230px">Attendees</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="mono">All day</td>
-            <td><span class="k">📍DC</span></td>
-            <td class="muted">—</td>
-            <td class="muted">—</td>
-          </tr>
-          <tr>
-            <td class="mono">3:00–8:00pm</td>
-            <td><span class="k">Marie Smeallie &amp; Tyler Harned Wedding</span><br><span class="small muted">Ceremony 3 PM · Reception 6 PM · Black tie</span><br><span class="small muted">Debbie RSVP: needsAction</span></td>
-            <td>Holy Trinity Catholic Church, 3513 N St NW, Washington, DC<br><span class="small muted">Reception: The Sulgrave Club</span></td>
-            <td class="small">Terry Finley (accepted)<br>Debbie Finley (<span class="k">needsAction</span>)</td>
-          </tr>
-          <tr>
-            <td class="mono">5:25pm</td>
-            <td><span class="k">Intricate Spirit</span> at Gulfstream Park (Race <span class="k">10</span>)<br><span class="small muted">Texas Glitter Stakes</span></td>
-            <td class="muted">—</td>
-            <td class="small">Jeff Lowe (accepted)<br>Ryan Finley (needsAction)<br>WPT Team 2025 (needsAction)<br>Terry (accepted)</td>
-          </tr>
-        </tbody>
-      </table>
+      <section class="span-2" id="schedule">
+        <h2>Schedule (ET)</h2>
+        <div class="meta">
+          <span class="tag"><strong>Today</strong> (Sun 3/22) — Location: <strong>DC + FL</strong></span>
+          <span class="tag"><strong>Tomorrow</strong> (Mon 3/23) — Location: <strong>FL</strong></span>
+          <span class="tag"><strong>Tue</strong> (3/24) — Location: <strong>FL</strong></span>
+        </div>
 
-      <h3>Tomorrow — Sun, Mar 22 (Location: <span class="k">DC + FL</span>)</h3>
-      <table>
-        <thead>
-          <tr>
-            <th style="width:120px">Time (ET)</th>
-            <th>Event</th>
-            <th style="width:260px">Where / Link</th>
-            <th style="width:230px">Attendees</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="mono">All day</td>
-            <td><span class="k">📍DC + FL</span></td>
-            <td class="muted">—</td>
-            <td class="muted">—</td>
-          </tr>
-          <tr>
-            <td class="mono">9:50am–12:36pm</td>
-            <td><span class="k">Flight to Fort Lauderdale (AA 3052)</span><br><span class="small muted">Confirmation: <span class="mono k">JUEIKX</span></span></td>
-            <td>Depart: Washington <span class="k">DCA</span><br>Arrive: <span class="k">FLL</span></td>
-            <td class="muted">—</td>
-          </tr>
-          <tr>
-            <td class="mono">2:39pm</td>
-            <td><span class="k">Band On the Run</span> at Tampa Bay Downs (Race <span class="k">5</span>)<br><span class="small muted">Maiden Claiming 32k</span></td>
-            <td class="muted">—</td>
-            <td class="small">Jeff Lowe (accepted)<br>Ryan Finley (needsAction)<br>WPT Team 2025 (needsAction)<br>Terry (accepted)</td>
-          </tr>
-        </tbody>
-      </table>
+        <h3 style="margin:12px 0 6px 0;font-size:13px;font-weight:800">Today — Sun 3/22</h3>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:120px">Time</th>
+              <th>Event</th>
+              <th style="width:230px">People</th>
+              <th style="width:220px">Location / Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>All day</strong></td>
+              <td><strong>DC + FL</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>9:50 AM–12:36 PM</strong></td>
+              <td><strong>Flight to Fort Lauderdale (AA 3052)</strong><div class="sub">Confirmation: <strong>JUEIKX</strong>. Depart: Washington DCA.</div></td>
+              <td></td>
+              <td>Washington DCA</td>
+            </tr>
+            <tr>
+              <td><strong>2:39 PM</strong></td>
+              <td><strong>Band On the Run</strong> at Tampa Bay Downs in race 5<div class="sub">Maiden Claiming 32k.</div></td>
+              <td><strong>Jeff Lowe</strong>, <strong>Ryan Finley</strong>, <strong>WPT Team 2025</strong></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
 
-      <h3>Mon, Mar 23 (Location: <span class="k">FL</span>)</h3>
-      <table>
-        <thead>
-          <tr>
-            <th style="width:120px">Time (ET)</th>
-            <th>Event</th>
-            <th style="width:260px">Where / Link</th>
-            <th style="width:230px">Attendees</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="mono">All day</td>
-            <td><span class="k">📍FL</span></td>
-            <td class="muted">—</td>
-            <td class="muted">—</td>
-          </tr>
-          <tr>
-            <td class="mono">8:30–9:30am</td>
-            <td><span class="k">StretchZone Session</span></td>
-            <td>Stretch Zone, 20614 Biscayne Blvd, Aventura, FL</td>
-            <td class="muted">—</td>
-          </tr>
-          <tr>
-            <td class="mono">10:00–10:15am</td>
-            <td><span class="k">Weekly Calendar Lookahead</span><br><span class="small muted">Debbie RSVP: needsAction</span></td>
-            <td><a class="link" href="https://us02web.zoom.us/j/6096367204">Zoom</a></td>
-            <td class="small">Casey Clemmons (accepted)<br>Terry (accepted)<br>Debbie (<span class="k">needsAction</span>)</td>
-          </tr>
-          <tr>
-            <td class="mono">10:15–10:45am</td>
-            <td><span class="k">Casey + Terry Daily Sync</span></td>
-            <td><a class="link" href="https://us02web.zoom.us/j/6096367204">Zoom</a></td>
-            <td class="small">Casey Clemmons (accepted)<br>Terry (accepted)</td>
-          </tr>
-          <tr>
-            <td class="mono">12:00–5:00pm</td>
-            <td><span class="k">Gulfstream Park Florida Derby Golf Tournament</span></td>
-            <td>Fort Lauderdale, FL</td>
-            <td class="muted">—</td>
-          </tr>
-        </tbody>
-      </table>
+        <h3 style="margin:14px 0 6px 0;font-size:13px;font-weight:800">Tomorrow — Mon 3/23</h3>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:120px">Time</th>
+              <th>Event</th>
+              <th style="width:230px">People</th>
+              <th style="width:220px">Location / Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>All day</strong></td>
+              <td><strong>FL</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>8:30–9:30 AM</strong></td>
+              <td><strong>StretchZone Session</strong></td>
+              <td></td>
+              <td>Stretch Zone, 20614 Biscayne Blvd, Aventura, FL</td>
+            </tr>
+            <tr>
+              <td><strong>9:45–10:15 AM</strong></td>
+              <td><strong>Call with Ken Freirich</strong> (cell)</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>10:15–10:30 AM</strong></td>
+              <td><strong>Weekly Calendar Lookahead</strong></td>
+              <td><strong>Casey Clemmons</strong>, <strong>Debbie Finley</strong></td>
+              <td><a href="https://us02web.zoom.us/j/6096367204">Zoom</a></td>
+            </tr>
+            <tr>
+              <td><strong>10:30–11:00 AM</strong></td>
+              <td><strong>Casey + Terry Daily Sync</strong></td>
+              <td><strong>Casey Clemmons</strong></td>
+              <td><a href="https://us02web.zoom.us/j/6096367204">Zoom</a></td>
+            </tr>
+            <tr>
+              <td><strong>12:00–5:00 PM</strong></td>
+              <td><strong>Gulfstream Park Florida Derby Golf Tournament</strong></td>
+              <td></td>
+              <td>Fort Lauderdale, FL</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <div style="margin-top:10px" class="small muted">
-        Conflict check: No overlaps detected; note the Mon 10:00–10:45am block is back-to-back (lookahead immediately followed by daily sync).
-      </div>
-    </section>
+        <h3 style="margin:14px 0 6px 0;font-size:13px;font-weight:800">Tue 3/24</h3>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:120px">Time</th>
+              <th>Event</th>
+              <th style="width:230px">People</th>
+              <th style="width:220px">Location / Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>All day</strong></td>
+              <td><strong>FL</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>9:00–9:30 AM</strong></td>
+              <td><strong>Terry and Debbie Finley and Greta Allen</strong><div class="sub">Topic: scholarship (Calendly).</div></td>
+              <td><strong>Greta Allen</strong>, <strong>Debbie Finley</strong></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>10:00–11:00 AM</strong></td>
+              <td><strong>Jennifer Coaching Call</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>11:00 AM–12:00 PM</strong></td>
+              <td><strong>Casey + Terry Daily Sync</strong></td>
+              <td><strong>Casey Clemmons</strong></td>
+              <td><a href="https://us02web.zoom.us/j/6096367204">Zoom</a></td>
+            </tr>
+            <tr>
+              <td><strong>12:30–1:00 PM</strong></td>
+              <td><strong>JC Follow Up with Terry</strong></td>
+              <td><strong>Casey Clemmons</strong>, <strong>Max Wittenberg</strong> (+ others)</td>
+              <td><a href="https://meet.google.com/zxo-qzxc-upm">Google Meet</a></td>
+            </tr>
+            <tr>
+              <td><strong>1:00–2:00 PM</strong></td>
+              <td><strong>Tommy + Terry Lunch</strong></td>
+              <td><strong>Tom Bellhouse</strong></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
 
-    <section id="alerts" class="card">
-      <h2>Alerts</h2>
-      <ul>
-        <li><span class="pill urgent">URGENT</span> <span class="k">Intricate Spirit</span> stakes moved OFF the turf — Miguel is irate; expectations tempered (via Tom Bellhouse in #horse-comms).</li>
-        <li><span class="pill urgent">URGENT</span> RSVP follow-ups: Debbie has <span class="k">needsAction</span> on the Wedding invite and Weekly Calendar Lookahead.</li>
-        <li><span class="pill attention">ATTENTION</span> Race-day: <span class="k">Intricate Spirit</span> runs today at Gulfstream (Texas Glitter Stakes, Race 10, <span class="k">5:25 PM ET</span>).</li>
-        <li><span class="pill attention">ATTENTION</span> Travel tomorrow: Flight <span class="k">AA 3052</span> (DCA → FLL), confirmation <span class="k mono">JUEIKX</span>.</li>
-        <li><span class="pill attention">ATTENTION</span> Terry is <span class="k">needsAction</span> on <span class="k">Band On the Run</span> (Tampa Bay Downs) calendar entry.</li>
-        <li><span class="pill win">WIN</span> <span class="k">3 sales closed</span> this week: Ted Gibbens 2.5% Yaupon, Earl &amp; Carol Franks 2.5% Yaupon, Dickie Oliver 5% Jimmy Creed.</li>
-        <li><span class="pill win">WIN</span> Salesforce: Opportunity <span class="k">Oliver - 2026</span> marked <span class="k">Closed Won</span> for <span class="k">$18,900</span> (modified Mar 20).</li>
-      </ul>
-    </section>
+        <div class="sub"><strong>Note:</strong> No same-day meeting conflicts detected across listed times; watch 10:15 → 10:30 AM Mon for a tight handoff.</div>
+      </section>
 
-    <section id="inventory" class="card">
-      <h2>2026 Inventory (only horses with remaining &gt; 0)</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Horse</th>
-            <th style="width:140px">Trainer</th>
-            <th style="width:120px">% Sold</th>
-            <th style="width:140px">$ Remaining</th>
-            <th style="width:120px">% Remaining</th>
-            <th style="width:150px">Syndicated Value</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span class="k">CAIRO PRINCE/CABARET STARLET</span></td>
-            <td>CLEMENT</td>
-            <td><span class="k">90%</span></td>
-            <td><span class="k">$21,600</span></td>
-            <td><span class="k">10.00%</span></td>
-            <td><span class="k">$216,000</span></td>
-          </tr>
-          <tr>
-            <td><span class="k">YAUPON/LIGHTER KNOT</span></td>
-            <td>DELACOUR</td>
-            <td><span class="k">85%</span></td>
-            <td><span class="k">$59,400</span></td>
-            <td><span class="k">15.00%</span></td>
-            <td><span class="k">$396,000</span></td>
-          </tr>
-          <tr>
-            <td><span class="k">JIMMY CREED/MOON AND STARS</span></td>
-            <td>ROMANS</td>
-            <td><span class="k">90%</span></td>
-            <td><span class="k">$39,690</span></td>
-            <td><span class="k">10.50%</span></td>
-            <td><span class="k">$378,000</span></td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="small muted" style="margin-top:8px">
-        Combined remaining across these three: <span class="k">$120,690</span>.
-      </div>
-    </section>
+      <section id="alerts">
+        <h2>Alerts</h2>
+        <ul class="list">
+          <li><span class="indicator"><span class="dot red"></span>RSVP needs action</span>: <strong>Debbie Finley</strong> is marked <strong>needsAction</strong> on <strong>Weekly Calendar Lookahead</strong> (Mon 10:15 AM ET).</li>
+          <li><span class="indicator"><span class="dot red"></span>Travel</span>: <strong>Flight to Fort Lauderdale (AA 3052)</strong> today <strong>9:50 AM ET</strong> (confirm <strong>JUEIKX</strong>).</li>
+          <li><span class="indicator"><span class="dot gold"></span>Racing</span>: <strong>Band On the Run</strong> runs today (Tampa Bay Downs, race 5) at <strong>2:39 PM ET</strong>.</li>
+        </ul>
+      </section>
 
-    <section id="pulse" class="card">
-      <h2>Team Pulse</h2>
-      <p class="small muted" style="margin:0 0 10px 0">Slack activity from the last 48 hours across monitored channels.</p>
+      <section id="inventory">
+        <h2>2026 Inventory</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Horse</th>
+              <th>Trainer</th>
+              <th style="width:110px">% Sold</th>
+              <th style="width:170px">$ Remaining</th>
+              <th style="width:140px">% Remaining</th>
+              <th style="width:170px">Syndicated Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>CAIRO PRINCE/CABARET STARLET</strong></td>
+              <td><strong>CLEMENT</strong></td>
+              <td><strong>90%</strong></td>
+              <td><strong>$21,600</strong></td>
+              <td><strong>10.00%</strong></td>
+              <td><strong>$216,000</strong></td>
+            </tr>
+            <tr>
+              <td><strong>YAUPON/LIGHTER KNOT</strong></td>
+              <td><strong>DELACOUR</strong></td>
+              <td><strong>85%</strong></td>
+              <td><strong>$59,400</strong></td>
+              <td><strong>15.00%</strong></td>
+              <td><strong>$396,000</strong></td>
+            </tr>
+            <tr>
+              <td><strong>JIMMY CREED/MOON AND STARS</strong></td>
+              <td><strong>ROMANS</strong></td>
+              <td><strong>90%</strong></td>
+              <td><strong>$39,690</strong></td>
+              <td><strong>10.50%</strong></td>
+              <td><strong>$378,000</strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="meta">
+          <span class="tag">Combined remaining: <strong>$120,690</strong></span>
+        </div>
+      </section>
 
-      <h3><span class="channel-tag">#horse-comms</span> Racing &amp; Horse Operations</h3>
-      <ul>
-        <li><span class="k">Tom Bellhouse</span> — Miguel is irate they took the stakes off the turf for <span class="k">Intricate Spirit</span>. "We'll stay in to get the year started but he doesn't have high expectations."</li>
-        <li><span class="k">Jeff Lowe</span> — Pletcher site update on <span class="k">Vibe</span>: "Came back from the race in good shape. Pointed to a N2X at Aqueduct <span class="k">4/25</span>."</li>
-        <li><span class="k">Terry Finley</span> — "<span class="k">EXPLORA</span> shipping back and forth. Let's go."</li>
-        <li><span class="k">Joe Bianca</span> — Only 6 in the Fantasy field: Search Party (Torres), Empath (Vazquez), <span class="k">Counting Stars</span> (Arrieta), Taken by the Wind (Esquivel), Sticker Shock (I. Ortiz Jr.), <span class="k">Explora</span> (Prat).</li>
-      </ul>
+      <section class="span-2" id="team-pulse">
+        <h2>Team Pulse (last ~48 hours)</h2>
 
-      <h3><span class="channel-tag">#sales-made</span> Closed Sales <span class="pill win" style="margin-left:6px">3 NEW</span></h3>
-      <ul>
-        <li><span class="k">Jason Blewitt</span> — <span class="k">Ted Gibbens</span> 2.5% <span class="k">Yaupon</span></li>
-        <li><span class="k">Tom Bellhouse</span> — <span class="k">Earl &amp; Carol Franks</span> 2.5% <span class="k">Yaupon</span></li>
-        <li><span class="k">Tom Murphy</span> — <span class="k">Dickie Oliver</span> 5% <span class="k">Jimmy Creed</span></li>
-        <li>Celebration from the team — Terry: "Yea baby. Great job. Super week of sales." Jason: "Outstanding work!!!" Erin, Tom B, Joe all chimed in.</li>
-      </ul>
+        <div class="channel">
+          <h3>#horse-comms</h3>
+          <div class="msg">
+            <div class="msg-head">
+              <div><span class="tag">#horse-comms</span> <span class="who"><strong>Tom Bellhouse</strong></span></div>
+              <div class="when">Sat 3/21 • 11:03 AM ET • <a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1774105393619329">permalink</a></div>
+            </div>
+            <div class="msg-body">Miguel is irate they took the stakes off the turf. We’ll stay in to get the year started but he doesn't have high expectations</div>
+          </div>
+        </div>
 
-      <h3><span class="channel-tag">#sales</span> Sales Activity</h3>
-      <ul>
-        <li><span class="k">Erin Birkenhauer</span> — Putting "5% left" on bulletin pages to drive urgency and close out remaining inventory.</li>
-        <li><span class="k">Dawn Lenert</span> — Shared the <a class="link" href="https://docs.google.com/spreadsheets/d/1SPGyl1d0EVsyhgGge03M6CUmeT0WsiwWP8lXSgOb5kM/edit?usp=sharing">2026 2yo Model spreadsheet</a>.</li>
-      </ul>
+        <div class="channel">
+          <h3>#exec-team</h3>
+          <div class="msg">
+            <div class="msg-head">
+              <div><span class="tag">#exec-team</span> <span class="who"><strong>Terry Finley</strong></span></div>
+              <div class="when">Sat 3/21 • 7:49 AM ET • <a href="https://westpointtb.slack.com/archives/C0702F2JWBD/p1774093757831759">permalink</a></div>
+            </div>
+            <div class="msg-body"><strong>Einstein</strong>? If we r not using should cancel</div>
+          </div>
+        </div>
+      </section>
 
-      <h3><span class="channel-tag">#exec-team</span> Executive</h3>
-      <ul>
-        <li><span class="k">Terry Finley</span> — "Einstein? If we r not using should cancel."</li>
-        <li><span class="k">Erin Birkenhauer</span> — Transition plan: next 2 weeks are booked, then spring break (Jeff out 2 days), then OBS April week → Derby. Naturally/organically transitioning out of exec duties. Suggests <span class="k">Monday after the Derby</span> as the official handoff target.</li>
-      </ul>
-    </section>
+      <section class="span-2" id="racing">
+        <h2>Racing</h2>
 
-    <section id="racing" class="card">
-      <h2>Racing</h2>
+        <div class="two-col">
+          <div>
+            <div class="indicator" style="margin-bottom:8px"><span class="dot gold"></span>Entries (from WPT Daily Entries)</div>
+            <table>
+              <thead>
+                <tr>
+                  <th style="width:90px">Date</th>
+                  <th>Horse</th>
+                  <th style="width:70px">Race</th>
+                  <th style="width:90px">Post</th>
+                  <th style="width:120px">Track</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>03/19/26</td>
+                  <td><strong>Walking in Memphis</strong></td>
+                  <td>5</td>
+                  <td>2:54 ET</td>
+                  <td>Gulfstream Park</td>
+                </tr>
+                <tr>
+                  <td>03/20/26</td>
+                  <td><strong>Legalize</strong></td>
+                  <td>8</td>
+                  <td>5:15 CT</td>
+                  <td>Fair Grounds</td>
+                </tr>
+                <tr>
+                  <td>03/20/26</td>
+                  <td><strong>Bullard</strong></td>
+                  <td>5</td>
+                  <td>7:55 ET</td>
+                  <td>Turfway Park</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="sub">Source: <a href="https://www.westpointtb.com/daily-entries/">westpointtb.com/daily-entries</a></div>
+          </div>
 
-      <h3>Today &amp; Upcoming Entries</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Horse</th>
-            <th style="width:70px">Race</th>
-            <th style="width:90px">Post</th>
-            <th>Track</th>
-            <th>Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>03/21/26</td><td><span class="k">Intricate Spirit</span></td><td>10</td><td>5:25 PM</td><td>Gulfstream Park</td><td>Texas Glitter Stakes</td></tr>
-          <tr><td>03/22/26</td><td><span class="k">Band On the Run</span></td><td>5</td><td>2:39 PM</td><td>Tampa Bay Downs</td><td>Maiden Claiming 32k</td></tr>
-        </tbody>
-      </table>
+          <div>
+            <div class="indicator" style="margin-bottom:8px"><span class="dot green"></span>Results (last 7 days, from All Race Results)</div>
+            <table>
+              <thead>
+                <tr>
+                  <th style="width:120px">Date</th>
+                  <th>Horse</th>
+                  <th style="width:120px">Track</th>
+                  <th style="width:90px">Finish</th>
+                  <th style="width:140px">Earnings</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>03/20/26</td>
+                  <td><strong>Bullard</strong></td>
+                  <td>Turfway Park</td>
+                  <td><strong>3</strong></td>
+                  <td><strong>$9,988</strong></td>
+                </tr>
+                <tr>
+                  <td>03/19/26</td>
+                  <td><strong>Walking in Memphis</strong></td>
+                  <td>Gulfstream Park</td>
+                  <td><strong>1</strong></td>
+                  <td><strong>$20,160</strong></td>
+                </tr>
+                <tr>
+                  <td>03/16/26</td>
+                  <td><strong>Hold the Salsa</strong></td>
+                  <td>Fair Grounds</td>
+                  <td><strong>4</strong></td>
+                  <td><strong>$3,200</strong></td>
+                </tr>
+                <tr>
+                  <td>03/15/26</td>
+                  <td><strong>Moment’s Notice</strong></td>
+                  <td>Aqueduct</td>
+                  <td><strong>3</strong></td>
+                  <td><strong>$4,920</strong></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="sub">Sources: <a href="https://www.westpointtb.com/racing/all-race-results/">westpointtb.com/racing/all-race-results</a>; corroborates recent items listed on <a href="https://www.westpointtb.com/racing/results/">westpointtb.com/racing/results</a>.</div>
+          </div>
+        </div>
+      </section>
 
-      <h3>Recent Results (last 7 days)</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Horse</th>
-            <th>Track</th>
-            <th>Type</th>
-            <th style="width:70px">Finish</th>
-            <th style="width:100px">Earnings</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="background:#f0faf5"><td>03/20/26</td><td><span class="k">Legalize</span></td><td>Fair Grounds</td><td>NW3X Allowance (Turf)</td><td><span class="k">DH-2nd</span></td><td><span class="k">$8,990</span></td></tr>
-          <tr><td>03/20/26</td><td><span class="k">Bullard</span></td><td>Turfway Park</td><td>NW2X Allowance (AW)</td><td>3rd</td><td><span class="k">$9,988</span></td></tr>
-          <tr style="background:#f0faf5"><td>03/19/26</td><td><span class="k">Walking in Memphis</span></td><td>Gulfstream Park</td><td>Claiming 35k NW2L (Turf, 8F)</td><td><span class="pill win">1st</span></td><td><span class="k">$19,200</span></td></tr>
-          <tr><td>03/15/26</td><td><span class="k">Moment's Notice</span></td><td>Aqueduct</td><td>Claiming 30k NW2L</td><td>3rd</td><td><span class="k">$4,920</span></td></tr>
-          <tr style="background:#f0faf5"><td>03/14/26</td><td><span class="k">Vibe</span></td><td>Gulfstream Park</td><td>NW1X Allowance</td><td><span class="pill win">1st</span></td><td><span class="k">$42,000</span></td></tr>
-          <tr><td>03/14/26</td><td><span class="k">Statesman</span></td><td>Gulfstream Park</td><td>NW1X Allowance</td><td>3rd</td><td><span class="k">$7,700</span></td></tr>
-        </tbody>
-      </table>
+      <section id="decisions">
+        <h2>Decisions Needed</h2>
+        <ul class="list">
+          <li><span class="indicator"><span class="dot gold"></span>Ops / subscriptions</span>: Do we still need <strong>Einstein</strong>? If not, cancel (per Terry note in #exec-team).</li>
+        </ul>
+      </section>
 
-      <h3>Horse Updates (from Slack)</h3>
-      <ul>
-        <li><span class="k">Vibe</span> — Back from race in good shape. Pointed to N2X at Aqueduct <span class="k">4/25</span> (Pletcher).</li>
-        <li><span class="k">Explora</span> — Shipping; entered in Fantasy field with Prat aboard.</li>
-        <li><span class="k">Intricate Spirit</span> — Stakes moved off turf; Miguel not expecting much but staying in to start the year.</li>
-      </ul>
+      <section class="span-2" id="pipeline">
+        <h2>Sales Pipeline (Salesforce; modified last 7 days)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Opportunity</th>
+              <th style="width:220px">Stage</th>
+              <th style="width:140px">Amount</th>
+              <th style="width:130px">Close</th>
+              <th style="width:190px">Owner</th>
+              <th style="width:180px">Last modified (UTC)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Arroyave - 2026</strong></td><td>Talking - Unlikely to Close</td><td><strong>$20,000</strong></td><td>2026-09-22</td><td><strong>Jason Blewitt</strong></td><td>2026-03-21 22:07</td></tr>
+            <tr><td><strong>Slejko-Smith, Christa - 2026</strong></td><td>Talking - Unlikely to Close</td><td><strong>$20,000</strong></td><td>2026-09-18</td><td><strong>Jason Blewitt</strong></td><td>2026-03-21 22:07</td></tr>
+            <tr><td><strong>Sharpe, Kirsten - 2027</strong></td><td>Not talked to yet</td><td><strong>$20,000</strong></td><td>2027-03-15</td><td><strong>Jason Blewitt</strong></td><td>2026-03-21 21:58</td></tr>
+            <tr><td><strong>Ennis, Kathryn L. - 2027</strong></td><td>Not talked to yet</td><td><strong>$20,000</strong></td><td>2027-03-15</td><td><strong>Jason Blewitt</strong></td><td>2026-03-21 21:58</td></tr>
+            <tr><td><strong>Farrar - 2026</strong></td><td>Talking - Unlikely to Close</td><td><strong>$20,000</strong></td><td>2026-10-01</td><td><strong>Jason Blewitt</strong></td><td>2026-03-21 21:58</td></tr>
+            <tr><td><strong>Grein - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-10-01</td><td><strong>Jason Blewitt</strong></td><td>2026-03-21 20:34</td></tr>
+            <tr><td><strong>White - 2026</strong></td><td>Talking - Unlikely to Close</td><td><strong>$20,000</strong></td><td>2026-09-30</td><td><strong>Jason Blewitt</strong></td><td>2026-03-21 20:31</td></tr>
+            <tr><td><strong>Vuono, Richard - 2026 VERY LIKELY</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-04-21</td><td><strong>Tom Murphy</strong></td><td>2026-03-21 12:30</td></tr>
+            <tr><td><strong>Gnerre - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-10-01</td><td><strong>Joe Bianca</strong></td><td>2026-03-20 21:50</td></tr>
+            <tr><td><strong>Dupont, Lorie - 2027</strong></td><td>Not talked to yet</td><td><strong>$20,000</strong></td><td>2027-03-11</td><td><strong>Joe Bianca</strong></td><td>2026-03-20 20:47</td></tr>
+            <tr><td><strong>Pinkerton - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-11-12</td><td><strong>Tom Bellhouse</strong></td><td>2026-03-20 20:14</td></tr>
+            <tr><td><strong>Mondshine - 2026 Somewhat</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-04-02</td><td><strong>Jason Blewitt</strong></td><td>2026-03-20 20:14</td></tr>
+            <tr><td><strong>McCall - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-10-01</td><td><strong>Joe Bianca</strong></td><td>2026-03-20 20:14</td></tr>
+            <tr><td><strong>Taylor - 2026</strong></td><td>Talking - Unlikely to Close</td><td><strong>$20,000</strong></td><td>2026-05-01</td><td><strong>Jason Blewitt</strong></td><td>2026-03-20 20:14</td></tr>
+            <tr><td><strong>Palumbo - 2026 Somewhat</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-11-12</td><td><strong>Tom Bellhouse</strong></td><td>2026-03-20 20:05</td></tr>
+            <tr><td><strong>Gale, James - 2026 Somewhat</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-06-18</td><td><strong>Joe Bianca</strong></td><td>2026-03-20 19:25</td></tr>
+            <tr><td><strong>Caggiano - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-10-01</td><td><strong>Joe Bianca</strong></td><td>2026-03-20 19:25</td></tr>
+            <tr><td><strong>Dougherty, Tim - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-04-21</td><td><strong>Tom Murphy</strong></td><td>2026-03-20 19:17</td></tr>
+            <tr><td><strong>Imschweiler, David - 2026</strong></td><td>Talking - Unlikely to Close</td><td><strong>$20,000</strong></td><td>2026-06-20</td><td><strong>Tom Murphy</strong></td><td>2026-03-20 19:17</td></tr>
+            <tr><td><strong>Lissy, Paul - 2026 Somewhat</strong></td><td>Attempted Contact</td><td><strong>$20,000</strong></td><td>2026-09-18</td><td><strong>Tom Murphy</strong></td><td>2026-03-20 19:17</td></tr>
+          </tbody>
+        </table>
+      </section>
 
-      <div class="small muted" style="margin-top:10px">
-        Sources: <a class="link" href="https://www.westpointtb.com/racing/results/">westpointtb.com Results</a>, <a class="link" href="https://www.westpointtb.com/racing/all-race-results/">All Race Results</a>, <a class="link" href="https://www.bloodhorse.com">BloodHorse</a>, #horse-comms Slack.
-      </div>
-    </section>
+      <section class="span-2" id="perplexity">
+        <h2>Perplexity Computer Slack Activity</h2>
+        <div class="sub">No messages found from <strong>Perplexity</strong> in the last ~48 hours (search: after:2026-03-20).</div>
+      </section>
 
-    <section id="decisions" class="card">
-      <h2>Decisions Needed</h2>
-      <ul>
-        <li><span class="pill urgent">URGENT</span> Confirm Debbie RSVP status (Wedding + Weekly Lookahead) or delegate follow-up.</li>
-        <li><span class="pill attention">ATTENTION</span> Einstein — cancel the subscription if not in use (per your #exec-team note).</li>
-        <li><span class="pill attention">ATTENTION</span> Confirm travel ground logistics for DCA departure + FLL arrival (driver, timing).</li>
-        <li><span class="pill attention">ATTENTION</span> Confirm who is covering race-day comms for <span class="k">Intricate Spirit</span> and <span class="k">Band On the Run</span> while traveling.</li>
-        <li>Review Erin's transition timeline — post-Derby Monday handoff target. Align with Lindsey H.</li>
-      </ul>
-    </section>
+    </div>
 
-    <section id="pipeline" class="card">
-      <h2>Sales Pipeline (modified last 7 days — latest 20)</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Opportunity</th>
-            <th style="width:210px">Stage</th>
-            <th style="width:120px">Amount</th>
-            <th style="width:120px">Close</th>
-            <th style="width:160px">Owner</th>
-            <th style="width:160px">Last modified (ET)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td><span class="k">Gnerre - 2026</span></td><td>Talking - No Commitment</td><td><span class="k">$20,000</span></td><td>2026-10-01</td><td>Joe Bianca</td><td>2026-03-20 5:50pm</td></tr>
-          <tr><td><span class="k">Dupont, Lorie - 2027</span></td><td>Not talked to yet</td><td><span class="k">$20,000</span></td><td>2027-03-11</td><td>Joe Bianca</td><td>2026-03-20 4:47pm</td></tr>
-          <tr><td><span class="k">Taylor - 2026</span></td><td>Talking - Unlikely to Close</td><td><span class="k">$20,000</span></td><td>2026-05-01</td><td>Jason Blewitt</td><td>2026-03-20 4:14pm</td></tr>
-          <tr><td><span class="k">Mondshine - 2026 Somewhat</span></td><td>Talking - No Commitment</td><td><span class="k">$20,000</span></td><td>2026-04-02</td><td>Jason Blewitt</td><td>2026-03-20 4:14pm</td></tr>
-          <tr><td><span class="k">McCall - 2026</span></td><td>Talking - No Commitment</td><td><span class="k">$20,000</span></td><td>2026-10-01</td><td>Joe Bianca</td><td>2026-03-20 4:14pm</td></tr>
-          <tr><td><span class="k">Pinkerton - 2026</span></td><td>Talking - No Commitment</td><td><span class="k">$20,000</span></td><td>2026-11-12</td><td>Tom Bellhouse</td><td>2026-03-20 4:14pm</td></tr>
-          <tr><td><span class="k">Palumbo - 2026 Somewhat</span></td><td>Talking - No Commitment</td><td><span class="k">$20,000</span></td><td>2026-11-12</td><td>Tom Bellhouse</td><td>2026-03-20 4:05pm</td></tr>
-          <tr><td><span class="k">Gale, James - 2026 Somewhat</span></td><td>Talking - No Commitment</td><td><span class="k">$20,000</span></td><td>2026-06-18</td><td>Joe Bianca</td><td>2026-03-20 3:25pm</td></tr>
-          <tr><td><span class="k">Caggiano - 2026</span></td><td>Talking - No Commitment</td><td><span class="k">$20,000</span></td><td>2026-10-01</td><td>Joe Bianca</td><td>2026-03-20 3:25pm</td></tr>
-          <tr><td><span class="k">Lissy, Paul - 2026 Somewhat</span></td><td>Attempted Contact</td><td><span class="k">$20,000</span></td><td>2026-09-18</td><td>Tom Murphy</td><td>2026-03-20 3:17pm</td></tr>
-          <tr><td><span class="k">Imschweiler, David - 2026</span></td><td>Talking - Unlikely to Close</td><td><span class="k">$20,000</span></td><td>2026-06-20</td><td>Tom Murphy</td><td>2026-03-20 3:17pm</td></tr>
-          <tr><td><span class="k">Robert Britain - 2026</span></td><td>Talking - No Commitment</td><td><span class="k">$15,000</span></td><td>2026-06-30</td><td>Tom Murphy</td><td>2026-03-20 3:17pm</td></tr>
-          <tr><td><span class="k">Dougherty, Tim - 2026</span></td><td>Talking - No Commitment</td><td><span class="k">$20,000</span></td><td>2026-04-21</td><td>Tom Murphy</td><td>2026-03-20 3:17pm</td></tr>
-          <tr><td><span class="k">Otis - 2026</span></td><td>Talking - Unlikely to Close</td><td><span class="k">$20,000</span></td><td>2026-10-08</td><td>Tom Murphy</td><td>2026-03-20 3:17pm</td></tr>
-          <tr><td><span class="k">Oliver, Charles - 2027</span></td><td>Not talked to yet</td><td><span class="k">$20,000</span></td><td>2027-03-20</td><td>Tom Murphy</td><td>2026-03-20 3:10pm</td></tr>
-          <tr><td><span class="k">Oliver - 2026</span></td><td><span class="pill win">Closed Won</span></td><td><span class="k">$18,900</span></td><td>2026-03-20</td><td>Tom Murphy</td><td>2026-03-20 3:10pm</td></tr>
-          <tr><td><span class="k">Shawcroft, Andrew - 2026</span></td><td>Talking - No Commitment</td><td><span class="k">$20,000</span></td><td>2026-05-04</td><td>Jason Blewitt</td><td>2026-03-20 3:09pm</td></tr>
-          <tr><td><span class="k">Herbold - 2026</span></td><td>Talking - Unlikely to Close</td><td><span class="k">$20,000</span></td><td>2026-11-12</td><td>Tom Murphy</td><td>2026-03-20 3:00pm</td></tr>
-          <tr><td><span class="k">Newborn - 2026</span></td><td>Talking - Unlikely to Close</td><td><span class="k">$20,000</span></td><td>2026-11-12</td><td>Tom Bellhouse</td><td>2026-03-20 3:00pm</td></tr>
-          <tr><td><span class="k">Bice, William - 3-2026</span></td><td>Not talked to yet</td><td><span class="k">$20,000</span></td><td>2026-05-12</td><td>Joe Bianca</td><td>2026-03-20 2:26pm</td></tr>
-        </tbody>
-      </table>
-      <div class="small muted" style="margin-top:8px">
-        Focus: 10 of the 20 most recently updated opportunities are owned by <span class="k">Joe Bianca</span> or <span class="k">Tom Murphy</span> (pipeline concentration).
-      </div>
-    </section>
-
-    <section id="perplexity" class="card">
-      <h2>Perplexity Computer Slack Activity</h2>
-      <ul>
-        <li><span class="k">CEO Daily Briefing</span> delivered to Terry's DM — Sat, Mar 21 at 6:00 AM ET.</li>
-        <li><span class="k">CEO Daily Briefing</span> delivered to Terry's DM — Fri, Mar 20 at 6:00 AM ET.</li>
-      </ul>
-      <div class="small muted" style="margin-top:6px">These are the daily briefing delivery messages sent by Perplexity Computer to your Slack DM.</div>
-    </section>
-
-    <footer class="meta" style="margin-top:16px">
-      Generated: 2026-03-21 5:11 PM ET • Design: WPT executive brief • Accents: teal #01696F
+    <footer>
+      Sources: West Point Thoroughbreds <a href="https://www.westpointtb.com/daily-entries/">Daily Entries</a>, <a href="https://www.westpointtb.com/racing/results/">Results</a>, <a href="https://www.westpointtb.com/racing/all-race-results/">All Race Results</a>. Internal systems: Google Calendar, Slack, Salesforce.
     </footer>
   </div>
 </body>
