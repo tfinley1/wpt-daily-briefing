@@ -1,455 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WPT CEO Daily Briefing — Sunday, March 29, 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #FFFFFF;
-    --text: #28251D;
-    --accent: #01696F;
-    --accent-light: #E8F5F5;
-    --border: #E5E2DB;
-    --muted: #6B6560;
-    --red: #C0392B;
-    --gold: #D4A017;
-    --green: #27AE60;
-    --purple: #7B61FF;
-    --section-gap: 2rem;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    font-size: 15px;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-  }
-  header {
-    border-bottom: 3px solid var(--accent);
-    padding-bottom: 1rem;
-    margin-bottom: var(--section-gap);
-  }
-  header h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--accent);
-    letter-spacing: -0.02em;
-  }
-  header .date {
-    font-size: 0.95rem;
-    color: var(--muted);
-    margin-top: 0.25rem;
-  }
-  header .location-badge {
-    display: inline-block;
-    background: var(--accent-light);
-    color: var(--accent);
-    font-weight: 600;
-    font-size: 0.8rem;
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-    margin-top: 0.5rem;
-  }
-  .section {
-    margin-bottom: var(--section-gap);
-  }
-  .section-header {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
-    padding-bottom: 0.4rem;
-    border-bottom: 1.5px solid var(--border);
-  }
-  .section-header h2 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--text);
-  }
-  .section-icon {
-    font-size: 1.1rem;
-  }
-  ul { list-style: none; padding: 0; }
-  ul li {
-    padding: 0.4rem 0;
-    border-bottom: 1px solid #F2F0ED;
-  }
-  ul li:last-child { border-bottom: none; }
-  .time-badge {
-    display: inline-block;
-    background: var(--accent-light);
-    color: var(--accent);
-    font-weight: 600;
-    font-size: 0.78rem;
-    padding: 0.15rem 0.45rem;
-    border-radius: 3px;
-    margin-right: 0.4rem;
-  }
-  .tag {
-    display: inline-block;
-    font-size: 0.7rem;
-    font-weight: 600;
-    padding: 0.12rem 0.4rem;
-    border-radius: 3px;
-    margin-right: 0.3rem;
-    vertical-align: middle;
-  }
-  .tag-red { background: #FDEAEA; color: var(--red); }
-  .tag-gold { background: #FFF8E1; color: var(--gold); }
-  .tag-green { background: #E8F8EF; color: var(--green); }
-  .tag-purple { background: #F0EBFF; color: var(--purple); }
-  .tag-channel { background: #EEF2F7; color: #3A5A8C; }
-  .tag-accent { background: var(--accent-light); color: var(--accent); }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.88rem;
-    margin-top: 0.5rem;
-  }
-  th {
-    background: var(--accent);
-    color: #fff;
-    font-weight: 600;
-    text-align: left;
-    padding: 0.5rem 0.65rem;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-  }
-  td {
-    padding: 0.45rem 0.65rem;
-    border-bottom: 1px solid var(--border);
-  }
-  tr:nth-child(even) { background: #FAFAF8; }
-  .highlight-row { background: #FFF8E1 !important; }
-  .sub-header {
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: var(--muted);
-    margin: 1rem 0 0.4rem;
-  }
-  .action-item {
-    background: #FFF8E1;
-    border-left: 3px solid var(--gold);
-    padding: 0.6rem 0.8rem;
-    margin: 0.4rem 0;
-    border-radius: 0 4px 4px 0;
-    font-size: 0.9rem;
-  }
-  .action-item.urgent {
-    background: #FDEAEA;
-    border-left-color: var(--red);
-  }
-  .win-item {
-    background: #E8F8EF;
-    border-left: 3px solid var(--green);
-    padding: 0.6rem 0.8rem;
-    margin: 0.4rem 0;
-    border-radius: 0 4px 4px 0;
-    font-size: 0.9rem;
-  }
-  .race-card {
-    background: #FAFAF8;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 0.75rem;
-    margin: 0.5rem 0;
-  }
-  .race-card .horse-name {
-    font-weight: 700;
-    color: var(--accent);
-    font-size: 1rem;
-  }
-  .race-card .details {
-    font-size: 0.85rem;
-    color: var(--muted);
-    margin-top: 0.2rem;
-  }
-  .pipeline-stage {
-    display: inline-block;
-    font-size: 0.72rem;
-    font-weight: 600;
-    padding: 0.12rem 0.4rem;
-    border-radius: 3px;
-  }
-  .stage-won { background: #E8F8EF; color: var(--green); }
-  .stage-lost { background: #FDEAEA; color: var(--red); }
-  .stage-open { background: #FFF8E1; color: var(--gold); }
-  footer {
-    margin-top: 3rem;
-    padding-top: 1rem;
-    border-top: 1.5px solid var(--border);
-    font-size: 0.78rem;
-    color: var(--muted);
-    text-align: center;
-  }
-  @media (max-width: 600px) {
-    body { padding: 1rem; font-size: 14px; }
-    header h1 { font-size: 1.25rem; }
-    table { font-size: 0.82rem; }
-    .race-card { padding: 0.6rem; }
-  }
-  @media print {
-    body { max-width: 100%; padding: 1rem; }
-    .section { page-break-inside: avoid; }
-  }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WPT CEO Daily Briefing — Monday, March 30, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#28251D;
+      --muted:#6b665c;
+      --card:#fbfbfa;
+      --border:#e7e4de;
+      --teal:#01696F;
+      --red:#b42318;
+      --gold:#b54708;
+      --green:#027a48;
+      --purple:#6d28d9;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.35}
+    a{color:var(--teal);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px 16px 56px}
+    header{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px;justify-content:space-between;margin-bottom:14px}
+    h1{font-size:22px;margin:0}
+    .sub{color:var(--muted);font-size:13px}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px}
+    @media (min-width:980px){.grid{grid-template-columns:1fr 1fr}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 14px 12px}
+    .card h2{font-size:14px;margin:0 0 10px 0;letter-spacing:.02em;text-transform:uppercase;color:#2f2a21}
+    .badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--border);background:#fff;margin-left:8px;color:var(--muted)}
+    .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;vertical-align:middle}
+    .tag.red{background:rgba(180,35,24,.08);color:var(--red);border:1px solid rgba(180,35,24,.25)}
+    .tag.gold{background:rgba(181,71,8,.08);color:var(--gold);border:1px solid rgba(181,71,8,.25)}
+    .tag.green{background:rgba(2,122,72,.08);color:var(--green);border:1px solid rgba(2,122,72,.25)}
+    .tag.purple{background:rgba(109,40,217,.08);color:var(--purple);border:1px solid rgba(109,40,217,.25)}
+    ul{margin:0;padding-left:18px}
+    li{margin:6px 0}
+    .mono{font-variant-numeric:tabular-nums}
+    .tbl{width:100%;border-collapse:collapse;font-size:13px}
+    .tbl th,.tbl td{border-top:1px solid var(--border);padding:8px 6px;vertical-align:top}
+    .tbl th{color:var(--muted);font-weight:600;text-align:left}
+    .k{color:var(--muted)}
+    .callout{padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:#fff}
+    .callout.red{border-color:rgba(180,35,24,.35);background:rgba(180,35,24,.04)}
+    .callout.gold{border-color:rgba(181,71,8,.35);background:rgba(181,71,8,.04)}
+    .callout.green{border-color:rgba(2,122,72,.35);background:rgba(2,122,72,.04)}
+    .footer{margin-top:18px;color:var(--muted);font-size:12px}
+    @media print{
+      a{text-decoration:none}
+      .wrap{padding:0}
+      .card{break-inside:avoid}
+    }
+  </style>
 </head>
 <body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>WPT CEO Daily Briefing — Monday, March 30, 2026</h1>
+        <div class="sub">Prepared for Terry Finley • Times shown in ET</div>
+      </div>
+      <div class="sub mono">Run #12 • 6:04 AM ET</div>
+    </header>
 
-<header>
-  <h1>West Point Thoroughbreds — CEO Daily Briefing</h1>
-  <div class="date">Sunday, March 29, 2026</div>
-  <span class="location-badge">📍 Florida</span>
-</header>
+    <div class="grid">
+      <section class="card" style="grid-column:1/-1">
+        <h2>Schedule</h2>
+        <div class="callout gold">
+          <span class="tag gold">Attention</span>
+          Calendar returned <strong>0</strong> events for <strong>today</strong> and <strong>next 2 days</strong>. Please verify calendar connection or that events are on the correct calendar.
+        </div>
+      </section>
 
-<!-- ===================== SCHEDULE ===================== -->
-<div class="section">
-  <div class="section-header">
-    <span class="section-icon">📅</span>
-    <h2>Schedule</h2>
-  </div>
+      <section class="card" style="grid-column:1/-1">
+        <h2>Alerts</h2>
+        <div class="callout red">
+          <span class="tag red">Urgent</span>
+          <strong>$900</strong> Bandon Dunes deposit due by <strong>Mar 31</strong> (Venmo <strong>@Brett-Eaton-4</strong>, note: <strong>Bandon</strong>). <span class="k">(from Terry self-DM summary)</span>
+        </div>
+      </section>
 
-  <div class="sub-header">Today — Sunday, March 29</div>
-  <ul>
-    <li><span class="time-badge">2:19 PM</span> 🏇 <b>Find No Fault</b> — Gulfstream Park R4 (Dale Romans / Tyler Gaffalione, ML 4/6)</li>
-    <li><span class="time-badge">3:15 PM</span> 🏇 <b>Grunge</b> &amp; <b>Major Tac</b> — Aqueduct R5 (Clement/Rodriguez &amp; Mott/Lezcano)</li>
-    <li><span class="time-badge">5:40 PM</span> 🏇 <b>Tiz the Lady</b> — Tampa Bay Downs R11 (Shug McGaughey / John Velazquez, ML 10/12)</li>
-  </ul>
+      <section class="card" style="grid-column:1/-1">
+        <h2>2026 Inventory</h2>
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>Horse</th>
+              <th>Trainer</th>
+              <th class="mono">% Sold</th>
+              <th class="mono">% Remaining</th>
+              <th class="mono">$ Remaining</th>
+              <th class="mono">Syndicated Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>CAIRO PRINCE/CABARET STARLET</strong></td>
+              <td><strong>CLEMENT</strong></td>
+              <td class="mono"><strong>90%</strong></td>
+              <td class="mono"><strong>10.00%</strong></td>
+              <td class="mono"><strong>$21,600</strong></td>
+              <td class="mono"><strong>$216,000</strong></td>
+            </tr>
+            <tr>
+              <td><strong>JIMMY CREED/MOON AND STARS</strong></td>
+              <td><strong>ROMANS</strong></td>
+              <td class="mono"><strong>90%</strong></td>
+              <td class="mono"><strong>10.50%</strong></td>
+              <td class="mono"><strong>$39,690</strong></td>
+              <td class="mono"><strong>$378,000</strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="sub" style="margin-top:8px">Only horses with remaining inventory &gt; 0 shown.</div>
+      </section>
 
-  <div class="sub-header">Tomorrow — Monday, March 30 📍FL</div>
-  <ul>
-    <li><span class="time-badge">6:00 AM</span> Workout with Dale (6:00–6:45 AM)</li>
-    <li><span class="time-badge">10:30 AM</span> Golf (10:30 AM – 5:00 PM)</li>
-  </ul>
+      <section class="card" style="grid-column:1/-1">
+        <h2>Team Pulse <span class="badge">All messages listed (last ~48h)</span></h2>
 
-  <div class="sub-header">Tuesday, March 31 📍FL</div>
-  <ul>
-    <li><span class="time-badge">9:15 AM</span> <b>Jeff Litwin</b> — Call</li>
-    <li><span class="time-badge">10:00 AM</span> Weekly Lookahead</li>
-    <li><span class="time-badge">10:15 AM</span> <b>Casey</b> — Sync</li>
-    <li><span class="time-badge">11:00 AM</span> <b>Walt + Terry + Erin + Beth</b> — Connect (Zoom, Stites/BOAM lawyers)</li>
-    <li><span class="time-badge">1:00 PM</span> <b>Joe Appelbaum</b> — Sync</li>
-    <li><span class="time-badge">2:00 PM</span> <b>Andrew Shields</b> — Sync</li>
-    <li><span class="time-badge">3:00 PM</span> <b>Lindsey + Terry</b> — Perplexity/Salesforce</li>
-  </ul>
-</div>
+        <div style="margin:10px 0 6px">
+          <span class="tag purple">Terry's DMs to Individuals</span>
+        </div>
+        <ul>
+          <li><strong>Terry</strong> → <strong>Debbie Finley</strong>: “need a hotel in tampa - near ol memorial golf course. that thursday night befroe the sale” (<a href="https://westpointtb.slack.com/archives/D02FEJEDBU6/p1774830737737359">Slack</a>)</li>
+          <li><strong>Terry</strong> → <strong>Casey Clemmons</strong>: “Derby box.” (<a href="https://westpointtb.slack.com/archives/D08TC545TNZ/p1774810880292669">Slack</a>)</li>
+          <li><strong>Terry</strong> → <strong>Dawn Lenert</strong>: (blank message) (<a href="https://westpointtb.slack.com/archives/D02FWPJDZNY/p1774840339716649">Slack</a>)</li>
+        </ul>
 
-<!-- ===================== ALERTS ===================== -->
-<div class="section">
-  <div class="section-header">
-    <span class="section-icon">🚨</span>
-    <h2>Alerts &amp; Action Items</h2>
-  </div>
-  <div class="action-item urgent">
-    <span class="tag tag-red">ACTION</span> <b>Bandon Dunes</b> — <b>$900</b> deposit due by <b>March 31</b>
-  </div>
-  <div class="action-item">
-    <span class="tag tag-gold">RACE DAY</span> <b>4 WPT horses</b> running today across 3 tracks — GP, AQU, TAM
-  </div>
-  <div class="action-item">
-    <span class="tag tag-gold">FOLLOW-UP</span> Terry to Casey: Dale matrix for beta, website needs update with <b>2 stakes wins</b>, highlight <b>Honor A.P.</b> shareholders
-  </div>
-  <div class="action-item">
-    <span class="tag tag-gold">FOLLOW-UP</span> Terry to Jason: Prep for <b>Adam Nonn</b> call via Claude Cowork
-  </div>
-</div>
+        <div style="margin:14px 0 6px">
+          <span class="tag" style="background:rgba(1,105,111,.08);color:var(--teal);border:1px solid rgba(1,105,111,.25)">#horse-comms</span>
+        </div>
+        <ul>
+          <li><strong>Tom Bellhouse</strong>: Internal notes on <strong>GRUNGE</strong> (Clement barn post-race): turf scenario, blinkers on possibility, “cheap speed” vs quality. (<a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1774815938158969">Slack</a>)</li>
+        </ul>
+      </section>
 
-<!-- ===================== 2026 INVENTORY ===================== -->
-<div class="section">
-  <div class="section-header">
-    <span class="section-icon">📊</span>
-    <h2>2026 Inventory</h2>
-  </div>
-  <table>
-    <thead>
-      <tr>
-        <th>Horse</th>
-        <th>Trainer</th>
-        <th>Syndicated Value</th>
-        <th>$ Remaining</th>
-        <th>% Remaining</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="highlight-row">
-        <td><b>Cairo Prince</b></td>
-        <td>—</td>
-        <td>—</td>
-        <td><b>$21,600</b></td>
-        <td>10.0%</td>
-      </tr>
-      <tr class="highlight-row">
-        <td><b>Jimmy Creed</b></td>
-        <td>—</td>
-        <td>—</td>
-        <td><b>$39,690</b></td>
-        <td>10.5%</td>
-      </tr>
-    </tbody>
-  </table>
-  <p style="font-size:0.82rem; color:var(--muted); margin-top:0.5rem;">4 of 6 horses are sold out and omitted. Only active inventory shown.</p>
-</div>
+      <section class="card" style="grid-column:1/-1">
+        <h2>Racing</h2>
+        <div class="callout gold">
+          <span class="tag gold">Attention</span>
+          WPT homepage did not expose an “Entries” module today (site may have moved that content).
+        </div>
+        <div style="height:10px"></div>
+        <div class="callout">
+          <div class="k" style="margin-bottom:6px">Upcoming (from WPT Upcoming Races page)</div>
+          <ul>
+            <li><span class="mono"><strong>04/02/26</strong></span> — <strong>Army Man</strong> — Santa Anita Park — NW1X Allowance</li>
+            <li><span class="mono"><strong>04/03/26</strong></span> — <strong>Brightline Bullet</strong> — Tampa Bay Downs — Maiden Special Weight</li>
+            <li><span class="mono"><strong>04/03/26</strong></span> — <strong>Powered by Family</strong> — Keeneland — NW1X Allowance</li>
+            <li><span class="mono"><strong>04/04/26</strong></span> — <strong>Sansone</strong> — Aqueduct — NW1X Allowance</li>
+            <li><span class="mono"><strong>04/04/26</strong></span> — <strong>Reagan’s Honor</strong> — Keeneland — <strong>Bluegrass Stakes (G1)</strong></li>
+            <li><span class="mono"><strong>04/08/26</strong></span> — <strong>Integration</strong> — Keeneland — Allowance</li>
+            <li><span class="mono"><strong>04/09/26</strong></span> — <strong>Reagan’s Wit</strong> — Keeneland — NW2X Allowance</li>
+            <li><span class="mono"><strong>04/11/26</strong></span> — <strong>Willpowered</strong> — Aqueduct — NY-Bred NW1X Allowance</li>
+          </ul>
+          <div class="sub" style="margin-top:8px">Source: <a href="https://www.westpointtb.com/racing/upcoming-races/">westpointtb.com/racing/upcoming-races</a></div>
+        </div>
+      </section>
 
-<!-- ===================== TEAM PULSE ===================== -->
-<div class="section">
-  <div class="section-header">
-    <span class="section-icon">💬</span>
-    <h2>Team Pulse</h2>
-  </div>
+      <section class="card" style="grid-column:1/-1">
+        <h2>Sales Pipeline <span class="badge">Last 7 days (modified)</span></h2>
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>Opportunity</th>
+              <th>Owner</th>
+              <th>Stage</th>
+              <th class="mono">Amount</th>
+              <th class="mono">Close</th>
+              <th class="mono">Last Modified (UTC)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Salter,  David - 2026</strong></td><td><strong>Joe Bianca</strong></td><td>Talking - No Commitment</td><td class="mono"><strong>$20,000</strong></td><td class="mono">2026-09-15</td><td class="mono">2026-03-30 04:10</td></tr>
+            <tr><td><strong>Harris,  Charles - 2027</strong></td><td><strong>Tom Murphy</strong></td><td>Not talked to yet</td><td class="mono"><strong>$20,000</strong></td><td class="mono">2027-03-13</td><td class="mono">2026-03-29 23:43</td></tr>
+            <tr><td><strong>Galluzzo,  Mike - 2026 VERY</strong></td><td><strong>Jason Blewitt</strong></td><td>Talking - No Commitment</td><td class="mono"><strong>$20,000</strong></td><td class="mono">2026-06-20</td><td class="mono">2026-03-29 16:32</td></tr>
+            <tr><td><strong>Ross Coven - 2026</strong></td><td><strong>Jason Blewitt</strong></td><td>Talking - No Commitment</td><td class="mono"><strong>$15,000</strong></td><td class="mono">2026-05-26</td><td class="mono">2026-03-29 16:29</td></tr>
+            <tr><td><strong>Cusimano - 2026</strong></td><td><strong>Jason Blewitt</strong></td><td>Picking Horses</td><td class="mono"><strong>$10,000</strong></td><td class="mono">2026-05-01</td><td class="mono">2026-03-29 14:50</td></tr>
+            <tr><td><strong>Hennessy,  Mike - 2026</strong></td><td><strong>Jason Blewitt</strong></td><td>Talking - No Commitment</td><td class="mono"><strong>$20,000</strong></td><td class="mono">2026-04-24</td><td class="mono">2026-03-28 18:09</td></tr>
+            <tr><td><strong>Bice,  William - 3-2026</strong></td><td><strong>Joe Bianca</strong></td><td>Not talked to yet</td><td class="mono"><strong>$20,000</strong></td><td class="mono">2026-05-12</td><td class="mono">2026-03-28 18:09</td></tr>
+            <tr><td><strong>Reagan,  Nancy - 2027</strong></td><td><strong>Dawn Lenert</strong></td><td>Not talked to yet</td><td class="mono"><strong>$20,000</strong></td><td class="mono">2027-03-27</td><td class="mono">2026-03-27 18:18</td></tr>
+            <tr><td><strong>Kaiser,  Marlene - 2027</strong></td><td><strong>Dawn Lenert</strong></td><td>Not talked to yet</td><td class="mono"><strong>$20,000</strong></td><td class="mono">2027-03-27</td><td class="mono">2026-03-27 18:17</td></tr>
+            <tr><td><strong>Kaiser - 2026</strong></td><td><strong>Dawn Lenert</strong></td><td><span class="tag green">Win</span> Closed Won</td><td class="mono"><strong>$3,960</strong></td><td class="mono">2026-03-27</td><td class="mono">2026-03-27 18:17</td></tr>
+            <tr><td><strong>Reagan - 2026</strong></td><td><strong>Dawn Lenert</strong></td><td><span class="tag green">Win</span> Closed Won</td><td class="mono"><strong>$3,960</strong></td><td class="mono">2026-03-27</td><td class="mono">2026-03-27 18:11</td></tr>
+            <tr><td><strong>Joseph Pennington - 2026</strong></td><td><strong>Jason Blewitt</strong></td><td>Talking - No Commitment</td><td class="mono"><strong>$15,000</strong></td><td class="mono">2026-04-16</td><td class="mono">2026-03-27 17:45</td></tr>
+          </tbody>
+        </table>
+      </section>
 
-  <!-- Terry's DMs -->
-  <div class="sub-header"><span class="tag tag-purple">Terry's DMs to Individuals</span></div>
-  <ul>
-    <li>To <b>Lindsey</b> — Asked about <b>$4,400</b> Amex charge for KY state tax</li>
-    <li>To <b>Casey</b> — Dale matrix for beta; website needs update with <b>2 stakes wins</b>; highlight <b>Honor A.P.</b> shareholders</li>
-    <li>To <b>Dawn</b> — Claude Cowork brand alignment review output; Salesforce API question</li>
-    <li>To <b>Jason</b> — Claude Cowork <b>Adam Nonn</b> call prep</li>
-    <li>Self-notes: <b>Bandon Dunes $900 deposit</b> ACTION by 3/31; X bookmarks</li>
-  </ul>
+      <section class="card" style="grid-column:1/-1">
+        <h2>Perplexity Computer Slack Activity</h2>
+        <div class="sub">No Perplexity-authored Slack messages found in the last ~48 hours.</div>
+      </section>
+    </div>
 
-  <!-- #horse-comms -->
-  <div class="sub-header"><span class="tag tag-channel">#horse-comms</span></div>
-  <ul>
-    <li><b>Jeff Lowe</b> (3/28) — <b>Reagan's Honor</b> worked great</li>
-    <li><b>Joe Bianca</b> (3/28) — "Big filly" all good, Louisville ship TBD</li>
-  </ul>
-
-  <!-- #exec-team -->
-  <div class="sub-header"><span class="tag tag-channel">#exec-team</span></div>
-  <ul>
-    <li><b>Terry</b> (3/28) — "See who might be available from FanDuel"</li>
-  </ul>
-</div>
-
-<!-- ===================== RACING ===================== -->
-<div class="section">
-  <div class="section-header">
-    <span class="section-icon">🏇</span>
-    <h2>Racing — Today's Runners</h2>
-  </div>
-
-  <div class="race-card">
-    <div class="horse-name">Find No Fault</div>
-    <div class="details">
-      Gulfstream Park — Race 4 — <b>2:19 PM ET</b><br>
-      Trainer: <b>Dale Romans</b> · Jockey: <b>Tyler Gaffalione</b> · ML: <b>4/6 (favorite)</b>
+    <div class="footer">
+      Data sources: Google Calendar, Slack, Salesforce, Google Sheets, westpointtb.com.
     </div>
   </div>
-
-  <div class="race-card">
-    <div class="horse-name">Major Tac</div>
-    <div class="details">
-      Aqueduct — Race 5 — <b>3:15 PM ET</b><br>
-      Trainer: <b>Bill Mott</b> · Jockey: <b>Jose Lezcano</b> · ML: <b>6/8</b>
-    </div>
-  </div>
-
-  <div class="race-card">
-    <div class="horse-name">Grunge</div>
-    <div class="details">
-      Aqueduct — Race 5 — <b>3:15 PM ET</b><br>
-      Trainer: <b>Miguel Clement</b> · Jockey: <b>Jaime Rodriguez</b> · ML: <b>2/8</b>
-    </div>
-  </div>
-
-  <div class="race-card">
-    <div class="horse-name">Tiz the Lady</div>
-    <div class="details">
-      Tampa Bay Downs — Race 11 — <b>5:40 PM ET</b><br>
-      Trainer: <b>Shug McGaughey</b> · Jockey: <b>John Velazquez</b> · ML: <b>10/12</b>
-    </div>
-  </div>
-</div>
-
-<!-- ===================== DECISIONS NEEDED ===================== -->
-<div class="section">
-  <div class="section-header">
-    <span class="section-icon">⚡</span>
-    <h2>Decisions Needed</h2>
-  </div>
-  <div class="action-item urgent">
-    <span class="tag tag-red">DUE 3/31</span> <b>Bandon Dunes</b> — Confirm <b>$900</b> deposit
-  </div>
-  <div class="action-item">
-    <span class="tag tag-gold">FOLLOW-UP</span> FanDuel — Identify available contacts (per Terry's #exec-team post)
-  </div>
-  <div class="action-item">
-    <span class="tag tag-gold">REVIEW</span> Claude Cowork brand alignment output sent to <b>Dawn</b> — confirm next steps
-  </div>
-</div>
-
-<!-- ===================== SALES PIPELINE ===================== -->
-<div class="section">
-  <div class="section-header">
-    <span class="section-icon">💰</span>
-    <h2>Sales Pipeline</h2>
-  </div>
-
-  <div class="sub-header">Recent Wins</div>
-  <div class="win-item">
-    <span class="tag tag-green">CLOSED WON</span> <b>Kaiser</b> — <b>$3,960</b> (Dawn)
-  </div>
-  <div class="win-item">
-    <span class="tag tag-green">CLOSED WON</span> <b>Reagan</b> — <b>$3,960</b> (Dawn/Jason)
-  </div>
-  <div class="win-item">
-    <span class="tag tag-green">CLOSED WON</span> <b>Ghecas</b> — <b>$7,920</b> (Dawn/Jason)
-  </div>
-
-  <div class="sub-header">Pipeline Activity (Last 7 Days)</div>
-  <table>
-    <thead>
-      <tr>
-        <th>Opportunity</th>
-        <th>Stage</th>
-        <th>Amount</th>
-        <th>Owner</th>
-        <th>Close Date</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><b>Dolan II</b></td>
-        <td><span class="pipeline-stage stage-open">VERY LIKELY</span></td>
-        <td><b>—</b></td>
-        <td>Jason</td>
-        <td>4/23</td>
-      </tr>
-      <tr>
-        <td>Tangeman</td>
-        <td><span class="pipeline-stage stage-lost">CLOSED LOST</span></td>
-        <td>—</td>
-        <td>—</td>
-        <td>—</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<!-- ===================== PERPLEXITY COMPUTER SLACK ACTIVITY ===================== -->
-<div class="section">
-  <div class="section-header">
-    <span class="section-icon">🤖</span>
-    <h2>Perplexity Computer — Slack Activity</h2>
-  </div>
-  <ul>
-    <li><span class="tag tag-accent">DM to Terry</span> CEO Daily Briefing delivery — daily link + summary posted to DM</li>
-  </ul>
-</div>
-
-<footer>
-  Generated by Perplexity Computer · Sunday, March 29, 2026 at 6:09 AM ET<br>
-  West Point Thoroughbreds · <a href="https://www.westpointtb.com" style="color:var(--accent);">westpointtb.com</a>
-</footer>
-
 </body>
 </html>
