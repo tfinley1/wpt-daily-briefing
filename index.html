@@ -1,492 +1,423 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WPT CEO Daily Briefing — Friday, April 10, 2026</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #FFFFFF;
-      color: #28251D;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
-    }
-    /* Header */
-    .header {
-      border-bottom: 3px solid #01696F;
-      padding-bottom: 16px;
-      margin-bottom: 28px;
-    }
-    .header-logo {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #01696F;
-      margin-bottom: 4px;
-    }
-    .header h1 {
-      font-size: 22px;
-      font-weight: 700;
-      color: #28251D;
-      line-height: 1.2;
-    }
-    .header-meta {
-      font-size: 12px;
-      color: #888;
-      margin-top: 4px;
-    }
-    /* Sections */
-    .section {
-      margin-bottom: 28px;
-    }
-    .section-title {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #01696F;
-      border-bottom: 1px solid #E8F5F5;
-      padding-bottom: 6px;
-      margin-bottom: 12px;
-    }
-    /* Alerts */
-    .alert {
-      padding: 9px 13px;
-      border-radius: 5px;
-      margin-bottom: 7px;
-      font-size: 13.5px;
-      line-height: 1.5;
-    }
-    .alert-red    { background: #FDF2F2; border-left: 3px solid #C0392B; }
-    .alert-gold   { background: #FEFBE8; border-left: 3px solid #D4A017; }
-    .alert-green  { background: #F0FBF4; border-left: 3px solid #27AE60; }
-    /* Bullet lists */
-    ul.bl { list-style: none; padding: 0; }
-    ul.bl li {
-      padding: 4px 0 4px 14px;
-      position: relative;
-      font-size: 13.5px;
-      border-bottom: 1px solid #F5F5F3;
-    }
-    ul.bl li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #01696F;
-    }
-    ul.bl li:last-child { border-bottom: none; }
-    /* Tables */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 13px;
-      margin-top: 4px;
-    }
-    th {
-      background: #E8F5F5;
-      color: #01696F;
-      font-weight: 600;
-      text-align: left;
-      padding: 6px 10px;
-      font-size: 11.5px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    td {
-      padding: 6px 10px;
-      border-bottom: 1px solid #F0F0EE;
-      vertical-align: top;
-    }
-    tr:last-child td { border-bottom: none; }
-    tr:hover td { background: #FAFAF9; }
-    /* Tags */
-    .tag {
-      display: inline-block;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      padding: 2px 6px;
-      border-radius: 3px;
-      margin-right: 5px;
-    }
-    .tag-teal   { background: #E8F5F5; color: #01696F; }
-    .tag-purple { background: #F0EEFF; color: #7B61FF; }
-    .tag-green  { background: #EDFBF2; color: #27AE60; }
-    .tag-red    { background: #FDF2F2; color: #C0392B; }
-    .tag-gold   { background: #FEFBE8; color: #B8860B; }
-    /* Channel groups */
-    .channel-group { margin-bottom: 14px; }
-    .channel-group:last-child { margin-bottom: 0; }
-    /* Schedule items */
-    .sched-item {
-      display: flex;
-      gap: 12px;
-      padding: 6px 0;
-      border-bottom: 1px solid #F5F5F3;
-      font-size: 13.5px;
-    }
-    .sched-item:last-child { border-bottom: none; }
-    .sched-time {
-      min-width: 80px;
-      font-weight: 600;
-      color: #01696F;
-      white-space: nowrap;
-    }
-    .sched-body { flex: 1; }
-    /* Sub-header */
-    .sub-header {
-      font-size: 12px;
-      font-weight: 700;
-      color: #28251D;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      margin: 14px 0 6px;
-      padding-bottom: 4px;
-      border-bottom: 1px solid #E8F5F5;
-    }
-    /* Win highlight */
-    .win { color: #27AE60; font-weight: 700; }
-    .urgent { color: #C0392B; font-weight: 700; }
-    .gold-text { color: #B8860B; font-weight: 600; }
-    /* Footer */
-    .footer {
-      margin-top: 40px;
-      padding-top: 14px;
-      border-top: 1px solid #E8F5F5;
-      font-size: 11.5px;
-      color: #AAA;
-      text-align: center;
-    }
-    a { color: #01696F; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    @media print {
-      body { font-size: 12px; }
-      .container { padding: 0; }
-    }
-  </style>
-</head>
-<body>
-<div class="container">
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>WPT CEO Daily Briefing — Friday, April 10, 2026</title>
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap' rel='stylesheet'>
+<style>
+:root{--bg:#fff;--text:#28251D;--teal:#01696F;--muted:#6b6b6b;--red:#b42318;--gold:#b27a00;--green:#067647;--purple:#6f42c1;--border:#e7e5e4;}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--text);}
+.container{max-width:980px;margin:0 auto;padding:24px 18px 60px;}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;border-bottom:2px solid var(--border);padding-bottom:14px;margin-bottom:18px;}
+.h1{font-size:22px;font-weight:800;letter-spacing:-0.02em;}
+.meta{color:var(--muted);font-size:13px;}
+section{margin:18px 0 22px;}
+.h2{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin:0 0 10px;}
+.card{border:1px solid var(--border);border-radius:12px;padding:12px 12px;}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;}
+@media(min-width:900px){.grid-2{grid-template-columns:1fr 1fr;}}
+.badge{display:inline-block;border-radius:999px;padding:2px 8px;font-size:12px;font-weight:700;line-height:18px;}
+.badge.red{background:rgba(180,35,24,.08);color:var(--red);border:1px solid rgba(180,35,24,.25);}
+.badge.gold{background:rgba(178,122,0,.10);color:var(--gold);border:1px solid rgba(178,122,0,.25);}
+.badge.green{background:rgba(6,118,71,.10);color:var(--green);border:1px solid rgba(6,118,71,.25);}
+.badge.purple{background:rgba(111,66,193,.10);color:var(--purple);border:1px solid rgba(111,66,193,.25);}
+.tag{display:inline-block;border-radius:8px;padding:3px 8px;font-size:12px;font-weight:700;background:#f4f4f5;border:1px solid var(--border);}
+.small{font-size:12px;color:var(--muted);}
+ul{margin:8px 0 0 18px;padding:0;}
+li{margin:6px 0;}
+.table{width:100%;border-collapse:collapse;}
+.table th,.table td{border-top:1px solid var(--border);padding:8px 8px;text-align:left;font-size:13px;vertical-align:top;}
+.table th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;}
+a{color:var(--teal);text-decoration:none;} a:hover{text-decoration:underline;}
+hr{border:none;border-top:1px solid var(--border);margin:14px 0;}
+@media print{a{text-decoration:none;color:var(--text);} .badge,.tag{border:1px solid #999 !important;}}
+</style></head><body><div class='container'>
+<header><div><div class='h1'>WPT CEO Daily Briefing</div><div class='meta'>Friday, April 10, 2026 · Generated 6:09 AM ET</div></div>
+<div class='meta'>West Point Thoroughbreds · CEO: Terry Finley</div></header>
 
-  <!-- HEADER -->
-  <div class="header">
-    <div class="header-logo">West Point Thoroughbreds</div>
-    <h1>CEO Daily Briefing — Friday, April 10, 2026</h1>
-    <div class="header-meta">📍 FL (Tampa + Ocala) &nbsp;|&nbsp; Generated 6:00 AM EDT &nbsp;|&nbsp; <a href="https://tfinley1.github.io/wpt-daily-briefing/">Live version</a></div>
-  </div>
-
-  <!-- SCHEDULE -->
-  <div class="section">
-    <div class="section-title">Schedule — Friday, April 10</div>
-
-    <div class="sched-item">
-      <div class="sched-time">All Day</div>
-      <div class="sched-body"><strong>📍 FL — Tampa + Ocala</strong> (travel day)</div>
-    </div>
-    <div class="sched-item">
-      <div class="sched-time">Checkout</div>
-      <div class="sched-body">Courtyard by Marriott Tampa NW/Veterans Expressway (checkout by 11:00 AM) — Confirmation #75753285</div>
-    </div>
-    <div class="sched-item">
-      <div class="sched-time">8:50 AM ET</div>
-      <div class="sched-body"><strong>Golf with Bill Freeman</strong> — Tampa, FL</div>
-    </div>
-
-    <div class="sub-header">Tomorrow Preview — Saturday, April 11</div>
-
-    <div class="sched-item">
-      <div class="sched-time">All Day</div>
-      <div class="sched-body"><strong>📍 FL (Ocala)</strong> — Drive to Ocala</div>
-    </div>
-    <div class="sched-item">
-      <div class="sched-time">Check-in</div>
-      <div class="sched-body">SpringHill Suites by Marriott Ocala (check-in 4:00 PM, through Apr 17) — Confirmation #80487694</div>
-    </div>
-    <div class="sched-item">
-      <div class="sched-time">1:43 PM ET</div>
-      <div class="sched-body"><strong>Band On the Run</strong> — Tampa Bay Downs, Race 4 — Maiden Claiming $32k &nbsp;<span class="tag tag-teal">Race Day</span><br>
-      <small>Attendees: Terry Finley (accepted), Jeff Lowe (accepted), Ryan Finley</small></div>
-    </div>
-    <div class="sched-item">
-      <div class="sched-time">All Day</div>
-      <div class="sched-body">🎂 <strong>McKenna's Birthday</strong> — Sunday, April 12</div>
-    </div>
-  </div>
-
-  <!-- ALERTS -->
-  <div class="section">
-    <div class="section-title">Alerts</div>
-
-    <div class="alert alert-green">
-      🏆 <strong>Reagan's Wit WON</strong> — Keeneland Race 8 (NW2X Allowance, 1M Turf, Firm) — <strong>$81,900</strong> purse — Jose Ortiz up — Trainer: Cherie DeVaux — Beat 10 runners at 5/1. Upset of 6/5f favorite Risk Tolerance (Chad Brown).
-    </div>
-    <div class="alert alert-green">
-      🏆 <strong>Brightline Bullet WON</strong> — Aqueduct Race 1 (MSW, 6.5F Dirt, $80,000) — <strong>First win of career</strong>. Confirmed by YouTube race video.
-    </div>
-    <div class="alert alert-gold">
-      ⚠️ <strong>Essential Charm update:</strong> Arnaud NOT running Apr 12 MCL $32k — instead targeting <strong>Sat Apr 18 MSW Tampa 1 1/16M turf</strong>. Gate work needed first. Arnaud: "I am not seeing a lot of improvement in ability and the way he moves." (Dawn flagged: partners Roger Jones, Melanie Davis, Maria Diesel &amp; Bill Freeman need pre-entry call.)
-    </div>
-    <div class="alert alert-red">
-      🔴 <strong>HERF bank account</strong> — Mandy Minger still waiting for Terry's signature. Overdue since ~Apr 3.
-    </div>
-    <div class="alert alert-gold">
-      ⚠️ <strong>OBS April Sale next week</strong> — $1.5M–$2.0M acquisition budget. Meetings scheduled, comms set. Very buttoned up per Lindsey. (Curlin/Minnie Macy naming: St. Elias asking for WPT name suggestions before Todd Pletcher receives horse — Saratoga May 1 target.)
-    </div>
-    <div class="alert alert-gold">
-      ⚠️ <strong>Fox Sports suite opportunity:</strong> Terry forwarded to Danielle — Fox has 32-ticket Oaks+Derby suite they paid ~<strong>$150k</strong> for (Terry Bradshaw's filly flamed out). Danielle asked Loren for leads.
-    </div>
-    <div class="alert alert-gold">
-      ⚠️ <strong>Integration</strong> — Ran KEE R5 4/8, struggled (slow pace, trapped). Shug open to Dinner Party Stakes or another allowance. "The horse had trained really well." Manhattan is out.
-    </div>
-    <div class="alert alert-gold">
-      ⚠️ <strong>Major Tac</strong> — Has a fever, off this week or until better (Bill Mott barn).
-    </div>
-    <div class="alert alert-gold">
-      ⚠️ <strong>Garden of Grace</strong> — Ran AQU R3 4/9 (NY-Bred MSW, 6F Dirt, $75k) — Result not yet confirmed; Weaver notes Duggan filly was touted.
-    </div>
-  </div>
-
-  <!-- 2026 INVENTORY -->
-  <div class="section">
-    <div class="section-title">2026 Inventory</div>
-    <table>
-      <thead>
-        <tr>
-          <th>Horse</th>
-          <th>Trainer</th>
-          <th>Synd. Value</th>
-          <th>$ Remaining</th>
-          <th>% Sold</th>
-          <th>% Left</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Cairo Prince / Cabaret Starlet</strong></td>
-          <td>Clement</td>
-          <td>$216,000</td>
-          <td class="urgent"><strong>$21,600</strong></td>
-          <td>90%</td>
-          <td class="gold-text">10%</td>
-        </tr>
-      </tbody>
-    </table>
-    <p style="font-size:12px; color:#888; margin-top:6px;">All other 2026 syndications are 100% sold out.</p>
-  </div>
-
-  <!-- TEAM PULSE -->
-  <div class="section">
-    <div class="section-title">Team Pulse</div>
-
-    <!-- #horse-comms -->
-    <div class="channel-group">
-      <div style="margin-bottom:6px;"><span class="tag tag-teal">#horse-comms</span></div>
-      <ul class="bl">
-        <li><strong>Joe Bianca (Casse barn):</strong> <strong>Casino</strong> settled at Churchill — looks great, may breeze this weekend. <strong>Chapman</strong> — left front still slightly off, going over him today. <strong>Counting Stars</strong> all good at Oaklawn. <strong>Curtain Call</strong> on stall rest in Ocala. <strong>Epicenter filly</strong> doing well, likely not far from shipping to CD — needs a name. <strong>Ewing</strong> + <strong>Sandman</strong> — light training in Ocala. <strong>Walking in Memphis</strong> — entered for $35k N3L Thu 4/16 at Gulfstream.</li>
-        <li><strong>Dawn Lenert:</strong> Essential Charm MCL debut — if filed, first-timers Roger Jones &amp; Melanie Davis need a pre-entry call (Jason is rep; Tom or Terry to make call). Maria Diesel is first-timer/charity winner. Bill Freeman owns 10%, Ted Myers owns 7.5%.</li>
-        <li><strong>Tom Bellhouse (Bill Mott barn):</strong> Race for <strong>Pillar of Beauty</strong> on the 18th. <strong>Nyquist colt</strong> due in today. <strong>Major Tac</strong> has a fever — off this week.</li>
-        <li><strong>Jason Blewitt (Shug McGaughey barn):</strong> <strong>Battle</strong> — pointing toward Fort Marcy. <strong>Cugino</strong> — supposedly starting back up yesterday. <strong>Honoree</strong> — all set for turf debut 4/19, leaves for Belmont this Saturday. <strong>If Ever</strong> — Shug postponed gate breeze (rain at Payson); worked easy half Mon in :50; gate work next, then race target. <strong>Integration</strong> — Shug open to Dinner Party or another allowance; "didn't love the ride." <strong>Peak Performer</strong> — heading to Belmont next week. <strong>Sansone</strong> — Shug throwing out AQU race (inside post, ship); "far better horse." <strong>Statesman</strong> — to Belmont next week, May race anticipated. <strong>Ohana</strong> — started up April 1. <strong>Tiz the Lady</strong> — looking for turf MSW at Laurel; Shug throwing out Tampa race. <strong>Cajun Gold</strong> — healthy, breezing again; mile race end of month possibly in play, Heather slightly more comfortable 5F.</li>
-        <li><strong>Tom Bellhouse (George Weaver barn):</strong> <strong>Careless Whisper</strong> — nice progress; extra time was right call; needs gate work; late April/early May debut target. <strong>Garden of Grace</strong> — in today (AQU R3 4/9), solid spot; Duggan filly touted.</li>
-        <li><strong>Erin Birkenhauer:</strong> Will finalize all horse names next week when back in office.</li>
-        <li><strong>Jeff Lowe (Arnaud Delacour — Essential Charm):</strong> Essential Charm will breeze from gate; if smooth, moves to <strong>MSW Apr 18 Tampa (1 1/16M turf, $32k)</strong> — NOT the MCL this weekend. Arnaud: "I thought about running him this weekend but it didn't work out timing wise for the gate work."</li>
-        <li><strong>Jason Blewitt (Pletcher — Curlin/Minnie Macy):</strong> TAP knows Minnie Macy can ship whenever. Pletcher would wait till <strong>Saratoga opens May 1</strong>.</li>
-        <li><strong>Danielle Austin:</strong> <strong>Flightline/Noted and Quoted filly named "Clear for Takeoff"</strong> ✈️ — named by Will Farish.</li>
-      </ul>
-    </div>
-
-    <!-- #exec-team -->
-    <div class="channel-group">
-      <div style="margin-bottom:6px;"><span class="tag tag-teal">#exec-team</span></div>
-      <ul class="bl">
-        <li><strong>Lindsey Heumann:</strong> Communicated Oaks/Derby coverage plan to reps (including spouse attendance). Will tell Jason next week WPT has no pressure re: his father's situation — assess closer to Derby.</li>
-      </ul>
-    </div>
-
-    <!-- #sales -->
-    <div class="channel-group">
-      <div style="margin-bottom:6px;"><span class="tag tag-teal">#sales</span></div>
-      <ul class="bl">
-        <li><strong>Lindsey Heumann (Sales/Team Call 4/9):</strong> "We are VERY buttoned up heading into the OBS sale next week." Budget: <strong>$1.5M–$2.0M in acquisitions</strong> (in line with OBS 2025). Housekeeping items from Ali Finley + Dawn Lenert. Sales team asked to weigh in on <strong>fireside chat format</strong> for Oaks cocktail party (TPF proposed). Danielle to update OBS attendees + Oaks comms. Naming: <strong>Curlin/Minnie Macy</strong> → St. Elias asks if WPT wants to submit name recommendations first.</li>
-      </ul>
-    </div>
-
-    <!-- Terry's DMs -->
-    <div class="channel-group">
-      <div style="margin-bottom:6px;"><span class="tag tag-purple">Terry's DMs to Individuals</span></div>
-      <ul class="bl">
-        <li><strong>Terry → Casey Clemmons:</strong> Shared link for <a href="https://obssales.com/catalog/#/150/hip/139?refUrl=catalog" target="_blank">OBS Hip #139 — Into Mischief colt</a> (Casey responded with the catalog link).</li>
-        <li><strong>Terry → Danielle Austin:</strong> Forwarded Fox Sports suite message from Jim Gagliano — Fox has 32-ticket Oaks+Derby suite (~<strong>$150k</strong> paid). "Let's discuss." Danielle: "Let me ask Loren?"</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- RACING -->
-  <div class="section">
-    <div class="section-title">Racing</div>
-
-    <div class="sub-header">Yesterday's Results — Thursday, April 9</div>
-    <table>
-      <thead>
-        <tr><th>Horse</th><th>Track</th><th>Race</th><th>Result</th><th>Purse</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Brightline Bullet</strong></td>
-          <td>Aqueduct</td>
-          <td>R1 — MSW 6.5F Dirt</td>
-          <td><span class="win">🏆 1st</span></td>
-          <td><strong>$50,400</strong></td>
-        </tr>
-        <tr>
-          <td><strong>Garden of Grace</strong></td>
-          <td>Aqueduct</td>
-          <td>R3 — NY-Bred MSW 6F Dirt</td>
-          <td><span class="gold-text">Result pending</span></td>
-          <td>$47,250 (1st)</td>
-        </tr>
-        <tr>
-          <td><strong>Reagan's Wit</strong></td>
-          <td>Keeneland</td>
-          <td>R8 — NW2X Allowance 1M Turf</td>
-          <td><span class="win">🏆 1st</span></td>
-          <td><strong>$81,900</strong></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="sub-header">Today — Friday, April 10</div>
-    <p style="font-size:13px; color:#888;">No WPT runners scheduled.</p>
-
-    <div class="sub-header">Tomorrow — Saturday, April 11</div>
-    <table>
-      <thead>
-        <tr><th>Horse</th><th>Track</th><th>Race</th><th>Post</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Band On the Run</strong></td>
-          <td>Tampa Bay Downs</td>
-          <td>Race 4 — MCL $32k</td>
-          <td>1:43 PM ET</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="sub-header">Key Upcoming Entries</div>
-    <table>
-      <thead>
-        <tr><th>Date</th><th>Horse</th><th>Track</th><th>Race</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Wed 4/15</td><td><strong>Walking in Memphis</strong></td><td>Gulfstream</td><td>$35k NW3L</td></tr>
-        <tr><td>Wed 4/16</td><td><strong>Relaxx (FR)</strong></td><td>Aqueduct</td><td>Plenty of Grace Stakes</td></tr>
-        <tr><td>Wed 4/16</td><td><strong>Ivory and Ebony</strong></td><td>Keeneland</td><td>NW1X Allowance</td></tr>
-        <tr><td>Sat 4/18</td><td><strong>Essential Charm</strong></td><td>Tampa Bay Downs</td><td>MSW 1 1/16M Turf (pending gate work)</td></tr>
-        <tr><td>Sat 4/18</td><td><strong>Keep It Easy</strong></td><td>Keeneland</td><td>NW2X Allowance</td></tr>
-        <tr><td>Sat 4/18</td><td><strong>Pillar of Beauty</strong></td><td>TBD</td><td>Mott race (Apr 18)</td></tr>
-        <tr><td>Sun 4/19</td><td><strong>Intricate Spirit</strong></td><td>Keeneland</td><td>Palisades Stakes</td></tr>
-        <tr><td>Sun 4/19</td><td><strong>Honoree</strong></td><td>Aqueduct</td><td>NY-Bred MSW (turf debut — ships Sat)</td></tr>
-        <tr><td>Thu 4/23</td><td><strong>La Ceiba (FR)</strong></td><td>Aqueduct</td><td>NW1X Allowance</td></tr>
-        <tr><td>Sat 4/25</td><td><strong>Vibe</strong></td><td>Aqueduct</td><td>NW2X Allowance</td></tr>
-        <tr><td>Sat 4/25</td><td><strong>Willpowered</strong></td><td>Aqueduct</td><td>NY-Bred NW1X Allowance</td></tr>
-        <tr><td>Sun 4/26</td><td><strong>Creed's Vision</strong></td><td>Laurel Park</td><td>MD-Bred NW1X</td></tr>
-        <tr><td>Sun 4/26</td><td><strong>Christel Clean</strong></td><td>Santa Anita</td><td>Cal-Bred NW1X</td></tr>
-        <tr><td>Fri 5/1</td><td><strong>Counting Stars</strong></td><td>Churchill Downs</td><td><strong>Kentucky Oaks (G1)</strong> 🌹</td></tr>
-        <tr><td>Sat 5/2</td><td><strong>Carson's Run</strong></td><td>Belmont at Big A</td><td>Fort Marcy Stakes (G3T)</td></tr>
-        <tr><td>Sat 5/2</td><td><strong>Battle of Normandy</strong></td><td>Belmont at Big A</td><td>Fort Marcy Stakes (G3T)</td></tr>
-        <tr><td>Sun 5/25</td><td><strong>Final Boss</strong></td><td>Santa Anita</td><td><strong>Shoemaker Mile (G1T)</strong></td></tr>
-      </tbody>
-    </table>
-
-    <div class="sub-header">Recent Results (Past 7 Days)</div>
-    <table>
-      <thead>
-        <tr><th>Date</th><th>Horse</th><th>Track</th><th>Result</th><th>Purse</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>4/9</td><td><strong>Brightline Bullet</strong></td><td>Aqueduct</td><td><span class="win">🏆 1st (MSW)</span></td><td><strong>$50,400</strong></td></tr>
-        <tr><td>4/9</td><td><strong>Reagan's Wit</strong></td><td>Keeneland</td><td><span class="win">🏆 1st (Allowance)</span></td><td><strong>$81,900</strong></td></tr>
-        <tr><td>4/8</td><td><strong>Integration</strong></td><td>Keeneland</td><td>Off the board (slow pace/traffic)</td><td>—</td></tr>
-        <tr><td>4/4</td><td><strong>Liberty's Champion</strong></td><td>Oaklawn</td><td><span class="win">🏆 1st (MCL 30k)</span></td><td><strong>$22,800</strong></td></tr>
-        <tr><td>4/4</td><td><strong>Reagan's Honor</strong></td><td>Keeneland</td><td>6th — Blue Grass (G1)</td><td>$15,625</td></tr>
-        <tr><td>4/4</td><td><strong>Sansone</strong></td><td>Aqueduct</td><td>5th — NW1X</td><td>$3,320</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- DECISIONS NEEDED -->
-  <div class="section">
-    <div class="section-title">Decisions Needed</div>
-    <ul class="bl">
-      <li><span class="tag tag-red">URGENT</span> <strong>HERF bank account signature</strong> — Mandy Minger waiting. Overdue since ~Apr 3.</li>
-      <li><span class="tag tag-gold">OBS Naming</span> <strong>Curlin/Minnie Macy</strong> — Submit WPT name suggestions to St. Elias before horse goes to Pletcher (Saratoga May 1 target).</li>
-      <li><span class="tag tag-gold">Horse Comms</span> <strong>Essential Charm</strong> — Pre-entry partner call: Roger Jones, Melanie Davis, Maria Diesel, Bill Freeman (10%), Ted Myers (7.5%) before Apr 18 MSW entry is filed.</li>
-      <li><span class="tag tag-gold">Derby/Oaks</span> <strong>Fox Sports suite ($150k, 32 tkts)</strong> — Do you want to pursue or know anyone? Danielle is checking with Loren.</li>
-      <li><span class="tag tag-gold">Sales</span> <strong>OBS Hip #139 (Into Mischief)</strong> — Terry shared with Casey. Decision on bid?</li>
-      <li><span class="tag tag-gold">Sales App</span> <strong>April sales app progress update</strong> — Terry to update team on horse call (from Apr 8 exec meeting action items).</li>
-      <li><span class="tag tag-teal">Outreach</span> <strong>Brian Domenick</strong> — catch-up pending.</li>
-      <li><span class="tag tag-teal">Oaks Cocktail</span> <strong>Fireside chat format</strong> — Team asked to weigh in (Terry proposed it last week).</li>
-      <li><span class="tag tag-teal">Partner Email</span> <strong>Drip email</strong> — Partners only or also prospects? (Terry thinks prospects, Erin says partners — clarification needed.)</li>
-    </ul>
-  </div>
-
-  <!-- SALES PIPELINE -->
-  <div class="section">
-    <div class="section-title">Sales Pipeline (Salesforce — Last 7 Days)</div>
-
-    <div class="sub-header">Active Opportunities — Recently Modified</div>
-    <table>
-      <thead>
-        <tr><th>Prospect</th><th>Stage</th><th>Amount</th><th>Close Date</th><th>Owner</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><strong>Richard Alfred</strong></td><td>Talking – No Commitment</td><td>$15,000</td><td>Apr 30</td><td>Tom Bellhouse</td></tr>
-        <tr><td><strong>Chris Schulte</strong></td><td>Picking Horses</td><td>$15,000</td><td>Apr 30</td><td>Tom Murphy</td></tr>
-        <tr><td><strong>Kobak Taylor</strong></td><td>Talking – No Commitment</td><td>$15,000</td><td>Jun 30</td><td>Tom Murphy</td></tr>
-        <tr><td><strong>Rubilotta, Jason</strong></td><td>Not talked to yet</td><td>$20,000</td><td>Mar 2027</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>McEvoy-Hubert</strong></td><td>Talking – No Commitment</td><td>$20,000</td><td>Oct 1</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Carmody</strong></td><td>Talking – No Commitment</td><td>$20,000</td><td>Oct 1</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Koski</strong></td><td>Talking – No Commitment</td><td>$20,000</td><td>Oct 1</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Grimes, Cathy</strong></td><td>Talking – No Commitment</td><td>$20,000</td><td>Aug 8</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Seymour, Scott</strong></td><td>Not talked to yet</td><td>$20,000</td><td>Mar 2027</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Jackvony</strong></td><td>Talking – No Commitment</td><td>$20,000</td><td>Oct 1</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Bardonaro, Frank</strong></td><td>Not talked to yet</td><td>$20,000</td><td>Mar 2027</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Rivera, Rudy</strong></td><td>Talking – No Commitment</td><td>$20,000</td><td>Sep 12</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Boeheim, Brian</strong></td><td>Not talked to yet</td><td>$20,000</td><td>Mar 2027</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Lindgren</strong></td><td>Talking – No Commitment</td><td>$20,000</td><td>Oct 1</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Dittus, Robert</strong></td><td>Talking – No Commitment</td><td>$20,000</td><td>Apr 25</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Lucas Loynes</strong></td><td>Talking – No Commitment</td><td>$15,000</td><td>May 31</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Gaska, Deborah</strong></td><td>Talking – No Commitment</td><td>$20,000</td><td>Jun 18</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Arnie Boyarsky</strong></td><td>Talking – No Commitment</td><td>$15,000</td><td>Apr 23</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Kravets</strong></td><td>Not talked to yet</td><td>$20,000</td><td>Apr 2027</td><td>Jason Blewitt</td></tr>
-        <tr><td><strong>Baker, Steven &amp; Betty</strong></td><td>Not talked to yet</td><td>$20,000</td><td>Mar 2027</td><td>Jason Blewitt</td></tr>
-      </tbody>
-    </table>
-    <p style="font-size:12px; color:#888; margin-top:6px;"><strong>Note:</strong> Chris Schulte is furthest along ("Picking Horses") with close date Apr 30 — <strong>Tom Murphy</strong>. Robert Dittus and Arnie Boyarsky have close dates within next 2 weeks. No Closed Won deals in last 7 days.</p>
-  </div>
-
-  <!-- PERPLEXITY COMPUTER SLACK ACTIVITY -->
-  <div class="section">
-    <div class="section-title">Perplexity Computer — Slack Activity</div>
-    <p style="font-size:13px; color:#888;">No new Perplexity Computer Slack messages found since Apr 8. (Yesterday's CEO Daily Briefing was posted to Terry's DM at 6:06 AM and 6:11 AM on Apr 9.)</p>
-  </div>
-
-  <!-- FOOTER -->
-  <div class="footer">
-    West Point Thoroughbreds &nbsp;·&nbsp; CEO Daily Briefing &nbsp;·&nbsp; Friday, April 10, 2026<br>
-    Generated by Perplexity Computer &nbsp;·&nbsp; <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a>
-  </div>
-
+<section><div class='h2'>Schedule</div>
+<div class='card' style='margin-bottom:10px'>
+<div style='display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap'><div style='font-weight:800'>Fri Apr 10</div><div class='small'>📍FL (Ocala)</div></div>
+<table class='table'><thead><tr><th style='width:140px'>Time</th><th>Event</th><th style='width:240px'>Attendees / Location</th><th style='width:70px'></th></tr></thead><tbody>
+<tr><td>All day</td><td><strong>Drive to Ocala</strong></td><td><span class=small>—</span></td><td><a href="https://www.google.com/calendar/event?eid=MGxnZHFnODVhaTNtbTlvbDVoamxxYzVxZjQgdGVycnlAd2VzdHBvaW50dGIuY29t" target="_blank" rel="noopener">Link</a></td></tr>
+<tr><td>All day</td><td><strong>📍FL (Ocala)</strong></td><td><span class=small>—</span></td><td><a href="https://www.google.com/calendar/event?eid=MjI5b2tjZG82cmN0MTk3amdwanFmZjlib2IgdGVycnlAd2VzdHBvaW50dGIuY29t" target="_blank" rel="noopener">Link</a></td></tr>
+<tr><td>8:50 AM–2:00 PM ET</td><td><strong>Golf with Bill Freeman</strong></td><td>Tampa, FL, USA</td><td><a href="https://www.google.com/calendar/event?eid=Mjk4cDl0dG0zbmM2Mzhkdmp2ZGMyNW84cTggdGVycnlAd2VzdHBvaW50dGIuY29t" target="_blank" rel="noopener">Link</a></td></tr>
+</tbody></table>
 </div>
-</body>
-</html>
+<div class='card' style='margin-bottom:10px'>
+<div style='display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap'><div style='font-weight:800'>Sat Apr 11</div><div class='small'>📍FL (Ocala)</div></div>
+<table class='table'><thead><tr><th style='width:140px'>Time</th><th>Event</th><th style='width:240px'>Attendees / Location</th><th style='width:70px'></th></tr></thead><tbody>
+<tr><td>All day</td><td><strong>McKenna's Birthday</strong></td><td><span class=small>—</span></td><td><a href="https://www.google.com/calendar/event?eid=MWlqbHAzNThkOTE4NjN2NW12YjRhbjAxNDdfMjAyNjA0MTIgdGVycnlAd2VzdHBvaW50dGIuY29t" target="_blank" rel="noopener">Link</a></td></tr>
+<tr><td>All day</td><td><strong>📍FL (Ocala)</strong></td><td><span class=small>—</span></td><td><a href="https://www.google.com/calendar/event?eid=MzY4aGM4dGgzNGsxbDhqOXQydDJyaTM4MGkgdGVycnlAd2VzdHBvaW50dGIuY29t" target="_blank" rel="noopener">Link</a></td></tr>
+<tr><td>1:43 PM ET</td><td><strong>Band On the Run at Tampa Bay Downs in race 4</strong></td><td>Finley, Ryan, Jeff Lowe, West Point Thoroughbreds Team 2025, Terry Finley</td><td><a href="https://www.google.com/calendar/event?eid=M3UyZXZmcXVqbGcyYzBuaGVjbGRhN2s4ZjEgdGVycnlAd2VzdHBvaW50dGIuY29t" target="_blank" rel="noopener">Link</a></td></tr>
+</tbody></table>
+</div>
+<div class='card' style='margin-bottom:10px'>
+<div style='display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap'><div style='font-weight:800'>Sun Apr 12</div><div class='small'></div></div>
+<div class='small'>No events found.</div>
+</div>
+</section>
+<section><div class='h2'>Alerts</div><div class='card'><ul>
+<li><span class="badge gold">ATTN</span> <span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Jeff Lowe</strong>: Here's the update posted for Essential Charm: he will breeze from the gate and if all goes smoothly he will move forward to the maiden special weight (purse $32,000) run at a mile and a sixteenth on the turf on Saturday, April 18 at Tampa.
+
+Arnaud said, "I thought about running him this weekend in a $32k maiden claimer but it didn't work out timing wise for him to be able to get in a gate work beforehand. I think the maiden special weight will be too tough for him, at least first time out, but we can get a race into him and go from there." <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775760741876579' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class="badge gold">ATTN</span> <span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Jeff Lowe</strong>: This was Arnaud's comment about Essential Charm: "I am not seeing a lot of improvement in ability and the way he moves." <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775750679635709?thread_ts=1775691927.062679&amp;cid=C02Q17HRHMW' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class="badge red">URGENT</span> <span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Tom Bellhouse</strong>: BILL MOTT
+
+Race for Pillar of Beauty on the 18th, 
+
+the Nyquist is due in today, 
+
+Major Tac has a fever and will be off this week or until better. <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775744579484079' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class="badge gold">ATTN</span> <span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Dawn Lenert</strong>: Regarding Essential Charm in mdn clm first out, if we do this then I believe this morning prior to entry publishing,  it's essential for first time Partners Roger Jones and Melanie Davis to get a call explaining the decision.  (&lt;@U02FVP54YEQ|Jason Blewitt&gt; is rep so maybe &lt;@U02FQGPB2Q5|Tom Bellhouse&gt; or &lt;@U02F5J2V24X|Terry Finley&gt; could do it.)  Maria Diesel is a first timer/charity winner &lt;@U02FQGPB2Q5|Tom Bellhouse&gt;.    Bill Freeman owns 10%  Ted Myers owns 7.5%.
+
+Horse's works are watchable on Delacour's youtube channel and he is Essential Quality with good family if those factor into claim potential. <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775744566757029' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class="badge red">URGENT</span> <span class='tag'>DM (ID: D02FYU268QZ)</span> <strong>Terry Finley</strong>: :envelope_with_arrow: Email Digest — Friday, Apr 10, 2026
+20 important + 7 self-sent from 32 reviewed
+:red_circle: ACTION REQUIRED (0)
+(none)
+:large_yellow_circle: OVERDUE / PENDING (8)
+West Point Thoroughbreds, Inc. — Jeff Lowe posted a link in the group All Things WPT (9:54pm et)
+#Brightlinebullet Link name: Entry: Brightline Bullet on Thursday at Aqueduct, Race 1 1:10 ET 4 of 6 Link: &lt;https://www.westpointtb.com/ho...&gt;
+Debbie Finley — Joe breakfast (5:14pm et)
+Have a question? Schedule a meeting with me. Debbie Finley Business Development Executive &lt;mailto:debbie@westpointtb.com&gt; Cell: 609-706-7473 www.w...
+Dan Cellucci, Catholic Leadership Institute — Court Sense (9:30am et)
+I am on a somewhat self-imposed break from youth sport coaching....
+Drew Myers — Re: New Deal from brightSTAR Communities/Drew Check In (1:30pm et)
+__
+Mandy Minger — HERF document requires signature (12:36pm et)
+Hi Terry, Please sign and return this document needed to complete opening the HERF bank account. It is a resolution Board members need to...
+:clipboard: INFORMATIONAL (8)
+West Point Thoroughbreds, Inc. — Tom Murphy posted in the group All Things WPT (5:00am et)
+Today's TDN click to view: &lt;http://thoroughbreddailynews.com/getLatest.php...&gt;
+LifeLock — Financial activity detected (4:40am et)
+Please review the important information inside...
+Chris Giordano — Re: Finley Tax Questions (1:39am et)
+Hi Casey, For the 2024 Notice Terry and Debbie will have to go to the IRS to c...
+:large_green_circle: NOTES TO SELF (7)
+(see self-sent bookmarks/reminders in Gmail)
+:wastebasket: Filtered: marketing/newsletter (3), automated notification (2), Google Calendar daily agenda (1) <a href='https://westpointtb.slack.com/archives/D02FYU268QZ/p1775815478600289' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class="badge gold">ATTN</span> <span class='tag'>DM (ID: D02FYU268QZ)</span> <strong>Terry Finley</strong>: :newspaper: CEO Daily Briefing — Friday, April 10, 2026
+&lt;https://tfinley1.github.io/wpt-daily-briefing/&gt;
+:trophy: Big day yesterday: Brightline Bullet won AQU R1 (MSW) + Reagan's Wit won KEE R8 (Allowance, $81,900). Today: golf with Bill Freeman, checkout Tampa → Ocala. Tomorrow: Band On the Run at TBD R4 1:43 PM. OBS Sale next week — $1.5M–$2M budget, team is buttoned up. Action: HERF signature + Curlin/Minnie Macy name suggestions needed. <a href='https://westpointtb.slack.com/archives/D02FYU268QZ/p1775791704967389' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class="badge gold">ATTN</span> <span class='tag'>DM (ID: D02NMTD7Q9M)</span> <strong>Terry Finley</strong>: Hey. Got this from jim Gagliano.    From head of fox.  Let’s discuss. 
+Got this from FoxSports’ Mike Mulvihill, FYI. 
+Hey Jim, hope everything’s been going well. Reaching out with kind of an odd problem and wonder if you might have any ideas. 
+FOX finds itself in the unexpected position of having a suite for Oaks and Derby that we don’t need. Terry Bradshaw has a filly that started her career 4 for 4 and seemed to be on the Oaks trail and we bought a suite thinking we’d turn it into a party weekend. Since then needless to say the filly has flamed out and she’s off the Oaks trail. 
+If you’re aware of any JC members or anyone else who may have horses entered that weekend and they’re looking for premium seating, we have to do something with this suite. 32 tickets for both Oaks and Derby Day and we paid about 150k for the full weekend. 
+If you have any ideas let me know! Happy to speak with anyone and answer questions if they’re interested. <a href='https://westpointtb.slack.com/archives/D02NMTD7Q9M/p1775741769429399?thread_ts=1775741769.429399&amp;cid=D02NMTD7Q9M' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class="badge gold">ATTN</span> <span class='tag'>DM (ID: D02FYU268QZ)</span> <strong>Terry Finley</strong>: :newspaper: CEO Daily Briefing — Thursday, April 9, 2026
+&lt;https://tfinley1.github.io/wpt-daily-briefing/&gt;
+:horse_racing: 3 runners today: Brightline Bullet (AQU R1, 1:10 PM), Garden of Grace (AQU R3, 2:11 PM), Reagan's Wit (KEE R8, 4:44 PM). Drive to Tampa at noon. Dinner with Bill Freeman at Donatello 6:15 PM. Action on horse call: Essential Charm debut Sunday pending your approval. April sales app update assigned to you. HERF signature still needed. <a href='https://westpointtb.slack.com/archives/D02FYU268QZ/p1775729515913499' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class="badge red">URGENT</span> <span class='tag'>DM (ID: D02FYU268QZ)</span> <strong>Terry Finley</strong>: :incoming_envelope: Email Digest — Thursday, Apr 9, 2026
+18 important + 2 self-sent from 29 reviewed
+:red_circle: ACTION REQUIRED (0)
+:large_yellow_circle: OVERDUE / PENDING (7)
+Debbie Finley — Joe breakfast. Have a question? Schedule a meeting with me. Debbie Finley Business Development Executive &lt;mailto:debbie@westpointtb.com&gt; Cell: 609-706-7473 www.w...
+"Dan Cellucci, Catholic Leadership Institute" — Court Sense. I am on a somewhat self-imposed break from youth sport coaching.
+Drew Myers — Re: New Deal from brightSTAR Communities/Drew Check In.
+Mandy Minger — HERF document requires signature. Hi Terry, Please sign and return this document needed to complete opening the HERF bank account. It is a resolution Board members need to...
+Paul LaFontaine — CNQ Profile Book for Reunion - C4. Hi all, The Class of 1986 Reunion is coming up November 5-8, 2026, at West Point during Army-Air Force weekend. We're collecting prof...
+brian domenick — Catch-up. Terry, I hope all is well. I just wanted to check in with you.
+Zoom — Timothy Buff has joined your Personal Meeting Room. Hi Terry Finley, Timothy Buff has joined your Personal Meeting Room. Start Meeting
+:clipboard: INFORMATIONAL (1)
+Jeff Lowe — Invitation: Band On the Run at Tampa Bay Downs in race 4 @ Sat Apr 11, 2026 1:43pm (EDT) (Terry Finley).
+:large_green_circle: NOTES TO SELF (5)
+Terry Finley — Fwd: Now available: 2025 K-1s.
+Terry Finley — Re: Project Cardinal Follow-up.
+Terry Finley — Fwd: Meeting assets for Terry Finley's Personal Meeting Room are ready!.
+Terry Finley — Watch "How to Stop Wasting Your Life (No More Distractions)" on YouTube.
+Terry Finley — How Maryland bought a $4.5M horse farm it's not going to use - The Baltimore Banner.
+:wastebasket: Filtered: marketing/promotions/newsletters, automated notifications, LinkedIn notifications, Google Calendar daily agendas <a href='https://westpointtb.slack.com/archives/D02FYU268QZ/p1775729218325489' target='_blank' rel='noopener'>Permalink</a></li>
+</ul></div></section>
+<section><div class='h2'>2026 Inventory</div><div class='card'>
+<table class='table'><thead><tr><th>Horse</th><th>Trainer</th><th>% Sold</th><th>% Remaining</th><th>$ Remaining</th><th>Syndicated Value</th></tr></thead><tbody>
+<tr><td><strong>CAIRO PRINCE/CABARET STARLET</strong></td><td>CLEMENT</td><td><strong>90%</strong></td><td><strong>10.00%</strong></td><td><strong>21,600</strong></td><td><strong>$216,000</strong></td></tr>
+</tbody></table></div></section>
+<section><div class='h2'>Team Pulse</div>
+<div class='card' style='margin-bottom:10px'>
+<div style='display:flex;align-items:center;gap:10px;flex-wrap:wrap'><div style='font-weight:800'>#horse-comms</div></div>
+<ul>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Jason Blewitt</strong> <span class='small'>(2026-04-09 16:09:13 EDT)</span>: Was texting a bit with Pletcher and although they could take the horse at Belmont, he said he would wait till Saratoga opens May 1. <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775765353167719' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Jeff Lowe</strong> <span class='small'>(2026-04-09 14:52:21 EDT)</span>: Here's the update posted for Essential Charm: he will breeze from the gate and if all goes smoothly he will move forward to the maiden special weight (purse $32,000) run at a mile and a sixteenth on the turf on Saturday, April 18 at Tampa.
+
+Arnaud said, "I thought about running him this weekend in a $32k maiden claimer but it didn't work out timing wise for him to be able to get in a gate work beforehand. I think the maiden special weight will be too tough for him, at least first time out, but we can get a race into him and go from there." <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775760741876579' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Jason Blewitt</strong> <span class='small'>(2026-04-09 14:38:02 EDT)</span>: TAP knows Minnie Macy can ship whenever he wants him <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775759882842089' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Jason Blewitt</strong> <span class='small'>(2026-04-09 14:03:59 EDT)</span>: Nice <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775757839548409?thread_ts=1775756193.877679&amp;cid=C02Q17HRHMW' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Danielle Austin</strong> <span class='small'>(2026-04-09 13:36:33 EDT)</span>: Gretchen just let me know Flightline/Noted and Quoted is named Clear for Takeoff :airplane: Will Farish named him <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775756193877679?thread_ts=1775756193.877679&amp;cid=C02Q17HRHMW' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Jeff Lowe</strong> <span class='small'>(2026-04-09 12:04:39 EDT)</span>: This was Arnaud's comment about Essential Charm: "I am not seeing a lot of improvement in ability and the way he moves." <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775750679635709?thread_ts=1775691927.062679&amp;cid=C02Q17HRHMW' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Erin Birkenhauer</strong> <span class='small'>(2026-04-09 11:59:42 EDT)</span>: I'll finalize all the names next week when back in office <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775750382418579' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Tom Bellhouse</strong> <span class='small'>(2026-04-09 11:46:28 EDT)</span>: GEORGE WEAVER
+
+CARELESS WHISPER 
+Making nice progress
+Giving her the extra time was really the right move
+Needs to get a gate work but
+She should be ready for late April/early May debut
+
+GARDEN OF GRACE
+In today.  Solid spot
+Duggan filly is touted <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775749588567559' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Jason Blewitt</strong> <span class='small'>(2026-04-09 11:11:26 EDT)</span>: Battle:  pointing towards Fort Marcy
+
+Cugino: was supposedly starting back up yesterday. Hopefully that was the case. 
+
+Honoree:  all set for his turf debut on 4/19. Leaves for Belmont on Saturday. 
+
+If Ever:  It’s been rainy down here so Shug postponed the gate breeze because of track conditions at PAY but the horse did work an easy half on Monday in 50. Will do something from the gate next breeze and if that goes well, will pick out a race. 
+
+Integration:  I have mixed feelings on his return yesterday and knew he was in trouble down the backside between his position and slow pace.  The Manhattan is of course out but the race Preakness Day could work well for him.  “That race really served as a bridge to get him back into stakes company although I didn’t love the ride and they walked in front of him,” Shug said.  “The Dinner Party is something I thought about this morning although I would be open to give him another shot in an allowance race if we could find one.  The horse had trained really well going into it.” 
+
+Peak Performer:  will head to Belmont next week. 
+
+Sansone:  been a tough few weeks for the Shug string as Tiz the Lady, Integration and this horse all looked the same to me. Shug told me he’s throwing the race out.  “Between the inside post and the ship up there, I am drawing a line through the race.  I am telling you, he’s a far better horse than the way the race played out.” 
+
+Statesman:  leaves for Belmont next week. I anticipate him racing sometime in May up north. Doing well. 
+
+Ohana:  Started up on the first. 
+
+Tiz the Lady:  going to look for a turf MSW at Laurel and depending on how that goes, that will determine the course we take.  “I still don’t know what happened at Tampa last time and I’m inclined to throw the race out.  She’s come out of it in good shape.” 
+
+Cajun Gold:  Horse is healthy and getting ready to breeze again. Mile race at the end of the month in potentially in play but Heather is slightly more comfortable going 5F with him.  “the 7.5 furlong distance would be a no-brainer to me although I want to see what the mile race looks like from a competition standpoint.” <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775747486584529' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Tom Bellhouse</strong> <span class='small'>(2026-04-09 10:22:59 EDT)</span>: BILL MOTT
+
+Race for Pillar of Beauty on the 18th, 
+
+the Nyquist is due in today, 
+
+Major Tac has a fever and will be off this week or until better. <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775744579484079' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Dawn Lenert</strong> <span class='small'>(2026-04-09 10:22:46 EDT)</span>: Regarding Essential Charm in mdn clm first out, if we do this then I believe this morning prior to entry publishing,  it's essential for first time Partners Roger Jones and Melanie Davis to get a call explaining the decision.  (&lt;@U02FVP54YEQ|Jason Blewitt&gt; is rep so maybe &lt;@U02FQGPB2Q5|Tom Bellhouse&gt; or &lt;@U02F5J2V24X|Terry Finley&gt; could do it.)  Maria Diesel is a first timer/charity winner &lt;@U02FQGPB2Q5|Tom Bellhouse&gt;.    Bill Freeman owns 10%  Ted Myers owns 7.5%.
+
+Horse's works are watchable on Delacour's youtube channel and he is Essential Quality with good family if those factor into claim potential. <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775744566757029' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> <strong>Joe Bianca</strong> <span class='small'>(2026-04-09 09:47:20 EDT)</span>: Casse (Mark has the flu this week so these are a bit abbreviated)
+Casino - Settled in at Churchill and looks great. May have a light breeze this weekend
+Chapman - Left front is still bugging him slightly. Doesn't seem serious, they're supposed to go over him today, will keep everyone posted
+Counting Stars - All good, at Oaklawn
+Curtain Call - Stall rest in Ocala
+Epicenter filly - Doing well, likely not far off from shipping to CD. Needs a name
+Ewing - Light training in Ocala
+Sandman - Light training in Ocala
+Walking in Memphis - Entering today for the $35k N3L next Thursday 4/16 at Gulfstream <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775742440917829' target='_blank' rel='noopener'>Permalink</a></li>
+</ul></div>
+<div class='card' style='margin-bottom:10px'>
+<div style='display:flex;align-items:center;gap:10px;flex-wrap:wrap'><div style='font-weight:800'>#sales</div></div>
+<ul>
+<li><span class='tag'>#sales (ID: C02NXCN650B)</span> <strong>Lindsey Heumann</strong> <span class='small'>(2026-04-09 09:41:52 EDT)</span>: Sales/Team call 4/9 -
+
+This week will be a shortened sales call and then we'll roll right into the horse call &lt;@U02NR5ALB9V|Jeff Lowe&gt;
+
+Overall, we are VERY buttoned up as we head into the sale next week.
+All meetings are scheduled and campaigns/groups for texts and emails comms are setup.
+We aim to spend between $1.5m - $2m in acquisitions - this will put us in line with the OBS sales from 2025
+
+• A few house keeping items from &lt;@U04SB65FZB5|Ali Finley&gt; and &lt;@U02FUJG6UJE|Dawn Lenert&gt; 
+• &lt;@S02N4LRKRPD|salesguys&gt; please weigh in on your thoughts regarding the fireside chat TPF proposed last week for the cocktail party
+• &lt;@U02NZJFDF53|Danielle Austin&gt; update any attendees for OBS next week and on all things Kentucky Oaks
+• Naming on  the Curlin/Minnie Macy (going to Todd P.) - St. Elias asked if we wanted to put in some recommendations for names first <a href='https://westpointtb.slack.com/archives/C02NXCN650B/p1775742112533789' target='_blank' rel='noopener'>Permalink</a></li>
+</ul></div>
+<div class='card' style='margin-bottom:10px'>
+<div style='display:flex;align-items:center;gap:10px;flex-wrap:wrap'><div style='font-weight:800'>#exec-team</div></div>
+<ul>
+<li><span class='tag'>#exec-team (ID: C0702F2JWBD)</span> <strong>Lindsey Heumann</strong> <span class='small'>(2026-04-09 09:13:05 EDT)</span>: I've communicated to the REPS about the Oaks/Derby coverage plan.  Included a mention of the spouse attendance.  I will communicate to Jason next week that we'll assess what is happening with his dad, and there is no pressure from WPT to come if things are uncertain. <a href='https://westpointtb.slack.com/archives/C0702F2JWBD/p1775740385203029?thread_ts=1775670290.668329&amp;cid=C0702F2JWBD' target='_blank' rel='noopener'>Permalink</a></li>
+</ul></div>
+<div class='card' style='margin-bottom:10px'>
+<div style='display:flex;align-items:center;gap:10px;flex-wrap:wrap'><div style='font-weight:800'>Terry's DMs to Individuals</div><span class="badge purple">Terry's DMs to Individuals</span></div>
+<ul>
+<li><span class='tag'>DM (ID: D02FYU268QZ)</span> <strong>Terry Finley</strong> <span class='small'>(2026-04-10 06:04:38 EDT)</span>: :envelope_with_arrow: Email Digest — Friday, Apr 10, 2026
+20 important + 7 self-sent from 32 reviewed
+:red_circle: ACTION REQUIRED (0)
+(none)
+:large_yellow_circle: OVERDUE / PENDING (8)
+West Point Thoroughbreds, Inc. — Jeff Lowe posted a link in the group All Things WPT (9:54pm et)
+#Brightlinebullet Link name: Entry: Brightline Bullet on Thursday at Aqueduct, Race 1 1:10 ET 4 of 6 Link: &lt;https://www.westpointtb.com/ho...&gt;
+Debbie Finley — Joe breakfast (5:14pm et)
+Have a question? Schedule a meeting with me. Debbie Finley Business Development Executive &lt;mailto:debbie@westpointtb.com&gt; Cell: 609-706-7473 www.w...
+Dan Cellucci, Catholic Leadership Institute — Court Sense (9:30am et)
+I am on a somewhat self-imposed break from youth sport coaching....
+Drew Myers — Re: New Deal from brightSTAR Communities/Drew Check In (1:30pm et)
+__
+Mandy Minger — HERF document requires signature (12:36pm et)
+Hi Terry, Please sign and return this document needed to complete opening the HERF bank account. It is a resolution Board members need to...
+:clipboard: INFORMATIONAL (8)
+West Point Thoroughbreds, Inc. — Tom Murphy posted in the group All Things WPT (5:00am et)
+Today's TDN click to view: &lt;http://thoroughbreddailynews.com/getLatest.php...&gt;
+LifeLock — Financial activity detected (4:40am et)
+Please review the important information inside...
+Chris Giordano — Re: Finley Tax Questions (1:39am et)
+Hi Casey, For the 2024 Notice Terry and Debbie will have to go to the IRS to c...
+:large_green_circle: NOTES TO SELF (7)
+(see self-sent bookmarks/reminders in Gmail)
+:wastebasket: Filtered: marketing/newsletter (3), automated notification (2), Google Calendar daily agenda (1) <a href='https://westpointtb.slack.com/archives/D02FYU268QZ/p1775815478600289' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>DM (ID: D02FYU268QZ)</span> <strong>Terry Finley</strong> <span class='small'>(2026-04-09 23:28:24 EDT)</span>: :newspaper: CEO Daily Briefing — Friday, April 10, 2026
+&lt;https://tfinley1.github.io/wpt-daily-briefing/&gt;
+:trophy: Big day yesterday: Brightline Bullet won AQU R1 (MSW) + Reagan's Wit won KEE R8 (Allowance, $81,900). Today: golf with Bill Freeman, checkout Tampa → Ocala. Tomorrow: Band On the Run at TBD R4 1:43 PM. OBS Sale next week — $1.5M–$2M budget, team is buttoned up. Action: HERF signature + Curlin/Minnie Macy name suggestions needed. <a href='https://westpointtb.slack.com/archives/D02FYU268QZ/p1775791704967389' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>DM (ID: D02NMTD7Q9M)</span> <strong>Terry Finley</strong> <span class='small'>(2026-04-09 23:24:20 EDT)</span>: Is there an update on that folder? <a href='https://westpointtb.slack.com/archives/D02NMTD7Q9M/p1775791460289369' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>DM (ID: D08TC545TNZ)</span> <strong>Terry Finley</strong> <span class='small'>(2026-04-09 10:16:05 EDT)</span>:  <a href='https://westpointtb.slack.com/archives/D08TC545TNZ/p1775744165663099' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>DM (ID: D02NMTD7Q9M)</span> <strong>Terry Finley</strong> <span class='small'>(2026-04-09 09:36:09 EDT)</span>: Hey. Got this from jim Gagliano.    From head of fox.  Let’s discuss. 
+Got this from FoxSports’ Mike Mulvihill, FYI. 
+Hey Jim, hope everything’s been going well. Reaching out with kind of an odd problem and wonder if you might have any ideas. 
+FOX finds itself in the unexpected position of having a suite for Oaks and Derby that we don’t need. Terry Bradshaw has a filly that started her career 4 for 4 and seemed to be on the Oaks trail and we bought a suite thinking we’d turn it into a party weekend. Since then needless to say the filly has flamed out and she’s off the Oaks trail. 
+If you’re aware of any JC members or anyone else who may have horses entered that weekend and they’re looking for premium seating, we have to do something with this suite. 32 tickets for both Oaks and Derby Day and we paid about 150k for the full weekend. 
+If you have any ideas let me know! Happy to speak with anyone and answer questions if they’re interested. <a href='https://westpointtb.slack.com/archives/D02NMTD7Q9M/p1775741769429399?thread_ts=1775741769.429399&amp;cid=D02NMTD7Q9M' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>DM (ID: D02FYU268QZ)</span> <strong>Terry Finley</strong> <span class='small'>(2026-04-09 08:12:18 EDT)</span>: WPT CEO Daily Briefing — Thu Apr 9
+Alerts
+OVERDUE: Pipeline hygiene — 888 open opps; earliest CloseDate 2026-03-15 (recommend quick overdue triage + close out stale).
+TODAY: Racing reminders on calendar — Brightline Bullet (AQU R1) + Garden of Grace (AQU R3).
+Sales
+Open opps: 888
+New leads (7d): 25 (Web/Online)
+Closed won (7d): 0
+Racing
+Today: Reagan’s Wit — Keeneland (NW2X) &lt;https://www.westpointtb.com/racing/upcoming-races/|WPT upcoming races&gt;
+Upcoming: Willpowered (AQU 4/11), Ivory and Ebony (KEE 4/16) &lt;https://www.westpointtb.com/racing/upcoming-races/|WPT upcoming races&gt;
+Full PDF is in the Perplexity Computer chat under “ceo_daily_briefing”. <a href='https://westpointtb.slack.com/archives/D02FYU268QZ/p1775736738732409' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>DM (ID: D02FYU268QZ)</span> <strong>Terry Finley</strong> <span class='small'>(2026-04-09 06:11:55 EDT)</span>: :newspaper: CEO Daily Briefing — Thursday, April 9, 2026
+&lt;https://tfinley1.github.io/wpt-daily-briefing/&gt;
+:horse_racing: 3 runners today: Brightline Bullet (AQU R1, 1:10 PM), Garden of Grace (AQU R3, 2:11 PM), Reagan's Wit (KEE R8, 4:44 PM). Drive to Tampa at noon. Dinner with Bill Freeman at Donatello 6:15 PM. Action on horse call: Essential Charm debut Sunday pending your approval. April sales app update assigned to you. HERF signature still needed. <a href='https://westpointtb.slack.com/archives/D02FYU268QZ/p1775729515913499' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>DM (ID: D02FYU268QZ)</span> <strong>Terry Finley</strong> <span class='small'>(2026-04-09 06:06:58 EDT)</span>: :incoming_envelope: Email Digest — Thursday, Apr 9, 2026
+18 important + 2 self-sent from 29 reviewed
+:red_circle: ACTION REQUIRED (0)
+:large_yellow_circle: OVERDUE / PENDING (7)
+Debbie Finley — Joe breakfast. Have a question? Schedule a meeting with me. Debbie Finley Business Development Executive &lt;mailto:debbie@westpointtb.com&gt; Cell: 609-706-7473 www.w...
+"Dan Cellucci, Catholic Leadership Institute" — Court Sense. I am on a somewhat self-imposed break from youth sport coaching.
+Drew Myers — Re: New Deal from brightSTAR Communities/Drew Check In.
+Mandy Minger — HERF document requires signature. Hi Terry, Please sign and return this document needed to complete opening the HERF bank account. It is a resolution Board members need to...
+Paul LaFontaine — CNQ Profile Book for Reunion - C4. Hi all, The Class of 1986 Reunion is coming up November 5-8, 2026, at West Point during Army-Air Force weekend. We're collecting prof...
+brian domenick — Catch-up. Terry, I hope all is well. I just wanted to check in with you.
+Zoom — Timothy Buff has joined your Personal Meeting Room. Hi Terry Finley, Timothy Buff has joined your Personal Meeting Room. Start Meeting
+:clipboard: INFORMATIONAL (1)
+Jeff Lowe — Invitation: Band On the Run at Tampa Bay Downs in race 4 @ Sat Apr 11, 2026 1:43pm (EDT) (Terry Finley).
+:large_green_circle: NOTES TO SELF (5)
+Terry Finley — Fwd: Now available: 2025 K-1s.
+Terry Finley — Re: Project Cardinal Follow-up.
+Terry Finley — Fwd: Meeting assets for Terry Finley's Personal Meeting Room are ready!.
+Terry Finley — Watch "How to Stop Wasting Your Life (No More Distractions)" on YouTube.
+Terry Finley — How Maryland bought a $4.5M horse farm it's not going to use - The Baltimore Banner.
+:wastebasket: Filtered: marketing/promotions/newsletters, automated notifications, LinkedIn notifications, Google Calendar daily agendas <a href='https://westpointtb.slack.com/archives/D02FYU268QZ/p1775729218325489' target='_blank' rel='noopener'>Permalink</a></li>
+</ul></div>
+</section>
+<section><div class='h2'>Racing</div><div class='grid grid-2'>
+<div class='card'><div style='font-weight:800;margin-bottom:6px'>Current Entries (Homepage)</div><table class='table'><thead><tr><th>Date</th><th>Horse</th><th>Track</th><th>Name/Type</th><th>Post</th></tr></thead><tbody>
+<tr><td>04/11/26Add to Calendar+</td><td><strong>Band On the Run</strong></td><td>Tampa Bay Downs</td><td>Maiden Claiming 32k</td><td>1:43 ET</td></tr>
+<tr><td>04/16/26Add to Calendar+</td><td><strong>Walking in Memphis</strong></td><td>Gulfstream Park</td><td>Claiming 35k NW3L</td><td>1:54 ET</td></tr>
+<tr><td>04/16/26Add to Calendar+</td><td><strong>Legalize</strong></td><td>Keeneland</td><td>NW3X Allowance</td><td>3:08 ET</td></tr>
+<tr><td>04/16/26Add to Calendar+</td><td><strong>Ivory and Ebony</strong></td><td>Keeneland</td><td>NW1X Allowance</td><td>3:40 ET</td></tr>
+</tbody></table><div class='small'>Source: <a href='https://www.westpointtb.com' target='_blank' rel='noopener'>westpointtb.com</a></div></div>
+<div class='card'><div style='font-weight:800;margin-bottom:6px'>Upcoming Races (Site)</div><table class='table'><thead><tr><th>Date</th><th>Horse</th><th>Track</th><th>Name/Type</th></tr></thead><tbody>
+<tr><td>04/16/26</td><td><strong>Relaxx (FR)</strong></td><td>Aqueduct</td><td>Plenty of Grace Stakes</td></tr>
+<tr><td>04/18/26</td><td><strong>Essential Charm</strong></td><td>Tampa Bay Downs</td><td>Maiden Special Weight</td></tr>
+<tr><td>04/18/26</td><td><strong>Keep It Easy</strong></td><td>Keeneland</td><td>NW2X Allowance</td></tr>
+<tr><td>04/19/26</td><td><strong>Intricate Spirit</strong></td><td>Keeneland</td><td>Palisades Stakes</td></tr>
+<tr><td>04/19/26</td><td><strong>Honoree</strong></td><td>Aqueduct</td><td>NY-Bred Maiden Special Weight</td></tr>
+<tr><td>04/22/26</td><td><strong>Castle Run</strong></td><td>Keeneland</td><td>Maiden Claiming 30k</td></tr>
+<tr><td>04/23/26</td><td><strong>La Ceiba (FR)</strong></td><td>Aqueduct</td><td>NW1X Allowance</td></tr>
+<tr><td>04/23/26</td><td><strong>Miss Enchanted</strong></td><td>Keeneland</td><td>Ratings Handicap</td></tr>
+<tr><td>04/24/26</td><td><strong>Cajun Gold</strong></td><td>Gulfstream Park</td><td>FL-Bred NW1X Allowance</td></tr>
+<tr><td>04/25/26</td><td><strong>Vibe</strong></td><td>Aqueduct</td><td>NW2X Allowance</td></tr>
+<tr><td>04/25/26</td><td><strong>Willpowered</strong></td><td>Aqueduct</td><td>NY-Bred NW1X Allowance</td></tr>
+<tr><td>04/26/26</td><td><strong>Creed’s Vision</strong></td><td>Laurel Park</td><td>MD-Bred NW1X Allowance</td></tr>
+</tbody></table><div class='small'>Source: <a href='https://www.westpointtb.com/racing/upcoming-races/' target='_blank' rel='noopener'>Upcoming Races</a></div></div>
+</div></section>
+<section><div class='h2'>Decisions Needed</div><div class='card'><ul>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> Here's the update posted for Essential Charm: he will breeze from the gate and if all goes smoothly he will move forward to the maiden special weight (purse $32,000) run at a mile and a sixteenth on the turf on Saturday, April 18 at Tampa.
+
+Arnaud said, "I thought about running him this weekend in a $32k maiden claimer but it didn't work out timing wise for him to be able to get in a gate work beforehand. I think the maiden special weight will be too tough for him, at least first time out, but we can get a race into him and go from there." <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775760741876579' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> This was Arnaud's comment about Essential Charm: "I am not seeing a lot of improvement in ability and the way he moves." <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775750679635709?thread_ts=1775691927.062679&amp;cid=C02Q17HRHMW' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> BILL MOTT
+
+Race for Pillar of Beauty on the 18th, 
+
+the Nyquist is due in today, 
+
+Major Tac has a fever and will be off this week or until better. <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775744579484079' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#horse-comms (ID: C02Q17HRHMW)</span> Regarding Essential Charm in mdn clm first out, if we do this then I believe this morning prior to entry publishing,  it's essential for first time Partners Roger Jones and Melanie Davis to get a call explaining the decision.  (&lt;@U02FVP54YEQ|Jason Blewitt&gt; is rep so maybe &lt;@U02FQGPB2Q5|Tom Bellhouse&gt; or &lt;@U02F5J2V24X|Terry Finley&gt; could do it.)  Maria Diesel is a first timer/charity winner &lt;@U02FQGPB2Q5|Tom Bellhouse&gt;.    Bill Freeman owns 10%  Ted Myers owns 7.5%.
+
+Horse's works are watchable on Delacour's youtube channel and he is Essential Quality with good family if those factor into claim potential. <a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1775744566757029' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>#sales (ID: C02NXCN650B)</span> Sales/Team call 4/9 -
+
+This week will be a shortened sales call and then we'll roll right into the horse call &lt;@U02NR5ALB9V|Jeff Lowe&gt;
+
+Overall, we are VERY buttoned up as we head into the sale next week.
+All meetings are scheduled and campaigns/groups for texts and emails comms are setup.
+We aim to spend between $1.5m - $2m in acquisitions - this will put us in line with the OBS sales from 2025
+
+• A few house keeping items from &lt;@U04SB65FZB5|Ali Finley&gt; and &lt;@U02FUJG6UJE|Dawn Lenert&gt; 
+• &lt;@S02N4LRKRPD|salesguys&gt; please weigh in on your thoughts regarding the fireside chat TPF proposed last week for the cocktail party
+• &lt;@U02NZJFDF53|Danielle Austin&gt; update any attendees for OBS next week and on all things Kentucky Oaks
+• Naming on  the Curlin/Minnie Macy (going to Todd P.) - St. Elias asked if we wanted to put in some recommendations for names first <a href='https://westpointtb.slack.com/archives/C02NXCN650B/p1775742112533789' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>DM (ID: D02FYU268QZ)</span> :envelope_with_arrow: Email Digest — Friday, Apr 10, 2026
+20 important + 7 self-sent from 32 reviewed
+:red_circle: ACTION REQUIRED (0)
+(none)
+:large_yellow_circle: OVERDUE / PENDING (8)
+West Point Thoroughbreds, Inc. — Jeff Lowe posted a link in the group All Things WPT (9:54pm et)
+#Brightlinebullet Link name: Entry: Brightline Bullet on Thursday at Aqueduct, Race 1 1:10 ET 4 of 6 Link: &lt;https://www.westpointtb.com/ho...&gt;
+Debbie Finley — Joe breakfast (5:14pm et)
+Have a question? Schedule a meeting with me. Debbie Finley Business Development Executive &lt;mailto:debbie@westpointtb.com&gt; Cell: 609-706-7473 www.w...
+Dan Cellucci, Catholic Leadership Institute — Court Sense (9:30am et)
+I am on a somewhat self-imposed break from youth sport coaching....
+Drew Myers — Re: New Deal from brightSTAR Communities/Drew Check In (1:30pm et)
+__
+Mandy Minger — HERF document requires signature (12:36pm et)
+Hi Terry, Please sign and return this document needed to complete opening the HERF bank account. It is a resolution Board members need to...
+:clipboard: INFORMATIONAL (8)
+West Point Thoroughbreds, Inc. — Tom Murphy posted in the group All Things WPT (5:00am et)
+Today's TDN click to view: &lt;http://thoroughbreddailynews.com/getLatest.php...&gt;
+LifeLock — Financial activity detected (4:40am et)
+Please review the important information inside...
+Chris Giordano — Re: Finley Tax Questions (1:39am et)
+Hi Casey, For the 2024 Notice Terry and Debbie will have to go to the IRS to c...
+:large_green_circle: NOTES TO SELF (7)
+(see self-sent bookmarks/reminders in Gmail)
+:wastebasket: Filtered: marketing/newsletter (3), automated notification (2), Google Calendar daily agenda (1) <a href='https://westpointtb.slack.com/archives/D02FYU268QZ/p1775815478600289' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>DM (ID: D02FYU268QZ)</span> :newspaper: CEO Daily Briefing — Friday, April 10, 2026
+&lt;https://tfinley1.github.io/wpt-daily-briefing/&gt;
+:trophy: Big day yesterday: Brightline Bullet won AQU R1 (MSW) + Reagan's Wit won KEE R8 (Allowance, $81,900). Today: golf with Bill Freeman, checkout Tampa → Ocala. Tomorrow: Band On the Run at TBD R4 1:43 PM. OBS Sale next week — $1.5M–$2M budget, team is buttoned up. Action: HERF signature + Curlin/Minnie Macy name suggestions needed. <a href='https://westpointtb.slack.com/archives/D02FYU268QZ/p1775791704967389' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>DM (ID: D02FYU268QZ)</span> :newspaper: CEO Daily Briefing — Thursday, April 9, 2026
+&lt;https://tfinley1.github.io/wpt-daily-briefing/&gt;
+:horse_racing: 3 runners today: Brightline Bullet (AQU R1, 1:10 PM), Garden of Grace (AQU R3, 2:11 PM), Reagan's Wit (KEE R8, 4:44 PM). Drive to Tampa at noon. Dinner with Bill Freeman at Donatello 6:15 PM. Action on horse call: Essential Charm debut Sunday pending your approval. April sales app update assigned to you. HERF signature still needed. <a href='https://westpointtb.slack.com/archives/D02FYU268QZ/p1775729515913499' target='_blank' rel='noopener'>Permalink</a></li>
+<li><span class='tag'>DM (ID: D02FYU268QZ)</span> :incoming_envelope: Email Digest — Thursday, Apr 9, 2026
+18 important + 2 self-sent from 29 reviewed
+:red_circle: ACTION REQUIRED (0)
+:large_yellow_circle: OVERDUE / PENDING (7)
+Debbie Finley — Joe breakfast. Have a question? Schedule a meeting with me. Debbie Finley Business Development Executive &lt;mailto:debbie@westpointtb.com&gt; Cell: 609-706-7473 www.w...
+"Dan Cellucci, Catholic Leadership Institute" — Court Sense. I am on a somewhat self-imposed break from youth sport coaching.
+Drew Myers — Re: New Deal from brightSTAR Communities/Drew Check In.
+Mandy Minger — HERF document requires signature. Hi Terry, Please sign and return this document needed to complete opening the HERF bank account. It is a resolution Board members need to...
+Paul LaFontaine — CNQ Profile Book for Reunion - C4. Hi all, The Class of 1986 Reunion is coming up November 5-8, 2026, at West Point during Army-Air Force weekend. We're collecting prof...
+brian domenick — Catch-up. Terry, I hope all is well. I just wanted to check in with you.
+Zoom — Timothy Buff has joined your Personal Meeting Room. Hi Terry Finley, Timothy Buff has joined your Personal Meeting Room. Start Meeting
+:clipboard: INFORMATIONAL (1)
+Jeff Lowe — Invitation: Band On the Run at Tampa Bay Downs in race 4 @ Sat Apr 11, 2026 1:43pm (EDT) (Terry Finley).
+:large_green_circle: NOTES TO SELF (5)
+Terry Finley — Fwd: Now available: 2025 K-1s.
+Terry Finley — Re: Project Cardinal Follow-up.
+Terry Finley — Fwd: Meeting assets for Terry Finley's Personal Meeting Room are ready!.
+Terry Finley — Watch "How to Stop Wasting Your Life (No More Distractions)" on YouTube.
+Terry Finley — How Maryland bought a $4.5M horse farm it's not going to use - The Baltimore Banner.
+:wastebasket: Filtered: marketing/promotions/newsletters, automated notifications, LinkedIn notifications, Google Calendar daily agendas <a href='https://westpointtb.slack.com/archives/D02FYU268QZ/p1775729218325489' target='_blank' rel='noopener'>Permalink</a></li>
+</ul></div></section>
+<section><div class='h2'>Sales Pipeline</div><div class='card'>
+<table class='table'><thead><tr><th>Opportunity</th><th>Stage</th><th>Amount</th><th>Close</th><th>Owner</th><th>Last Modified</th></tr></thead><tbody>
+<tr><td><strong>Richard Alfred - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$15,000</strong></td><td>2026-04-30</td><td>Tom Bellhouse</td><td>Apr 9 9:54 PM ET</td></tr>
+<tr><td><strong>Chris Schulte - 2026</strong></td><td>Picking Horses</td><td><strong>$15,000</strong></td><td>2026-04-30</td><td>Tom Murphy</td><td>Apr 9 9:45 PM ET</td></tr>
+<tr><td><strong>Kobak Taylor - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$15,000</strong></td><td>2026-06-30</td><td>Tom Murphy</td><td>Apr 9 9:24 PM ET</td></tr>
+<tr><td><strong>Rubilotta,  Jason - 2027</strong></td><td>Not talked to yet</td><td><strong>$20,000</strong></td><td>2027-03-13</td><td>Joe Bianca</td><td>Apr 9 4:34 PM ET</td></tr>
+<tr><td><strong>McEvoy-Hubert - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-10-01</td><td>Joe Bianca</td><td>Apr 9 4:33 PM ET</td></tr>
+<tr><td><strong>Carmody - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-10-01</td><td>Joe Bianca</td><td>Apr 9 4:33 PM ET</td></tr>
+<tr><td><strong>Koski - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-10-01</td><td>Joe Bianca</td><td>Apr 9 4:32 PM ET</td></tr>
+<tr><td><strong>Grimes,  Cathy - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-08-08</td><td>Joe Bianca</td><td>Apr 9 4:32 PM ET</td></tr>
+<tr><td><strong>Seymour,  Scott - 2027</strong></td><td>Not talked to yet</td><td><strong>$20,000</strong></td><td>2027-03-13</td><td>Joe Bianca</td><td>Apr 9 4:29 PM ET</td></tr>
+<tr><td><strong>Jackvony - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-10-01</td><td>Joe Bianca</td><td>Apr 9 4:22 PM ET</td></tr>
+<tr><td><strong>Bardonaro,  Frank - 2027</strong></td><td>Not talked to yet</td><td><strong>$20,000</strong></td><td>2027-03-10</td><td>Joe Bianca</td><td>Apr 9 4:00 PM ET</td></tr>
+<tr><td><strong>Rivera,  Rudy - 2026 VERY</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-09-12</td><td>Joe Bianca</td><td>Apr 9 4:00 PM ET</td></tr>
+<tr><td><strong>Boeheim,  Brian - 2027</strong></td><td>Not talked to yet</td><td><strong>$20,000</strong></td><td>2027-03-10</td><td>Joe Bianca</td><td>Apr 9 3:56 PM ET</td></tr>
+<tr><td><strong>Lindgren - 2026 Somewhat</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-10-01</td><td>Joe Bianca</td><td>Apr 9 3:54 PM ET</td></tr>
+<tr><td><strong>Dittus,  Robert - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-04-25</td><td>Joe Bianca</td><td>Apr 9 3:52 PM ET</td></tr>
+<tr><td><strong>Lucas Loynes - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$15,000</strong></td><td>2026-05-31</td><td>Joe Bianca</td><td>Apr 9 3:51 PM ET</td></tr>
+<tr><td><strong>Gaska,  Deborah - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>2026-06-18</td><td>Joe Bianca</td><td>Apr 9 3:49 PM ET</td></tr>
+<tr><td><strong>Arnie Boyarsky - 2026</strong></td><td>Talking - No Commitment</td><td><strong>$15,000</strong></td><td>2026-04-23</td><td>Joe Bianca</td><td>Apr 9 3:48 PM ET</td></tr>
+<tr><td><strong>Kravets - 2027</strong></td><td>Not talked to yet</td><td><strong>$20,000</strong></td><td>2027-04-09</td><td>Jason Blewitt</td><td>Apr 9 2:43 PM ET</td></tr>
+<tr><td><strong>Baker,  Steven and Betty - 2027</strong></td><td>Not talked to yet</td><td><strong>$20,000</strong></td><td>2027-03-15</td><td>Jason Blewitt</td><td>Apr 9 2:21 PM ET</td></tr>
+</tbody></table></div></section>
+<footer class='meta' style='margin-top:26px;border-top:1px solid var(--border);padding-top:12px'>Generated automatically for internal use. Sources: <a href='https://www.westpointtb.com' target='_blank' rel='noopener'>westpointtb.com</a>, <a href='https://www.westpointtb.com/racing/upcoming-races/' target='_blank' rel='noopener'>Upcoming Races</a>.</footer>
+</div></body></html>
