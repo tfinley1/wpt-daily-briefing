@@ -1,353 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WPT CEO Daily Briefing — Monday, April 13, 2026</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WPT CEO Daily Briefing — Tue, Apr 14, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: #FFFFFF; color: #28251D; font-size: 14px; line-height: 1.6; }
-    .container { max-width: 760px; margin: 0 auto; padding: 32px 20px 60px; }
-    .header { border-bottom: 3px solid #01696F; padding-bottom: 16px; margin-bottom: 28px; }
-    .header-logo { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #01696F; margin-bottom: 4px; }
-    .header h1 { font-size: 22px; font-weight: 700; color: #28251D; line-height: 1.2; }
-    .header-meta { font-size: 12px; color: #888; margin-top: 4px; }
-    .section { margin-bottom: 28px; }
-    .section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #01696F; border-bottom: 1px solid #E8F5F5; padding-bottom: 6px; margin-bottom: 12px; }
-    .alert { padding: 9px 13px; border-radius: 5px; margin-bottom: 7px; font-size: 13.5px; line-height: 1.5; }
-    .alert-red { background: #FDF2F2; border-left: 3px solid #C0392B; }
-    .alert-gold { background: #FEFBE8; border-left: 3px solid #D4A017; }
-    .alert-green { background: #F0FBF4; border-left: 3px solid #27AE60; }
-    ul.bl { list-style: none; padding: 0; }
-    ul.bl li { padding: 4px 0 4px 14px; position: relative; font-size: 13.5px; border-bottom: 1px solid #F5F5F3; }
-    ul.bl li::before { content: "•"; position: absolute; left: 0; color: #01696F; }
-    ul.bl li:last-child { border-bottom: none; }
-    table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 4px; }
-    th { background: #E8F5F5; color: #01696F; font-weight: 600; text-align: left; padding: 6px 10px; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.05em; }
-    td { padding: 6px 10px; border-bottom: 1px solid #F0F0EE; vertical-align: top; }
-    tr:last-child td { border-bottom: none; }
-    tr:hover td { background: #FAFAF9; }
-    .tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; padding: 2px 6px; border-radius: 3px; margin-right: 5px; }
-    .tag-teal { background: #E8F5F5; color: #01696F; }
-    .tag-purple { background: #F0EEFF; color: #7B61FF; }
-    .tag-green { background: #EDFBF2; color: #27AE60; }
-    .tag-red { background: #FDF2F2; color: #C0392B; }
-    .tag-gold { background: #FEFBE8; color: #B8860B; }
-    .channel-group { margin-bottom: 14px; }
-    .channel-group:last-child { margin-bottom: 0; }
-    .sched-item { display: flex; gap: 12px; padding: 6px 0; border-bottom: 1px solid #F5F5F3; font-size: 13.5px; }
-    .sched-item:last-child { border-bottom: none; }
-    .sched-time { min-width: 80px; font-weight: 600; color: #01696F; white-space: nowrap; }
-    .sched-body { flex: 1; }
-    .sub-header { font-size: 12px; font-weight: 700; color: #28251D; text-transform: uppercase; letter-spacing: 0.06em; margin: 14px 0 6px; padding-bottom: 4px; border-bottom: 1px solid #E8F5F5; }
-    .win { color: #27AE60; font-weight: 700; }
-    .urgent { color: #C0392B; font-weight: 700; }
-    .gold-text { color: #B8860B; font-weight: 600; }
-    .footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid #E8F5F5; font-size: 11.5px; color: #AAA; text-align: center; }
-    a { color: #01696F; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    @media print { body { font-size: 12px; } .container { padding: 0; } }
+    :root{
+      --bg:#FFFFFF;
+      --text:#28251D;
+      --muted:#6B655A;
+      --teal:#01696F;
+      --line:#E7E4DD;
+      --red:#B42318;
+      --gold:#B54708;
+      --green:#027A48;
+      --purple:#6941C6;
+    }
+    html,body{background:var(--bg); color:var(--text); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    body{margin:0;}
+    .wrap{max-width:980px; margin:0 auto; padding:22px 16px 48px;}
+    header{display:flex; gap:12px; align-items:flex-end; justify-content:space-between; border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:18px;}
+    h1{font-size:20px; margin:0; color:var(--teal); letter-spacing:-0.02em;}
+    .sub{font-size:13px; color:var(--muted); margin-top:6px;}
+    .pill{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border:1px solid var(--line); border-radius:999px; font-size:12px; color:var(--muted);}
+    .grid{display:grid; grid-template-columns: 1fr; gap:14px;}
+    section{border:1px solid var(--line); border-radius:12px; padding:14px 14px 12px; break-inside:avoid;}
+    section h2{margin:0 0 10px; font-size:14px; color:var(--teal); text-transform:uppercase; letter-spacing:0.06em;}
+    .tag{display:inline-block; font-size:11px; padding:3px 8px; border-radius:999px; border:1px solid var(--line); color:var(--muted); margin-right:8px;}
+    .tag.red{border-color: rgba(180,35,24,.25); color:var(--red); background: rgba(180,35,24,.06);}    
+    .tag.gold{border-color: rgba(181,71,8,.25); color:var(--gold); background: rgba(181,71,8,.06);}    
+    .tag.green{border-color: rgba(2,122,72,.25); color:var(--green); background: rgba(2,122,72,.06);}    
+    .tag.purple{border-color: rgba(105,65,198,.25); color:var(--purple); background: rgba(105,65,198,.06);}    
+    ul{margin:0; padding-left:18px;}
+    li{margin:6px 0; line-height:1.25rem;}
+    table{width:100%; border-collapse:collapse; font-size:13px;}
+    th,td{padding:8px 8px; border-top:1px solid var(--line); vertical-align:top;}
+    th{color:var(--muted); font-weight:600; text-align:left; border-top:0; padding-top:0;}
+    .knum{font-weight:700;}
+    .muted{color:var(--muted);}
+    .small{font-size:12px;}
+    .two-col{display:grid; grid-template-columns:1fr; gap:12px;}
+    @media(min-width:860px){
+      .grid{grid-template-columns: 1fr 1fr;}
+      .span2{grid-column:1 / -1;}
+      .two-col{grid-template-columns: 1fr 1fr;}
+    }
+    @media print{
+      header{position:static;}
+      a{color:inherit; text-decoration:none;}
+      section{break-inside:avoid;}
+    }
+    a{color:var(--teal); text-decoration:none;}
+    a:hover{text-decoration:underline;}
   </style>
 </head>
 <body>
-<div class="container">
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>WPT CEO Daily Briefing — Tue, Apr 14, 2026</h1>
+        <div class="sub">America/New_York (ET) • Generated 6:05 AM ET</div>
+      </div>
+      <div class="pill">West Point Thoroughbreds • Executive Brief</div>
+    </header>
 
-  <!-- HEADER -->
-  <div class="header">
-    <div class="header-logo">West Point Thoroughbreds</div>
-    <h1>CEO Daily Briefing — Monday, April 13, 2026</h1>
-    <div class="header-meta">📍 FL (Ocala) &nbsp;|&nbsp; OBS Sale Week &nbsp;|&nbsp; Generated 6:00 AM EDT &nbsp;|&nbsp; <a href="https://tfinley1.github.io/wpt-daily-briefing/">Live version</a></div>
+    <div class="grid">
+      <section class="span2">
+        <h2>Schedule</h2>
+        <div class="two-col">
+          <div>
+            <div class="tag gold">Today — Tue, Apr 14</div>
+            <ul>
+              <li><span class="knum">All day</span> — Stay at SpringHill Suites by Marriott Ocala <span class="muted">(SpringHill Suites by Marriott Ocala, Ocala)</span></li>
+              <li><span class="knum">All day</span> — <span class="knum">2026 Spring Two-Year-Olds in Training Sale</span></li>
+              <li><span class="knum">All day</span> — 📍FL (Ocala) <span class="muted">(Location label: FL)</span></li>
+              <li><span class="knum">1:30–3:00 PM ET</span> — <span class="knum">KHRG Board Meeting</span> <span class="muted">(KHRC Conference Room 75)</span> • Zoom: <a href="https://us06web.zoom.us/j/3741243263?pwd=bXJnMDlwR2JMS1NhN2tacjF5Y2JTZz09&omn=88370804798">Join</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="tag gold">Tomorrow — Wed, Apr 15</div>
+            <ul>
+              <li><span class="knum">All day</span> — Stay at SpringHill Suites by Marriott Ocala <span class="muted">(SpringHill Suites by Marriott Ocala, Ocala)</span></li>
+              <li><span class="knum">All day</span> — <span class="knum">2026 Spring Two-Year-Olds in Training Sale</span></li>
+              <li><span class="knum">All day</span> — <span class="knum">Quarterly Taxes Due</span></li>
+              <li><span class="knum">All day</span> — 📍FL (Ocala) <span class="muted">(Location label: FL)</span></li>
+              <li><span class="knum">6:30–7:15 AM ET</span> — Workout with Nicole</li>
+              <li><span class="knum">4:00–4:30 PM ET</span> — OBS April Shortlist 3 <span class="muted">(Attendees: Erin Birkenhauer, West Point Thoroughbreds Team 2025)</span></li>
+              <li><span class="knum">4:00–5:00 PM ET</span> — OBS April Shortlist Webinars • Zoom: <a href="https://us02web.zoom.us/w/86130823474?tk=Bz0uu8br-dyRLh561yy86lw4nz12-bRviH2RJNabgTY.DQkAAAAUDcwRMhZISmk2QnQteFI4S0FBN1djaV9DNWlBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">Join</a></li>
+              <li><span class="knum">6:00–7:00 PM ET</span> — Dinner with Jimmy Politano and Company <span class="muted">(Mesa de Notte, Ocala)</span></li>
+            </ul>
+            <div class="small" style="margin-top:10px;">
+              <span class="tag red">Conflict</span>
+              <span class="muted">4:00 PM start overlap: <span class="knum">OBS April Shortlist 3</span> vs <span class="knum">OBS April Shortlist Webinars</span>.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Alerts</h2>
+        <ul>
+          <li><span class="tag red">Urgent</span> <span class="knum">Builder's Remedy</span> still showing bone bruising; headed to Bramlage for MRI to get full read on status.</li>
+          <li><span class="tag gold">Attention</span> <span class="knum">Nyquist/Stillchargingmaria</span> bled from nose after light breeze; plan suggestion: send to Becky’s for <span class="knum">60 days</span>.</li>
+          <li><span class="tag gold">Attention</span> OBS access issue: Erin reports updated Perplexity app link still prompting “request access” for recipients.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>2026 Inventory (Only horses w/ inventory remaining)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Horse</th>
+              <th>Trainer</th>
+              <th class="knum">$ Remaining</th>
+              <th class="knum">% Remaining</th>
+              <th class="knum">Syndicated Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="knum">CAIRO PRINCE/CABARET STARLET</span></td>
+              <td>CLEMENT</td>
+              <td><span class="knum">$21,600</span></td>
+              <td><span class="knum">10.00%</span></td>
+              <td><span class="knum">$216,000</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="span2">
+        <h2>Team Pulse (last ~48h)</h2>
+
+        <div style="margin-bottom:10px;"><span class="tag">#horse-comms</span></div>
+        <ul>
+          <li><span class="knum">Jeff Lowe</span> — <span class="knum">Builder's Remedy</span> still has bone bruising; MRI at Bramlage tomorrow.</li>
+          <li><span class="knum">Jeff Lowe</span> — Cherie: <span class="knum">Nyquist/Stillchargingmaria</span> bled after breeze; recommends Becky’s for <span class="knum">60 days</span>.</li>
+          <li><span class="knum">Jeff Lowe</span> — Arnaud leaning Turfway for the <span class="knum">Yaupon colt</span>; will see him at Eisaman’s this week.</li>
+        </ul>
+
+        <div style="margin:14px 0 10px;"><span class="tag">#sales</span></div>
+        <ul>
+          <li><span class="knum">Dawn Lenert</span> — “OBS APR Shortlist 1 2026 Call attendees” spreadsheet shows <span class="knum">101</span> attendees.</li>
+          <li><span class="knum">Terry Finley</span> — Shared updated Perplexity app link for day-one shortlist + scratches; asked team to share (<a href="https://www.perplexity.ai/computer/a/obs-spring-sale-the-matrix-BYAT3VbgRDCI3RudJo0ORQ">link</a>).</li>
+          <li><span class="knum">Erin Birkenhauer</span> — Reports app link prompting “request access”; plans to remove from spreadsheet email and revisit.</li>
+          <li><span class="knum">Terry Finley</span> — “Hold off till the morning” while shortlist/app is being locked in.</li>
+          <li><span class="knum">Erin Birkenhauer</span> — Asked which app link to use for note to top Partners; getting pings from people awaiting spreadsheet.</li>
+          <li><span class="knum">Erin Birkenhauer</span> — Troubleshooting tip: incognito windows.</li>
+        </ul>
+
+        <div style="margin:14px 0 10px;"><span class="tag">#prospectcomms</span></div>
+        <ul>
+          <li><span class="knum">Erin Birkenhauer</span> — Confirming latest “<span class="knum">2s</span>” list is ready in HubSpot + Salesforce for a text campaign.</li>
+          <li><span class="knum">Ali Finley</span> — “2s is latest and greatest — ready to be pulled into a text campaign.”</li>
+          <li><span class="knum">Dawn Lenert</span> — Resynched “SMART ALL 2 Prospects” HubSpot list to Salesforce; matches <span class="knum">126</span> people.</li>
+          <li><span class="knum">Erin Birkenhauer</span> — “2Prospects OBS April” follow-up note.</li>
+        </ul>
+
+        <div style="margin:14px 0 10px;"><span class="tag purple">Terry's DMs to Individuals</span></div>
+        <ul>
+          <li><span class="knum">To Joe Bianca</span> — Sent app to <span class="knum">Lorie DuPont</span>; asks for other names.</li>
+          <li><span class="knum">To Dawn Lenert</span> — Wants ideas; asks whether “these” are captured in Salesforce.</li>
+          <li><span class="knum">To Lindsey Heumann</span> — AM call request; cross-reference shortlist attendees and send ~<span class="knum">10</span> people the sales app.</li>
+          <li><span class="knum">To Casey Clemmons</span> — “Let’s post this on chatter” + PBS Independent Lens “Backside” link (<a href="https://www.pbs.org/independentlens/documentaries/backside/">link</a>).</li>
+          <li><span class="knum">To Casey Clemmons</span> — “Job for dale personal trainer at gulfstream”.</li>
+          <li><span class="knum">To Tom Murphy</span> — “YEP. We can do that” (re: Marc Ferrandino discount question).</li>
+          <li><span class="knum">To Lindsey Heumann</span> — Corey broke arm/shoulder playing softball; no surgery; impacts plans.</li>
+          <li><span class="knum">To Erin Birkenhauer</span> — “Total data dump from sale”.</li>
+          <li><span class="knum">To Casey Clemmons</span> — Counting Stars work video link (<a href="https://brunowiththeworks.s3.amazonaws.com/OP/2026-04/CountingStars-OP-20260412_hq.mp4">video</a>).</li>
+          <li><span class="knum">To Danielle Austin</span> — Requests day 4 shortlist + day 6 Equix.</li>
+          <li><span class="knum">To Jeff Lowe</span> — Start weekly update to Justin Casse on <span class="knum">PowerF Flight</span>.</li>
+          <li><span class="knum">To Lindsey Heumann</span> — “Food for thought” ChatGPT share link.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Racing</h2>
+        <div class="tag gold">Upcoming entries (from WPT homepage module)</div>
+        <ul>
+          <li><span class="knum">Thu 04/16</span> — <span class="knum">Walking in Memphis</span> (Gulfstream Park) • Race <span class="knum">3</span> • <span class="knum">1:54 ET</span> • Claiming 35k NW3L</li>
+          <li><span class="knum">Thu 04/16</span> — <span class="knum">Legalize</span> (Keeneland) • Race <span class="knum">5</span> • <span class="knum">3:08 ET</span> • NW3X Allowance</li>
+          <li><span class="knum">Thu 04/16</span> — <span class="knum">Ivory and Ebony</span> (Keeneland) • Race <span class="knum">6</span> • <span class="knum">3:40 ET</span> • NW1X Allowance</li>
+          <li><span class="knum">Fri 04/17</span> — <span class="knum">Relaxx (FR)</span> (Aqueduct) • Race <span class="knum">7</span> • <span class="knum">4:21 ET</span> • Plenty of Grace Stakes</li>
+          <li><span class="knum">Fri 04/17</span> — <span class="knum">Miles Finch</span> (Santa Anita) • Race <span class="knum">9</span> • <span class="knum">5:00 PT</span> • Cal-Bred NW1X Allowance</li>
+          <li><span class="knum">Sat 04/18</span> — <span class="knum">Keep It Easy</span> (Keeneland) • Race <span class="knum">7</span> • <span class="knum">4:12 ET</span> • NW2X Allowance</li>
+          <li><span class="knum">Sun 04/19</span> — <span class="knum">Intricate Spirit</span> (Keeneland) • Race <span class="knum">8</span> • <span class="knum">4:44 ET</span> • Palisades Stakes</li>
+        </ul>
+        <div style="margin-top:10px;" class="tag green">Most recent results</div>
+        <ul>
+          <li><span class="knum">04/11</span> — <span class="knum">Band On the Run</span> • Tampa Bay Downs • Maiden Claiming 32k • Finish <span class="knum">2</span> • <span class="knum">$4,932</span></li>
+          <li><span class="knum">04/09</span> — <span class="knum">Brightline Bullet</span> • Aqueduct • Maiden Special Weight • Finish <span class="knum">1</span> • <span class="knum">$44,000</span></li>
+          <li><span class="knum">04/09</span> — <span class="knum">Reagan’s Wit</span> • Keeneland • NW2X Allowance • Finish <span class="knum">1</span> • <span class="knum">$75,563</span></li>
+        </ul>
+        <div class="small muted" style="margin-top:8px;">Sources: WPT homepage Entries & Results module, WPT race results page.</div>
+      </section>
+
+      <section>
+        <h2>Decisions Needed</h2>
+        <ul>
+          <li><span class="tag red">Urgent</span> Approve/confirm plan for <span class="knum">Builder's Remedy</span> after Bramlage MRI (timeline + next step).</li>
+          <li><span class="tag gold">Attention</span> Approve/confirm sending <span class="knum">Nyquist/Stillchargingmaria</span> to Becky’s for <span class="knum">60 days</span> (and comms to investors).</li>
+          <li><span class="tag gold">Attention</span> Resolve Perplexity app “request access” issue before sharing to Partners (distribution plan + correct link).</li>
+        </ul>
+      </section>
+
+      <section class="span2">
+        <h2>Sales Pipeline (Last modified ≤ 7 days)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Opportunity</th>
+              <th>Stage</th>
+              <th class="knum">Amount</th>
+              <th>Close</th>
+              <th>Owner</th>
+              <th>Last modified (UTC)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="knum">Melissa Pedigo - 2026</span></td><td>Talking - No Commitment</td><td><span class="knum">$15,000</span></td><td>2026-06-03</td><td>Ali Finley</td><td>2026-04-14</td></tr>
+            <tr><td><span class="knum">Ingrid Clapp - 2026</span></td><td>Picking Horses</td><td><span class="knum">$15,000</span></td><td>2026-06-01</td><td>Tom Bellhouse</td><td>2026-04-14</td></tr>
+            <tr><td><span class="knum">Ben Shapiro - 2026</span></td><td>Talking - No Commitment</td><td><span class="knum">$15,000</span></td><td>2026-06-01</td><td>Tom Murphy</td><td>2026-04-14</td></tr>
+            <tr><td><span class="knum">Lucius Clay - 2026</span></td><td>Picking Horses</td><td><span class="knum">$15,000</span></td><td>2026-04-30</td><td>Ali Finley</td><td>2026-04-14</td></tr>
+            <tr><td><span class="knum">Genny Mayers-Lewis - 2026</span></td><td>Talking - No Commitment</td><td><span class="knum">$15,000</span></td><td>2026-04-30</td><td>Tom Murphy</td><td>2026-04-14</td></tr>
+            <tr><td><span class="knum">Zumpano - 2026</span></td><td><span class="knum">Closed Won</span></td><td><span class="knum">$17,960</span></td><td>2026-03-23</td><td>Tom Bellhouse</td><td>2026-04-13</td></tr>
+            <tr><td><span class="knum">Scherer, Brian - 2026</span></td><td><span class="knum">Closed Won</span></td><td><span class="knum">$19,800</span></td><td>2026-03-18</td><td>Tom Bellhouse</td><td>2026-04-13</td></tr>
+            <tr><td><span class="knum">Gabriele Jr. - 2026</span></td><td><span class="knum">Closed Won</span></td><td><span class="knum">$12,200</span></td><td>2026-03-14</td><td>Tom Bellhouse</td><td>2026-04-13</td></tr>
+            <tr><td><span class="knum">Moses, Robert - 2026</span></td><td><span class="knum">Closed Won</span></td><td><span class="knum">$12,200</span></td><td>2026-03-14</td><td>Tom Bellhouse</td><td>2026-04-13</td></tr>
+            <tr><td><span class="knum">Harsh, Milton - 2026</span></td><td><span class="knum">Closed Won</span></td><td><span class="knum">$18,900</span></td><td>2026-03-14</td><td>Tom Bellhouse</td><td>2026-04-13</td></tr>
+          </tbody>
+        </table>
+        <div class="small muted" style="margin-top:8px;">Showing 10 of 20 most recently modified opportunities (limit set by briefing format).</div>
+      </section>
+
+      <section class="span2">
+        <h2>Perplexity Computer Slack Activity</h2>
+        <div class="muted small">No bot posts found in the last ~48 hours by Slack search “from:Perplexity after:2026-04-12”.</div>
+      </section>
+
+      <section class="span2">
+        <h2 class="muted" style="margin-bottom:6px;">Notes</h2>
+        <div class="small muted">This page is designed for quick scanning; for raw logs, refer to Slack and Salesforce.</div>
+      </section>
+    </div>
   </div>
-
-  <!-- SCHEDULE -->
-  <div class="section">
-    <div class="section-title">Schedule — Monday, April 13</div>
-
-    <div class="sched-item">
-      <div class="sched-time">All Day</div>
-      <div class="sched-body"><strong>📍 FL (Ocala)</strong> — SpringHill Suites by Marriott Ocala (through Apr 17, Conf #80487694)</div>
-    </div>
-    <div class="sched-item">
-      <div class="sched-time">All Day</div>
-      <div class="sched-body"><strong>Backside Documentary on PBS</strong> — airs today</div>
-    </div>
-    <div class="sched-item">
-      <div class="sched-time">6:15 AM ET</div>
-      <div class="sched-body"><strong>Workout with Nicole</strong></div>
-    </div>
-    <div class="sched-item">
-      <div class="sched-time">4:00 PM ET</div>
-      <div class="sched-body"><strong>OBS April Shortlist 1</strong> — with Erin Birkenhauer &amp; WPT Team<br><small>Budget: <strong>$1.5M–$2.0M</strong> in acquisitions</small></div>
-    </div>
-
-    <div class="sub-header">Tomorrow Preview — Tuesday, April 14</div>
-
-    <div class="sched-item">
-      <div class="sched-time">All Day</div>
-      <div class="sched-body"><strong>📍 FL (Ocala)</strong> — OBS April 2-Year-Olds in Training Sale begins (through Apr 17)</div>
-    </div>
-    <div class="sched-item">
-      <div class="sched-time">1:30 PM ET</div>
-      <div class="sched-body"><strong>KHRG Board Meeting</strong> — KHRC Conference Room 75 / <a href="https://us06web.zoom.us/j/3741243263?pwd=bXJnMDlwR2JMS1NhN2tacjF5Y2JTZz09">Zoom</a> (Meeting ID: 374 124 3263, Passcode: C23aCj)</div>
-    </div>
-    <div class="sched-item">
-      <div class="sched-time">4:00 PM ET</div>
-      <div class="sched-body"><strong>OBS April Shortlist 2</strong> — with Erin Birkenhauer &amp; WPT Team<br>
-      ⚠️ <strong>Conflict:</strong> overlaps with <strong>Partner Happy Hour</strong> at OBS Tiki Bar (4:00–5:00 PM ET)</div>
-    </div>
-    <div class="sched-item">
-      <div class="sched-time">4:00 PM ET</div>
-      <div class="sched-body"><strong>Partner Happy Hour</strong> — OBS Tiki Bar</div>
-    </div>
-
-    <div class="sub-header">Wednesday, April 15</div>
-    <div class="sched-item">
-      <div class="sched-time">All Day</div>
-      <div class="sched-body"><strong>Quarterly Taxes Due</strong></div>
-    </div>
-    <div class="sched-item">
-      <div class="sched-time">6:30 AM ET</div>
-      <div class="sched-body"><strong>Workout with Nicole</strong></div>
-    </div>
-    <div class="sched-item">
-      <div class="sched-time">4:00 PM ET</div>
-      <div class="sched-body"><strong>OBS April Shortlist 3</strong> — with Erin Birkenhauer &amp; WPT Team</div>
-    </div>
-    <div class="sched-item">
-      <div class="sched-time">6:00 PM ET</div>
-      <div class="sched-body"><strong>Dinner with Jimmy Politano and Company</strong> — Mesa de Notte, 2436 E Silver Springs Blvd, Ocala</div>
-    </div>
-  </div>
-
-  <!-- ALERTS -->
-  <div class="section">
-    <div class="section-title">Alerts</div>
-
-    <div class="alert alert-red">
-      🔴 <strong>HERF bank account signature</strong> — Mandy Minger still waiting. Overdue since ~Apr 3. (Flagged again in your email digest today.)
-    </div>
-    <div class="alert alert-red">
-      🔴 <strong>Quarterly taxes due Wednesday, April 15.</strong> Chris Giordano also asking Lindsey for projected K-1 net income number for Terry.
-    </div>
-    <div class="alert alert-gold">
-      ⚠️ <strong>OBS Sale begins tomorrow (Apr 14–17).</strong> Budget: <strong>$1.5M–$2.0M</strong>. Terry shared updated APP tool in #sales — <a href="https://www.perplexity.ai/computer/a/west-point-thoroughbreds-obs-s-IxO380biT_ykAgS5FvfiEw">OBS April Sale APP</a>. Three shortlist sessions scheduled this week.
-    </div>
-    <div class="alert alert-gold">
-      ⚠️ <strong>Schedule conflict Tuesday 4:00 PM:</strong> OBS April Shortlist 2 overlaps with Partner Happy Hour at OBS Tiki Bar. May need to choose or split time.
-    </div>
-    <div class="alert alert-gold">
-      ⚠️ <strong>Tap Rules</strong> — Bruce says "becoming quite the handful" — recommended to be gelded. Erin confirmed: go ahead and geld now. Tom Bellhouse agrees, "sooner is better." Ships back to Miguel after Apr 16.
-    </div>
-    <div class="alert alert-gold">
-      ⚠️ <strong>She's Country</strong> — Encouraging ultrasound but still roughening at right hind suspensory attachment. Cleared to start treadmill. Vet recommended <strong>60 more days before galloping</strong>.
-    </div>
-    <div class="alert alert-gold">
-      ⚠️ <strong>Miss Enchanted</strong> — Dale Romans scratched/brought back from 4/12 entry. Now targeting <strong>Wed 4/23 Ratings Handicap at Keeneland</strong> (per WPT upcoming races page). Tom Murphy: "Dale says the ratings race will go."
-    </div>
-  </div>
-
-  <!-- 2026 INVENTORY -->
-  <div class="section">
-    <div class="section-title">2026 Inventory</div>
-    <table>
-      <thead>
-        <tr><th>Horse</th><th>Trainer</th><th>Synd. Value</th><th>$ Remaining</th><th>% Sold</th><th>% Left</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Cairo Prince / Cabaret Starlet</strong></td>
-          <td>Clement</td>
-          <td>$216,000</td>
-          <td class="urgent"><strong>$21,600</strong></td>
-          <td>90%</td>
-          <td class="gold-text">10%</td>
-        </tr>
-      </tbody>
-    </table>
-    <p style="font-size:12px; color:#888; margin-top:6px;">All other 2026 syndications (Yaupon/Lighter Knot, Nyquist/Lookin Dynamic, Jimmy Creed/Moon and Stars, Epicenter/More Than Folly, Oscar Performance/Anthropology) are 100% sold out.</p>
-  </div>
-
-  <!-- TEAM PULSE -->
-  <div class="section">
-    <div class="section-title">Team Pulse</div>
-
-    <!-- #horse-comms -->
-    <div class="channel-group">
-      <div style="margin-bottom:6px;"><span class="tag tag-teal">#horse-comms</span></div>
-      <ul class="bl">
-        <li><strong>Erin Birkenhauer (Bruce barn update, Ocala):</strong>
-          <br>— <strong>Amira's Star</strong> (Cairo Prince / Cabaret Starlet filly, 3yo — Rt Hind Ank Sx + Severe EPM): Starts back galloping this week. Progressing steadily following severe neurologic issues — as well as could be hoped.
-          <br>— <strong>She's Country</strong> (Combatant / Lunar Affair filly, 3yo): Starts back on treadmill following encouraging ultrasound. Still roughening at right hind suspensory attachment — vet recommends <strong>60 more days before galloping</strong>.
-          <br>— <strong>Tap Rules</strong> (Tacitus / Judiciary colt, 3yo — Juvenile Tendonitis): Breezed 3/8 well, tendons quiet. Becoming "quite the handful" — recommended gelding. <a href="https://youtu.be/3ar7Jf9X8BU">Breeze video</a>. Ships back to Miguel after Apr 16.</li>
-        <li><strong>Erin Birkenhauer → Tom Bellhouse:</strong> "Good if Bruce just goes ahead and gelds <strong>Tap Rules</strong> now?" Tom: "Absolutely. Sooner is better." ✅</li>
-        <li><strong>Terry Finley:</strong> Posted photo of <strong>@countingstars</strong> this morning at Oaklawn — looking good ahead of Kentucky Oaks (G1) May 1.</li>
-        <li><strong>Tom Murphy:</strong> Dale Romans called — entering <strong>Miss Enchanted</strong> for the 2x going 6F next Sunday at Keeneland. Doesn't think the ratings race will go later this month. <em>(Update: Erin says "Brought back. Enter again Wednesday" — now targeting <strong>Wed 4/23 Ratings Handicap at Keeneland</strong>.)</em></li>
-      </ul>
-    </div>
-
-    <!-- #sales -->
-    <div class="channel-group">
-      <div style="margin-bottom:6px;"><span class="tag tag-teal">#sales</span></div>
-      <ul class="bl">
-        <li><strong>Terry Finley:</strong> Shared updated OBS April Sale APP with the sales team — <a href="https://www.perplexity.ai/computer/a/west-point-thoroughbreds-obs-s-IxO380biT_ykAgS5FvfiEw">OBS April Sale APP</a>. "Drop this link into a browser and take a look. Each individual hip opens up so you can access more information like TG numbers, progeny, etc."</li>
-      </ul>
-    </div>
-
-    <!-- Terry's DMs -->
-    <div class="channel-group">
-      <div style="margin-bottom:6px;"><span class="tag tag-purple">Terry's DMs to Individuals</span></div>
-      <ul class="bl">
-        <li><strong>Email Digest — Mon Apr 13:</strong> 20 important + 7 self-sent from 32 reviewed. Key items:
-          <br>— <strong>HERF document requires signature</strong> (Mandy Minger, still pending)
-          <br>— <strong>Joe breakfast</strong> (Debbie Finley)
-          <br>— <strong>Drew Myers</strong> — Re: New Deal from brightSTAR Communities/Drew Check In
-          <br>— <strong>Chris Giordano</strong> — WPT 2025 TR K-1 Income (asking Lindsey for projected K-1 net income for Terry)
-          <br>— <strong>Chris Giordano</strong> — Re: Finley Tax Questions (2024 Notice — Terry &amp; Debbie need to go to IRS to confirm identity)
-          <br>— <strong>LifeLock</strong> — Financial activity detected</li>
-        <li><strong>Email Digest — Sun Apr 12:</strong> 21 important + 3 self-sent. Key items:
-          <br>— <strong>Gretchen Feld</strong> — OBS Breeze Day 6 Notes (action required)
-          <br>— <strong>Megan Dill (WPAOG)</strong> — 1986 West Point Challenge spreadsheet + links ("Let's discuss")</li>
-        <li><strong>Terry shared links to self:</strong> Notebook LM upgrades (X/@zentalksai), Bank account thread (X/@VadimStrizheus), Claude agents (X/@coreyganim)</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- RACING -->
-  <div class="section">
-    <div class="section-title">Racing</div>
-
-    <div class="sub-header">Weekend Results — April 11–12</div>
-    <table>
-      <thead>
-        <tr><th>Date</th><th>Horse</th><th>Track</th><th>Race</th><th>Result</th><th>Earnings</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>4/11</td>
-          <td><strong>Band On the Run</strong></td>
-          <td>Tampa Bay Downs</td>
-          <td>R4 — MCL $32k, 1M 110Y Turf</td>
-          <td><span class="gold-text">2nd (13/8 fav)</span></td>
-          <td><strong>$5,700</strong></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="sub-header">Recent Results (Past 10 Days)</div>
-    <table>
-      <thead>
-        <tr><th>Date</th><th>Horse</th><th>Track</th><th>Result</th><th>Earnings</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>4/11</td><td><strong>Band On the Run</strong></td><td>Tampa Bay Downs</td><td><span class="gold-text">2nd (MCL $32k)</span></td><td><strong>$5,700</strong></td></tr>
-        <tr><td>4/9</td><td><strong>Brightline Bullet</strong></td><td>Aqueduct</td><td><span class="win">🏆 1st (MSW)</span></td><td><strong>$50,400</strong></td></tr>
-        <tr><td>4/9</td><td><strong>Reagan's Wit</strong></td><td>Keeneland</td><td><span class="win">🏆 1st (NW2X Allowance)</span></td><td><strong>$81,900</strong></td></tr>
-        <tr><td>4/9</td><td><strong>Garden of Grace</strong></td><td>Aqueduct</td><td>NY-Bred MSW (result TBD)</td><td>—</td></tr>
-        <tr><td>4/8</td><td><strong>Integration</strong></td><td>Keeneland</td><td>Off the board (slow pace/traffic)</td><td>—</td></tr>
-        <tr><td>4/4</td><td><strong>Liberty's Champion</strong></td><td>Oaklawn</td><td><span class="win">🏆 1st (MCL 30k)</span></td><td><strong>$22,800</strong></td></tr>
-        <tr><td>4/4</td><td><strong>Reagan's Honor</strong></td><td>Keeneland</td><td>6th — Blue Grass (G1)</td><td>$15,625</td></tr>
-        <tr><td>4/4</td><td><strong>Sansone</strong></td><td>Aqueduct</td><td>5th — NW1X</td><td>$3,320</td></tr>
-      </tbody>
-    </table>
-
-    <div class="sub-header">Today — Monday, April 13</div>
-    <p style="font-size:13px; color:#888;">No WPT runners scheduled.</p>
-
-    <div class="sub-header">Key Upcoming Entries</div>
-    <table>
-      <thead>
-        <tr><th>Date</th><th>Horse</th><th>Track</th><th>Race</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Wed 4/16</td><td><strong>Walking in Memphis</strong></td><td>Gulfstream</td><td>Claiming $35k NW3L (Paco Lopez up)</td></tr>
-        <tr><td>Wed 4/16</td><td><strong>Ivory and Ebony</strong></td><td>Keeneland</td><td>NW1X Allowance (Dale Romans)</td></tr>
-        <tr><td>Thu 4/17</td><td><strong>Relaxx (FR)</strong></td><td>Aqueduct</td><td>Plenty of Grace Stakes (Clement)</td></tr>
-        <tr><td>Sat 4/18</td><td><strong>Essential Charm</strong></td><td>Tampa Bay Downs</td><td>MSW 1 1/16M Turf (gate work pending)</td></tr>
-        <tr><td>Sun 4/19</td><td><strong>Honoree</strong></td><td>Aqueduct</td><td>NY-Bred MSW (turf debut — ships Sat)</td></tr>
-        <tr><td>Wed 4/22</td><td><strong>Castle Run</strong></td><td>Keeneland</td><td>MCL 30k</td></tr>
-        <tr><td>Wed 4/23</td><td><strong>Miss Enchanted</strong></td><td>Keeneland</td><td>Ratings Handicap (Dale Romans)</td></tr>
-        <tr><td>Thu 4/23</td><td><strong>La Ceiba (FR)</strong></td><td>Aqueduct</td><td>NW1X Allowance</td></tr>
-        <tr><td>Thu 4/24</td><td><strong>Cajun Gold</strong></td><td>Gulfstream</td><td>FL-Bred NW1X Allowance</td></tr>
-        <tr><td>Sat 4/25</td><td><strong>Vibe</strong></td><td>Aqueduct</td><td>NW2X Allowance</td></tr>
-        <tr><td>Sat 4/25</td><td><strong>Willpowered</strong></td><td>Aqueduct</td><td>NY-Bred NW1X Allowance</td></tr>
-        <tr><td>Sun 4/26</td><td><strong>Golden Joker</strong></td><td>Aqueduct</td><td>NY-Bred MCL 50k</td></tr>
-        <tr><td>Sun 4/26</td><td><strong>Creed's Vision</strong></td><td>Laurel Park</td><td>MD-Bred NW1X</td></tr>
-        <tr><td>Sun 4/26</td><td><strong>Christel Clean</strong></td><td>Santa Anita</td><td>Cal-Bred NW1X</td></tr>
-        <tr><td>Fri 5/1</td><td><strong>Counting Stars</strong></td><td>Churchill Downs</td><td><strong>Kentucky Oaks (G1)</strong> 🌹</td></tr>
-        <tr><td>Fri 5/1</td><td><strong>Paige Turner</strong></td><td>Churchill Downs</td><td>NW1X Allowance</td></tr>
-        <tr><td>Sat 5/2</td><td><strong>Carson's Run</strong></td><td>Belmont at Big A</td><td>Fort Marcy Stakes (G3T)</td></tr>
-        <tr><td>Sat 5/2</td><td><strong>Battle of Normandy</strong></td><td>Belmont at Big A</td><td>Fort Marcy Stakes (G3T)</td></tr>
-        <tr><td>Sat 5/2</td><td><strong>Bullard</strong></td><td>Churchill Downs</td><td>NW2X Allowance</td></tr>
-        <tr><td>Sat 5/2</td><td><strong>Find No Fault</strong></td><td>Churchill Downs</td><td>Derby Day MSW</td></tr>
-        <tr><td>Wed 5/13</td><td><strong>Run Away Rojo</strong></td><td>Horseshoe Indy</td><td>Onesmoothoperator Handicap</td></tr>
-        <tr><td>Sun 5/25</td><td><strong>Final Boss</strong></td><td>Santa Anita</td><td><strong>Shoemaker Mile (G1T)</strong></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- DECISIONS NEEDED -->
-  <div class="section">
-    <div class="section-title">Decisions Needed</div>
-    <ul class="bl">
-      <li><span class="tag tag-red">URGENT</span> <strong>HERF bank account signature</strong> — Mandy Minger waiting. Overdue since ~Apr 3. Flagged again in today's email digest.</li>
-      <li><span class="tag tag-red">URGENT</span> <strong>Quarterly taxes due Wed, Apr 15.</strong> Chris Giordano needs projected K-1 net income from Lindsey.</li>
-      <li><span class="tag tag-red">URGENT</span> <strong>IRS identity confirmation</strong> — Chris Giordano says Terry &amp; Debbie must go to IRS for 2024 Notice.</li>
-      <li><span class="tag tag-gold">OBS Sale</span> <strong>OBS Shortlist sessions</strong> — Mon/Tue/Wed 4:00 PM. <strong>$1.5M–$2.0M budget</strong>. Tuesday overlaps Partner Happy Hour at OBS Tiki Bar.</li>
-      <li><span class="tag tag-gold">Naming</span> <strong>Curlin/Minnie Macy</strong> — Submit WPT name suggestions to St. Elias before horse goes to Pletcher (Saratoga May 1 target).</li>
-      <li><span class="tag tag-gold">Horse Comms</span> <strong>Essential Charm</strong> — Pre-entry partner call needed: Roger Jones, Melanie Davis, Maria Diesel, Bill Freeman (10%), Ted Myers (7.5%) before Apr 18 MSW entry.</li>
-      <li><span class="tag tag-gold">Derby/Oaks</span> <strong>Fox Sports suite ($150k, 32 tkts)</strong> — Danielle checking with Loren. Decision pending.</li>
-      <li><span class="tag tag-teal">Outreach</span> <strong>Brian Domenick</strong> — catch-up pending.</li>
-      <li><span class="tag tag-teal">Oaks Cocktail</span> <strong>Fireside chat format</strong> — Team asked to weigh in (Terry proposed it).</li>
-      <li><span class="tag tag-teal">Partner Email</span> <strong>Drip email</strong> — Partners only or also prospects? Clarification needed.</li>
-      <li><span class="tag tag-teal">West Point</span> <strong>1986 West Point Challenge</strong> — Megan Dill (WPAOG) spreadsheet + links. Terry: "Let's discuss."</li>
-    </ul>
-  </div>
-
-  <!-- SALES PIPELINE -->
-  <div class="section">
-    <div class="section-title">Sales Pipeline (Salesforce — Last 7 Days)</div>
-
-    <div class="sub-header">Active Opportunities — Recently Modified</div>
-    <table>
-      <thead>
-        <tr><th>Prospect</th><th>Stage</th><th>Amount</th><th>Close Date</th><th>Owner</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><strong>Chatfield, Robert</strong></td><td>Talking – No Commitment</td><td>$20,000</td><td class="urgent">Apr 22</td><td>Jason Blewitt</td></tr>
-        <tr><td><strong>Dougherty, Dennis</strong></td><td>Talking – No Commitment</td><td>$20,000</td><td class="urgent">Apr 20</td><td>Jason Blewitt</td></tr>
-        <tr><td><strong>Findley, David</strong></td><td class="gold-text">Talking – No Commitment (VERY)</td><td>$20,000</td><td class="urgent">Apr 17</td><td>Joe Bianca</td></tr>
-        <tr><td><strong>Derrick Keith</strong></td><td>Talking – No Commitment</td><td>$15,000</td><td>Apr 30</td><td>Tom Murphy</td></tr>
-        <tr><td><strong>Wickel Donohue</strong></td><td>Talking – No Commitment</td><td>$15,000</td><td>Apr 30</td><td>Tom Murphy</td></tr>
-        <tr><td><strong>James Hayes</strong></td><td>Talking – No Commitment</td><td>$15,000</td><td>Jun 1</td><td>Tom Bellhouse</td></tr>
-        <tr><td><strong>James McPartlon</strong></td><td>Talking – No Commitment</td><td>$15,000</td><td>Jun 29</td><td>Tom Bellhouse</td></tr>
-        <tr><td><strong>O'Regan</strong></td><td>Talking – No Commitment</td><td>$20,000</td><td>Oct 8</td><td>Tom Murphy</td></tr>
-        <tr><td><strong>Fletcher, Ernest</strong></td><td>Talking – No Commitment</td><td>$20,000</td><td>Nov 3</td><td>Tom Murphy</td></tr>
-        <tr><td><strong>Montgomery</strong></td><td>Talking – Unlikely to Close</td><td>$20,000</td><td>Nov 6</td><td>Jason Blewitt</td></tr>
-        <tr><td><strong>Keith Giemzik</strong></td><td>Talking – Unlikely to Close</td><td>$20,000</td><td>Oct 8</td><td>Tom Murphy</td></tr>
-        <tr><td><strong>Pigg</strong></td><td>Talking – Unlikely to Close</td><td>$20,000</td><td>Oct 8</td><td>Tom Murphy</td></tr>
-      </tbody>
-    </table>
-    <p style="font-size:12px; color:#888; margin-top:6px;"><strong>Hottest lead:</strong> David Findley (Joe Bianca, "VERY" — close date Apr 17, this week). Robert Chatfield (Apr 22) and Dennis Dougherty (Apr 20) also closing soon. No Closed Won deals in last 7 days. Jason Blewitt also batch-updated several long-term prospects on Apr 12.</p>
-  </div>
-
-  <!-- PERPLEXITY COMPUTER SLACK ACTIVITY -->
-  <div class="section">
-    <div class="section-title">Perplexity Computer — Slack Activity</div>
-    <ul class="bl">
-      <li><strong>Sun Apr 12, 6:06 AM:</strong> CEO Daily Briefing link sent to Terry's DM — <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a></li>
-      <li><strong>Sun Apr 12, 8:07 AM:</strong> WPT CEO Briefing summary posted to Terry's DM — alerts on 7 overdue opps ($140k), Pillar of Beauty scheduled at KEE, pipeline: 889 opps / $17.08M open</li>
-      <li><strong>Sat Apr 11, 6:09 AM:</strong> CEO Daily Briefing generated and sent to Terry's DM</li>
-      <li><strong>Fri Apr 10, 6:12 AM:</strong> CEO Daily Briefing generated and sent to Terry's DM</li>
-    </ul>
-  </div>
-
-  <!-- FOOTER -->
-  <div class="footer">
-    West Point Thoroughbreds &nbsp;·&nbsp; CEO Daily Briefing &nbsp;·&nbsp; Monday, April 13, 2026<br>
-    Generated by Perplexity Computer &nbsp;·&nbsp; <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a>
-  </div>
-
-</div>
 </body>
 </html>
