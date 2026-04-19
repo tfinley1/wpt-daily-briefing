@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WPT CEO Week Ahead — April 20–26, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#28251D;
+    --teal:#01696F;
+    --bg:#FFFFFF;
+    --soft:#F6F5F1;
+    --line:#E4E1D8;
+    --red:#B3261E;
+    --gold:#B78103;
+    --green:#0A7A4A;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.45;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:32px 24px 80px}
+  header{border-bottom:3px solid var(--teal);padding-bottom:18px;margin-bottom:28px}
+  header .eyebrow{color:var(--teal);font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:6px}
+  header h1{font-size:28px;font-weight:800;margin:0 0 4px;letter-spacing:-0.02em}
+  header .sub{color:#6b6860;font-size:14px}
+  h2{font-size:18px;font-weight:700;color:var(--ink);margin:36px 0 14px;padding-bottom:6px;border-bottom:1px solid var(--line);letter-spacing:-0.01em}
+  h2 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--teal);margin-right:10px;vertical-align:middle}
+  h3{font-size:14px;font-weight:700;margin:18px 0 8px;color:var(--ink)}
+  p{margin:8px 0}
+  ul{margin:8px 0 14px 0;padding-left:20px}
+  li{margin:4px 0}
+  .card{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:10px 0}
+  .hero{background:linear-gradient(135deg,#FDFBF5,#F0F7F7);border:2px solid var(--teal);border-radius:14px;padding:22px 26px;margin-bottom:10px}
+  .hero .eye{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--teal);margin-bottom:8px}
+  .hero h2{border:none;margin:0 0 14px;padding:0;font-size:20px;color:var(--ink)}
+  .glance-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:640px){.glance-grid{grid-template-columns:1fr}}
+  .glance-item{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:flex;gap:12px;align-items:flex-start}
+  .glance-num{font-size:22px;font-weight:800;color:var(--teal);min-width:30px;line-height:1.2}
+  .glance-text{font-size:13.5px;line-height:1.4}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13.5px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--soft);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.6px;color:#4a4740}
+  tr:last-child td{border-bottom:none}
+  .pill{display:inline-block;font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;letter-spacing:0.4px;text-transform:uppercase}
+  .pill-red{background:#FBE9E7;color:var(--red)}
+  .pill-gold{background:#FFF4D6;color:var(--gold)}
+  .pill-green{background:#E1F4E9;color:var(--green)}
+  .pill-teal{background:#DDF0F1;color:var(--teal)}
+  .alert{border-left:4px solid var(--red);background:#FBE9E7;padding:10px 14px;border-radius:0 8px 8px 0;margin:8px 0;font-size:13.5px}
+  .attn{border-left:4px solid var(--gold);background:#FFF4D6;padding:10px 14px;border-radius:0 8px 8px 0;margin:8px 0;font-size:13.5px}
+  .win{border-left:4px solid var(--green);background:#E1F4E9;padding:10px 14px;border-radius:0 8px 8px 0;margin:8px 0;font-size:13.5px}
+  .row-time{color:var(--teal);font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .muted{color:#6b6860;font-size:12.5px}
+  .day-header{background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:8px 14px;margin:16px 0 6px;font-weight:700;font-size:13px;display:flex;align-items:center;gap:8px}
+  .day-header .wday{color:var(--teal);font-size:15px;font-weight:800}
+  .kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:10px 0 16px}
+  @media(max-width:640px){.kpi{grid-template-columns:1fr 1fr}}
+  .kpi .k{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+  .kpi .k .n{font-size:18px;font-weight:800;color:var(--teal)}
+  .kpi .k .l{font-size:11px;color:#6b6860;text-transform:uppercase;letter-spacing:0.8px;margin-top:2px}
+  .priority-card{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:10px 0;display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:start}
+  .priority-num{font-size:28px;font-weight:800;color:var(--teal);line-height:1.1}
+  .priority-body h3{margin:0 0 6px;font-size:15px}
+  .priority-body p{margin:4px 0;font-size:13.5px}
+  .decision-box{background:var(--teal);color:#fff;border-radius:14px;padding:24px 26px;margin-top:36px}
+  .decision-box .eye{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;opacity:.85;font-weight:700}
+  .decision-box h2{color:#fff;border:none;margin:6px 0 10px;padding:0;font-size:22px}
+  .decision-box p{margin:0 0 6px;font-size:15px;opacity:.95}
+  a{color:var(--teal);text-decoration:none;border-bottom:1px dotted var(--teal)}
+  a:hover{border-bottom-style:solid}
+  footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);color:#6b6860;font-size:12px;text-align:center}
+  strong{color:var(--ink);font-weight:700}
+  .deal-table{font-size:12.5px}
+  .race-card{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:8px 0}
+  .race-card .race-horse{font-size:15px;font-weight:800;color:var(--ink);margin-bottom:4px}
+  .race-card .race-meta{font-size:13px;color:#4a4740;margin-bottom:2px}
+  .race-card .race-sig{font-size:12.5px;color:var(--teal);font-style:italic;margin-top:4px}
+  .backtoback{background:#FFF9E6;border-radius:4px}
+  @media print{
+    body{background:#fff}
+    .wrap{max-width:100%;padding:10px}
+    header{border-bottom-width:2px}
+    .card,.hero,.kpi .k,.glance-item,.race-card{background:#fff}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">West Point Thoroughbreds · CEO Sunday Night Week Ahead</div>
+  <h1>April 20 – 26, 2026</h1>
+  <div class="sub">Prepared for Terry Finley · Sunday Evening Edition</div>
+</header>
+
+<!-- 1. WEEK AT A GLANCE -->
+<section class="hero">
+  <div class="eye">Week at a Glance</div>
+  <h2>The 5 things that matter most this week</h2>
+  <div class="glance-grid">
+    <div class="glance-item">
+      <div class="glance-num">1</div>
+      <div class="glance-text"><strong>Counting Stars runs in the Kentucky Oaks (G1)</strong> on Friday, May 1 — but this week is all prep: Monday partner call, partner checks shipping out, media and storytelling to partners. Your highest-profile moment of the season is 11 days away.</div>
+    </div>
+    <div class="glance-item">
+      <div class="glance-num">2</div>
+      <div class="glance-text"><strong>30 deals closing this week</strong> ($575K+ in Salesforce) — Mon–Wed cluster is the heaviest. Tom Bellhouse, Jason Blewitt, and Tom Murphy each carry 8+ due deals. Your job is accountability, not closing individual deals.</div>
+    </div>
+    <div class="glance-item">
+      <div class="glance-num">3</div>
+      <div class="glance-text"><strong>OBS April Post-Sale Webinar Monday evening</strong> with David Ingordo — the Flightline colt and remaining 2YO inventory go on stage. The Cyberknife/Broadway Show colt ($400K cost, 33% to sell) needs a strategy before that webinar starts.</div>
+    </div>
+    <div class="glance-item">
+      <div class="glance-num">4</div>
+      <div class="glance-text"><strong>6 WPT horses run Thursday–Saturday</strong>: Honoree and La Ceiba (Aqueduct, Thu), Cajun Gold (Gulfstream, Fri), Vibe and Willpowered (Aqueduct, Sat), Creed's Vision (Laurel, Sun). First racing card of the week has double-headers.</div>
+    </div>
+    <div class="glance-item">
+      <div class="glance-num">5</div>
+      <div class="glance-text"><strong>Travel: Kentucky all week, Nashville Fri–Sat.</strong> Monday is the most packed day of the week — 7 commitments from 11:45 AM to 6 PM including an IRS in-person appointment in Bowling Green. Leave the 3 PM OBS webinar on time.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. WEEK AHEAD CALENDAR -->
+<h2><span class="dot"></span>Week Ahead Calendar</h2>
+
+<div class="day-header"><span class="wday">MON</span> April 20 — 📍 Kentucky · Tom Bellhouse's Birthday</div>
+<div class="card">
+  <table>
+    <thead><tr><th style="width:115px">Time (ET)</th><th>Event</th><th>Attendees / Notes</th></tr></thead>
+    <tbody>
+      <tr><td class="row-time">7:45 AM</td><td>Look at Suana</td><td class="muted">15 min reminder block</td></tr>
+      <tr><td class="row-time">9:00 AM</td><td>Doctor's Appointment — <strong>Dr. Emma Stokes</strong></td><td class="muted">60 min</td></tr>
+      <tr><td class="row-time">10:00 AM</td><td>Vin Pica</td><td class="muted">15 min call</td></tr>
+      <tr><td class="row-time">11:00 AM</td><td><strong>Walt + Terry + Erin + Beth Connect</strong></td><td class="muted">Walt Robertson (Stites), Sigler &amp; Cal (BOAM Law) · Legal/structure topic</td></tr>
+      <tr class="backtoback"><td class="row-time">2:00 PM</td><td><strong>Counting Stars Oaks Partner Call</strong> <span class="pill pill-gold">Back-to-back</span></td><td class="muted">Erin Birkenhauer, WPT Team · Oaks week prep for partners</td></tr>
+      <tr class="backtoback"><td class="row-time">3:00 PM</td><td><strong>OBS April Post-Sale Webinar</strong> <span class="pill pill-gold">Back-to-back</span></td><td class="muted">David Ingordo, Gretchen Feld, Erin, WPT Team · Zoom link emailed Monday AM</td></tr>
+      <tr><td class="row-time">4:45 PM</td><td><strong>IRS Identity Verification Appointment</strong> <span class="pill pill-red">In Person</span></td><td class="muted">📍 IRS Taxpayer Assistance Center, 200 W Professional Park Ct, Bowling Green, KY · With Debbie Finley · Must leave OBS webinar on time</td></tr>
+      <tr><td class="row-time">6:00 PM</td><td>Call <strong>Vinnie Politano</strong></td><td class="muted">15 min · 50% Solomini/Dovey Lovey conversation — do not go in cold</td></tr>
+    </tbody>
+  </table>
+  <div class="alert" style="margin-top:10px"><strong>Back-to-back alert:</strong> Counting Stars Partner Call (2 PM) → OBS Webinar (3 PM) → IRS Bowling Green in-person (4:45 PM). Zero buffer. Exit the OBS call at 4:35 PM or delegate the wrap to Erin.</div>
+</div>
+
+<div class="day-header"><span class="wday">TUE</span> April 21 — 📍 Kentucky · Heavy family evening</div>
+<div class="card">
+  <table>
+    <thead><tr><th style="width:115px">Time (ET)</th><th>Event</th><th>Attendees / Notes</th></tr></thead>
+    <tbody>
+      <tr class="backtoback"><td class="row-time">10:30 AM</td><td>Weekly AI/Tech Sync <span class="pill pill-gold">Back-to-back</span></td><td class="muted">Dawn Lenert, Lindsey Heumann · Zoom: us02web.zoom.us/j/6096367204</td></tr>
+      <tr class="backtoback"><td class="row-time">11:00 AM</td><td><strong>Exec Meeting</strong> <span class="pill pill-gold">Back-to-back</span></td><td class="muted">Erin Birkenhauer, Lindsey Heumann · Zoom</td></tr>
+      <tr><td class="row-time">1:00 PM</td><td>TIGER 21 Check-In — <strong>Jeff &amp; Terry</strong></td><td class="muted">Miriam Seidl, Casey Clemmons · Jeff calls directly</td></tr>
+      <tr><td class="row-time">2:00 PM</td><td>Tuesdays at Two: CD</td><td class="muted">Erin, WPT Team · Churchill Downs topic</td></tr>
+      <tr><td class="row-time">3:00 PM</td><td>Andrew Shields + Terry Finley Sync</td><td class="muted">Zoom: us02web.zoom.us/j/6096367204</td></tr>
+      <tr><td class="row-time">4:00 PM</td><td>Swim</td><td class="muted">Family</td></tr>
+      <tr><td class="row-time">5:15 PM</td><td>Gymnastics</td><td class="muted">Family</td></tr>
+      <tr><td class="row-time">6:30 PM</td><td>Flag Football</td><td class="muted">Family</td></tr>
+      <tr><td class="row-time">6:45 PM</td><td>Baseball Game — <strong>Basil Griffin 5</strong> <span class="pill pill-red">Overlap</span></td><td class="muted">Erin Birkenhauer, Debbie · Flag Football + Baseball same time — coordinate coverage</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="day-header"><span class="wday">WED</span> April 22 — 📍 Kentucky</div>
+<div class="card">
+  <table>
+    <thead><tr><th style="width:115px">Time (ET)</th><th>Event</th><th>Attendees / Notes</th></tr></thead>
+    <tbody>
+      <tr><td class="row-time">8:00 AM</td><td>Stretch Session with Wes</td><td class="muted">Personal wellness</td></tr>
+      <tr><td class="row-time">11:30 AM</td><td>American University Class Zoom Interview</td><td class="muted">📍 Zoom: american.zoom.us/j/95827379016</td></tr>
+      <tr><td class="row-time">1:30 PM</td><td>TIGER 21: First Look at Mayo Clinic CEO Study — Longevity in High Performance Individuals</td><td class="muted">📍 Zoom: tiger21.zoom.us</td></tr>
+      <tr><td class="row-time">5:00 PM</td><td>Kids Golf</td><td class="muted">Family</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="day-header"><span class="wday">THU</span> April 23 — 📍 Kentucky · Liberty's Champion runs + Sales Call + Double-header race day</div>
+<div class="card">
+  <table>
+    <thead><tr><th style="width:115px">Time (ET)</th><th>Event</th><th>Attendees / Notes</th></tr></thead>
+    <tbody>
+      <tr class="backtoback"><td class="row-time">11:00 AM</td><td><strong>Sales Call</strong> — Full Team Zoom <span class="pill pill-gold">Back-to-back</span></td><td class="muted">Dawn, Tom Bellhouse, Lindsey, Danielle Austin, Jason Blewitt, Joe Bianca, Melinda Blonshine, Tom Murphy, Jeff Lowe, Ali, Casey, Erin · Zoom: us02web.zoom.us/j/6092381009</td></tr>
+      <tr class="backtoback"><td class="row-time">11:30 AM</td><td>Horse Call <span class="pill pill-gold">Back-to-back</span></td><td class="muted">Jeff Lowe, WPT Team · Zoom</td></tr>
+      <tr><td class="row-time">12:30 PM</td><td>Monthly <strong>Mandy + Terry</strong> Sync on HERF</td><td class="muted">Mandy Minger · Zoom: us02web.zoom.us/j/6096367204</td></tr>
+      <tr><td class="row-time">1:00 PM</td><td>Terry / Phil / Atlas — Bi-Monthly</td><td class="muted">Max Wittenberg, Phil (Taproot Bloodstock), Ashok (ThoroBid), Casey Clemmons · Google Meet: meet.google.com/rbp-gpfk-eri</td></tr>
+      <tr><td class="row-time">2:00 PM</td><td>Monthly Touch Base</td><td class="muted">Humberto Chavez, Michelle Borisenok, Ramón Dominguez, Casey Clemmons</td></tr>
+      <tr><td class="row-time">~4:58 PM</td><td><strong>Liberty's Champion</strong> — Oaklawn Park Race 5</td><td class="muted">Ryan Finley, Jeff Lowe, WPT Team · Reminder on calendar</td></tr>
+      <tr><td class="row-time">6:45 PM</td><td>Baseball Game — <strong>Basil Griffin 5</strong></td><td class="muted">Erin, Debbie</td></tr>
+    </tbody>
+  </table>
+  <div class="attn" style="margin-top:8px"><strong>Thursday is the busiest business day of the week.</strong> Sales Call → Horse Call → HERF sync → Atlas meeting → Touch Base → race reminder — all between 11 AM and 5 PM. Block 10-minute buffers between back-to-backs or delegate one to Erin to co-lead.</div>
+</div>
+
+<div class="day-header"><span class="wday">FRI</span> April 24 — 📍 Kentucky · Ali Finley's Birthday · Board meeting</div>
+<div class="card">
+  <table>
+    <thead><tr><th style="width:115px">Time (ET)</th><th>Event</th><th>Attendees / Notes</th></tr></thead>
+    <tbody>
+      <tr><td class="row-time">All day</td><td><strong>Ali Finley's Birthday</strong></td><td class="muted">Personal — make a moment of it</td></tr>
+      <tr><td class="row-time">11:00 AM</td><td><strong>NYRTCA Zoom Board Meeting</strong></td><td class="muted">Humberto Chavez, Will Phipps, John Velazquez, Bob Curran, Ramon Dominguez, Nick Caras, Casey Clemmons + 8 others</td></tr>
+      <tr><td class="row-time">12:00 PM</td><td>Meghan + Terry Connect</td><td class="muted">M Morrison · Zoom: us02web.zoom.us/j/6096367204</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="day-header"><span class="wday">SAT</span> April 25 — 📍 Kentucky + Nashville trip begins</div>
+<div class="card">
+  <table>
+    <thead><tr><th style="width:115px">Time (ET)</th><th>Event</th><th>Attendees / Notes</th></tr></thead>
+    <tbody>
+      <tr><td class="row-time">All day</td><td><strong>Nashville Trip</strong></td><td class="muted">📍 Traveling KY → Nashville</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="day-header"><span class="wday">SUN</span> April 26 — 📍 Tennessee + Kentucky · 3 WPT horses run</div>
+<div class="card">
+  <table>
+    <thead><tr><th style="width:115px">Time (ET)</th><th>Event</th><th>Attendees / Notes</th></tr></thead>
+    <tbody>
+      <tr><td class="row-time">All day</td><td><strong>Creed's Vision</strong> — Laurel Park, MD-Bred NW1X Allowance</td><td class="muted">Entry date 4/20 · Race day, watch for post time</td></tr>
+      <tr><td class="row-time">All day</td><td><strong>Christel Clean</strong> — Santa Anita Park, Cal-Bred NW1X Allowance</td><td class="muted">Entry date 4/21</td></tr>
+      <tr><td class="row-time">All day</td><td><strong>Golden Joker</strong> — Aqueduct, NY-Bred 50k Maiden Claiming</td><td class="muted">Entry date 4/22</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 3. TOP 3 PRIORITIES THIS WEEK -->
+<h2><span class="dot"></span>Top 3 Priorities This Week</h2>
+
+<div class="priority-card">
+  <div class="priority-num">1</div>
+  <div class="priority-body">
+    <h3>Own the Counting Stars / Kentucky Oaks narrative this week</h3>
+    <p>Counting Stars arrives at Churchill with real Oaks credentials and $465K in purse distributions shipping to partners Monday. The partner call Monday at 2 PM and the wave of positive Slack/email energy need to be channeled into a marketing moment. This is WPT's highest-profile horse going into the biggest race of the spring. The week's tone-setting starts Monday at 2 PM.</p>
+    <p><span class="pill pill-teal">Strategic</span> Prep talking points for Monday partner call. Align with Jeff Lowe on media, Joe Bianca on partner-facing content.</p>
+  </div>
+</div>
+
+<div class="priority-card">
+  <div class="priority-num">2</div>
+  <div class="priority-body">
+    <h3>Drive this week's pipeline close — 30 deals, $575K+ due</h3>
+    <p>The Salesforce pipeline has a massive cluster of deals closing Mon–Wed (April 20–22). Most are in "Talking — No Commitment" or "Picking Horses" stage. The real risk is calendar close dates sliding past without conversions. Terry's role is accountability: Thursday's sales call is the natural checkpoint to demand reporting, not to close deals himself.</p>
+    <p><span class="pill pill-teal">Strategic</span> On Thursday's sales call, ask each rep: how many of your April close-date deals advanced to committed this week? Make the number public.</p>
+  </div>
+</div>
+
+<div class="priority-card">
+  <div class="priority-num">3</div>
+  <div class="priority-body">
+    <h3>Resolve the Cyberknife/Broadway Show colt sell-down before the webinar</h3>
+    <p>The $400K (WPT cost) Cyberknife/Broadway Show colt ($2.06M hip) has 33% still to place. It received no momentum in last weekend's OBS heater. Before Monday's post-sale webinar with David Ingordo, there needs to be a named-partner target list and a lead pitch ready. Walking into the webinar without a plan on this horse is a missed opportunity — it's the most visible piece of unsold inventory.</p>
+    <p><span class="pill pill-red">Urgent</span> Sit down with Joe/Tom/Jason Monday AM to build the target list.</p>
+  </div>
+</div>
+
+<!-- 4. PIPELINE — DEALS CLOSING THIS WEEK -->
+<h2><span class="dot"></span>Pipeline — Deals Closing This Week</h2>
+
+<div class="kpi">
+  <div class="k"><div class="n">30</div><div class="l">Deals with close dates this week</div></div>
+  <div class="k"><div class="n">$575K+</div><div class="l">Total value on deck (est.)</div></div>
+  <div class="k"><div class="n">1</div><div class="l">At "Picking Horses" stage</div></div>
+</div>
+
+<div class="attn"><strong>Pipeline caution:</strong> All deals shown are at "Talking — No Commitment" or "Talking — Unlikely to Close" stage. Close dates are targets, not commitments. The one exception is <strong>Belote, Mark</strong> at "Picking Horses" — that is the hottest deal this week.</div>
+
+<table class="deal-table">
+  <thead>
+    <tr><th>Close Date</th><th>Opportunity</th><th>Stage</th><th>Amount</th><th>Owner</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Apr 20</td><td><strong>Dougherty, Dennis</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Jason Blewitt</td></tr>
+    <tr style="background:#F0F9F1"><td>Apr 21</td><td><strong>Belote, Mark — VERY</strong></td><td><span class="pill pill-green">Picking Horses</span></td><td><strong>$20,000</strong></td><td>Tom Bellhouse</td></tr>
+    <tr><td>Apr 21</td><td><strong>Rice, Brian</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Tom Bellhouse</td></tr>
+    <tr><td>Apr 21</td><td><strong>Trullinger, John</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Tom Murphy</td></tr>
+    <tr><td>Apr 21</td><td><strong>Vuono, Richard — VERY LIKELY</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Tom Murphy</td></tr>
+    <tr><td>Apr 21</td><td><strong>Lombardo, Michael</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Tom Bellhouse</td></tr>
+    <tr><td>Apr 21</td><td><strong>Bergeron, Matt</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Tom Bellhouse</td></tr>
+    <tr><td>Apr 21</td><td><strong>Dougherty, Tim</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Tom Murphy</td></tr>
+    <tr><td>Apr 21</td><td><strong>Manion, Dan</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Tom Bellhouse</td></tr>
+    <tr><td>Apr 21</td><td><strong>Bunting, Gary</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Tom Bellhouse</td></tr>
+    <tr><td>Apr 21</td><td><strong>Johnson, Stephen</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Tom Bellhouse</td></tr>
+    <tr><td>Apr 21</td><td><strong>Kern, Stephen</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Jason Blewitt</td></tr>
+    <tr><td>Apr 21</td><td><strong>Anastasio, Martin</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Jason Blewitt</td></tr>
+    <tr><td>Apr 21</td><td><strong>Elder, Ralph</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Joe Bianca</td></tr>
+    <tr><td>Apr 21</td><td><strong>McQuade, James</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Joe Bianca</td></tr>
+    <tr><td>Apr 21</td><td><strong>Robert Moore</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$15,000</strong></td><td>Joe Bianca</td></tr>
+    <tr><td>Apr 21</td><td>Schneider, Denis</td><td><span class="pill pill-red">Talking - Unlikely</span></td><td>$20,000</td><td>Tom Murphy</td></tr>
+    <tr><td>Apr 21</td><td>Porter, Dennis</td><td><span class="pill pill-red">Talking - Unlikely</span></td><td>$20,000</td><td>Jason Blewitt</td></tr>
+    <tr><td>Apr 21</td><td>McCurdie, Mike</td><td><span class="pill pill-red">Talking - Unlikely</span></td><td>$20,000</td><td>Jason Blewitt</td></tr>
+    <tr><td>Apr 22</td><td><strong>Chatfield, Robert</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Jason Blewitt</td></tr>
+    <tr><td>Apr 22</td><td><strong>Higgins, James</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Joe Bianca</td></tr>
+    <tr><td>Apr 22</td><td><strong>DiGeronimo, Drew</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Tom Bellhouse</td></tr>
+    <tr><td>Apr 22</td><td><strong>Fazzino, Jay</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Tom Bellhouse</td></tr>
+    <tr><td>Apr 22</td><td><strong>Battles, Michael</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Tom Bellhouse</td></tr>
+    <tr><td>Apr 22</td><td><strong>Huntington, Mia</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Tom Bellhouse</td></tr>
+    <tr><td>Apr 22</td><td><strong>Pumyea, Fred</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Jason Blewitt</td></tr>
+    <tr><td>Apr 23</td><td><strong>Dolan II — VERY</strong></td><td><span class="pill pill-gold">Talking - No Commitment</span></td><td><strong>$20,000</strong></td><td>Jason Blewitt</td></tr>
+  </tbody>
+</table>
+<p class="muted"><strong>Hottest deal this week:</strong> Mark Belote ($20K, Picking Horses, Tom Bellhouse, Apr 21). <strong>Most optimistic single-rep close:</strong> Richard Vuono ("VERY LIKELY", Tom Murphy) and Tim Dougherty. Watch that Blewitt pushes Dolan II and Kern across the line by Thursday's call.</p>
+
+<!-- 5. INVENTORY PUSH LIST -->
+<h2><span class="dot"></span>Inventory Push List — Needs Attention This Week</h2>
+
+<p class="muted">Source: 2026 Two Year Old Model · 2026 PURCHASES sheet. Flags based on less than 50% placed (or significant unsold remainder).</p>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>Horse (Sire / Dam)</th><th>Sale</th><th>Cost</th><th>WPT %</th><th>Other Owners</th><th>Status</th></tr>
+  </thead>
+  <tbody>
+    <tr style="background:#FBE9E7"><td>9</td><td><strong>Cyberknife / Broadway Show</strong> (C)</td><td>OBS APRIL</td><td><strong>$400,000 (WPT share), $2.06M hip</strong></td><td>33%</td><td>Talla 33.33%, Sadler Client 33.33%</td><td><span class="pill pill-red">Push This Week</span></td></tr>
+    <tr><td>1</td><td><strong>Yaupon / Lighter Knot</strong> (C)</td><td>OBS MARCH</td><td>$150,000</td><td>100%</td><td>—</td><td><span class="pill pill-gold">Push</span></td></tr>
+    <tr><td>2</td><td><strong>Nyquist / Lookin Dynamic</strong> (C)</td><td>OBS MARCH</td><td>$400,000</td><td>100%</td><td>—</td><td><span class="pill pill-gold">Push</span></td></tr>
+    <tr><td>5</td><td><strong>Oscar Performance / Anthropology</strong> (C)</td><td>OBS MARCH</td><td>$200,000</td><td>100%</td><td>—</td><td><span class="pill pill-gold">Push</span></td></tr>
+    <tr><td>10</td><td><strong>Charlatan / Colby</strong> (C)</td><td>OBS APRIL</td><td>$160,000</td><td>100%</td><td>—</td><td><span class="pill pill-gold">Push</span></td></tr>
+    <tr><td>11</td><td><strong>Solomini / Dovey Lovey</strong> (C)</td><td>OBS APRIL</td><td>$108,000</td><td>90%</td><td>James Politano 10%</td><td><span class="pill pill-gold">Watch — Vinnie at 50%?</span></td></tr>
+    <tr style="background:#E1F4E9"><td>3</td><td><strong>Jimmy Creed / Moon and Stars</strong> (F) "Cosmic Creed"</td><td>OBS MARCH</td><td>$126,000</td><td>90%</td><td>Michael Bennet 10%</td><td><span class="pill pill-green">Nearly Full</span></td></tr>
+    <tr style="background:#E1F4E9"><td>4</td><td><strong>Epicenter / More Than Folly</strong> (F) "Epic Fashionista"</td><td>OBS MARCH</td><td>$427,500</td><td>95%</td><td>Michael Lyden 5%</td><td><span class="pill pill-green">Nearly Full</span></td></tr>
+    <tr style="background:#E1F4E9"><td>6</td><td><strong>Cyberknife / Queen of Thorns</strong> (F)</td><td>OBS APRIL</td><td>$110,000</td><td>50%</td><td>DJ Stable 50%</td><td><span class="pill pill-green">Sold Out</span></td></tr>
+    <tr style="background:#E1F4E9"><td>7</td><td><strong>Twirling Candy / The Bull Unbridled</strong> (F)</td><td>OBS APRIL</td><td>$250,000</td><td>100%</td><td>—</td><td><span class="pill pill-green">~Closed (last ~7.5%)</span></td></tr>
+    <tr style="background:#E1F4E9"><td>8</td><td><strong>Early Voting / Wyn Jym</strong> (C)</td><td>OBS APRIL</td><td>$430,000</td><td>100%</td><td>—</td><td><span class="pill pill-green">Closed</span></td></tr>
+    <tr><td>14</td><td><strong>Early Voting / Shes Got Moves</strong> (C)</td><td>TATTERSALLS</td><td>—</td><td>100%</td><td>—</td><td><span class="pill pill-teal">Pending</span></td></tr>
+  </tbody>
+</table>
+<div class="alert"><strong>Top inventory concern:</strong> The Cyberknife/Broadway Show colt (33% remaining, $400K WPT cost) is the most expensive unsold piece in the book. It did not move last weekend during the OBS heater. Monday's post-sale webinar is the best window to generate leads — prep a named-partner pitch beforehand.</div>
+
+<!-- 6. RACING CARD THIS WEEK -->
+<h2><span class="dot"></span>Racing Card This Week — April 20–26, 2026</h2>
+
+<p class="muted">Source: <a href="https://www.westpointtb.com/racing/upcoming-races/">westpointtb.com/racing/upcoming-races</a> as of Sunday evening.</p>
+
+<div class="attn"><strong>No WPT horses run Monday through Wednesday.</strong> First action is Thursday at Oaklawn. Weekend double-header Sunday April 26 is the most partner-facing day of the week on the track.</div>
+
+<div class="race-card">
+  <div class="race-horse">Liberty's Champion</div>
+  <div class="race-meta">Thursday April 23 · Oaklawn Park · Race 5 · ~4:58 PM ET</div>
+  <div class="race-meta">Entry on calendar: Ryan Finley, Jeff Lowe, WPT Team</div>
+  <div class="race-sig">Partner significance: Regional stakes presence — keep partners updated same evening.</div>
+</div>
+
+<div class="race-card">
+  <div class="race-horse">Honoree</div>
+  <div class="race-meta">Thursday April 23 · Aqueduct · NY-Bred Maiden Special Weight · Entry date 4/17</div>
+  <div class="race-sig">Maiden debut — key moment for partners holding this horse. Prep a pre-race note.</div>
+</div>
+
+<div class="race-card">
+  <div class="race-horse">La Ceiba (FR)</div>
+  <div class="race-meta">Thursday April 23 · Aqueduct · NW1X Allowance · Entry date 4/17</div>
+  <div class="race-sig">French import in first US start — compelling partner story. Confirm trainer update with Jeff Lowe.</div>
+</div>
+
+<div class="race-card">
+  <div class="race-horse">Cajun Gold</div>
+  <div class="race-meta">Friday April 24 · Gulfstream Park · FL-Bred NW1X Allowance · Entry date 4/17</div>
+  <div class="race-sig">First WPT starter of the week in Florida. Relevant for Florida-based partners.</div>
+</div>
+
+<div class="race-card">
+  <div class="race-horse">Vibe</div>
+  <div class="race-meta">Saturday April 25 · Aqueduct · NW2X Allowance · Entry date 4/19</div>
+  <div class="race-sig">Step-up in class — confirm connections and partner roster with Jeff Lowe ahead of Nashville travel.</div>
+</div>
+
+<div class="race-card">
+  <div class="race-horse">Willpowered</div>
+  <div class="race-meta">Saturday April 25 · Aqueduct · NY-Bred NW1X Allowance · Entry date 4/19</div>
+  <div class="race-sig">Aqueduct double-header Saturday with Vibe — both need pre-race communications out Friday.</div>
+</div>
+
+<div class="race-card">
+  <div class="race-horse">Creed's Vision</div>
+  <div class="race-meta">Sunday April 26 · Laurel Park · MD-Bred NW1X Allowance · Entry date 4/20</div>
+</div>
+
+<div class="race-card">
+  <div class="race-horse">Christel Clean</div>
+  <div class="race-meta">Sunday April 26 · Santa Anita Park · Cal-Bred NW1X Allowance · Entry date 4/21</div>
+</div>
+
+<div class="race-card">
+  <div class="race-horse">Golden Joker</div>
+  <div class="race-meta">Sunday April 26 · Aqueduct · NY-Bred 50k Maiden Claiming · Entry date 4/22</div>
+  <div class="race-sig">Sunday features a coast-to-coast triple: Laurel, Aqueduct, and Santa Anita all on the same card. Assign Jeff Lowe to coordinate post-race communications for all three.</div>
+</div>
+
+<div class="win"><strong>On the horizon — Kentucky Oaks Week:</strong> Counting Stars runs in the Kentucky Oaks (G1) on Friday, May 1. This week's Monday partner call and the positive Slack/email energy from her Churchill arrival are the setup. Make sure the partner experience plan for Oaks week is confirmed by Thursday.</div>
+
+<!-- 7. OPEN COMMITMENTS / LOOSE ENDS -->
+<h2><span class="dot"></span>Open Commitments / Loose Ends</h2>
+
+<div class="card">
+  <h3>1. Flightline colt — follow-up calls to Ken Frierich and Chris Randazzo</h3>
+  <p>Terry posted in #sales Thursday April 16: "No more commits to the Flightline. He's fully subscribed. Have two follow-ups in the morning — one call to <strong>Ken Frierich</strong> and one to <strong>Chris Randazzo</strong>." Status of those calls is unconfirmed in Slack. If they haven't happened, they need to be resolved this week — either commit them to something else or close the loop.</p>
+  <p><span class="pill pill-red">Open</span></p>
+</div>
+
+<div class="card">
+  <h3>2. Counting Stars — $465,000 purse distribution going out Monday</h3>
+  <p>Lindsey Heumann posted in #distributions-and-final-accountings Friday April 17: "Counting Stars - Purse Distribution - $465,000. Email going out Saturday 4/18/2026. Checks going out Monday 4/20/2026." Lindsey noted she had to manually craft the calculation presentation due to a formatting issue in the new accounting software. Confirm Monday morning that checks and email went out as planned.</p>
+  <p><span class="pill pill-gold">Confirm Monday AM</span></p>
+</div>
+
+<div class="card">
+  <h3>3. Walt Shea naming replacement</h3>
+  <p>From Sunday April 19 daily briefing: The Walt Shea naming commitment was pulled — all Albaugh names are accounted for. Tom Bellhouse was flagged to propose alternatives by Tuesday's Exec Meeting. Track this on Tuesday's Exec agenda.</p>
+  <p><span class="pill pill-gold">Due Tuesday Exec</span></p>
+</div>
+
+<div class="card">
+  <h3>4. Cyberknife/Broadway Show colt — partner target list</h3>
+  <p>From Sunday daily briefing: The $2.06M colt (33% WPT to sell) needs a named-partner target list built before Monday's post-sale webinar. This requires a quick Monday AM huddle with Joe Bianca, Tom Bellhouse, and Jason Blewitt. Not optional.</p>
+  <p><span class="pill pill-red">Must happen Monday before 3 PM</span></p>
+</div>
+
+<div class="card">
+  <h3>5. 20+ open web leads from last 2 days</h3>
+  <p>Salesforce shows 20 open web leads created in the last 14 days (most from April 17–19), all "Open" status, all sourced from Web/Online. These include <strong>Albert Fialkovich</strong>, <strong>Michael Williams</strong>, <strong>Mathew Fisher</strong>, <strong>William Kissel</strong>, <strong>Patricia King</strong>, <strong>Mason Stone</strong>, and others. No rep assignment visible in the query. These need to be triaged and assigned this week before they go cold.</p>
+  <p><span class="pill pill-gold">Delegate to Erin/Lindsey for rep assignment</span></p>
+</div>
+
+<div class="card">
+  <h3>6. Vinnie Politano — 50% Solomini conversation</h3>
+  <p>Monday 6 PM call is on the calendar. The Sunday pre-call was the recommended action. Walk into Monday's call knowing Vinnie's current position and what you're asking him to commit to.</p>
+  <p><span class="pill pill-gold">Monitor outcome Monday evening</span></p>
+</div>
+
+<!-- 8. STALLED DEALS TO RESCUE -->
+<h2><span class="dot"></span>Stalled Deals to Rescue</h2>
+<p class="muted">High-value opportunities with no Salesforce activity in 14+ days. These are drifting — they need a nudge or a decision to move or mark lost.</p>
+
+<table class="deal-table">
+  <thead>
+    <tr><th>Opportunity</th><th>Stage</th><th>Amount</th><th>Close Date</th><th>Last Activity</th><th>Owner</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Harper — 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>Oct 1</td><td>Jan 14</td><td>Tom Bellhouse</td></tr>
+    <tr><td><strong>Veasey — 2026 VERY</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>Oct 30</td><td>Jan 14</td><td>Tom Bellhouse</td></tr>
+    <tr><td><strong>Potasiewicz — 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>Oct 30</td><td>Jan 14</td><td>Tom Bellhouse</td></tr>
+    <tr><td><strong>Valdes — 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>Oct 30</td><td>Jan 14</td><td>Tom Bellhouse</td></tr>
+    <tr><td><strong>Bentley, Ronald — 2026</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>Mar 15</td><td>Jan 14</td><td>Tom Bellhouse</td></tr>
+    <tr><td><strong>Politano — 2026 VERY</strong></td><td>Picking Horses</td><td><strong>$20,000</strong></td><td>Mar 31</td><td>Jan 14</td><td>Tom Bellhouse</td></tr>
+    <tr><td><strong>Barry — 2026 Somewhat</strong></td><td>Talking - No Commitment</td><td><strong>$20,000</strong></td><td>Apr 30</td><td>Mar 18</td><td>Tom Bellhouse</td></tr>
+    <tr><td><strong>Mendelsohn Brooks, Katy — 2026</strong></td><td><span class="pill pill-green">Picking Horses</span></td><td><strong>$20,000</strong></td><td>Apr 30</td><td>Mar 26</td><td>Tom Murphy</td></tr>
+    <tr><td><strong>Schwegman, Craig — 2026</strong></td><td><span class="pill pill-green">Picking Horses</span></td><td><strong>$20,000</strong></td><td>Mar 15</td><td>Mar 31</td><td>Tom Bellhouse</td></tr>
+    <tr><td>Murley-Gonzalez, Jenny — 2026</td><td>Talking - Unlikely</td><td>$20,000</td><td>Apr 30</td><td>Mar 26</td><td>Tom Murphy</td></tr>
+    <tr><td>Dilla, Bob — 2026</td><td>Talking - Unlikely</td><td>$20,000</td><td>Apr 30</td><td>Mar 26</td><td>Tom Murphy</td></tr>
+    <tr><td>Garbarini, Herb — 2026 Somewhat</td><td>Talking - No Commitment</td><td>$20,000</td><td>Nov 1</td><td>Mar 26</td><td>Jason Blewitt</td></tr>
+  </tbody>
+</table>
+<div class="alert"><strong>Tom Bellhouse owns 7 of the 12 stalled deals, including 4 with no activity since January 14.</strong> Veasey ("VERY"), Politano ("VERY"), Harper, Potasiewicz, Valdes, and Bentley all need a clear next action or close. Use Thursday's sales call to demand a status on each. Schwegman and Mendelsohn Brooks (both "Picking Horses") are close — they need a horse assigned this week or the stage will decay.</div>
+
+<!-- 9. INDUSTRY WATCH -->
+<h2><span class="dot"></span>Industry Watch</h2>
+
+<div class="card">
+  <h3>1. OBS April sale concluded with record momentum — but now what?</h3>
+  <p><strong>Why it matters this week:</strong> The OBS April Spring Sale of Two-Year-Olds concluded April 14–17 with a record average, a $10.5M Flightline colt, and nine seven-figure hips. WPT participated and is hosting Monday's post-sale webinar with David Ingordo to present its purchases to partners. The market is buying at historically elevated levels — which validates WPT's pricing strategy but also raises partner expectations on quality. The Monday webinar is the moment to set accurate expectations on individual horses while riding the hype wave.</p>
+  <p class="muted">Source: <a href="https://obssales.com">OBS Sales</a></p>
+</div>
+
+<div class="card">
+  <h3>2. Counting Stars is a legitimate Kentucky Oaks contender — peer field thinning</h3>
+  <p><strong>Why it matters this week:</strong> Per Joe Bianca's April 16 update, trainer Mark Casse said "Cox's filly is out and internally Mark thinks Zany is gonna scratch too." That field attrition improves Counting Stars' competitive position. The horse looked "extremely impressive" in her last breeze and arrived at Churchill on April 18. The partner call Monday at 2 PM is the first official touchpoint — this is the week to build the narrative.</p>
+  <p class="muted">Source: WPT #horse-comms Slack channel</p>
+</div>
+
+<div class="card">
+  <h3>3. Kentucky Derby 2026 — field forming, Churchill Downs week approaches</h3>
+  <p><strong>Why it matters this week:</strong> The Kentucky Derby runs May 2. Blue Grass Stakes winner Further Ado is the leading contender after a breeze April 15 at Churchill. Counting Stars and WPT's other Churchill horses are in the same environment. Oaks week (April 28 – May 2) is now 8 days away — confirm WPT's partner hospitality plans, Oaks credentials, and media strategy are locked before this week ends.</p>
+  <p class="muted">Source: <a href="https://www.youtube.com/watch?v=Fo5w3r9aId8">YouTube / Churchill Downs training updates</a>, <a href="https://www.creekentertainment.com/2026kentuckyderby">Creek Entertainment Derby Prep Schedule</a></p>
+</div>
+
+<!-- 10. PREP NEEDED BEFORE MONDAY -->
+<h2><span class="dot"></span>Prep Needed Before Monday</h2>
+
+<div class="card">
+  <ul>
+    <li><strong>Counting Stars Oaks Partner Call (2 PM Monday):</strong> Review Counting Stars's record, Joe Bianca's latest trainer notes, and the $465K purse distribution context. Have 3 talking points: (1) horse is doing excellent, (2) field getting shorter, (3) Oaks week hospitality plan. Erin is co-organizing — confirm agenda with her tonight.</li>
+    <li><strong>OBS April Post-Sale Webinar (3 PM Monday):</strong> Know your horses' status cold: Cyberknife/Broadway Show (33% to sell, needs a pitch), Charlatan (still placing), Solomini (Politano 50% conversation live), Twirling Candy (~7.5% remaining). David Ingordo will lead — your job is to know which partners to follow up with post-call.</li>
+    <li><strong>IRS Identity Verification (4:45 PM Monday, Bowling Green):</strong> Bring required documents (government-issued ID, SSN documentation). Travel time from wherever you are in KY — confirm with Debbie that she has what she needs.</li>
+    <li><strong>Vinnie Politano call (6 PM Monday):</strong> Know Solomini's current cap table. What exactly are you offering Vinnie? 50% of WPT's 90% or 50% of the horse outright? Clarify with Lindsey tonight.</li>
+    <li><strong>Walt + Terry + Erin + Beth connect (11 AM Monday):</strong> Walt Robertson (Stites) and BOAM Law attorneys are on this call. Confirm with Erin what the topic is — legal/structure topic. Have your notes ready.</li>
+    <li><strong>Tom Bellhouse birthday:</strong> Send a personal note Monday morning. He's a key rep with 8+ deals closing this week.</li>
+  </ul>
+</div>
+
+<!-- 11. DELEGATION OPPORTUNITIES -->
+<h2><span class="dot"></span>Delegation Opportunities</h2>
+
+<div class="card">
+  <table>
+    <thead><tr><th>Task</th><th>Delegate To</th><th>When</th></tr></thead>
+    <tbody>
+      <tr><td>Triage and assign 20+ new web leads to sales reps</td><td><strong>Erin Birkenhauer</strong> or Lindsey Heumann</td><td>Monday AM</td></tr>
+      <tr><td>Coordinate post-race communications for Sunday April 26 (Creed's Vision, Christel Clean, Golden Joker)</td><td><strong>Jeff Lowe</strong></td><td>Friday</td></tr>
+      <tr><td>Send pre-race partner comms for Honoree, La Ceiba (Thursday) and Vibe, Willpowered (Saturday)</td><td><strong>Jeff Lowe</strong></td><td>Wed AM / Fri AM</td></tr>
+      <tr><td>Walt Shea naming replacement — propose 2 alternatives</td><td><strong>Tom Bellhouse</strong></td><td>By Tuesday Exec</td></tr>
+      <tr><td>Finalize "commitment" definition in 2YO model and distribute to sales team</td><td><strong>Lindsey Heumann</strong></td><td>Monday before webinar</td></tr>
+      <tr><td>Confirm Counting Stars $465K purse distribution checks went out Monday</td><td><strong>Lindsey Heumann</strong></td><td>Monday AM check-in</td></tr>
+      <tr><td>NYRTCA Board Meeting prep — agenda and position notes</td><td><strong>Casey Clemmons</strong></td><td>Thursday evening</td></tr>
+      <tr><td>Thursday race comms for Liberty's Champion, Honoree, La Ceiba</td><td><strong>Jeff Lowe</strong> + <strong>Erin</strong></td><td>Thursday midday</td></tr>
+      <tr><td>Oaks week partner hospitality plan — confirmation and logistics</td><td><strong>Erin Birkenhauer</strong></td><td>Confirm by Thursday</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 12. SUNDAY SETUP — ONE DECISION TO MAKE TONIGHT -->
+<div class="decision-box">
+  <div class="eye">Sunday Setup — One Decision to Make Tonight</div>
+  <h2>Decide: What exactly are you offering Vinnie Politano tomorrow at 6 PM?</h2>
+  <p>You have a 6 PM call with <strong>Vinnie Politano</strong> on Monday. The Monday OBS post-sale webinar ends at 4 PM. The IRS appointment runs 4:45–5:45 PM. That leaves 15 minutes before the call — not enough time to figure out the offer on the fly.</p>
+  <p>Tonight, decide: Is Vinnie taking <strong>50% of WPT's 90% share</strong> (meaning he'd own 45% of the horse) or is this a different structure? What's the price — proportional to cost or adjusted? Text Lindsey or check the model now, so you walk into Monday with the offer ready to state clearly in the first 60 seconds of the call.</p>
+  <p>A vague call loses Vinnie. A crisp offer closes him — and takes the last major piece of unsold OBS April inventory off the board before Oaks week.</p>
+</div>
+
+<footer>
+  Built by Perplexity Computer · Sunday, April 19, 2026 · Week Ahead Edition<br/>
+  <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a> ·
+  <a href="https://tfinley1.github.io/wpt-daily-briefing/week-ahead.html">Week Ahead permalink</a>
+</footer>
+
+</div>
+</body>
+</html>
