@@ -3,153 +3,193 @@
 <head>
 <meta charset='utf-8'/>
 <meta name='viewport' content='width=device-width, initial-scale=1'/>
-<title>WPT CEO Daily Briefing — Sunday, April 19, 2026</title>
+<title>WPT CEO Daily Briefing — Tuesday, April 21, 2026</title>
 <link rel='preconnect' href='https://fonts.googleapis.com'>
 <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
 <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap' rel='stylesheet'>
 <style>
-:root{--bg:#ffffff;--text:#28251D;--teal:#01696F;--muted:#6b675f;--red:#B42318;--gold:#B54708;--green:#027A48;--purple:#6941C6;--gray:#667085;--card:#F7F7F5;}
+:root{--bg:#ffffff;--text:#28251D;--teal:#01696F;--teal-light:#E8F5F5;--muted:#6b675f;--red:#B42318;--gold:#B54708;--green:#027A48;--purple:#6941C6;--gray:#667085;--card:#F7F7F5;}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
-.wrap{max-width:1100px;margin:0 auto;padding:24px;}
-header{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;border-bottom:2px solid #E7E6E3;padding-bottom:12px;margin-bottom:18px;}
-h1{font-size:20px;margin:0;}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5;}
+.wrap{max-width:880px;margin:0 auto;padding:28px 24px;}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--teal);padding-bottom:14px;margin-bottom:22px;}
+h1{font-size:22px;margin:0;color:var(--teal);font-weight:700;}
+h2{font-size:16px;margin:22px 0 10px 0;color:var(--teal);text-transform:uppercase;letter-spacing:0.04em;border-bottom:1px solid #E7E6E3;padding-bottom:6px;}
 .small{color:var(--muted);font-size:12px;}
-section{margin:18px 0;}
-.card{background:var(--card);border:1px solid #E7E6E3;border-radius:12px;padding:14px;}
-.tbl{width:100%;border-collapse:collapse;font-size:13px;}
-.tbl th,.tbl td{padding:8px;border-bottom:1px solid #E7E6E3;vertical-align:top;}
-.tbl th{text-align:left;color:var(--muted);font-weight:600;font-size:12px;}
-.tag{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:600;border:1px solid transparent;}
-.tag.teal{background:rgba(1,105,111,.08);color:var(--teal);border-color:rgba(1,105,111,.25);}
-.tag.purple{background:rgba(105,65,198,.10);color:var(--purple);border-color:rgba(105,65,198,.25);}
-.tag.gray{background:rgba(102,112,133,.10);color:var(--gray);border-color:rgba(102,112,133,.25);}
-.tag.loc{background:rgba(181,71,8,.10);color:var(--gold);border-color:rgba(181,71,8,.25);}
-.pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:700;}
-.pill.red{background:rgba(180,35,24,.10);color:var(--red);}
-.pill.gold{background:rgba(181,71,8,.10);color:var(--gold);}
-.pill.green{background:rgba(2,122,72,.10);color:var(--green);}
-.bul{margin:8px 0 0 18px;}
-.bul li{margin:6px 0;}
-.sub{margin-top:10px;}
-.subhdr{margin:10px 0 6px 0;}
-.msgs{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;}
-.msgs li{background:#fff;border:1px solid #E7E6E3;border-radius:10px;padding:10px;display:grid;grid-template-columns:1fr auto;gap:8px;}
-.meta{font-size:12px;color:var(--muted);}
-.text{font-size:13px;white-space:pre-wrap;}
-.lnk a{font-size:12px;color:var(--teal);text-decoration:none;}
-.lnk a:hover{text-decoration:underline;}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-.pre{white-space:pre-wrap;background:#fff;border:1px solid #E7E6E3;border-radius:10px;padding:10px;font-size:12px;}
-@media (max-width: 800px){.grid2{grid-template-columns:1fr;} .wrap{padding:16px;}}
-@media print{.card{break-inside:avoid;} a{color:var(--text);text-decoration:none;}}
+section{margin:16px 0;}
+.card{background:var(--card);border:1px solid #E7E6E3;border-radius:10px;padding:14px 16px;margin-bottom:10px;}
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px;}
+.tbl th,.tbl td{padding:8px 10px;border-bottom:1px solid #E7E6E3;text-align:left;vertical-align:top;}
+.tbl th{background:var(--teal-light);color:var(--teal);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:0.03em;}
+.tag{display:inline-block;font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:10px;text-transform:uppercase;letter-spacing:0.04em;margin-right:6px;}
+.tag-red{background:#FEE4E2;color:var(--red);}
+.tag-gold{background:#FEF0C7;color:var(--gold);}
+.tag-green{background:#D1FADF;color:var(--green);}
+.tag-purple{background:#EBE9FE;color:var(--purple);}
+.tag-teal{background:var(--teal-light);color:var(--teal);}
+.tag-gray{background:#F2F4F7;color:var(--gray);}
+ul{margin:6px 0 10px 18px;padding:0;}
+li{margin:4px 0;}
+b,strong{font-weight:700;}
+a{color:var(--teal);text-decoration:none;border-bottom:1px solid rgba(1,105,111,0.3);}
+a:hover{border-bottom:1px solid var(--teal);}
+.kpi{display:inline-block;padding:3px 8px;background:var(--teal-light);color:var(--teal);border-radius:6px;font-weight:700;font-size:13px;}
+.urgent{color:var(--red);font-weight:600;}
+.win{color:var(--green);font-weight:600;}
+footer{margin-top:30px;padding-top:14px;border-top:1px solid #E7E6E3;color:var(--muted);font-size:12px;text-align:center;}
+@media(max-width:640px){.wrap{padding:18px 14px;}h1{font-size:18px;}.tbl{font-size:12.5px;}}
+@media print{body{background:#fff;}.wrap{max-width:100%;padding:0;}}
 </style>
 </head>
 <body>
 <div class='wrap'>
 <header>
-  <div>
-    <h1>WPT CEO Daily Briefing — Sunday, April 19, 2026</h1>
-    <div class='small'>Times shown in <b>ET</b>. Generated 2026-04-21 10:05 UTC.</div>
-  </div>
-  <div class='small'>GitHub Pages: <a href='https://tfinley1.github.io/wpt-daily-briefing/' target='_blank'>open</a></div>
+<h1>WPT CEO Daily Briefing</h1>
+<div class='small'>Tuesday, April 21, 2026 · 📍 Versailles, KY</div>
 </header>
 
-<section class='card'>
-  <h2>Schedule</h2>
-  <h3>Saturday, April 18, 2026 <span class='tag loc'>📍KY</span></h3><table class='tbl'><thead><tr><th style='width:90px'>Time (ET)</th><th>Event</th><th style='width:220px'>Attendees</th><th style='width:240px'>Location/Link</th><th style='width:120px'>Notes</th></tr></thead><tbody><tr><td>All-day</td><td><b>📍KY</b></td><td></td><td><a href='https://www.google.com/calendar/event?eid=NjQzMzE4MjBqZm5vZTB2M2ZyOGEzczFvYmQgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td></td></tr></tbody></table><h3>Sunday, April 19, 2026 <span class='tag loc'>📍KY</span></h3><table class='tbl'><thead><tr><th style='width:90px'>Time (ET)</th><th>Event</th><th style='width:220px'>Attendees</th><th style='width:240px'>Location/Link</th><th style='width:120px'>Notes</th></tr></thead><tbody><tr><td>4:44 p–4:44 p</td><td><b>Intricate Spirit at Keeneland in race 8</b></td><td>Finley, Ryan, Erin Birkenhauer, West Point Thoroughbreds Team 2025, Terry Finley</td><td><a href='https://www.google.com/calendar/event?eid=NDdnZmU5bGJyZTFvNmZvbXJyOGxmMWU1YWQgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td></td></tr><tr><td>All-day</td><td><b>Tom Bellhouse's Birthday</b></td><td></td><td><a href='https://www.google.com/calendar/event?eid=M3ZjOWxjcGdiNG43MHRiY3RjbXNjOGVtZWNfMjAyNjA0MjAgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td></td></tr><tr><td>All-day</td><td><b>📍KY</b></td><td></td><td><a href='https://www.google.com/calendar/event?eid=NmptNjFpMTVndjc1Z3Y4dXVkMXVwaDh0ZjUgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td></td></tr></tbody></table><h3>Monday, April 20, 2026 <span class='tag loc'>📍KY</span></h3><table class='tbl'><thead><tr><th style='width:90px'>Time (ET)</th><th>Event</th><th style='width:220px'>Attendees</th><th style='width:240px'>Location/Link</th><th style='width:120px'>Notes</th></tr></thead><tbody><tr><td>7:45 a–8:00 a</td><td><b>Look at Suana</b></td><td></td><td><a href='https://www.google.com/calendar/event?eid=NjFjYzF0anZrYWJmcDlhNWFnZmZhY2JyY2sgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td></td></tr><tr><td>9:00 a–10:00 a</td><td><b>Doctors Appointment — Dr. Emma Stokes</b></td><td></td><td><a href='https://www.google.com/calendar/event?eid=Mzkzam43YTk4bnJrYXJsYzF1cTcyZXVrN2sgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td></td></tr><tr><td>10:00 a–10:15 a</td><td><b>Vin Pica</b></td><td></td><td><a href='https://www.google.com/calendar/event?eid=OWpxNm0wMWNjMW4wdW9hZ3JqMmNuaTMwZmsgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td><span class='pill gold'>Back-to-back</span></td></tr><tr><td>11:00 a–12:00 p</td><td><b>Walt + Terry + Erin + Beth Connect</b></td><td>Erin Birkenhauer, sigler@boamlaw.com, Terry Finley, Robertson, Walter S., cal@boamlaw.com</td><td><a href='https://www.google.com/calendar/event?eid=NjUxYnJ1MjM1MjBkYTNoN3IyYjNwaWxtZTAgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td></td></tr><tr><td>2:00 p–3:00 p</td><td><b>Counting Stars Oaks Partner Call</b></td><td>Erin Birkenhauer, West Point Thoroughbreds Team 2025, Terry Finley</td><td><a href='https://www.google.com/calendar/event?eid=N29pbnBoOTg2Y3YyN2dra2N0NGt0dTVoZW0gdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td></td></tr><tr><td>3:00 p–4:00 p</td><td><b>OBS April Post Sale Webinar</b></td><td>Erin Birkenhauer, West Point Thoroughbreds Team 2025, Terry Finley, David Ingordo, Gretchen Feld</td><td><a href='https://www.google.com/calendar/event?eid=M2gxYWU0ZWRjZDYzdmNvZ3ZmNTBsZnBhNmkgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td><span class='pill gold'>Back-to-back</span></td></tr><tr><td>4:45 p–5:45 p</td><td><b>IRS Identity Verification Appointment</b></td><td>Debbie Finley, Terry Finley</td><td>Internal Revenue Service (IRS) Taxpayer Assistance Center, 200 W Professional Park Ct, Bowling Green, KY 42104, USA</td><td></td></tr><tr><td>6:00 p–6:15 p</td><td><b>Call vinnie Politano</b></td><td></td><td><a href='https://www.google.com/calendar/event?eid=cjloZWhubzloM21hdXQzMWNtZmptZmhnbWcgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td></td></tr><tr><td>All-day</td><td><b>📍KY</b></td><td></td><td><a href='https://www.google.com/calendar/event?eid=NW5pcTVpY2YycjZxNG82NzE0dXRzb3BkYTQgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td></td></tr></tbody></table><h3>Tuesday, April 21, 2026</h3><table class='tbl'><thead><tr><th style='width:90px'>Time (ET)</th><th>Event</th><th style='width:220px'>Attendees</th><th style='width:240px'>Location/Link</th><th style='width:120px'>Notes</th></tr></thead><tbody><tr><td>10:30 a–11:00 a</td><td><b>Weekly AI/Tech Sync</b></td><td>Dawn Lenert, Lindsey Heumann, Terry Finley</td><td><a href='https://us02web.zoom.us/j/6096367204' target='_blank'>open</a></td><td></td></tr><tr><td>11:00 a–12:00 p</td><td><b>Exec Meeting</b></td><td>Erin Birkenhauer, Lindsey Heumann, Terry Finley</td><td><a href='https://us02web.zoom.us/j/6096367204' target='_blank'>open</a></td><td><span class='pill gold'>Back-to-back</span></td></tr><tr><td>1:00 p–1:45 p</td><td><b>TIGER 21 Check In | Jeff &amp; Terry</b></td><td>Miriam Seidl, Terry Finley, Casey Clemmons, Jeff Hays</td><td>Jeff will call you directly </td><td></td></tr><tr><td>2:00 p–3:00 p</td><td><b>Tuesdays at Two: CD</b></td><td>Erin Birkenhauer, West Point Thoroughbreds Team 2025, Terry Finley</td><td><a href='https://www.google.com/calendar/event?eid=MzBtNDg2ZzZjYzZhNzBycWc3ZTE4c2x2dmwgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td></td></tr><tr><td>3:00 p–4:00 p</td><td><b>Andrew Shields + Terry Finley Sync</b></td><td>Andrew Shields, Terry Finley</td><td><a href='https://us02web.zoom.us/j/6096367204' target='_blank'>open</a></td><td><span class='pill gold'>Back-to-back</span></td></tr><tr><td>4:00 p–6:45 p</td><td><b>Swim 320PM</b></td><td>Terry Finley, Debbie Finley</td><td><a href='https://www.google.com/calendar/event?eid=M3E1ODE2OTVxcXIzcnVxMTBxcjd1dTdyNGNfMjAyNjA0MjFUMjAwMDAwWiB0ZXJyeUB3ZXN0cG9pbnR0Yi5jb20' target='_blank'>open</a></td><td><span class='pill gold'>Back-to-back</span></td></tr><tr><td>5:15 p–6:15 p</td><td><b>Gymnastics 4:15</b></td><td>Debbie Finley, Terry Finley</td><td><a href='https://www.google.com/calendar/event?eid=N2Q1c2wzcWhsMWlvMWZqYWhtaXZjcWM1ZGdfMjAyNjA0MjFUMjExNTAwWiB0ZXJyeUB3ZXN0cG9pbnR0Yi5jb20' target='_blank'>open</a></td><td><span class='pill red'>CONFLICT</span></td></tr><tr><td>6:30 p–7:30 p</td><td><b>Flag Football</b></td><td>Terry Finley, Debbie Finley</td><td><a href='https://www.google.com/calendar/event?eid=MGE5bzc5NmxzOTZlMnRxdmszY2hvdG80cTAgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td></td></tr><tr><td>6:45 p–7:45 p</td><td><b>Baseball Game 5:45 Basil Griffin 5</b></td><td>Debbie Finley, Erin Birkenhauer, Terry Finley</td><td><a href='https://www.google.com/calendar/event?eid=MW9sajlyMWpkcmY4Z2gwYmYwM2RrazdxOHUgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank'>open</a></td><td><span class='pill red'>CONFLICT</span></td></tr></tbody></table>
+<section>
+<h2>Schedule — Today (Tue Apr 21)</h2>
+<table class='tbl'>
+<tr><th style='width:80px'>Time ET</th><th>Meeting</th><th>With / Link</th></tr>
+<tr><td><b>10:30 AM</b></td><td>Weekly AI/Tech Sync</td><td>Dawn Lenert, Lindsey, Ali · <a href='https://us02web.zoom.us/j/6096367204'>Zoom</a></td></tr>
+<tr><td><b>11:00 AM</b></td><td><span class='tag tag-gold'>Back-to-back</span>Exec Meeting</td><td>Erin, Lindsey · Zoom</td></tr>
+<tr><td><b>1:00 PM</b></td><td>TIGER 21 Check In — Jeff &amp; Terry</td><td>Jeff Hays (calling); Miriam Seidl</td></tr>
+<tr><td><b>2:00 PM</b></td><td>Tuesdays at Two: <b>CD</b></td><td>Erin, WPT Team</td></tr>
+<tr><td><b>3:00 PM</b></td><td>Andrew Shields + Terry Sync</td><td>Zoom</td></tr>
+<tr><td>4:00 PM</td><td>Swim</td><td>Debbie</td></tr>
+<tr><td>5:15 PM</td><td>Gymnastics</td><td>Debbie</td></tr>
+<tr><td>6:30 PM</td><td>Flag Football</td><td>Debbie</td></tr>
+<tr><td>6:45 PM</td><td><span class='tag tag-gold'>Conflict</span>Baseball — Basil Griffin 5</td><td>Debbie, Erin</td></tr>
+</table>
+<div class='small'>⚠️ Back-to-back 10:30 → 11:00; overlap 6:30 flag football vs 6:45 baseball.</div>
 </section>
 
-<section class='card'>
-  <h2>Alerts</h2>
-  <ul class="bul"><li><span class='pill gold'>ATTN</span> Monday is packed (<b>9</b> events) — protect buffers.</li><li><span class='pill red'>RACE DAY</span> <b>Intricate Spirit</b> — Keeneland Race 8 (Palisades Stakes) today; calendar entry at <b>4:44p ET</b>.</li></ul>
+<section>
+<h2>Alerts</h2>
+<div class='card'>
+<ul>
+<li><span class='tag tag-red'>Stale receivable</span><b>Lindsey</b> reports still no response on the <b>Tatts invoice</b> — pulling <b>Kip</b> in to help chase.</li>
+<li><span class='tag tag-gold'>Decision pending</span><b>Cajun Gold</b> entered in Friday's mile; <b>Blewitt</b> suggests scratching for an upcoming 5F (no penalty). Field for the 5F is tougher than expected — need a call.</li>
+<li><span class='tag tag-gold'>Attention</span><b>Arnie Boyarsky</b> $15k opportunity closes <b>Apr 23</b> (Bianca); <b>Kevin Turrisi</b> $15k closes <b>Apr 29</b> (Bianca) — both near-term.</li>
+</ul>
+</div>
 </section>
 
-<section class='card'>
-  <h2>2026 Inventory</h2>
-  <table class='tbl'><thead><tr><th>Horse</th><th>Trainer</th><th>% Sold</th><th>% Rem</th><th>$ Remaining</th><th>Syndicated Value</th></tr></thead><tbody><tr><td><b>CAIRO PRINCE/CABARET STARLET</b></td><td>CLEMENT</td><td><b>90%</b></td><td><b>10.00%</b></td><td><b>$21,600</b></td><td><b>$216,000</b></td></tr></tbody></table>
+<section>
+<h2>2026 Inventory</h2>
+<table class='tbl'>
+<tr><th>Horse</th><th>Trainer</th><th>% Sold</th><th>% Left</th><th>$ Remaining</th></tr>
+<tr><td><b>Cairo Prince × Cabaret Starlet</b></td><td>Clement</td><td>90%</td><td>10%</td><td><span class='kpi'>$21,600</span></td></tr>
+</table>
+<div class='small'>Only one horse still has inventory — all other 2026 horses are sold out. New horse with Casse coming (Tom B. wants full-court press when team lands in KY next week).</div>
 </section>
 
-<section class='card'>
-  <h2>Team Pulse</h2>
-  <div class='sub'><div class='subhdr'><span class='tag teal'>#horse-comms</span></div><ul class='msgs'><li><span class='meta'><b>Jason Blewitt</b> <span class='muted'>(2026-04-18 09:35:00 CDT)</span></span><div class='text'>Parden this am. :ok_hand:</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1776522900411819' target='_blank'>open</a></div></li><li><span class='meta'><b>Tom Murphy</b> <span class='muted'>(2026-04-18 06:59:24 CDT)</span></span><div class='text'>Counting Stars catching some :zzz:</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C02Q17HRHMW/p1776513564105819' target='_blank'>open</a></div></li></ul></div><div class='sub'><div class='subhdr'><span class='tag teal'>#sales-made</span></div><ul class='msgs'><li><span class='meta'><b>Terry Finley</b> <span class='muted'>(2026-04-18 20:37:46 CDT)</span></span><div class='text'>flightliine esque</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776562666213449?thread_ts=1776553115.674459&amp;cid=C0334BG31D3' target='_blank'>open</a></div></li><li><span class='meta'><b>Tom Murphy</b> <span class='muted'>(2026-04-18 18:09:38 CDT)</span></span><div class='text'>On a heater!!!</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776553778322309?thread_ts=1776553115.674459&amp;cid=C0334BG31D3' target='_blank'>open</a></div></li><li><span class='meta'><b>Tom Bellhouse</b> <span class='muted'>(2026-04-18 17:59:15 CDT)</span></span><div class='text'>Spectacular!!!!</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776553155438469?thread_ts=1776553115.674459&amp;cid=C0334BG31D3' target='_blank'>open</a></div></li><li><span class='meta'><b>Joe Bianca</b> <span class='muted'>(2026-04-18 17:58:35 CDT)</span></span><div class='text'>Martin Miner <b>10%</b> of <b>Twirling Candy</b></div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776553115674459?thread_ts=1776553115.674459&amp;cid=C0334BG31D3' target='_blank'>open</a></div></li><li><span class='meta'><b>Terry Finley</b> <span class='muted'>(2026-04-18 17:47:00 CDT)</span></span><div class='text'>Team is a ma sheen</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776552420659859' target='_blank'>open</a></div></li><li><span class='meta'><b>Terry Finley</b> <span class='muted'>(2026-04-18 17:46:26 CDT)</span></span><div class='text'>Yea boy</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776552386132029?thread_ts=1776549927.986009&amp;cid=C0334BG31D3' target='_blank'>open</a></div></li><li><span class='meta'><b>Erin Birkenhauer</b> <span class='muted'>(2026-04-18 17:45:21 CDT)</span></span><div class='text'>Whoaaa</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776552321661849?thread_ts=1776549927.986009&amp;cid=C0334BG31D3' target='_blank'>open</a></div></li><li><span class='meta'><b>Tom Murphy</b> <span class='muted'>(2026-04-18 17:06:21 CDT)</span></span><div class='text'>JOEY!!!! :bomb::bomb:</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776549981979649?thread_ts=1776549927.986009&amp;cid=C0334BG31D3' target='_blank'>open</a></div></li><li><span class='meta'><b>Joe Bianca</b> <span class='muted'>(2026-04-18 17:05:27 CDT)</span></span><div class='text'>Lorie Dupont <b>10%</b> of <b>Twirling Candy</b> and last <b>8%</b> of <b>Early Voting OBS</b></div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776549927986009?thread_ts=1776549927.986009&amp;cid=C0334BG31D3' target='_blank'>open</a></div></li><li><span class='meta'><b>Jason Blewitt</b> <span class='muted'>(2026-04-18 16:03:59 CDT)</span></span><div class='text'>Just a phenomenal job by everyone on the team!!!!</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776546239750709' target='_blank'>open</a></div></li><li><span class='meta'><b>Jason Blewitt</b> <span class='muted'>(2026-04-18 15:57:59 CDT)</span></span><div class='text'>Wowowowowow</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776545879785799?thread_ts=1776545171.194259&amp;cid=C0334BG31D3' target='_blank'>open</a></div></li><li><span class='meta'><b>Joe Bianca</b> <span class='muted'>(2026-04-18 15:48:51 CDT)</span></span><div class='text'>Brian Boeheim <b>2.5%</b> of <b>Early Voting OBS</b></div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776545331348969' target='_blank'>open</a></div></li><li><span class='meta'><b>Joe Bianca</b> <span class='muted'>(2026-04-18 15:48:32 CDT)</span></span><div class='text'>KABOOM!!</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776545312724609?thread_ts=1776545171.194259&amp;cid=C0334BG31D3' target='_blank'>open</a></div></li><li><span class='meta'><b>Tom Bellhouse</b> <span class='muted'>(2026-04-18 15:46:27 CDT)</span></span><div class='text'>That's what I'm talking about</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776545187371249' target='_blank'>open</a></div></li><li><span class='meta'><b>Tom Murphy</b> <span class='muted'>(2026-04-18 15:46:11 CDT)</span></span><div class='text'>Paul Lissy <b>5%</b> Cyberknife Colt</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776545171194259?thread_ts=1776545171.194259&amp;cid=C0334BG31D3' target='_blank'>open</a></div></li><li><span class='meta'><b>Tom Bellhouse</b> <span class='muted'>(2026-04-18 15:00:44 CDT)</span></span><div class='text'>Milton Harsh
-<b>2.5%</b> of <b>the Twirling Candy</b></div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776542444153889' target='_blank'>open</a></div></li><li><span class='meta'><b>Joe Bianca</b> <span class='muted'>(2026-04-18 14:55:59 CDT)</span></span><div class='text'>Bob Dittus <b>2.5%</b> of <b>Twirling Candy</b></div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776542159509269' target='_blank'>open</a></div></li><li><span class='meta'><b>Jason Blewitt</b> <span class='muted'>(2026-04-18 12:20:43 CDT)</span></span><div class='text'>NP Sanjeev Akula <b>2.5%</b> OBS early voting</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776532843969559' target='_blank'>open</a></div></li><li><span class='meta'><b>Tom Bellhouse</b> <span class='muted'>(2026-04-18 11:43:06 CDT)</span></span><div class='text'>Bob Laylo
-<b>2.5%</b> of <b>the Early Voting</b></div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776530586629259' target='_blank'>open</a></div></li><li><span class='meta'><b>Jason Blewitt</b> <span class='muted'>(2026-04-18 10:59:58 CDT)</span></span><div class='text'>Lisa Bell <b>2.5%</b> Twirling filly</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776527998923229' target='_blank'>open</a></div></li><li><span class='meta'><b>Jason Blewitt</b> <span class='muted'>(2026-04-18 09:15:02 CDT)</span></span><div class='text'>Joe Walden <b>2.5</b> Charlatan colt</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776521702089439' target='_blank'>open</a></div></li><li><span class='meta'><b>Joe Bianca</b> <span class='muted'>(2026-04-18 08:07:15 CDT)</span></span><div class='text'>Seth Ferriell <b>2.5%</b> of <b>Early Voting OBS</b></div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776517635802609' target='_blank'>open</a></div></li><li><span class='meta'><b>Tom Bellhouse</b> <span class='muted'>(2026-04-18 08:03:32 CDT)</span></span><div class='text'>Jay Geiger ( Mop LLC)
-<b>2.5%</b> of <b>the Charlatan</b></div><div class='lnk'><a href='https://westpointtb.slack.com/archives/C0334BG31D3/p1776517412454479' target='_blank'>open</a></div></li></ul></div><div class='sub'><div class='subhdr'><span class='tag purple'>Terry's DMs to Individuals</span></div><ul class='msgs'><li><span class='meta'><b>Terry Finley</b> <span class='muted'>(2026-04-18 21:27:28 CDT)</span></span><div class='text'>looks like we madea. very nice hit on venosa pinhook?</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/D02FBLYEC23/p1776565648923349' target='_blank'>open</a></div></li><li><span class='meta'><b>Terry Finley</b> <span class='muted'>(2026-04-18 11:51:59 CDT)</span></span><div class='text'>Info</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/D02NMTD7Q9M/p1776531119394159?thread_ts=1776531119.394159&amp;cid=D02NMTD7Q9M' target='_blank'>open</a></div></li><li><span class='meta'><b>Terry Finley</b> <span class='muted'>(2026-04-18 11:51:31 CDT)</span></span><div class='text'>Hi.  This is a fiend of a freind who loves Saratoga.  Can you ping him about Belmont tickts.  LMK.
+<section>
+<h2>Team Pulse — Last 48 Hours</h2>
 
-Terry,
-I hope all is well. 
-I was in Florida last week and had to use the jacket that you sent to me and it was awesome. 
-I have a question for you.
-I was thinking about coming up to visit my cousin in Saratoga Springs the weekend of the Belmont. 
-I see online that they have tickets for both Friday and Saturday. I assume that the Stakes race is on Saturday, because the ticket prices are 3 times more money. 
-What do they run on Friday? The prices on Saturday are a little out of my league.</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/D02NMTD7Q9M/p1776531091470999' target='_blank'>open</a></div></li><li><span class='meta'><b>Terry Finley</b> <span class='muted'>(2026-04-18 08:25:55 CDT)</span></span><div class='text'>Context before: 
-- [See result above] From: Terry Finley (ID: U02F5J2V24X) Message_ts: 1776518742.435609</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/D064KD45H5F/p1776518755992369' target='_blank'>open</a></div></li><li><span class='meta'><b>Terry Finley</b> <span class='muted'>(2026-04-18 08:25:42 CDT)</span></span><div class='text'>Hi Terry, the photographer is interested in visiting the farm at 1:00 on Monday to capture photos and videos of the filly. Please let me know if that time works. 
-Thanks.</div><div class='lnk'><a href='https://westpointtb.slack.com/archives/D064KD45H5F/p1776518742435609' target='_blank'>open</a></div></li></ul></div>
+<div class='card'>
+<div><span class='tag tag-green'>#sales-made</span><b>5 new sales logged Mon Apr 20</b></div>
+<ul>
+<li><b>Rick Croscier</b> — <b>5%</b> <b>Charlatan</b> colt <span class='small'>(Blewitt)</span></li>
+<li><b>HOLD 2.5%</b> big <b>Cyber</b> colt for <b>Gary Bagliebter</b> <span class='small'>(Blewitt)</span></li>
+<li><b>Dewey Killbride</b> — <b>2.5%</b> <b>Charlatan</b> colt <span class='small'>(Blewitt)</span></li>
+<li><b>Greg Bone</b> — <b>2.5%</b> <b>Twirling Candy</b> filly <span class='small'>(Murphy)</span></li>
+<li><b>Peter Catalano</b> — <b>2.5%</b> <b>Charlatan</b> colt <span class='small'>(Bianca)</span></li>
+</ul>
+</div>
+
+<div class='card'>
+<div><span class='tag tag-teal'>#sales</span></div>
+<ul>
+<li><b>Dawn Lenert</b>: <b>95 peeps</b> on the OBS APR Post-Sale Webinar.</li>
+<li><b>Lindsey</b>: "Still no response. Having <b>Kip</b> help me." <span class='small'>(Tatts invoice follow-up)</span></li>
+<li><b>Tom Bellhouse</b>: "Let's plow through this <b>April 700k</b> and attack the new horse w/ <b>Casse</b> when we all hit KY next week. Full court press with Mark in person."</li>
+<li><b>Erin</b>: "Now that <b>Mott Early Voting</b> is sold out, do you want to tease the <b>Euro</b> on the call? Or stay focused on the OBS horses with inventory?"</li>
+</ul>
+</div>
+
+<div class='card'>
+<div><span class='tag tag-teal'>#horse-comms</span></div>
+<ul>
+<li><b>Jason Blewitt</b>: Heather put <b>Cajun Gold</b> in Friday's mile; can scratch in favor of upcoming 5F with no penalty. 5F field "tougher than I would have thought."</li>
+</ul>
+</div>
+
+<div class='card'>
+<div><span class='tag tag-purple'>Terry's DMs to Individuals</span></div>
+<ul>
+<li>→ <b>Lindsey</b>: "Ping me in the morning about <b>Vinnie Politano</b>."</li>
+<li>→ <b>Lindsey</b>: "Do you remember if <b>Erin</b> put a transition document together? Working on a ChatGPT thread that has really helped."</li>
+<li>→ <b>Lindsey</b>: "Got it. Let's discuss."</li>
+<li>→ <b>Self</b>: "Give <b>Debbie</b> the CVS receipts for the coupons."</li>
+</ul>
+</div>
 </section>
 
-<section class='card'>
-  <h2>Racing</h2>
-  <div class='grid2'><div><h4>Upcoming Races</h4><pre class='pre'>|Race Date|Horse|Track|Name/Type|Entry Date|
-|--|--|--|--|--|
-|04/23/26|Honoree|Aqueduct|NY-Bred Maiden Special Weight|04/17/26|
-|04/23/26|La Ceiba (FR)|Aqueduct|NW1X Allowance|04/17/26|
-|04/24/26|Cajun Gold|Gulfstream Park|FL-Bred NW1X Allowance|04/17/26|
-|04/25/26|Vibe|Aqueduct|NW2X Allowance|04/19/26|
-|04/25/26|Willpowered|Aqueduct|NY-Bred NW1X Allowance|04/19/26|
-|04/26/26|Creed’s Vision|Laurel Park|MD-Bred NW1X Allowance|04/20/26|
-|04/26/26|Christel Clean|Santa Anita Park|Cal-Bred NW1X Allowance|04/21/26|
-|04/26/26|Golden Joker|Aqueduct|NY-Bred 50k Maiden Claiming|04/22/26|
-|05/01/26|Counting Stars|Churchill Downs|Kentucky Oaks (G1)|04/25/26|
-|05/01/26|Paige Turner|Churchill Downs|NW1X Allowance|04/25/26|
-|05/01/26|Miss Enchanted|Churchill Downs|Ratings Handicap|04/25/26|
-|05/02/26|Battle of Normandy|Belmont at the Big A|Fort Marcy Stakes (G3T)|04/26/26|
-|05/02/26|Carson’s Run|Belmont at the Big A|Fort Marcy Stakes (G3T)|04/26/26|
-|05/02/26|Bullard|Churchill Downs|NW2X Allowance|04/25/26|
-|05/02/26|Find No Fault|Churchill Downs|Maiden Special Weight|04/25/26|
-|05/03/26|Les Reys (FR)|Belmont at the Big A|License Fee Stakes|04/29/26|
-|05/13/26|Run Away Rojo|Horseshoe Indianapolis|Onesmoothoperator Handicap|05/07/26|
-|05/15/26|Legalize|Churchill Downs|NW3X Allowance|05/08/26|
-|05/17/26|Absolutely Hot|Churchill Downs|NW1X Allowance|05/10/26|
-|05/17/26|Integration|Laurel Park|Dinner Party Stakes (G3T)|05/11/26|
-|05/25/26|Final Boss|Santa Anita Park|Shoemaker Mile (G1T)|05/22/26|</pre></div><div><h4>Recent Results</h4><pre class='pre'>### Race Results (10 available, most recent first)
-
-| Date      | Horse             | Track            | Name/Type                  | Finish | Earnings |
-|-----------|-------------------|------------------|----------------------------|--------|----------|
-| 04/17/26 | Miles Finch      | Santa Anita Park | Cal-Bred NW1X Allowance   | 4      | $4,020  |
-| 04/17/26 | Relaxx (FR)      | Aqueduct         | Plenty of Grace Stakes    | 5      | $6,000  |
-| 04/16/26 | Ivory and Ebony  | Keeneland        | NW1X Allowance            | 4      | $5,925  |
-| 04/16/26 | Walking in Memphis | Gulfstream Park | Claiming 35k NW3L       | 3      | $3,720  |
-| 04/11/26 | Band On the Run  | Tampa Bay Downs  | Maiden Claiming 32k       | 2      | $4,935  |
-| 04/09/26 | Garden of Grace  | Aqueduct         | NY-Bred Maiden Special Weight | 4   | $4,500  |
-| 04/09/26 | Reagan’s Wit     | Keeneland        | NW2X Allowance            | 1      | $75,563 |
-| 04/09/26 | Brightline Bullet| Aqueduct         | Maiden Special Weight     | 1      | $44,000 |
-| 04/08/26 | Integration      | Keeneland        | Allowance                 | 3      | $14,625 |
-| 04/04/26 | Sansone          | Aqueduct         | NW1X Allowance            | 5      | $3,320  |
-
-Only 10 race results rows available.</pre></div></div>
-  <div class='small'>Sources: <a href='https://www.westpointtb.com' target='_blank'>WPT homepage</a>, <a href='https://www.westpointtb.com/racing/upcoming-races/' target='_blank'>Upcoming Races</a>, <a href='https://www.westpointtb.com/racing/race-results/' target='_blank'>Race Results</a>.</div>
+<section>
+<h2>Racing</h2>
+<div class='card'>
+<b>Upcoming entries:</b>
+<ul>
+<li><b>Honoree</b> + <b>La Ceiba</b> — Thu Apr 23 at AQU</li>
+<li><b>Cajun Gold</b> — Fri Apr 24 at GP (Blewitt considering scratch for upcoming 5F)</li>
+<li><b>Counting Stars</b> — <b>Kentucky Oaks (G1)</b>, Fri May 1</li>
+<li><b>Final Boss</b> — <b>Shoemaker Mile (G1T)</b>, Mon May 25</li>
+</ul>
+<b>Recent results:</b>
+<ul>
+<li>Apr 19 — <b>Intricate Spirit</b> 9th in <b>Palisades Stakes</b> (9/1, Rosario/Clement; winner Reb Five)</li>
+<li>Apr 18 — Pillar of Beauty 16th, Keep It Easy 7th, Essential Charm 9th</li>
+</ul>
+</div>
 </section>
 
-<section class='card'>
-  <h2>Decisions Needed</h2>
-  <ul class="bul"><li>Confirm whether to pursue/feature a 'Flightline-esque' angle tied to the recent sales momentum (see #sales-made thread chatter).</li><li>Decide response path for Danielle re: Saratoga/Belmont tickets request (forward to sales/ops or handle directly).</li></ul>
+<section>
+<h2>Decisions Needed</h2>
+<div class='card'>
+<ol>
+<li><b>Cajun Gold</b> Friday: run the mile or scratch for the 5F? Need decision from Terry/Blewitt today.</li>
+<li><b>Sales call Thursday</b>: tease the <b>Euro</b> (Erin's question) or stay focused on OBS horses with inventory?</li>
+<li><b>Tatts invoice</b>: do we let Lindsey + Kip keep working it or escalate?</li>
+<li><b>Bianca's near-term Bianca opps</b>: any follow-up muscle needed for <b>Boyarsky (4/23)</b> and <b>Turrisi (4/29)</b>?</li>
+</ol>
+</div>
 </section>
 
-<section class='card'>
-  <h2>Sales Pipeline (Last 7 Days Updated)</h2>
-  <table class='tbl'><thead><tr><th>Opportunity</th><th>Stage</th><th>Amount</th><th>Close</th><th>Owner</th><th>Last Mod</th></tr></thead><tbody><tr><td>Counides,  Mark - 2027</td><td>Not talked to yet</td><td><b>$20,000</b></td><td>2027-03-17</td><td>Tom Murphy</td><td>2026-04-19</td></tr><tr><td>Turnicky,  Ann - 2026 Somewhat</td><td>Talking - No Commitment</td><td><b>$20,000</b></td><td>2026-05-19</td><td>Jason Blewitt</td><td>2026-04-18</td></tr><tr><td>Lorcan Malone - 2026</td><td>Talking - No Commitment</td><td><b>$15,000</b></td><td>2026-05-29</td><td>Jason Blewitt</td><td>2026-04-18</td></tr><tr><td>Tronsrue,  George - 2026</td><td>Talking - Unlikely to Close</td><td><b>$20,000</b></td><td>2026-09-18</td><td>Jason Blewitt</td><td>2026-04-18</td></tr><tr><td>Bubb,  Gary - 2027</td><td>Not talked to yet</td><td><b>$20,000</b></td><td>2027-03-15</td><td>Jason Blewitt</td><td>2026-04-18</td></tr><tr><td>Sandbrook,  William - 2026</td><td>Talking - No Commitment</td><td><b>$20,000</b></td><td>2026-08-07</td><td>Tom Bellhouse</td><td>2026-04-18</td></tr><tr><td>Kyle Gray - 2026</td><td>Picking Horses</td><td><b>$15,000</b></td><td>2026-04-30</td><td>Tom Bellhouse</td><td>2026-04-18</td></tr><tr><td>Tony Mullin - 2026</td><td>Talking - No Commitment</td><td><b>$15,000</b></td><td>2026-04-29</td><td>Tom Bellhouse</td><td>2026-04-18</td></tr><tr><td>James Hayes - 2026</td><td>Talking - No Commitment</td><td><b>$15,000</b></td><td>2026-06-01</td><td>Tom Bellhouse</td><td>2026-04-18</td></tr><tr><td>Bastardi- 2026</td><td>Picking Horses</td><td><b>$15,000</b></td><td>2026-06-30</td><td>Tom Bellhouse</td><td>2026-04-18</td></tr><tr><td>Taylor,  Edward - 2027</td><td>Not talked to yet</td><td><b>$20,000</b></td><td>2027-04-18</td><td>Tom Murphy</td><td>2026-04-18</td></tr><tr><td>Taylor,  Edward - 2026</td><td>Closed Won</td><td><b>$8,200</b></td><td>2026-04-18</td><td>Tom Murphy</td><td>2026-04-18</td></tr></tbody></table>
+<section>
+<h2>Sales Pipeline</h2>
+<div class='card'>
+<b>Closed Won — last 3 days (Fri–Mon): <span class='kpi'>~$313,690</span></b>
+<ul>
+<li>Sat Apr 18 — <b>$71,380</b></li>
+<li>Sun Apr 19 — <b>$161,360</b></li>
+<li>Mon Apr 20 — <b>$80,950</b> newly recorded</li>
+</ul>
+<b>Monday's Closed Won detail:</b>
+<ul>
+<li><b>Matin Miner 2026</b> — <b>$56,800</b> (Bianca, close Apr 18 — large catch-up entry)</li>
+<li><b>Bone, Greg 2026 #2</b> — <b>$14,200</b> (Murphy, Apr 20)</li>
+<li><b>Catalano 2026</b> — <b>$9,950</b> (Bianca, Apr 20)</li>
+</ul>
+<b>Active pipeline — Bianca's build-out (20+ new opps Apr 20):</b>
+<ul>
+<li>Most at $20k, Oct 2026 close: Garlan, Rosser, Hewes, Prince, Burr, Morrison, McEvoy-Hubert, Hoverman, Stach, Saunders, Stark, Walesky, Peck.</li>
+<li>Near-term: <b>Arnie Boyarsky</b> $15k (4/23), <b>Kevin Turrisi</b> $15k (4/29).</li>
+</ul>
+</div>
 </section>
 
-<section class='card'>
-  <h2>Perplexity Computer Slack Activity</h2>
-  
+<section>
+<h2>Perplexity Computer — Slack Activity</h2>
+<div class='card'>
+<div class='small'>No new Perplexity Computer posts logged in the last 48 hours beyond this briefing's own delivery thread.</div>
+</div>
 </section>
 
-<footer class='small' style='margin-top:18px;color:var(--muted);'>
-  Internal briefing for West Point Thoroughbreds.
+<footer>
+Generated Tue, Apr 21, 2026 · WPT CEO Daily Briefing · <a href='https://tfinley1.github.io/wpt-daily-briefing/'>tfinley1.github.io/wpt-daily-briefing</a>
 </footer>
-
 </div>
 </body>
 </html>
