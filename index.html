@@ -1,339 +1,200 @@
 <!doctype html>
-<html lang='en'>
+<html lang="en">
 <head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title>WPT CEO Daily Briefing — 2026-04-29</title>
-  <link rel='preconnect' href='https://fonts.googleapis.com'>
-  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap' rel='stylesheet'>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WPT CEO Daily Briefing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    :root { --bg:#ffffff; --text:#28251D; --muted:#6b6a63; --teal:#01696F; --red:#b42318; --gold:#b54708; --green:#027a48; --border:#e7e5df; --purple:#6f42c1; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background:var(--bg); color:var(--text); }
-    .wrap { max-width:980px; margin:0 auto; padding:24px 18px 40px; }
-    header { display:flex; align-items:flex-end; justify-content:space-between; gap:16px; padding-bottom:12px; border-bottom:1px solid var(--border); }
-    h1 { font-size:20px; margin:0; }
-    .sub { color:var(--muted); font-size:12px; }
-    h2 { font-size:16px; margin:20px 0 10px; border-left:4px solid var(--teal); padding-left:10px; }
-    h3.day { font-size:13px; margin:14px 0 8px; color:var(--text); }
-    .table { width:100%; border-collapse:collapse; border:1px solid var(--border); border-radius:10px; overflow:hidden; }
-    .table th, .table td { padding:10px 10px; border-bottom:1px solid var(--border); vertical-align:top; font-size:12px; }
-    .table th { text-align:left; background:#f7f7f5; font-weight:600; }
-    .muted { color:var(--muted); }
-    .card { border:1px solid var(--border); border-left:5px solid var(--teal); padding:10px 12px; border-radius:10px; margin:10px 0; }
-    .card.red { border-left-color:var(--red); }
-    .card.gold { border-left-color:var(--gold); }
-    .card.green { border-left-color:var(--green); }
-    .card-title { font-weight:700; font-size:12px; margin-bottom:6px; }
-    .pill { display:inline-block; font-size:11px; padding:2px 8px; border-radius:999px; border:1px solid var(--border); margin-right:6px; }
-    .pill.red { color:var(--red); border-color:rgba(180,35,24,.35); background:rgba(180,35,24,.06); }
-    .pill.gold { color:var(--gold); border-color:rgba(181,71,8,.35); background:rgba(181,71,8,.06); }
-    .pill.green { color:var(--green); border-color:rgba(2,122,72,.35); background:rgba(2,122,72,.06); }
-    .tag { display:inline-block; font-size:11px; padding:2px 8px; border-radius:8px; background:rgba(1,105,111,.08); border:1px solid rgba(1,105,111,.25); color:var(--teal); }
-    .tag.purple { background:rgba(111,66,193,.08); border-color:rgba(111,66,193,.25); color:var(--purple); }
-    ul.bullets { margin:8px 0 12px 18px; padding:0; }
-    ul.bullets li { margin:6px 0; font-size:12px; line-height:1.35; }
-    a { color:var(--teal); text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    pre.mono { white-space:pre-wrap; background:#f7f7f5; border:1px solid var(--border); padding:10px 12px; border-radius:10px; font-size:11px; overflow:auto; }
-    footer { margin-top:20px; border-top:1px solid var(--border); padding-top:12px; color:var(--muted); font-size:11px; }
-    @media print {
-      header { border-bottom:1px solid #ccc; }
-      a { color: #000; text-decoration: underline; }
-    }
+    :root{--bg:#fff;--text:#28251D;--teal:#01696F;--muted:#6B665D;--red:#B00020;--gold:#B08D00;--green:#0F7A3B;--purple:#6E3EBF;--card:#F7F6F4;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);}
+    .container{max-width:980px;margin:0 auto;padding:20px 16px 40px;}
+    header{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;justify-content:space-between;border-bottom:1px solid #E6E3DD;padding-bottom:12px;margin-bottom:18px;}
+    h1{font-size:20px;margin:0;}
+    .meta{color:var(--muted);font-size:13px;}
+    section{margin:18px 0;}
+    .card{background:var(--card);border:1px solid #E6E3DD;border-radius:10px;padding:12px 12px;}
+    .h{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;}
+    .h h2{font-size:14px;letter-spacing:.02em;text-transform:uppercase;margin:0;color:var(--teal);} 
+    .tag{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid #DDD;}
+    .tag.red{border-color:rgba(176,0,32,.35);color:var(--red);background:rgba(176,0,32,.06);} 
+    .tag.gold{border-color:rgba(176,141,0,.35);color:var(--gold);background:rgba(176,141,0,.08);} 
+    .tag.green{border-color:rgba(15,122,59,.35);color:var(--green);background:rgba(15,122,59,.08);} 
+    .tag.purple{border-color:rgba(110,62,191,.35);color:var(--purple);background:rgba(110,62,191,.08);} 
+    .small{font-size:12px;color:var(--muted);} 
+    a{color:var(--teal);text-decoration:none} a:hover{text-decoration:underline}
+    ul{margin:0;padding-left:18px;} li{margin:6px 0;}
+    .table{width:100%;border-collapse:collapse;font-size:13px;}
+    .table th,.table td{padding:8px;border-bottom:1px solid #E6E3DD;vertical-align:top;}
+    .table th{color:var(--muted);font-weight:600;text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.02em;}
+    @media print{body{background:#fff;} .card{background:#fff;}}
   </style>
 </head>
 <body>
-  <div class='wrap'>
+  <div class="container">
     <header>
       <div>
         <h1>WPT CEO Daily Briefing</h1>
-        <div class='sub'>For Terry Finley • Wednesday, April 29, 2026 (ET)</div>
+        <div class="meta">Terry Finley • Saturday, May 2, 2026</div>
       </div>
-      <div class='sub'>Generated 2026-05-01 6:02am et</div>
+      <div class="meta">Published: 5:01 AM ET</div>
     </header>
 
-    <h2>Schedule</h2>
-    <h3 class='day'>Wed, Apr 29 — KY</h3>
-<table class='table'><thead><tr><th style='width:110px'>Time</th><th>Event</th><th style='width:220px'>Attendees</th><th style='width:220px'>Location / Link</th></tr></thead><tbody>
-<tr><td class='muted'>All day</td><td>📍KY</td><td class='muted'>—</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=NzU2MjFwZHB1cDdzbm9kMGZ2NTZ1YWp2Y2UgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>10:45am–11:45am ET</td><td>Mass</td><td class='muted'>Terry Finley, Debbie Finley</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=NTJpZ29pdmJyZ3AyYTRnMmR0MnZibzQybHAgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>11:45am–12:00pm ET</td><td>Call graves Gilbert</td><td class='muted'>—</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=a3ZwajE4bmZsazZuODN0MmNqaDJuazYybmcgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>12:00pm–12:15pm ET</td><td>Oaks with Erin discussion</td><td class='muted'>—</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=YnBnNjdnNjZ2bW4wdXB1ZjFtZ2owMDhpNGcgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>2:00pm–3:00pm ET</td><td>WPT Team Handicapping Call</td><td class='muted'>Ali West Point, Danielle Austin, Dawn Lenert, Debbie Finley, Erin Birkenhauer, Janice Design, Jason Blewitt, Joe Bianca, Lindsey Heumann, Jeff Lowe, Melinda Blonshine, Terry Finley, Tom Murphy, Tom Bellhouse</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=N2d0dWhqcXNpdGgyY2pkczJoOGY0aGo2NTcgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-</tbody></table>
-<h3 class='day'>Thu, Apr 30 — KY</h3>
-<table class='table'><thead><tr><th style='width:110px'>Time</th><th>Event</th><th style='width:220px'>Attendees</th><th style='width:220px'>Location / Link</th></tr></thead><tbody>
-<tr><td class='muted'>All day</td><td>📍KY</td><td class='muted'>—</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=MjhkdDd0YXBmMDI5NHFmMjl2M2g2bzMyaTkgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>All day</td><td>Melinda Blonshine's Birthday</td><td class='muted'>—</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=MmozdnU0ODU4ZDZ1dG91b3E5dHYzZDN1dHNfMjAyNjA1MDEgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>All day</td><td>KY Oaks</td><td class='muted'>Terry Finley, Debbie Finley</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=NGw4M2IyOXJpa2xxYmFrcTEya205bDFpMnIgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>6:30am–8:00am ET</td><td>WPT Partners Barn Tour</td><td class='muted'>—</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=NzBsOXA5MzQ4a3I2NmtkcXRsNjRoMDdzM2wgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>11:00am–11:30am ET</td><td>Sales Call - Zoom 609-238-1009 https://us02web.zoom.us/j/6092381009</td><td class='muted'>Dawn Lenert, Tom Bellhouse, Lindsey Heumann, Danielle Austin, Jason Blewitt, Janice Design, Erin Birkenhauer, Joe Bianca, Melinda Blonshine, Tom Murphy, Jeff Lowe, Ali West Point, Terry Finley, Casey Clemmons</td><td class='muted'>https://us02web.zoom.us/j/6092381009<br><a href='https://www.google.com/calendar/event?eid=NWw4cXNkNHRvbHZlaDJic2FoazZyYWJiZHZfMjAyNjA0MzBUMTUwMDAwWiB0ZXJyeUB3ZXN0cG9pbnR0Yi5jb20' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>11:30am–12:30pm ET</td><td>Horse Call</td><td class='muted'>Jeff Lowe, West Point Thoroughbreds Team 2023, Terry Finley</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=MGl1bGFjaW1sa2R1MWpudmk5ZDZlODNmYmdfMjAyNjA0MzBUMTUzMDAwWiB0ZXJyeUB3ZXN0cG9pbnR0Yi5jb20' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>4:49pm–4:49pm ET</td><td>Garden of Grace &amp; Careless Whisper at Belmont at the Big A in race 8</td><td class='muted'>Finley, Ryan, Jeff Lowe, West Point Thoroughbreds Team 2026, Terry Finley</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=NjRnb3RrbWwxdXJwM2o4NWxqbmdjZHJtcmogdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>5:00pm–7:00pm ET</td><td>WPT Partners Party</td><td class='muted'>—</td><td class='muted'>Pendennis Club, 218 W Muhammad Ali Blvd, Louisville, KY 40202, USA<br><a href='https://www.google.com/calendar/event?eid=NGg2bWc4cjUzZ205cHQ1ZGdnYTdtcG1lMm4gdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>6:53pm–6:53pm ET</td><td>Castle Run at Churchill Downs in race 12</td><td class='muted'>Finley, Ryan, Jeff Lowe, West Point Thoroughbreds Team 2026, Terry Finley</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=NWhucW9oNHNscmptZTVubWRscjlrYnQzYWogdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-</tbody></table>
-<h3 class='day'>Fri, May 1</h3>
-<table class='table'><thead><tr><th style='width:110px'>Time</th><th>Event</th><th style='width:220px'>Attendees</th><th style='width:220px'>Location / Link</th></tr></thead><tbody>
-<tr><td class='muted'>9:00am–9:30am ET</td><td>Oaks Day Internal Review</td><td class='muted'>Erin Birkenhauer, Joe Bianca, Dawn Lenert, Tom Murphy, Tom Bellhouse, Jeff Lowe, Lindsey Heumann, Ali West Point, Terry Finley, Debbie Finley, Danielle Austin, Jason Blewitt</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=Nm80amxnNG44ZTFwNnFoYmI2ZGVvMnZqOGEgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>3:12pm–3:12pm ET</td><td>Paige Turner at Churchill Downs in race 6</td><td class='muted'>Finley, Ryan, Jeff Lowe, West Point Thoroughbreds Team 2026, Terry Finley</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=NWJtdHMzdHE3MjlicDZrM2xqaTE1MnMzZ3AgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>4:54pm–4:54pm ET</td><td>Cajun Gold at Gulfstream Park in race 8</td><td class='muted'>Finley, Ryan, Jeff Lowe, West Point Thoroughbreds Team 2026, Terry Finley</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=NmF0bDE3N2xqM3FwaGhpbWVsNjdqYjJ1Y2ggdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-<tr><td class='muted'>8:40pm–8:40pm ET</td><td>Counting Stars at Churchill Downs in race 13</td><td class='muted'>Finley, Ryan, Jeff Lowe, West Point Thoroughbreds Team 2026, Terry Finley</td><td class='muted'><a href='https://www.google.com/calendar/event?eid=MGExY3JhZjYwcm84Z2k1cDExamQzNWRmbmMgdGVycnlAd2VzdHBvaW50dGIuY29t' target='_blank' rel='noopener'>Open</a></td></tr>
-</tbody></table>
+    <section>
+      <div class="h"><h2>Schedule</h2></div>
 
-    <h2>Alerts</h2>
-    <div class='card red'><div class='card-title'>Urgent</div><ul class='bullets'><li><span class='pill gold'>Tight</span> Mass → Call graves Gilbert (0 min)</li><li><span class='pill gold'>Tight</span> Call graves Gilbert → Oaks with Erin discussion (0 min)</li></ul></div>
-<div class='card gold'><div class='card-title'>Attention</div><div class='muted'>2026 inventory sheet shows <b>0% remaining</b> across listed horses; confirm if new offerings are pending update.</div></div>
+      <div class="card">
+        <div class="h">
+          <h2 style="text-transform:none;letter-spacing:0;color:var(--text);font-size:15px;margin:0">Sat, May 2</h2>
+          <span class="tag gold">Location: KY</span>
+        </div>
+        <table class="table">
+          <thead><tr><th>Time (ET)</th><th>Event</th><th>Attendees</th><th>Where</th></tr></thead>
+          <tbody>
+            <tr><td style="white-space:nowrap">All day</td><td><b>KY Derby</b></td><td>Debbie Finley, Terry Finley</td><td><a href="https://www.google.com/calendar/event?eid=MXFxMXRwMDRhMmZuaWpoZXF1NTJjanZpdHMgdGVycnlAd2VzdHBvaW50dGIuY29t">Open</a></td></tr>
+            <tr><td style="white-space:nowrap">All day</td><td><b>📍KY</b></td><td></td><td><a href="https://www.google.com/calendar/event?eid=NWJpMXU4djA5N243MzJ0aTFtdWs0cWdrOGcgdGVycnlAd2VzdHBvaW50dGIuY29t">Open</a></td></tr>
+            <tr><td style="white-space:nowrap">8:00 AM ET</td><td><b>Derby Day Internal Review</b></td><td>Erin Birkenhauer, Joe Bianca, Dawn Lenert, Tom Murphy, Tom Bellhouse, Jeff Lowe, Lindsey Heumann, Ali West Point, Terry Finley, Debbie Finley, Danielle Austin, Jason Blewitt</td><td><a href="https://www.google.com/calendar/event?eid=MTJndmYzb2JuNWFlMnZhbHBxZXA5dW1lN2ggdGVycnlAd2VzdHBvaW50dGIuY29t">Open</a></td></tr>
+            <tr><td style="white-space:nowrap">8:45 AM ET</td><td><b>Check with richard woodruff</b></td><td></td><td><a href="https://www.google.com/calendar/event?eid=cGM4amhzajM5N2k5dGVkbWtwdWttbGIyczQgdGVycnlAd2VzdHBvaW50dGIuY29t">Open</a></td></tr>
+            <tr><td style="white-space:nowrap">9:00 AM ET</td><td><b>AI Agents Workshop w/ Claude Code &amp; n8n | Exclusive 3hr Session</b></td><td>Terry Finley</td><td><a href="https://www.google.com/calendar/event?eid=X2NjczZjZDFsYzRxNjJiOW02dGdtOGI5a2NoaTM0YmIxY2NzNmNkMWxjNHE2MmI5bTZ0Z204YjlrY2hpMzRiYjEgdGVycnlAd2VzdHBvaW50dGIuY29t">Open</a><div class="small">https://event.webinarjam.com/46r75/register/gyr3pav0</div></td></tr>
+            <tr><td style="white-space:nowrap">12:05 PM ET</td><td><b>Vibe and Bullard at Churchill Downs in race 3</b></td><td>Finley, Ryan, Jeff Lowe, West Point Thoroughbreds Team 2026, Terry Finley</td><td><a href="https://www.google.com/calendar/event?eid=MTI4bGloY3JyMm41aDc0bG52cm8yZXVrOWogdGVycnlAd2VzdHBvaW50dGIuY29t">Open</a></td></tr>
+            <tr><td style="white-space:nowrap">2:19 PM ET</td><td><b>Feeling Groovy at Horseshoe Indianapolis in race 7</b></td><td>Finley, Ryan, Jeff Lowe, West Point Thoroughbreds Team 2026, Terry Finley</td><td><a href="https://www.google.com/calendar/event?eid=NzN0ZzVraGFxbGY1ZGM5MjFmazkyc2JoZGYgdGVycnlAd2VzdHBvaW50dGIuY29t">Open</a></td></tr>
+            <tr><td style="white-space:nowrap">2:28 PM ET</td><td><b>Battle of Normandy at Belmont at the Big A in race 4</b></td><td>Finley, Ryan, Jeff Lowe, West Point Thoroughbreds Team 2026, Terry Finley</td><td><a href="https://www.google.com/calendar/event?eid=MWhjc3EwOXIycmxtNTdhNW1jMjFya3FxbDggdGVycnlAd2VzdHBvaW50dGIuY29t">Open</a></td></tr>
+            <tr><td style="white-space:nowrap">6:24 PM ET</td><td><b>Golden Joker at Belmont at the Big A in race 11</b></td><td>Finley, Ryan, Jeff Lowe, West Point Thoroughbreds Team 2026, Terry Finley</td><td><a href="https://www.google.com/calendar/event?eid=MWFua2Jidmx1Nm0xMjc5MzhvOGxiMjgzN2IgdGVycnlAd2VzdHBvaW50dGIuY29t">Open</a></td></tr>
+          </tbody>
+        </table>
+      </div>
 
-    
+      <div class="card">
+        <div class="h">
+          <h2 style="text-transform:none;letter-spacing:0;color:var(--text);font-size:15px;margin:0">Sun, May 3</h2>
+          <span class="tag gold">Location: KY</span>
+        </div>
+        <table class="table"><thead><tr><th>Time (ET)</th><th>Event</th><th>Attendees</th><th>Where</th></tr></thead><tbody>
+          <tr><td style="white-space:nowrap">All day</td><td><b>📍KY</b></td><td></td><td><a href="https://www.google.com/calendar/event?eid=MmVoZGR0aTI3dHMyZjZzb2I0am9zczljOTUgdGVycnlAd2VzdHBvaW50dGIuY29t">Open</a></td></tr>
+        </tbody></table>
+      </div>
 
-    <h2>Team Pulse</h2>
-    <h3><span class='tag'>#exec-team</span></h3>
-<ul class='bullets'>
-<li><span class='muted'>2026-04-28 16:20:15 CDT</span> — <b>Erin Birkenhauer (ID: U02FMS146QN)</b>: I will ask Dona tomorrow what her honest thoughts are. She would have a good sense on some of the confidentiality stuff we've discussed. <a class='muted' href='https://westpointtb.slack.com/archives/C0702F2JWBD/p1777411215864739?thread_ts=1777410891.478879&amp;cid=C0702F2JWBD' target='_blank' rel='noopener'>(open)</a></li>
-<li><span class='muted'>2026-04-28 16:14:51 CDT</span> — <b>Erin Birkenhauer (ID: U02FMS146QN)</b>: &lt;@U02F5J2V24X|Terry Finley&gt; a girl I I know through riding with Dona reached out asking if I knew of any job openings. Don’t know her super well but Dona always spoke very highly of her work ethic. Early 30s Lives in Lexington. From Maryland. Industry experience limited but knows horses. Believe she has a masters in equine nutrition. Said she's looking for something in 65 range. Will post resume. But definitely a candidate for assistant role. <a class='muted' href='https://westpointtb.slack.com/archives/C0702F2JWBD/p1777410891478879?thread_ts=1777410891.478879&amp;cid=C0702F2JWBD' target='_blank' rel='noopener'>(open)</a></li>
-<li><span class='muted'>2026-04-28 15:05:52 CDT</span> — <b>Erin Birkenhauer (ID: U02FMS146QN)</b>: He is also coded as a group member in Salesforce as he said he still wanted to stay in loop. I was ok with that but let me know if you'd rather him not receive our partner emails. <a class='muted' href='https://westpointtb.slack.com/archives/C0702F2JWBD/p1777406752878689?thread_ts=1777398370.867619&amp;cid=C0702F2JWBD' target='_blank' rel='noopener'>(open)</a></li>
-<li><span class='muted'>2026-04-28 12:46:10 CDT</span> — <b>Lindsey Heumann (ID: U02FSCM61DZ)</b>: Spoke with Dawn on Casey logins -
+      <div class="card">
+        <div class="h">
+          <h2 style="text-transform:none;letter-spacing:0;color:var(--text);font-size:15px;margin:0">Mon, May 4</h2>
+          <span class="tag gold">Location: KY</span>
+        </div>
+        <table class="table"><thead><tr><th>Time (ET)</th><th>Event</th><th>Attendees</th><th>Where</th></tr></thead><tbody>
+          <tr><td style="white-space:nowrap">All day</td><td><b>📍KY</b></td><td></td><td><a href="https://www.google.com/calendar/event?eid=NXJ0Z2w0aDBodG1hbW5mcTc1N3VwYmdlMzYgdGVycnlAd2VzdHBvaW50dGIuY29t">Open</a></td></tr>
+          <tr><td style="white-space:nowrap">7:00 AM ET</td><td><b>Contractor</b></td><td></td><td><a href="https://www.google.com/calendar/event?eid=dXVuZmY0bjQyaGw2aG0wNmxrdTlqaTFnanMgdGVycnlAd2VzdHBvaW50dGIuY29t">Open</a></td></tr>
+          <tr><td style="white-space:nowrap">12:45 PM ET</td><td><b>Do Sales APP</b></td><td></td><td><a href="https://www.google.com/calendar/event?eid=amx2N28xNDdybDJpajNxcmtwYTRqM2M3czQgdGVycnlAd2VzdHBvaW50dGIuY29t">Open</a></td></tr>
+          <tr><td style="white-space:nowrap">2:00 PM ET</td><td><b>West Point + Sovergn AI</b></td><td>Terry Finley, Andrew Shields</td><td><a href="https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc4NTIzMmdwbjZjcjRhZzlvOGdyazhncGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNjRxa2NnaGk2MTFrOGRwbzg1Mmo4YzlrNmNzNGFoOW82Y3BrNmRwbzZjcGppYzI2NmdwMCB0ZXJyeUB3ZXN0cG9pbnR0Yi5jb20">Open</a><div class="small">Microsoft Teams Meeting</div></td></tr>
+          <tr><td style="white-space:nowrap">4:00 PM ET</td><td><b>MB Samuel Meeting</b></td><td>MB Samuel, Terry Finley</td><td><a href="https://www.google.com/calendar/event?eid=amRxb3VodDZwdG03anA4NHI5cDZtMG02NGsgdGVycnlAd2VzdHBvaW50dGIuY29t">Open</a></td></tr>
+        </tbody></table>
+      </div>
+    </section>
 
-• Salesforce license - deactivated, can use the license for anyone that comes aboard
-• Slack - being deactivated
-• Website login - staying as a "partner" so he can follow
-• Google/gmail - Dawn is changing the password and will forward along anything important that comes through
+    <section>
+      <div class="h"><h2>Alerts</h2></div>
+      <div class="card">
+        <ul>
+          <li><span class="tag red">URGENT</span> From Miguel Oyster Harbor had a bit of a temperature early this morning and it’s starting to quickly escalate. Will send him to Rood &amp; Riddle clinic, <span class="small">(<a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1777639370435229">Slack</a>)</span></li>
+          <li><span class="tag gold">ATTENTION</span> Feeling Groovy is first AE tomorrow and they are trying to find out today if she will get in rather than at scratch time in the morning when they would have little to no shot of shipping in in time. <span class="small">(<a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1777643065955569">Slack</a>)</span></li>
+        </ul>
+      </div>
+    </section>
 
-&lt;@U02F5J2V24X|Terry Finley&gt; reminder to review and change any password (s) on the personal side he had access to <a class='muted' href='https://westpointtb.slack.com/archives/C0702F2JWBD/p1777398370867619?thread_ts=1777398370.867619&amp;cid=C0702F2JWBD' target='_blank' rel='noopener'>(open)</a></li>
-</ul>
-<h3><span class='tag'>#sales-made</span></h3>
-<ul class='bullets'>
-<li><span class='muted'>2026-04-28 13:13:02 CDT</span> — <b>Terry Finley (ID: U02F5J2V24X)</b>: Let's go baby! <a class='muted' href='https://westpointtb.slack.com/archives/C0334BG31D3/p1777399982230569?thread_ts=1777373751.860139&amp;cid=C0334BG31D3' target='_blank' rel='noopener'>(open)</a></li>
-<li><span class='muted'>2026-04-28 05:55:51 CDT</span> — <b>Jason Blewitt (ID: U02FVP54YEQ)</b>: Robert Grein good on 5% Charlatan on hold <a class='muted' href='https://westpointtb.slack.com/archives/C0334BG31D3/p1777373751860139?thread_ts=1777373751.860139&amp;cid=C0334BG31D3' target='_blank' rel='noopener'>(open)</a></li>
-</ul>
-<h3><span class='tag purple'>Terry's DMs to Individuals</span></h3>
-<ul class='bullets'>
-<li><span class='muted'>2026-04-28 21:21:06 CDT</span> — <span class='muted'>DM (ID: D02FBLYEC23)</span>: Also, lets dsicuss the ai channel - think it is a dm not a channel.  We should convert it to a channel. <a class='muted' href='https://westpointtb.slack.com/archives/D02FBLYEC23/p1777429266422249' target='_blank' rel='noopener'>(open)</a></li>
-<li><span class='muted'>2026-04-28 21:08:28 CDT</span> — <span class='muted'>DM (ID: D02NMTD7Q9M)</span>: Up to you guys.  We’ll be over Wednesday afternoon. <a class='muted' href='https://westpointtb.slack.com/archives/D02NMTD7Q9M/p1777428508090929?thread_ts=1777256149.639309&amp;cid=D02NMTD7Q9M' target='_blank' rel='noopener'>(open)</a></li>
-<li><span class='muted'>2026-04-28 09:00:15 CDT</span> — <span class='muted'>DM (ID: D04SFF2N7LK)</span>: Lets dsicuss 
+    <section>
+      <div class="h"><h2>Team Pulse</h2></div>
+      <div class="card">
+        <div class="h"><h2 style="text-transform:none;letter-spacing:0;color:var(--text);font-size:15px;margin:0">#horse-comms</h2><span class="tag gold">#horse-comms</span></div>
+        <ul>
+          <li><b>Jeff Lowe</b>: Eisaman report: <span class="small">(<a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1777651940179839">link</a>)</span></li>
+          <li><b>Jeff Lowe</b>: Feeling Groovy is first AE tomorrow and they are trying to find out today if she will get in rather than at scratch time in the morning when they would have little to no shot of shipping in in time. <span class="small">(<a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1777643065955569">link</a>)</span></li>
+          <li><b>Tom Bellhouse</b>: From Miguel <span class="small">(<a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1777639370435229">link</a>)</span></li>
+        </ul>
+        <div class="small" style="margin-top:8px;white-space:pre-wrap">(Full text for multi-line updates is available via the Slack links.)</div>
+      </div>
+    </section>
 
-Terry, here’s the clean step-by-step plan.
-Best path: connect Claude Code through <b>MCP</b>
-Claude Code connects to outside systems through <b>MCP</b> servers. Anthropic says <b>MCP</b> is the standard way to let Claude Code reach external tools, APIs, and data sources. Claude Code can load <b>MCP</b> servers from a project-level .mcp.jsonfile, and <b>MCP</b> tools must be explicitly allowed before Claude can use them. (&lt;https://code.claude.com/docs/en/agent-sdk/mcp|Claude&gt;)
-Step 1: Put one technical owner on this
-Have your head of prospecting work with whoever manages:
-System
-Needed person
-HubSpot
-HubSpot admin / developer
-Salesforce
-Salesforce admin / developer
-Claude Code
-Technical user comfortable with terminal / VS Code
-Security
-Someone who can approve <b>API</b> scopes
-Step 2: Decide what Claude should be allowed to do
-Start read-only.
-Recommended first use cases:
-Use case
-HubSpot
-Salesforce
-Look up prospects
-Yes
-Yes
-Summarize recent activity
-Yes
-Yes
-Identify stale leads
-Yes
-Yes
-Draft next-step recommendations
-Yes
-Yes
-Create/update records
-Later
-Later
-Do not start with broad write access.
-Step 3: HubSpot setup
-HubSpot now offers an official remote <b>MCP</b> server for <b>CRM</b> access. It can give <b>MCP</b>-compatible tools secure read/write access to contacts, companies, deals, tickets, engagements, and more. HubSpot says the remote server uses OAuth credentials connected to the mcp.hubspot.com endpoint. (&lt;https://developers.hubspot.com/mcp|HubSpot Developers&gt;)
-Have her do this:
-1. Go to HubSpot Developer settings.
-2. Create a user-level app.
-3. Grant only the <b>CRM</b> scopes she needs first:
-    ◦ contacts read
-    ◦ companies read
-    ◦ deals read
-    ◦ engagements read
-    ◦ owners/users read
-4. Complete OAuth authorization.
-5. Save the client ID, client secret, and token flow securely.
-6. Add the HubSpot <b>MCP</b> server to Claude Code’s .mcp.json.
-Conceptually, the Claude config will look like:
-{
-  "mcpServers": {
-    "hubspot": {
-      "type": "http",
-      "url": "https://mcp.hubspot.com",
-      "headers": {
-        "Authorization": "Bearer ${HUBSPOT_ACCESS_TOKEN}"
-      }
-    }
-  }
-}
-Step 4: Salesforce setup
-Salesforce has an official Salesforce DX <b>MCP</b> Server. Salesforce says it lets LLMs read, manage, and operate Salesforce org resources, but it is currently described as beta/pilot. (&lt;https://github.com/salesforcecli/mcp|GitHub&gt;)
-Steps:
-1. Install Salesforce <b>CLI</b>.
-2. Log in to the correct Salesforce org locally.
-3. Confirm the default org.
-4. Add Salesforce’s <b>MCP</b> server to .mcp.json.
-Salesforce’s Claude Code example looks like this: (&lt;https://github.com/salesforcecli/mcp|GitHub&gt;)
-{
-  "mcpServers": {
-    "Salesforce DX": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@salesforce/mcp",
-        "--orgs",
-        "DEFAULT_TARGET_ORG",
-        "--toolsets",
-        "orgs,data,users",
-        "--no-telemetry"
-      ]
-    }
-  }
-}
-I would not start with metadata, devops, or all. For prospecting, begin with:
-orgs,data,users
-Step 5: Create the Claude Code project folder
-Have her create a folder like:
-prospecting-ai-workbench
-Inside that folder:
-.mcp.json
-<b>README</b>.md
-prompts/
-reports/
-The .mcp.json holds the connections. The prompts folder holds reusable prospecting prompts.
-Step 6: Add safety rules
-In the project <b>README</b>, put rules like:
-Claude may read HubSpot and Salesforce data for prospecting analysis.
-Claude may not:
-- delete records
-- mass update records
-- email prospects directly
-- change deal stages
-- modify Salesforce objects
-- export large lists without approval
-- expose <b>API</b> keys or access tokens
-Step 7: Test one system at a time
-Start with HubSpot:
-Claude, check whether you can see HubSpot tools. Do not modify anything. List the available read-only tools.
-Then Salesforce:
-Claude, check whether you can see Salesforce tools. Do not modify anything. List available data and user tools.
-Claude Code troubleshooting should focus on whether the <b>MCP</b> server status is connected, whether environment variables are set, and whether tools were explicitly allowed. Anthropic notes that missing environment variables, invalid credentials, missing Node/npm packages, and network issues are common causes. (&lt;https://code.claude.com/docs/en/agent-sdk/mcp|Claude&gt;)
-Step 8: Give her three starter prompts
-Look up this prospect in HubSpot and Salesforce. Summarize what we know, recent activity, open opportunities, and recommended next move. Do not update any records.
-Find prospects with strong engagement but no recent follow-up. Return a table with name, company, last touch, evidence, and recommended action. Do not update any records.
-Compare HubSpot and Salesforce records for this prospect. Identify mismatches, missing fields, and recommended cleanup. Do not make changes.
-Step 9: Move to write access only after 2 weeks
-After she proves value, allow narrow writes:
-Action
-Allow?
-Create task
-Yes
-Add note
-Yes
-Update lifecycle stage
-Later
-Change deal amount
-No
-Delete records
-Never
-Bulk update
-Only with approval
-My recommendation
-Start with HubSpot remote <b>MCP</b> first, because prospecting activity usually lives closer to HubSpot. Then add Salesforce DX <b>MCP</b> once the workflow is stable.
-Prompt to take this further:
-Build me a read-only Claude Code prospecting playbook for HubSpot and Salesforce, including setup checklist, allowed scopes, test prompts, and safety rules for my head of prospecting. <a class='muted' href='https://westpointtb.slack.com/archives/D04SFF2N7LK/p1777384815702379' target='_blank' rel='noopener'>(open)</a></li>
-</ul>
+    <section>
+      <div class="h"><h2>Racing</h2></div>
+      <div class="card">
+        <div class="small">Entries &amp; results feed (homepage)</div>
+        <table class="table">
+          <thead><tr><th>Date</th><th>Horse</th><th>Track</th><th>Race</th><th>Post</th><th>Jockey</th></tr></thead>
+          <tbody>
+            <tr><td>05/01/26</td><td><b>Paige Turner</b></td><td>Churchill Downs</td><td>NW1X Allowance</td><td>3:12 ET</td><td>Jose Ortiz</td></tr>
+            <tr><td>05/01/26</td><td><b>Honoree</b></td><td>Belmont at the Big A</td><td>NY-Bred Maiden Special Weight</td><td>3:35 ET</td><td>Manny Franco</td></tr>
+            <tr><td>05/01/26</td><td><b>Cajun Gold</b></td><td>Gulfstream Park</td><td>Florida-Bred NW1X Allowance</td><td>4:54 ET</td><td>Yolber Torres</td></tr>
+            <tr><td>05/01/26</td><td><b>Counting Stars</b></td><td>Churchill Downs</td><td>Kentucky Oaks (G1)</td><td>8:40 ET</td><td>Francisco Arrieta</td></tr>
+            <tr><td>05/02/26</td><td><b>Vibe</b></td><td>Churchill Downs</td><td>NW2X Allowance</td><td>12:05 ET</td><td>Luis Saez</td></tr>
+            <tr><td>05/02/26</td><td><b>Bullard</b></td><td>Churchill Downs</td><td>NW2X Allowance</td><td>12:05 ET</td><td>John Velazquez</td></tr>
+            <tr><td>05/02/26</td><td><b>Feeling Groovy</b></td><td>Horseshoe Indianapolis</td><td>Maiden Special Weight</td><td>2:19 ET</td><td>Victor Carrasco</td></tr>
+            <tr><td>05/02/26</td><td><b>Battle of Normandy</b></td><td>Belmont at the Big A</td><td>Fort Marcy Stakes (G3T)</td><td>2:28 ET</td><td>Dylan Davis</td></tr>
+            <tr><td>05/02/26</td><td><b>Golden Joker</b></td><td>Belmont at the Big A</td><td>NYB Maiden Claiming 50k</td><td>6:24 ET</td><td>Reylu Gutierrez</td></tr>
+            <tr><td>05/02/26</td><td><b>Find No Fault</b></td><td>Churchill Downs</td><td>Maiden Special Weight</td><td>8:33 ET</td><td>Tyler Gaffalione</td></tr>
+          </tbody>
+        </table>
+      </div>
 
-    <h2>Racing</h2>
-    <h3>Entries & Results (from WPT homepage)</h3>
-<pre class='mono'>### Available Horses
-- **Charlatan Colt**: Charlatan - Colby (Super Saver)
-  - **Trainer**: Cherie DeVaux
+      <div class="card">
+        <div class="small">Upcoming races</div>
+        <table class="table">
+          <thead><tr><th>Date</th><th>Horse</th><th>Track</th><th>Race</th><th>Entry date</th></tr></thead>
+          <tbody>
+            <tr><td>05/07/26</td><td><b>Carson’s Run</b></td><td>Belmont at the Big A</td><td>Allowance</td><td>05/01/26</td></tr>
+            <tr><td>05/07/26</td><td><b>Miss Enchanted</b></td><td>Churchill Downs</td><td>NW2X Allowance</td><td>04/30/26</td></tr>
+            <tr><td>05/07/26</td><td><b>If Ever</b></td><td>Belmont at the Big A</td><td>Maiden Special Weight</td><td>05/01/26</td></tr>
+            <tr><td>05/09/26</td><td><b>Careless Whisper</b></td><td>Belmont at the Big A</td><td>NY-Bred Maiden Special Weight</td><td>05/03/26</td></tr>
+            <tr><td>05/10/26</td><td><b>Statesman</b></td><td>Belmont at the Big A</td><td>NW1X Allowance</td><td>05/06/26</td></tr>
+            <tr><td>05/10/26</td><td><b>Sansone</b></td><td>Belmont at the Big A</td><td>NW1X Allowance</td><td>05/06/26</td></tr>
+            <tr><td>05/13/26</td><td><b>Run Away Rojo</b></td><td>Horseshoe Indianapolis</td><td>Onesmoothoperator Handicap</td><td>05/07/26</td></tr>
+            <tr><td>05/15/26</td><td><b>Tiz the Lady</b></td><td>Laurel Park</td><td>Maiden Special Weight</td><td>05/10/26</td></tr>
+            <tr><td>05/15/26</td><td><b>Walking in Memphis</b></td><td>Gulfstream Park</td><td>Claiming 35k NW3L</td><td>05/08/26</td></tr>
+            <tr><td>05/15/26</td><td><b>Legalize</b></td><td>Churchill Downs</td><td>NW3X Allowance</td><td>05/08/26</td></tr>
+            <tr><td>05/16/26</td><td><b>Reagan’s Honor</b></td><td>Laurel Park</td><td>Sir Barton Stakes</td><td>05/10/26</td></tr>
+            <tr><td>05/17/26</td><td><b>Integration</b></td><td>Laurel Park</td><td>Dinner Party Stakes (G3T)</td><td>05/11/26</td></tr>
+            <tr><td>05/17/26</td><td><b>Absolutely Hot</b></td><td>Churchill Downs</td><td>NW1X Allowance</td><td>05/10/26</td></tr>
+            <tr><td>05/21/26</td><td><b>Casino</b></td><td>Churchill Downs</td><td>Maiden Special Weight</td><td>05/14/26</td></tr>
+            <tr><td>05/23/26</td><td><b>Peak Performer</b></td><td>Belmont at the Big A</td><td>Maiden Special Weight</td><td>05/17/26</td></tr>
+            <tr><td>05/30/26</td><td><b>Reagan’s Wit</b></td><td>Churchill Downs</td><td>Arlington Stakes (G3T)</td><td>05/23/26</td></tr>
+            <tr><td>06/06/26</td><td><b>Brightline Bullet</b></td><td>Saratoga</td><td>NW1X Allowance</td><td>05/31/26</td></tr>
+            <tr><td>06/13/26</td><td><b>Pascaline</b></td><td>Charles Town</td><td>Confucius Say Stakes</td><td>06/10/26</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-### Entries &amp; Results Table
+    <section>
+      <div class="h"><h2>Sales Pipeline</h2></div>
+      <div class="card">
+        <table class="table">
+          <thead><tr><th>Opportunity</th><th>Stage</th><th>Amount</th><th>Close</th><th>Owner</th><th>Last modified (UTC)</th></tr></thead>
+          <tbody>
+            <tr><td>LeFrois,  Richard - 3-2026</td><td>Not talked to yet</td><td><b>$20,000</b></td><td>2026-05-16</td><td><b>Jason Blewitt</b></td><td class="small">2026-05-01T20:08:32.000+0000</td></tr>
+            <tr><td>Kilbride,  Duane - 2027</td><td>Not talked to yet</td><td><b>$20,000</b></td><td>2027-04-21</td><td><b>Jason Blewitt</b></td><td class="small">2026-05-01T20:08:31.000+0000</td></tr>
+            <tr><td>Burmeister,  Thomas - 2027</td><td>Not talked to yet</td><td><b>$20,000</b></td><td>2027-04-19</td><td><b>Jason Blewitt</b></td><td class="small">2026-04-30T20:16:05.000+0000</td></tr>
+            <tr><td>Kern - 2027</td><td>Not talked to yet</td><td><b>$20,000</b></td><td>2027-04-22</td><td><b>Jason Blewitt</b></td><td class="small">2026-04-30T17:02:45.000+0000</td></tr>
+            <tr><td>Dolan II - 2026 VERY</td><td>Talking - No Commitment</td><td><b>$20,000</b></td><td>2026-11-01</td><td><b>Jason Blewitt</b></td><td class="small">2026-04-30T17:02:45.000+0000</td></tr>
+            <tr><td>Hoffman,  John - 2027</td><td>Not talked to yet</td><td><b>$20,000</b></td><td>2027-04-29</td><td><b>Jason Blewitt</b></td><td class="small">2026-04-30T16:44:23.000+0000</td></tr>
+            <tr><td>Gage Kalama Florence - 2026</td><td>Picking Horses</td><td><b>$20,000</b></td><td>2026-10-01</td><td><b>Ali Finley</b></td><td class="small">2026-04-30T16:33:58.000+0000</td></></tr>
+          </tbody>
+        </table>
+        <div class="small">Full list (20) available in Salesforce.</div>
+      </div>
+    </section>
 
-| Date      | Horse            | Trainer        | Track              | Race Name/Type              | Race # | Post Time | Post Position     | Distance | Surface | Rider            |
-|-----------|------------------|----------------|-------------------|-----------------------------|--------|-----------|-------------------|----------|---------|------------------|
-| 04/30/26 | Garden of Grace  | George Weaver  | Belmont at the Big A | NY-Bred Maiden Special Weight | 8     | 4:49 ET  | 6 of 8           | 6F      | turf   | Edgard Zayas    |
-| 04/30/26 | Careless Whisper | George Weaver  | Belmont at the Big A | NY-Bred Maiden Special Weight | 8     | 4:49 ET  | 10 of 10 (MTO)   | 6F      | dirt   | No rider        |
-| 04/30/26 | Castle Run       | Cherie DeVaux  | Churchill Downs    | Maiden Claiming 50k         | 12    | 6:53 ET  | 10 of 12         | 6F      | dirt   | Jose Ortiz      |
-| 05/01/26 | Paige Turner     | Cherie DeVaux  | Churchill Downs    | NW1X Allowance              | 6     | 3:12 ET  | 5 of 14          | 6.5F    | dirt   | Jose Ortiz      |
-| 05/01/26 | Honoree          | Shug McGaughey | Belmont at the Big A | NY-Bred Maiden Special Weight | 5     | 3:35 ET  | 4 of 8           | 8.5F    | turf   | Manny Franco    |
-| 05/01/26 | Cajun Gold       | Heather Smullen| Gulfstream Park    | Florida-Bred NW1X Allowance | 8     | 4:54 ET  | 2 of 9           | 5F      | turf   | Yolber Torres   |
-| 05/01/26 | Counting Stars   | Mark Casse     | Churchill Downs    | Kentucky Oaks (G1)          | 13    | 8:40 ET  | 4 of 14          | 9F      | dirt   | Francisco Arrieta |
-| 05/02/26 | Vibe             | Todd Pletcher  | Churchill Downs    | NW2X Allowance              | 3     | 12:05 ET | 10 of 14         | 8F      | dirt   | Luis Saez       |
-| 05/02/26 | Bullard          | Michael McCarthy | Churchill Downs  | NW2X Allowance              | 3     | 12:05 ET | 14 of 14         | 8F      | dirt   | John Velazquez  |
-| 05/02/26 | Battle of Normandy | Shug McGaughey | Belmont at the Big A | Fort Marcy Stakes (G3T)   | 4     | 2:28 ET  | 2 of 7           | 9F      | turf   | Dylan Davis     |
-| 05/02/26 | Golden Joker     | Miguel Clement | Belmont at the Big A | NYB Maiden Claiming 50k    | 11    | 6:24 ET  | 2 of 10          | 6F      | turf   | Reylu Gutierrez |
-| 05/02/26 | Find No Fault    | Dale Romans    | Churchill Downs    | Maiden Special Weight       | 14    | 8:33 ET  | 8 of 14          | 7F      | dirt   | Tyler Gaffalione |</pre>
-<h3>Upcoming Races (WPT)</h3>
-<pre class='mono'>|Race Date|Horse|Track|Name/Type|Entry Date|
-|--|--|--|--|--|
-|05/07/26|Carson’s Run|Belmont at the Big A|Allowance|05/01/26|
-|05/07/26|Miss Enchanted|Churchill Downs|NW2X Allowance|04/30/26|
-|05/07/26|If Ever|Belmont at the Big A|Maiden Special Weight|05/01/26|
-|05/09/26|Careless Whisper|Belmont at the Big A|NY-Bred Maiden Special Weight|05/03/26|
-|05/10/26|Statesman|Belmont at the Big A|NW1X Allowance|05/06/26|
-|05/10/26|Sansone|Belmont at the Big A|NW1X Allowance|05/06/26|
-|05/13/26|Run Away Rojo|Horseshoe Indianapolis|Onesmoothoperator Handicap|05/07/26|
-|05/15/26|Tiz the Lady|Laurel Park|Maiden Special Weight|05/10/26|
-|05/15/26|Walking in Memphis|Gulfstream Park|Claiming 35k NW3L|05/08/26|
-|05/15/26|Legalize|Churchill Downs|NW3X Allowance|05/08/26|
-|05/16/26|Reagan’s Honor|Laurel Park|Sir Barton Stakes|05/10/26|
-|05/17/26|Integration|Laurel Park|Dinner Party Stakes (G3T)|05/11/26|
-|05/17/26|Absolutely Hot|Churchill Downs|NW1X Allowance|05/10/26|
-|05/21/26|Casino|Churchill Downs|Maiden Special Weight|05/14/26|
-|05/23/26|Peak Performer|Belmont at the Big A|Maiden Special Weight|05/17/26|
-|05/30/26|Reagan’s Wit|Churchill Downs|Arlington Stakes (G3T)|05/23/26|
-|06/06/26|Brightline Bullet|Saratoga|NW1X Allowance|05/31/26|
-|06/13/26|Pascaline|Charles Town|Confucius Say Stakes|06/10/26|</pre>
-<p class='muted'>Sources: <a href='https://www.westpointtb.com' target='_blank' rel='noopener'>westpointtb.com</a>, <a href='https://www.westpointtb.com/racing/upcoming-races/' target='_blank' rel='noopener'>Upcoming Races</a>.</p>
+    <section>
+      <div class="h"><h2>Decisions Needed</h2></div>
+      <div class="card">
+        <ul>
+          <li><span class="tag red">URGENT</span> Oyster Harbor temperature escalation — sent to Rood &amp; Riddle clinic (monitor status + next steps).</li>
+          <li><span class="tag gold">ATTENTION</span> Feeling Groovy is first AE — confirm if getting in early vs waiting until scratch time (shipping risk).</li>
+        </ul>
+      </div>
+    </section>
 
-    <h2>Decisions Needed</h2>
-    <ul class='bullets'>
-      <li><span class='pill gold'>Attention</span> Confirm whether the 2026 inventory sheet is current (all listed horses show <b>0% remaining</b>).</li>
-      <li><span class='pill gold'>Attention</span> From #exec-team: decide whether Casey should remain a Salesforce group member / continue receiving partner emails.</li>
-    </ul>
-
-    <h2>Sales Pipeline</h2>
-    <table class='table'><thead><tr><th>Opportunity</th><th>Stage</th><th>Amount</th><th>Close</th><th>Owner</th><th>Last Modified</th></tr></thead><tbody><tr><td>Silver,  Jeffrey - 2027</td><td class='muted'>Not talked to yet</td><td><b>$20,000</b></td><td class='muted'>2027-04-21</td><td class='muted'>Tom Bellhouse</td><td class='muted'>apr 29 6:00am et</td></tr>
-<tr><td>Jody Palmer - 2026</td><td class='muted'>Talking - No Commitment</td><td><b>$15,000</b></td><td class='muted'>2026-05-29</td><td class='muted'>Tom Bellhouse</td><td class='muted'>apr 28 10:41pm et</td></tr>
-<tr><td>Tony Mullin - 2026</td><td class='muted'>Talking - No Commitment</td><td><b>$15,000</b></td><td class='muted'>2026-04-29</td><td class='muted'>Tom Bellhouse</td><td class='muted'>apr 28 10:39pm et</td></tr>
-<tr><td>Hoffman,  John - 2026</td><td class='muted'>Talking - Unlikely to Close</td><td><b>$20,000</b></td><td class='muted'>2026-10-06</td><td class='muted'>Jason Blewitt</td><td class='muted'>apr 28 10:34pm et</td></tr>
-<tr><td>Michael Williams - 2026</td><td class='muted'>Talking - No Commitment</td><td><b>$15,000</b></td><td class='muted'>2026-06-03</td><td class='muted'>Joe Bianca</td><td class='muted'>apr 28 10:28pm et</td></tr>
-<tr><td>Michael Sheedy - 2026</td><td class='muted'>Talking - No Commitment</td><td><b>$15,000</b></td><td class='muted'>2026-09-30</td><td class='muted'>Jason Blewitt</td><td class='muted'>apr 28 10:26pm et</td></tr>
-<tr><td>Stuart Wolpert - 2026</td><td class='muted'>Talking - No Commitment</td><td><b>$15,000</b></td><td class='muted'>2026-05-31</td><td class='muted'>Jason Blewitt</td><td class='muted'>apr 28 10:20pm et</td></tr>
-<tr><td>Helling - 2026</td><td class='muted'>Talking - No Commitment</td><td><b>$20,000</b></td><td class='muted'>2026-10-01</td><td class='muted'>Joe Bianca</td><td class='muted'>apr 28 5:42pm et</td></tr>
-<tr><td>Zirlin,  Todd - 2026</td><td class='muted'>Talking - No Commitment</td><td><b>$20,000</b></td><td class='muted'>2026-09-15</td><td class='muted'>Joe Bianca</td><td class='muted'>apr 28 5:42pm et</td></tr>
-<tr><td>Matthew McJunkin - 2026</td><td class='muted'>Talking - No Commitment</td><td><b>$15,000</b></td><td class='muted'>2026-05-31</td><td class='muted'>Tom Bellhouse</td><td class='muted'>apr 28 4:12pm et</td></tr>
-<tr><td>Mariano Morell - 2026</td><td class='muted'>Talking - No Commitment</td><td><b>$15,000</b></td><td class='muted'>2026-06-22</td><td class='muted'>Jason Blewitt</td><td class='muted'>apr 28 2:38pm et</td></tr>
-<tr><td>Myers,  Edward - 2026 Somewhat</td><td class='muted'>Picking Horses</td><td><b>$20,000</b></td><td class='muted'>2026-10-27</td><td class='muted'>Jason Blewitt</td><td class='muted'>apr 28 2:38pm et</td></tr>
-<tr><td>Beattie,  Adam and Marsha - 2026</td><td class='muted'>Not talked to yet</td><td><b>$20,000</b></td><td class='muted'>2026-09-17</td><td class='muted'>Jason Blewitt</td><td class='muted'>apr 28 2:38pm et</td></tr>
-<tr><td>Martindale,  Herschel - 2027</td><td class='muted'>Not talked to yet</td><td><b>$20,000</b></td><td class='muted'>2027-04-19</td><td class='muted'>Jason Blewitt</td><td class='muted'>apr 28 2:38pm et</td></tr>
-<tr><td>Goldfarb,  Irwin - 2027</td><td class='muted'>Not talked to yet</td><td><b>$20,000</b></td><td class='muted'>2027-03-15</td><td class='muted'>Jason Blewitt</td><td class='muted'>apr 28 2:38pm et</td></tr>
-<tr><td>Futrovsky - 2027</td><td class='muted'>Not talked to yet</td><td><b>$20,000</b></td><td class='muted'>2027-04-24</td><td class='muted'>Jason Blewitt</td><td class='muted'>apr 28 2:38pm et</td></tr>
-<tr><td>Holwell,  Steve - 2026 SOMEWHAT</td><td class='muted'>Picking Horses</td><td><b>$20,000</b></td><td class='muted'>2026-06-20</td><td class='muted'>Jason Blewitt</td><td class='muted'>apr 28 2:38pm et</td></tr>
-<tr><td>Miller,  Chase - 2027</td><td class='muted'>Not talked to yet</td><td><b>$20,000</b></td><td class='muted'>2027-03-13</td><td class='muted'>Tom Murphy</td><td class='muted'>apr 28 2:30pm et</td></tr>
-<tr><td>Baird,  John - 2026</td><td class='muted'>Closed Won</td><td><b>$8,200</b></td><td class='muted'>2026-04-19</td><td class='muted'>Jason Blewitt</td><td class='muted'>apr 28 2:25pm et</td></tr>
-<tr><td>Baird,  John - 2026</td><td class='muted'>Closed Won</td><td><b>$21,200</b></td><td class='muted'>2026-04-19</td><td class='muted'>Jason Blewitt</td><td class='muted'>apr 28 2:24pm et</td></tr></tbody></table>
-
-    <h2>Perplexity Computer Slack Activity</h2>
-    <div class='muted'>No bot messages found in the last ~48 hours (Slack search: from:Perplexity after:2026-04-27).</div>
-
-    <footer>
-      Built for internal use. Calendar times shown in ET.
+    <footer class="meta" style="margin-top:18px;border-top:1px solid #E6E3DD;padding-top:10px">
+      Data sources: Google Calendar; Slack; Salesforce; West Point Thoroughbreds website.
     </footer>
   </div>
 </body>
