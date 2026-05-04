@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>WPT CEO Daily Briefing — Sunday, May 3, 2026</title>
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap' rel='stylesheet'>
+<style>
+:root{--bg:#FFFFFF;--text:#28251D;--teal:#01696F;--teal-light:#E8F5F5;--muted:#6b675f;--red:#B42318;--gold:#B54708;--green:#027A48;--purple:#6941C6;--gray:#667085;--card:#F7F7F5;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5;}
+.wrap{max-width:880px;margin:0 auto;padding:28px 24px;}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--teal);padding-bottom:14px;margin-bottom:22px;}
+h1{font-size:22px;margin:0;color:var(--teal);font-weight:700;}
+h2{font-size:16px;margin:22px 0 10px 0;color:var(--teal);text-transform:uppercase;letter-spacing:0.04em;border-bottom:1px solid #E7E6E3;padding-bottom:6px;}
+.small{color:var(--muted);font-size:12px;}
+section{margin:16px 0;}
+.card{background:var(--card);border:1px solid #E7E6E3;border-radius:10px;padding:14px 16px;margin-bottom:10px;}
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px;}
+.tbl th,.tbl td{padding:8px 10px;border-bottom:1px solid #E7E6E3;text-align:left;vertical-align:top;}
+.tbl th{background:var(--teal-light);color:var(--teal);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:0.03em;}
+.tag{display:inline-block;font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:10px;text-transform:uppercase;letter-spacing:0.04em;margin-right:6px;}
+.tag-red{background:#FEE4E2;color:var(--red);}
+.tag-gold{background:#FEF0C7;color:var(--gold);}
+.tag-green{background:#D1FADF;color:var(--green);}
+.tag-purple{background:#EBE9FE;color:var(--purple);}
+.tag-teal{background:var(--teal-light);color:var(--teal);}
+ul{margin:6px 0 10px 18px;padding:0;}
+li{margin:5px 0;}
+b,strong{font-weight:700;}
+a{color:var(--teal);text-decoration:none;border-bottom:1px solid rgba(1,105,111,0.3);}
+a:hover{border-bottom:1px solid var(--teal);}
+.kpi{display:inline-block;padding:3px 8px;background:var(--teal-light);color:var(--teal);border-radius:6px;font-weight:700;font-size:13px;}
+footer{margin-top:30px;padding-top:14px;border-top:1px solid #E7E6E3;color:var(--muted);font-size:12px;text-align:center;}
+@media(max-width:640px){.wrap{padding:18px 14px;}h1{font-size:18px;}.tbl{font-size:12.5px;}}
+@media print{body{background:#fff;}.wrap{max-width:100%;padding:0;}}
+</style>
+</head>
+<body>
+<div class='wrap'>
+<header>
+<h1>WPT CEO Daily Briefing</h1>
+<div class='small'>Sunday, May 3, 2026 · 📍 KY · Derby weekend wrap</div>
+</header>
+
+<section>
+<h2>Schedule — Today (Sun May 3)</h2>
+<table class='tbl'>
+<tr><th style='width:90px'>Time ET</th><th>Event</th></tr>
+<tr><td>All day</td><td><b>📍 KY</b></td></tr>
+</table>
+<div class='small'>Open day — use it for partner outreach on Counting Stars (4th in the Oaks) and Oyster Harbor follow-up with Rood &amp; Riddle.</div>
+</section>
+
+<section>
+<h2>Schedule — Mon May 4 + Tue May 5</h2>
+<table class='tbl'>
+<tr><th style='width:140px'>When</th><th>Event</th><th>With / Link</th></tr>
+<tr><td><b>Mon all day</b></td><td>📍 KY</td><td></td></tr>
+<tr><td>Mon 7:00 AM</td><td>Contractor</td><td>—</td></tr>
+<tr><td>Mon 12:45 PM</td><td>Do Sales APP</td><td>—</td></tr>
+<tr><td><b>Mon 2:00 PM</b></td><td><b>West Point + Sovergn AI</b></td><td>Andrew Shields · <a href='https://teams.microsoft.com/meet/218311304127136?p=QxZHqYWP03oeEFBHs4'>Teams</a></td></tr>
+<tr><td><b>Mon 4:00 PM</b></td><td>MB Samuel Meeting</td><td>Mary Boyd Samuel</td></tr>
+<tr><td>Mon 8:15 PM</td><td>Baseball — Basil Griffin 5</td><td>Erin (Debbie tentative)</td></tr>
+<tr><td><b>Tue all day</b></td><td>📍 KY · <span class='tag tag-purple'>Birthday</span><b>Dawn Lenert's Birthday</b></td><td></td></tr>
+<tr><td><b>Tue 11:00 AM</b></td><td><span class='tag tag-red'>Conflict</span>Weekly AI/Tech Sync</td><td>Dawn, Lindsey, Ali (all declined) · <a href='https://us02web.zoom.us/j/6096367204'>Zoom</a></td></tr>
+<tr><td><b>Tue 11:00 AM</b></td><td><span class='tag tag-red'>Conflict</span><b>NMRHOF Finance &amp; Audit Committee</b></td><td>Walt Borisenok, Charlotte Weber, Charlie Wait, John Franck, Brown Advisory · Bongard Room</td></tr>
+</table>
+<div class='small'>⚠️ Tuesday 11 AM hard conflict — AI/Tech Sync (everyone declined) vs. NMRHOF Finance &amp; Audit Committee. Drop the AI Sync and own the museum committee meeting. Also a chance to wish Dawn a happy birthday.</div>
+</section>
+
+<section>
+<h2>Alerts</h2>
+<div class='card'>
+<ul>
+<li><span class='tag tag-red'>Health escalation</span><b>Oyster Harbour colt</b> — at <b>Rood &amp; Riddle</b>. Fairfield Bain (Internal Medicine + Pathology) reports a small area of <b>pneumonia in the right lung tip</b> plus blood streams from the right bronchus on endoscopy (possible bleed). Started on IV penicillin + Baytril + anti-inflammatories. <i>"Hoping for a short visit."</i> Bain is open to direct calls.</li>
+<li><span class='tag tag-gold'>Personnel</span><b>Cody Hembree</b> added to the <b>Charlatan shut-out list</b> (Ali, Sat May 2) — confirm new-partner welcome packet sent.</li>
+<li><span class='tag tag-gold'>Comms</span><b>Counting Stars</b> 4th in the <b>Kentucky Oaks (G1)</b> Friday — strong showing; partner-comms recap + photos owed.</li>
+<li><span class='tag tag-gold'>This week</span><b>Capital call due May 7</b> — partner notification still open.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>2026 Inventory — Only Horse with Remaining Inventory</h2>
+<table class='tbl'>
+<tr><th>Horse</th><th>Trainer</th><th>% Sold</th><th>% Left</th><th>$ Remaining</th><th>WPT Owns</th></tr>
+<tr><td><b>Cairo Prince × Cabaret Starlet</b> (F)</td><td>Clement</td><td>90%</td><td>10%</td><td><span class='kpi'>$21,600</span></td><td>100%</td></tr>
+</table>
+<div class='small'>All other 2026 horses sold out. Casse colt incoming next.</div>
+</section>
+
+<section>
+<h2>Team Pulse — Last 48 Hours</h2>
+
+<div class='card'>
+<div><span class='tag tag-teal'>#horse-comms</span></div>
+<ul>
+<li><b>Jason Blewitt</b> (Sat 8:55 AM): "<b>90 Beyer for Counting Stars… 77 Paige Turner.</b>"</li>
+<li><b>Tom Bellhouse</b> (Sat 1:09 PM, forwarded from <b>Dr. Fairfield Bain @ Rood &amp; Riddle</b>): "I have the <b>Oyster Harbour colt</b>. He has a small area of pneumonia in the bottom tip of the right lung. On endoscopy, a couple of streams of blood from the bronchus of the right lung — possible bleeding episode. Collected an airway sample for culture and cytology; starting IV penicillin and Baytril plus anti-inflammatory. Hoping for a short visit. Welcome to call me with questions."</li>
+</ul>
+</div>
+
+<div class='card'>
+<div><span class='tag tag-green'>#sales-made</span></div>
+<ul>
+<li><b>Ali Finley</b> (Sat 1:22 PM): "Please add new partner <b>Cody Hembree</b> to the <b>Charlatan</b> shut-out list."</li>
+</ul>
+</div>
+
+<div class='small'>#sales, #exec-team, #prospectcomms, Terry's DMs — no new posts in the last 48 hours.</div>
+</section>
+
+<section>
+<h2>Racing — Derby Weekend Recap</h2>
+
+<div class='card'>
+<b>Friday May 1 finishes:</b>
+<ul>
+<li><b>Counting Stars</b> — <b>4 of 14</b> in the <b>Kentucky Oaks (G1)</b> at Churchill (Casse · Arrieta · 9F dirt · <b>90 Beyer</b>). Strong G1 effort.</li>
+<li><b>Cajun Gold</b> — <b>2 of 9</b> in the FL-Bred NW1X Allowance at Gulfstream (Smullen · Torres · 5F turf). Money finish.</li>
+<li><b>Honoree</b> — 4 of 8 in the NY-Bred MSW at Belmont at the Big A (McGaughey · Franco · 8.5F turf).</li>
+<li><b>Paige Turner</b> — 5 of 14 in the NW1X Allowance at Churchill (DeVaux · Ortiz · 6.5F dirt · 77 Beyer).</li>
+</ul>
+
+<b>Saturday May 2 finishes:</b>
+<ul>
+<li><b>Battle of Normandy</b> — <span class='tag tag-green'>2nd</span> in the <b>Fort Marcy Stakes (G3T)</b> at Belmont at the Big A (McGaughey · Davis · 9F turf). <b>Black-type runner-up.</b></li>
+<li><b>Golden Joker</b> — <span class='tag tag-green'>2nd</span> in NYB Maiden Claiming 50k at Belmont at the Big A (Clement · Gutierrez · 6F turf).</li>
+<li><b>Vibe</b> — 10 of 14 in NW2X Allowance at Churchill (Pletcher · Saez · 8F dirt).</li>
+<li><b>Bullard</b> — 14 of 14 in NW2X Allowance at Churchill (McCarthy · Velazquez · 8F dirt).</li>
+<li><b>Feeling Groovy</b> — 13 of 12 (AE/scratch) at Horseshoe Indianapolis (DeVaux · Carrasco).</li>
+<li><b>Find No Fault</b> — 8 of 14 in MSW at Churchill (Romans · Gaffalione · 7F dirt).</li>
+</ul>
+</div>
+
+<div class='card'>
+<b>Upcoming entries:</b>
+<ul>
+<li>Garden of Grace + Les Reys (FR) — License Fee Stakes, Belmont at the Big A</li>
+<li>May 16 — <b>Reagan's Honor</b> in <b>Sir Barton Stakes</b> at Laurel</li>
+<li>May 17 — <b>Integration</b> in <b>Dinner Party Stakes (G3T)</b> at Laurel</li>
+<li>May 25 — <b>Final Boss</b> in <b>Shoemaker Mile (G1T)</b></li>
+<li>May 30 — <b>Reagan's Wit</b> in <b>Arlington Stakes (G3T)</b> at Churchill</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>Decisions Needed</h2>
+<div class='card'>
+<ol>
+<li><b>Oyster Harbour</b> — call Dr. Bain at Rood &amp; Riddle today; partner update + comms decision before Monday close.</li>
+<li><b>Counting Stars Oaks 4th</b> — partner-comms recap + Preakness/Black-Eyed Susan path discussion.</li>
+<li><b>Tuesday 11 AM conflict</b> — drop AI Sync (everyone declined), confirm NMRHOF attendance.</li>
+<li><b>Capital call (May 7)</b> — finalize partner-notification copy + send timeline today.</li>
+<li><b>Cairo Prince filly last 10%</b> — push reps for the close before Casse colt rollout.</li>
+</ol>
+</div>
+</section>
+
+<section>
+<h2>Sales Pipeline (Last 7 Days)</h2>
+<table class='tbl'>
+<tr><th>Opportunity</th><th>Stage</th><th>Amount</th><th>Close</th><th>Owner</th></tr>
+<tr><td><b>David Normandie 2026</b></td><td><b>Picking Horses</b></td><td>$15,000</td><td>Apr 30</td><td>Ali</td></tr>
+<tr><td><b>Gage Kalama Florence 2026</b></td><td><b>Picking Horses</b></td><td>$20,000</td><td>Oct 1</td><td>Ali</td></tr>
+<tr><td>Guerriero, Christopher 2026</td><td>Talking — No Commit</td><td>$20,000</td><td>May 20</td><td>Blewitt</td></tr>
+<tr><td>LeFrois, Richard 3-2026</td><td>Not talked to yet</td><td>$20,000</td><td>May 16</td><td>Blewitt</td></tr>
+<tr><td>Weldon 2026</td><td>Talking — Unlikely</td><td>$20,000</td><td>Jun 1</td><td>Blewitt</td></tr>
+<tr><td>Michel 2026</td><td>Talking — No Commit</td><td>$20,000</td><td>Jun 1</td><td>Blewitt</td></tr>
+<tr><td>Reeder, Andrew 2026</td><td>Talking — No Commit</td><td>$20,000</td><td>Jun 20</td><td>Blewitt</td></tr>
+<tr><td>Dalessandro 2026 VERY LIKELY</td><td>Talking — No Commit</td><td>$20,000</td><td>Jun 3</td><td>Blewitt</td></tr>
+<tr><td>Vignoe, Chris 2026</td><td>Talking — No Commit</td><td>$20,000</td><td>Aug 15</td><td>Murphy</td></tr>
+<tr><td>Dolan II 2026 VERY</td><td>Talking — No Commit</td><td>$20,000</td><td>Nov 1</td><td>Blewitt</td></tr>
+<tr><td>2027 cohort build-out (12 opps)</td><td>Not talked to yet / Unlikely</td><td>$20,000 ea</td><td>2027</td><td>Blewitt/Murphy/Bianca</td></tr>
+</table>
+<div class='small'><b>Notable:</b> Two <b>Picking Horses</b> opps with Ali (David Normandie $15k overdue Apr 30, Gage Kalama Florence $20k) — these are the closest to land. Blewitt continued heavy pipeline-build (15 opps logged Apr 30 / May 1 / May 2).</div>
+</section>
+
+<section>
+<h2>Perplexity Computer — Slack Activity</h2>
+<div class='card'>
+<div class='small'>The Sat May 2 CEO briefing posted to Terry's DM at 5:08 AM CDT. The Sun May 3 (today) briefing escalated due to a build-script error and is being delivered now via the parent agent. No other Perplexity Computer activity in the last 48 hours.</div>
+</div>
+</section>
+
+<footer>
+Generated Sun, May 3, 2026 · WPT CEO Daily Briefing · <a href='https://tfinley1.github.io/wpt-daily-briefing/'>tfinley1.github.io/wpt-daily-briefing</a>
+</footer>
+</div>
+</body>
+</html>
