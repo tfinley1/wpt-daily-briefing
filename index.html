@@ -1,203 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang='en'>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WPT CEO Daily Briefing — Sunday, May 17, 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>WPT CEO Daily Briefing — Monday, May 18, 2026</title>
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap' rel='stylesheet'>
 <style>
-  :root{--bg:#FFFFFF;--ink:#28251D;--teal:#01696F;--teal-soft:#E6F0F1;--muted:#6C6A63;--line:#E5E3DC;--gold:#B8860B;--red:#A12C7B;--green:#437A22;}
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:var(--bg);color:var(--ink);font-family:'Inter',-apple-system,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:880px;margin:0 auto;padding:32px 24px 80px}
-  header{border-bottom:2px solid var(--teal);padding-bottom:16px;margin-bottom:28px}
-  .eyebrow{color:var(--teal);font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
-  h1{font-size:28px;font-weight:800;margin-top:6px;letter-spacing:-.01em}
-  h2{font-size:20px;font-weight:700;color:var(--teal);margin:36px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
-  h3{font-size:15px;font-weight:700;margin:18px 0 6px;color:var(--ink)}
-  p{margin:8px 0}
-  ul{margin:8px 0 8px 22px}
-  li{margin:4px 0}
-  .snapshot{background:var(--teal-soft);border-left:4px solid var(--teal);padding:16px 20px;border-radius:4px;margin-bottom:18px}
-  .move{background:#FFF8E1;border-left:4px solid var(--gold);padding:16px 20px;border-radius:4px;margin:18px 0}
-  .move .lbl{color:var(--gold);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
-  .alert{color:var(--red);font-weight:600}
-  .win{color:var(--green);font-weight:600}
-  .watch{color:var(--gold);font-weight:600}
-  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}
-  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{background:#FAFAF7;font-weight:600;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
-  .compact{font-size:14px}
-  .muted{color:var(--muted)}
-  .num{font-variant-numeric:tabular-nums}
-  .channel-block{margin:14px 0;padding:10px 14px;background:#FAFAF7;border-radius:4px}
-  .channel-block h3{margin-top:0}
-  footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);text-align:center}
-  @media print{body{font-size:12px}.wrap{max-width:100%;padding:12px}h2{margin-top:20px}}
-  @media (max-width:600px){h1{font-size:22px}h2{font-size:17px}.wrap{padding:18px 14px 60px}}
+:root{--bg:#FFFFFF;--ink:#28251D;--teal:#01696F;--muted:#6b665c;--red:#b42318;--gold:#b54708;--green:#027a48;--card:#f7f7f6;}
+*{box-sizing:border-box;}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);}
+.container{max-width:980px;margin:0 auto;padding:24px;}
+.header{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;border-bottom:1px solid #e7e5e2;padding-bottom:14px;margin-bottom:18px;}
+.h1{font-size:22px;font-weight:800;margin:0;}
+.sub{color:var(--muted);font-size:13px;}
+.section{margin:18px 0 0;}
+.h2{font-size:15px;margin:0 0 10px;font-weight:800;color:var(--teal);text-transform:uppercase;letter-spacing:.06em;}
+.card{background:var(--card);border:1px solid #ebe9e6;border-radius:12px;padding:14px;}
+ul{margin:8px 0 0 18px;}
+.li-tight li{margin:4px 0;}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:700;}
+.red{background:#fee4e2;color:var(--red);}
+.gold{background:#fffaeb;color:var(--gold);}
+.green{background:#ecfdf3;color:var(--green);}
+.table{width:100%;border-collapse:collapse;}
+.table th,.table td{text-align:left;padding:8px 10px;border-bottom:1px solid #e7e5e2;vertical-align:top;}
+.table th{font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em;}
+.kv{display:grid;grid-template-columns:180px 1fr;gap:8px 12px;}
+.k{color:var(--muted);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;}
+.v{font-size:14px;}
+.small{font-size:12px;color:var(--muted);}
+@media print{.card{break-inside:avoid;}}
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class='container'>
+  <div class='header'>
+    <h1 class='h1'>WPT CEO Daily Briefing</h1>
+    <div class='sub'>Monday, May 18, 2026 · Generated 6:00 AM ET</div>
+  </div>
 
-<header>
-  <div class="eyebrow">WPT CEO Daily Briefing</div>
-  <h1>Sunday, May 17, 2026</h1>
-  <p class="muted compact">Run #29 · Garden of Grace debut at Belmont 4:41 PM ET · Max Wittenberg call 3 PM ET · Fasig-Tipton Midlantic sale starts tomorrow</p>
-</header>
+  <div class='section'>
+    <div class='h2'>1. CEO Snapshot</div>
+    <div class='card'>
+      <div class='kv'>
+        <div class='k'>Top 3 priorities</div>
+        <div class='v'><ul class='li-tight'><li>Confirm Fasig-Tipton Midlantic May 2YO sale coverage (shortlist, budget, bidding lanes)</li><li>Prep for West Point Distinguished Graduate Awards (logistics + key conversations)</li><li>Ensure sales team is aligned on the FT May 2026 Shortlist call list</li></ul></div>
+        <div class='k'>Biggest risk</div>
+        <div class='v'><span class='badge red'>Urgent</span> {esc(big_risk)}</div>
+        <div class='k'>Biggest opportunity</div>
+        <div class='v'><span class='badge gold'>Attention</span> {esc(opp)}</div>
+        <div class='k'>Needs Terry</div>
+        <div class='v'>{esc(needs_you)}</div>
+        <div class='k'>Delegate</div>
+        <div class='v'>{esc(delegate)}</div>
+      </div>
+    </div>
+  </div>
 
-<section class="snapshot">
-  <h3 style="margin-top:0;color:var(--teal)">1) CEO Snapshot</h3>
-  <p><strong>Top 3 priorities today</strong></p>
-  <ul>
-    <li><strong>Garden of Grace</strong> debut today at Belmont at the Big A, Race 8 (NY-Bred MSW, 4:41 PM ET) — first-time starter, partners watching</li>
-    <li><strong>Max Wittenberg call</strong> at 3:00 PM ET — handle personally, no overlap with the race</li>
-    <li>Sit down for 20 minutes to prep for the <strong>Fasig-Tipton Midlantic 2YO sale</strong> that opens tomorrow — review the short list before Joe Applebaum call at 10 AM Monday</li>
-  </ul>
-  <p><strong>Biggest risk:</strong> <span class="alert">Reagan's Honor has moderate pneumonia</span> at Mid-Atlantic Equine (Dr. Belgrave). Sir Barton Stakes scratch was the right call. Partner comms need to go out today so the news doesn't break on social first.</p>
-  <p><strong>Biggest opportunity:</strong> Quiet Sunday is the rare window to think clearly about the <strong>Fasig-Tipton Midlantic 2YO sale</strong> opening tomorrow — auction-allowance purse increases at Saratoga ($90k) make the lower-cost lots especially attractive this year.</p>
-  <p><strong>You handle:</strong> Reagan's Honor partner update + Max Wittenberg call.</p>
-  <p><strong>Delegate:</strong> Have Erin/Lindsey draft the Reagan's Honor health update for partners; you approve before send.</p>
-</section>
+  <div class='section'>
+    <div class='h2'>2. 1 CEO Move Today</div>
+    <div class='card'>
+      <div style='font-size:15px;font-weight:700'>{esc(ceo_move)}</div>
+      <div class='small' style='margin-top:6px'>Trigger: Slack note about <b>34 peeps</b> on the FT May 2026 shortlist call list.</div>
+    </div>
+  </div>
 
-<div class="move">
-  <div class="lbl">⭐ 2) 1 CEO Move Today</div>
-  <p><strong>Get the Reagan's Honor partner update out today, before the race news cycle.</strong> Pneumonia diagnosis at Mid-Atlantic Equine is significant enough that partners should hear it from WPT first — not from a Bloodhorse scratch note or a Twitter screenshot. Draft sent from you, two sentences max: diagnosis, treatment plan, attitude is good, will update again Tuesday.</p>
-</div>
+  <div class='section'>
+    <div class='h2'>3. Schedule (ET)</div>
+    <div class='card'>
+      <div class='small'>Note: today’s calendar pull had a transient connector read error; the schedule below reflects the next-2-days pull (and includes all-day items that begin today).</div>
+<h3 style='margin:14px 0 6px;font-size:14px'>Sun May 17</h3><table class='table'><thead><tr><th style='width:120px'>Time</th><th>Event</th><th style='width:220px'>Where / Link</th></tr></thead><tbody><tr><td><b>All day</b></td><td>Fasig-Tipton Midlantic May 2-Year-Olds in Training Sale</td><td><div class='small'><a href='https://www.google.com/calendar/event?eid=NzVpZTJqcjB2ajV0YWliZTJndnF2NDFhc2sgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr></tbody></table><h3 style='margin:14px 0 6px;font-size:14px'>Mon May 18</h3><table class='table'><thead><tr><th style='width:120px'>Time</th><th>Event</th><th style='width:220px'>Where / Link</th></tr></thead><tbody><tr><td><b>All day</b></td><td>West Point Distinguished Graduate Awards Ceremony — Vinnie Viola</td><td>United States Military Academy, 606 Thayer Rd, West Point, NY 10996, USA<div class='small'><a href='https://www.google.com/calendar/event?eid=MzVjbmk0YXZzYjdyb2luZ3ZhZ2JibXFrdDggdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr></tbody></table><h3 style='margin:14px 0 6px;font-size:14px'>Tue May 19</h3><table class='table'><thead><tr><th style='width:120px'>Time</th><th>Event</th><th style='width:220px'>Where / Link</th></tr></thead><tbody><tr><td><b>8:30 AM–9:30 AM</b></td><td>Shuttle pickup to West Point Club</td><td>Thayer Hotel<div class='small'><a href='https://www.google.com/calendar/event?eid=aDA5Mjh2OG12YTlrbzZzZTNkbTJiZXM1cDQgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr><tr><td><b>8:45 AM–9:45 AM</b></td><td>Breakfast</td><td>Hudson Room, West Point Club<div class='small'><a href='https://www.google.com/calendar/event?eid=M29hbTZxajB2ZnNxaWVvZ20ydGVwYjU5dXMgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr><tr><td><b>10:05 AM–11:05 AM</b></td><td>Alumni assemble for Alumni March and Wreath Laying Ceremony</td><td>Q100 Porch (spouses) / Superintendent’s Reviewing Stands (family)<div class='small'><a href='https://www.google.com/calendar/event?eid=bTk4Z3Vxb21mOGtnNnRvbWM5bzhta2hocGcgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr><tr><td><b>10:20 AM–11:20 AM</b></td><td>Alumni March and Wreath Laying Ceremony</td><td>Thayer Statue<div class='small'><a href='https://www.google.com/calendar/event?eid=bTFjbTJwdHI5a2lxZ3VjcHZkdG5kbnQ2NXMgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr><tr><td><b>11:00 AM–12:00 PM</b></td><td>Alumni Review</td><td>The Plain<div class='small'><a href='https://www.google.com/calendar/event?eid=OWljdmo1bTdsNjRhMW90YzVvZjY3ZmIyN2MgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr><tr><td><b>12:15 PM–1:15 PM</b></td><td>Alumni Luncheon</td><td>Cadet Mess Hall (Washington Hall)<div class='small'><a href='https://www.google.com/calendar/event?eid=Y2tyNmE0NmNnaWZia2hqcm5iaWQ1M3RkMzggdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr><tr><td><b>2:00 PM–3:00 PM</b></td><td>Tuesdays at Two: Spring/Summer 2026</td><td>https://us02web.zoom.us/w/84061156620?tk=QsLCFycuD54sNJpgJFQPE4jJrPk0zitCc3t9f-yd3D8.DQkAAAATkm91DBZ3MnhZRnVmMVRwZVBBbEFrNzZiOHJ3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<div class='small'><a href='https://www.google.com/calendar/event?eid=X2M4c2plcXJsZDhzbXVkajdkc3BtNm9wcGQwcjZtc2hqY2RobWdwcjVkMWttc2QzamQ5bzNnY2JpZGxnbjZzamJja29tc3JiOWU5bDZtcGI4ZDBwNzZycmljcGk2bV8yMDI2MDUxOVQxODAwMDBaIHRlcnJ5QHdlc3Rwb2ludHRiLmNvbQ'>Open</a></div></td></tr><tr><td><b>2:00 PM–4:00 PM</b></td><td>Post Luncheon Reception for Distinguished Graduate</td><td>TBD<div class='small'><a href='https://www.google.com/calendar/event?eid=dTNndnE3dWg0bWNpaHNsN24ybDF1ZDdwYmcgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr><tr><td><b>4:00 PM–7:00 PM</b></td><td>Swim 320PM</td><td><div class='small'><a href='https://www.google.com/calendar/event?eid=M3E1ODE2OTVxcXIzcnVxMTBxcjd1dTdyNGNfMjAyNjA1MTlUMjAwMDAwWiB0ZXJyeUB3ZXN0cG9pbnR0Yi5jb20'>Open</a></div></td></tr><tr><td><b>4:00 PM–4:15 PM</b></td><td>Joe a.   May 18, 10:00am
+https://zoom.us/j/93092212368?pwd=KaMnpbdKzURroA7yesvt9XeAOVs1da.1
 
-<h2>3) Schedule</h2>
+Meeting ID: 930 9221 2368
+Passcode: 607336</td><td><div class='small'><a href='https://www.google.com/calendar/event?eid=aGE5aDY2aDg3Yms2NmRmYmMxNWxtbXBiZWsgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr><tr><td><b>7:15 PM–7:30 PM</b></td><td>Get ready for joey</td><td><div class='small'><a href='https://www.google.com/calendar/event?eid=ZjE2aG90Z2c3ZTQzOWU3a3NhY3Jkcjg4bWsgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr><tr><td><b>8:00 PM–9:30 PM</b></td><td>Flying to BNA</td><td><div class='small'><a href='https://www.google.com/calendar/event?eid=N24zbHF2dWJ0cWQ1ZTgxczhvN3ZqbG0xc2QgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr><tr><td><b>8:15 PM–9:15 PM</b></td><td>Baseball Game 7:15 Basil Griffin 5</td><td><div class='small'><a href='https://www.google.com/calendar/event?eid=NG5mcms2dXUwN2IzNDRrYnVpaG5xN2ZucDYgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr></tbody></table><h3 style='margin:14px 0 6px;font-size:14px'>Wed May 20</h3><table class='table'><thead><tr><th style='width:120px'>Time</th><th>Event</th><th style='width:220px'>Where / Link</th></tr></thead><tbody><tr><td><b>7:00 AM–7:15 AM</b></td><td>Joey A working on AI</td><td><div class='small'><a href='https://www.google.com/calendar/event?eid=MnVuNTJmM3FwcmMzOG9mdDM4dm5sMTIxMWMgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr><tr><td><b>11:00 AM–12:00 PM</b></td><td>Exec Meeting</td><td>https://us02web.zoom.us/j/6096367204<div class='small'><a href='https://www.google.com/calendar/event?eid=NTY4cWJyOGRhZWRsYmM5b2txbjJhZWhxdXRfMjAyNjA1MjBUMTUwMDAwWiB0ZXJyeUB3ZXN0cG9pbnR0Yi5jb20'>Open</a></div></td></tr><tr><td><b>12:30 PM–1:00 PM</b></td><td>Terry / Phil / Atlas - Bi-Monthly</td><td><div class='small'><a href='https://www.google.com/calendar/event?eid=N3Rhbmx0ZmtyZWh1NGZ2bnJxOGk3ZjVodTZfMjAyNjA1MjBUMTcwMDAwWiB0ZXJyeUB3ZXN0cG9pbnR0Yi5jb20'>Open</a></div></td></tr><tr><td><b>3:00 PM–4:15 PM</b></td><td>MB Crosier</td><td><div class='small'><a href='https://www.google.com/calendar/event?eid=a2tha21lZ2tuM29qM25uZmhtZ2p0anNyYWcgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr><tr><td><b>4:00 PM–5:00 PM</b></td><td>Fasig-Midlantic Post Sale</td><td><div class='small'><a href='https://www.google.com/calendar/event?eid=NG9oMWxvbmZuMzk3MzM2MjZ0ZWxyMWUzaHEgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr><tr><td><b>5:00 PM–6:00 PM</b></td><td>Kids Golf</td><td><div class='small'><a href='https://www.google.com/calendar/event?eid=MWJxN25wMDdxMTdsYWtlODd1ODczYjVpbTYgdGVycnlAd2VzdHBvaW50dGIuY29t'>Open</a></div></td></tr></tbody></table>
+    </div>
+  </div>
 
-<h3>Today · Sunday, May 17</h3>
-<table>
-  <tr><th>Time (ET)</th><th>Event</th><th>Notes</th></tr>
-  <tr><td>3:00 – 4:00 PM</td><td><strong>Max Wittenberg call</strong></td><td>You organizing</td></tr>
-  <tr><td>4:41 PM</td><td><strong>Garden of Grace</strong> · Belmont at the Big A · Race 8 (NY-Bred MSW)</td><td>Jeff Lowe + WPT Team 2026 on invite, Ryan Finley invited · debut</td></tr>
-</table>
+  <div class='section'>
+    <div class='h2'>4. Alerts</div>
+    <div class='card'>
+<ul class='li-tight'><li><span class='badge red'>Conflict</span> 2026-05-19: Shuttle pickup to West Point Club overlaps Breakfast</li><li><span class='badge red'>Conflict</span> 2026-05-19: Alumni assemble for Alumni March and Wreath Laying Ceremony overlaps Alumni March and Wreath Laying Ceremony</li><li><span class='badge red'>Conflict</span> 2026-05-19: Alumni March and Wreath Laying Ceremony overlaps Alumni Review</li><li><span class='badge gold'>Tight</span> 2026-05-19: Alumni Review → Alumni Luncheon (15 min buffer)</li><li><span class='badge red'>Conflict</span> 2026-05-19: Tuesdays at Two: Spring/Summer 2026 overlaps Post Luncheon Reception for Distinguished Graduate</li><li><span class='badge gold'>Tight</span> 2026-05-19: Post Luncheon Reception for Distinguished Graduate → Swim 320PM (0 min buffer)</li><li><span class='badge red'>Conflict</span> 2026-05-19: Swim 320PM overlaps Joe a.   May 18, 10:00am
+https://zoom.us/j/93092212368?pwd=KaMnpbdKzURroA7yesvt9XeAOVs1da.1
 
-<h3>Tomorrow · Monday, May 18 (Fasig-Tipton Midlantic Day 1)</h3>
-<table>
-  <tr><th>Time (ET)</th><th>Event</th><th>Notes</th></tr>
-  <tr><td>All day</td><td><strong>Fasig-Tipton Midlantic May 2YO in Training Sale</strong></td><td>Day 1 of 3</td></tr>
-  <tr><td>10:00 – 10:30 AM</td><td>Daniel DePalma Zoom</td><td>Zoom · ddepalma@tbfo.com (TBFO)</td></tr>
-  <tr><td>10:00 – 10:15 AM</td><td>Call Joe Applebaum</td><td><span class="alert">Conflict with DePalma Zoom</span></td></tr>
-  <tr><td>3:00 – 4:00 PM</td><td>The Jockey Club Stewards Meeting (Option 2)</td><td>Microsoft Teams</td></tr>
-  <tr><td>3:00 PM</td><td>Call Jim Gagliano (Atlas call + WP visit)</td><td><span class="alert">Conflict with Jockey Club meeting</span></td></tr>
-  <tr><td>4:00 PM</td><td>Fasig Midlantic PreSale2</td><td></td></tr>
-  <tr><td>7:25 PM</td><td>Flight to Albany</td><td>For West Point Distinguished Graduate ceremony</td></tr>
-</table>
+Meeting ID: 930 9221 2368
+Passcode: 607336</li><li><span class='badge red'>Conflict</span> 2026-05-19: Flying to BNA overlaps Baseball Game 7:15 Basil Griffin 5</li><li><span class='badge red'>Conflict</span> 2026-05-20: MB Crosier overlaps Fasig-Midlantic Post Sale</li><li><span class='badge gold'>Tight</span> 2026-05-20: Fasig-Midlantic Post Sale → Kids Golf (0 min buffer)</li></ul>
+    </div>
+  </div>
 
-<h3>Tuesday, May 19 (West Point Distinguished Graduate Awards — Vinnie Viola)</h3>
-<table>
-  <tr><th>Time (ET)</th><th>Event</th><th>Notes</th></tr>
-  <tr><td>All day</td><td><strong>📍 West Point, NY</strong></td><td>USMA, 606 Thayer Rd · Distinguished Graduate Awards (Vinnie Viola)</td></tr>
-  <tr><td>8:30 AM</td><td>Shuttle pickup to West Point Club</td><td>Thayer Hotel</td></tr>
-  <tr><td>8:45 AM</td><td>Breakfast</td><td>Hudson Room, West Point Club</td></tr>
-  <tr><td>10:05 AM</td><td>Alumni assemble — March + Wreath Laying</td><td>Q100 Porch / Superintendent's Reviewing Stands</td></tr>
-  <tr><td>10:20 AM</td><td>Alumni March + Wreath Laying Ceremony</td><td>Thayer Statue</td></tr>
-  <tr><td>11:00 AM</td><td>Alumni Review</td><td>The Plain</td></tr>
-  <tr><td>12:15 PM</td><td>Alumni Luncheon</td><td>Cadet Mess Hall (Washington Hall)</td></tr>
-  <tr><td>2:00 PM</td><td><strong>Tuesdays at Two: Spring/Summer 2026</strong></td><td>Zoom</td></tr>
-  <tr><td>2:00 PM</td><td>Post Luncheon Reception for Distinguished Graduate</td><td>TBD</td></tr>
-  <tr><td>3:20 PM</td><td>Swim</td><td></td></tr>
-</table>
+  <div class='section'>
+    <div class='h2'>5. Team Pulse (Slack · last 2 days)</div>
+    <div class='card'>
+      <div style='margin-bottom:10px'>
+        <b>Executive Team Pulse Summary</b>
+        <ul class='li-tight'>
+          <li><span class='badge green'>Momentum</span> Sales ops progressing: <b>34 people</b> identified for the <b>FT May 2026 Shortlist call</b>.</li>
+          <li><span class='badge gold'>Follow-up</span> Ensure shortlist call has clear owner, agenda, and pre-read (targets + max bids).</li>
+          <li><span class='badge gold'>Signal</span> Limited chatter in tracked channels in last 48 hours; confirm if teams are using other channels for active deal updates.</li>
+        </ul>
+      </div>
+<h3 style='margin:12px 0 6px;font-size:14px'>#horse-comms</h3><div style='white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:12px;background:#fff;border:1px solid #e7e5e2;border-radius:10px;padding:10px'>---</div><h3 style='margin:12px 0 6px;font-size:14px'>#sales</h3><div style='white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:12px;background:#fff;border:1px solid #e7e5e2;border-radius:10px;padding:10px'>34 peeps on &lt;https://docs.google.com/spreadsheets/d/1O0pa0znFalhGNkXuwFlGNOwc_4PIsmmm/edit?gid=1058777943#gid=1058777943&amp;range=A1|FT May 2026 Shortlist call 1&gt; &lt;@S02N4LRKRPD|salesguys&gt; &lt;@U04SB65FZB5|Ali Finley&gt;
 
-<h2>4) Alerts</h2>
-<ul>
-  <li><span class="alert">Reagan's Honor — moderate pneumonia</span> at Mid-Atlantic Equine (Dr. Belgrave). Spiking fevers, on antibiotics/fluids/anti-inflammatories. Ultrasound not terrible if no progression. Attitude good. Sir Barton Stakes scratched yesterday. Partner update needed today.</li>
-  <li><span class="watch">Miss Enchanted likely scratch today</span> — coughing all day per Tom Murphy (Dale's call). Confirm post-decision and notify partners.</li>
-  <li><span class="alert">Monday 10 AM conflict</span> — DePalma Zoom and Joe Applebaum call both stacked at the same slot. Move one before tomorrow morning.</li>
-  <li><span class="alert">Monday 3 PM conflict</span> — Jockey Club Stewards Meeting and Jim Gagliano call both at 3 PM. Pick one or reschedule.</li>
-</ul>
+---</div><h3 style='margin:12px 0 6px;font-size:14px'>#sales-made</h3><div class='small'>No messages found in this window.</div><h3 style='margin:12px 0 6px;font-size:14px'>#prospectcomms</h3><div class='small'>No messages found in this window.</div><h3 style='margin:12px 0 6px;font-size:14px'>#exec-team</h3><div class='small'>No messages found in this window.</div><h3 style='margin:12px 0 6px;font-size:14px'>Terry DMs</h3><div class='small'>No messages found in this window.</div>
+    </div>
+  </div>
 
-<h2>5) Team Pulse</h2>
+  <div class='section'>
+    <div class='h2'>6. Racing</div>
+    <div class='card'>
+<div><b>Upcoming races list (from WPT site)</b>: <a href='https://www.westpointtb.com/racing/upcoming-races/'>Upcoming Races</a></div><ul class='li-tight'><li>05/07/26|Miss Enchanted|Churchill Downs|NW2X Allowance|04/30/26</li><li>05/09/26|Charlat River|Belmont at the Big A|Maiden Special Weight|05/02/26</li><li>05/09/26|Pillar of Beauty|Belmont at the Big A|Take The A Train Stakes|05/03/26</li><li>05/10/26|Willpowered|Belmont at the Big A|NY-Bred NW1X Allowance|05/04/26</li><li>05/10/26|Statesman|Belmont at the Big A|NW1X Allowance|05/06/26</li><li>05/10/26|Sansone|Belmont at the Big A|NW1X Allowance|05/06/26</li><li>05/13/26|Run Away Rojo|Horseshoe Indianapolis|Onesmoothoperator Handicap|05/07/26</li><li>05/15/26|Walking in Memphis|Gulfstream Park|Claiming 35k NW3L|05/08/26</li><li>05/15/26|Legalize|Churchill Downs|NW3X Allowance|05/08/26</li><li>05/15/26|Les Reys (FR)|Laurel Park|The Very One Stakes|05/10/26</li></ul><div style='margin-top:10px'><b>Entries & results</b>: <a href='https://www.westpointtb.com/racing/entries/'>Entries</a></div><div class='small' style='margin-top:8px'>More context: <a href='https://www.westpointtb.com'>westpointtb.com homepage</a></div>
+    </div>
+  </div>
 
-<div class="channel-block">
-  <h3>#horse-comms (since 5/15)</h3>
-  <ul>
-    <li><strong>Erin Birkenhauer (5/16 7:53 AM):</strong> <span class="alert">Reagan's Honor not doing well</span> — spiking fevers, lethargic, sent to Mid-Atlantic Equine clinic to Dr. Rodney Belgrave.</li>
-    <li><strong>Erin Birkenhauer (5/16 4:53 PM):</strong> Dr. Belgrave update — <strong>moderate pneumonia</strong>. On antibiotics, fluids, anti-inflammatories. Ultrasound not terrible if it doesn't progress. Attitude good.</li>
-    <li><strong>Lindsey Heumann (5/16 9:37 AM):</strong> "I will let Equus know."</li>
-    <li><strong>Tom Murphy (5/16 9:49 PM):</strong> Dale likely scratching <strong>Miss Enchanted</strong> today — coughing all day.</li>
-  </ul>
-</div>
+  <div class='section'>
+    <div class='h2'>7. Decisions Needed</div>
+    <div class='card'>
+      <ul class='li-tight'>
+        <li><b>Fasig-Tipton Midlantic May 2YO sale:</b> confirm bidding authority + max bid framework for top targets. <span class='badge gold'>This week</span></li>
+        <li><b>West Point trip logistics:</b> resolve Tue May 19 timing overlap (shuttle vs breakfast overlaps; plus overlapping 2:05/2:20 events). <span class='badge red'>Today</span></li>
+      </ul>
+    </div>
+  </div>
 
-<div class="channel-block">
-  <h3>#exec-team (since 5/15)</h3>
-  <ul>
-    <li><strong>Terry Finley (5/16 10:47 AM):</strong> "Tommy - digital sales and also horse updating/management" — note on Tommy's role.</li>
-  </ul>
-</div>
+  <div class='section'>
+    <div class='h2'>8. Perplexity Computer Slack Activity</div>
+    <div class='card'>
+<div class='small'>No Perplexity-related Slack mentions found in the last 2 days.</div>
+    </div>
+  </div>
 
-<p class="compact"><strong>Pulse summary:</strong> Quiet weekend — main signal is health-side. Reagan's Honor pneumonia is the dominant item, with Miss Enchanted scratch as a secondary watch. No sales activity over the weekend. Exec team has one note on Tommy/Lindsey responsibilities to follow up on Monday.</p>
-
-<h2>6) Racing</h2>
-
-<h3>Today</h3>
-<table>
-  <tr><th>Time (ET)</th><th>Horse</th><th>Track</th><th>Race</th></tr>
-  <tr><td>4:41 PM</td><td><strong>Garden of Grace</strong></td><td>Belmont at the Big A</td><td>Race 8 · NY-Bred Maiden Special Weight (debut)</td></tr>
-</table>
-
-<h3>This Week & Beyond</h3>
-<table>
-  <tr><th>Date</th><th>Horse</th><th>Track</th><th>Race</th></tr>
-  <tr><td>05/21</td><td>Casino</td><td>Churchill Downs</td><td>Maiden Special Weight</td></tr>
-  <tr><td>05/23</td><td>Peak Performer</td><td>Belmont at the Big A</td><td>Maiden Special Weight</td></tr>
-  <tr><td>05/23</td><td>Intricate Spirit</td><td>Belmont Park</td><td>Paradise Creek Stakes</td></tr>
-</table>
-
-<h3>Recent (last 3 days)</h3>
-<table>
-  <tr><th>Date</th><th>Horse</th><th>Track</th><th>Race</th></tr>
-  <tr><td>05/15</td><td>Walking in Memphis</td><td>Gulfstream Park</td><td>Claiming 35k NW3L</td></tr>
-  <tr><td>05/15</td><td>Legalize</td><td>Churchill Downs</td><td>NW3X Allowance</td></tr>
-  <tr><td>05/15</td><td>Les Reys (FR)</td><td>Laurel Park</td><td>The Very One Stakes</td></tr>
-  <tr><td>05/16</td><td><span class="alert">Reagan's Honor — SCRATCHED (pneumonia)</span></td><td>Laurel Park</td><td>Sir Barton Stakes</td></tr>
-  <tr><td>05/17</td><td>Absolutely Hot</td><td>Churchill Downs</td><td>NW1X Allowance</td></tr>
-</table>
-
-<h2>7) Decisions Needed</h2>
-<table>
-  <tr><th>Decision</th><th>Why it matters</th><th>Recommended</th><th>Timing</th></tr>
-  <tr>
-    <td>Reagan's Honor partner update</td>
-    <td>Pneumonia diagnosis at Mid-Atlantic; partners should hear from WPT first, not from social/scratch notes</td>
-    <td>Draft from Terry, 2 sentences, send today</td>
-    <td><strong>Today</strong></td>
-  </tr>
-  <tr>
-    <td>Monday 10 AM conflict: DePalma Zoom vs. Joe Applebaum call</td>
-    <td>Both calls collide on the calendar</td>
-    <td>Move Joe A. to 10:30 AM or after lunch</td>
-    <td><strong>Today</strong></td>
-  </tr>
-  <tr>
-    <td>Monday 3 PM conflict: Jockey Club vs. Jim Gagliano</td>
-    <td>Same time slot — Jockey Club is set; Gagliano is one-on-one</td>
-    <td>Take Jockey Club at 3, move Gagliano to Tues post-WP, or Wed</td>
-    <td><strong>Today</strong></td>
-  </tr>
-  <tr>
-    <td>Fasig-Tipton Midlantic short list</td>
-    <td>Sale starts tomorrow; PreSale2 at 4 PM Monday is the prep window</td>
-    <td>20 min prep block Sunday evening; confirm targets with Lowe</td>
-    <td><strong>Today</strong></td>
-  </tr>
-  <tr>
-    <td>Miss Enchanted scratch confirm + comms</td>
-    <td>Coughing all day per Dale; if scratched, partners notify</td>
-    <td>Confirm with Tom Murphy AM; comms ready to fire if scratched</td>
-    <td>Today</td>
-  </tr>
-</table>
-
-<h2>8) Perplexity Computer Slack Activity</h2>
-<p class="compact muted">No new Computer DM activity since Friday's run. App integration thread remains as-is.</p>
-
-<footer>
-  WPT CEO Daily Briefing — Sunday, May 17, 2026 · Run #29<br>
-  Data sources: Google Calendar, Slack (#horse-comms, #exec-team), westpointtb.com upcoming races
-</footer>
+  <div class='section'>
+    <div class='small'>Data sources: Google Calendar (gcal) + Slack + West Point Thoroughbreds website.</div>
+  </div>
 
 </div>
 </body>
