@@ -2,279 +2,290 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>WPT CEO Daily Briefing — Sunday, May 24, 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WPT CEO Daily Briefing — Monday, May 25, 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#ffffff; --ink:#28251D; --muted:#6b7280; --teal:#01696F;
-      --red:#b42318; --gold:#b54708; --green:#067647; --card:#f8fafc;
-      --border:#e5e7eb;
+      --bg:#FFFFFF;
+      --text:#28251D;
+      --muted:#6B6B6B;
+      --teal:#01696F;
+      --red:#B42318;
+      --gold:#B88200;
+      --green:#067647;
+      --card:#F7F7F7;
+      --border:#E7E7E7;
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    .wrap{max-width:980px;margin:0 auto;padding:24px 16px 48px;}
+    header{display:flex;gap:12px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;border-bottom:1px solid var(--border);padding-bottom:16px;margin-bottom:18px;}
+    h1{font-size:22px;line-height:1.2;margin:0;}
+    .meta{color:var(--muted);font-size:13px;}
+    .pill{display:inline-block;border:1px solid var(--border);background:var(--card);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
+    section{margin-top:18px;}
+    .sec-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 10px;}
+    .sec-title h2{margin:0;font-size:16px;}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;}
+    ul{margin:8px 0 0 18px;padding:0}
+    li{margin:6px 0}
+    .kpi{display:grid;grid-template-columns:repeat(12,1fr);gap:10px;}
+    .kpi .card{grid-column:span 6;}
+    @media (max-width:720px){.kpi .card{grid-column:span 12;}}
+    .tag{font-weight:700;font-size:12px;border-radius:999px;padding:2px 8px;display:inline-block;}
+    .tag.red{background:rgba(180,35,24,.10);color:var(--red);}
+    .tag.gold{background:rgba(184,130,0,.12);color:var(--gold);}
+    .tag.green{background:rgba(6,118,71,.10);color:var(--green);}
+    table{width:100%;border-collapse:collapse;margin-top:8px;font-size:13px;}
+    th,td{border-top:1px solid var(--border);padding:8px 6px;vertical-align:top;text-align:left;}
+    th{color:var(--muted);font-weight:600;font-size:12px;}
+    .small{font-size:12px;color:var(--muted)}
+    .channel{margin-top:10px}
+    .channel h3{margin:10px 0 6px;font-size:13px}
+    .msg{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:#fff;margin:8px 0;}
+    .msg .top{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+    .msg .text{margin-top:6px;font-size:13px;color:var(--text)}
     a{color:var(--teal);text-decoration:none}
     a:hover{text-decoration:underline}
-    .wrap{max-width:1100px;margin:0 auto;padding:20px 16px 80px}
-    header{display:flex;gap:14px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;margin:6px 0 14px}
-    .title{display:flex;flex-direction:column;gap:6px}
-    h1{font-size:20px;margin:0;letter-spacing:-0.01em}
-    .sub{color:var(--muted);font-size:13px}
-    .pillrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-    .pill{font-size:12px;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:#fff}
-    .grid{display:grid;grid-template-columns:1fr;gap:12px}
-    @media(min-width:900px){.grid{grid-template-columns:1fr 1fr}}
-    section{border:1px solid var(--border);border-radius:14px;background:var(--card);padding:14px 14px 12px}
-    section h2{font-size:14px;margin:0 0 10px;color:var(--teal);letter-spacing:0.01em}
-    .kpi{display:grid;grid-template-columns:1fr;gap:8px}
-    .kpi .row{display:flex;gap:10px;align-items:flex-start}
-    .k{min-width:160px;color:var(--muted);font-size:12px}
-    .v{font-size:13px;line-height:1.35}
-    ul{margin:0;padding-left:18px}
-    li{margin:6px 0;font-size:13px;line-height:1.35}
-    .tag{font-weight:700}
-    .red{color:var(--red)}
-    .gold{color:var(--gold)}
-    .green{color:var(--green)}
-    .small{font-size:12px;color:var(--muted)}
-    table{width:100%;border-collapse:separate;border-spacing:0;margin-top:6px;overflow:hidden;border-radius:10px;border:1px solid var(--border);background:#fff}
-    th,td{padding:10px 10px;border-bottom:1px solid var(--border);vertical-align:top}
-    th{font-size:12px;color:var(--muted);text-align:left;background:#fcfcfd}
-    td{font-size:13px}
-    tr:last-child td{border-bottom:none}
-    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
-    .twoCol{display:grid;grid-template-columns:1fr;gap:10px}
-    @media(min-width:900px){.twoCol{grid-template-columns:1fr 1fr}}
-    .callout{border-left:4px solid var(--teal);padding:10px 12px;background:#fff;border-radius:10px;border:1px solid var(--border)}
-    .hr{height:1px;background:var(--border);margin:10px 0}
-    @media print{.wrap{max-width:none} section{break-inside:avoid-page}}
+    .hr{height:1px;background:var(--border);margin:14px 0}
+    .foot{margin-top:18px;color:var(--muted);font-size:12px}
+    @media print{
+      .pill{display:none}
+      a{color:var(--text);text-decoration:none}
+      .card{break-inside:avoid}
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="title">
-        <h1>WPT CEO Daily Briefing — Sunday, May 24, 2026</h1>
-        <div class="sub">Prepared for <strong>Terry Finley</strong> • Primary link: <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a></div>
+      <div>
+        <h1>WPT CEO Daily Briefing — Monday, May 25, 2026</h1>
+        <div class="meta">Prepared for <strong>Terry Finley</strong> • Published: 5:00 AM CDT • Link: <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a></div>
       </div>
-      <div class="pillrow">
-        <div class="pill"><span class="tag">Timezone:</span> ET (America/New_York)</div>
-        <div class="pill"><span class="tag">Run focus:</span> Racing + Team momentum</div>
-      </div>
+      <div class="pill">Memorial Day (Offices closed)</div>
     </header>
 
-    <div class="grid">
-      <section>
-        <h2>1) CEO Snapshot</h2>
-        <div class="kpi">
-          <div class="row"><div class="k">Top 3 priorities</div><div class="v">
-            <ul>
-              <li><strong>Lock in post-holiday sales execution</strong>: convert the Caracaro filly momentum into additional closes and clean up end-of-month close dates.</li>
-              <li><strong>Align on finance systems decision path</strong>: confirm whether to proceed toward <strong>Sage Intacct</strong> migration (scope, timeline, cost, tax-prep relief).</li>
-              <li><strong>Stay ahead of racing communications</strong>: ensure the team is ready to amplify entries like <strong>Rhyton</strong> (Belmont at the Big A) and next up on the WPT slate.</li>
-            </ul>
-          </div></div>
-          <div class="row"><div class="k">Biggest risk</div><div class="v"><span class="red"><strong>Sales & ops stall over the holiday window</strong></span>—pipeline momentum fades if follow-ups and partner touches don’t restart fast Tuesday.</div></div>
-          <div class="row"><div class="k">Biggest opportunity</div><div class="v"><span class="green"><strong>Caracaro filly demand</strong></span>—multiple closes + new partners; use it to create urgency and pull forward decisions.</div></div>
-          <div class="row"><div class="k">Needs Terry direct</div><div class="v"><strong>Decision framing</strong> on Sage Intacct + partner economics/commission items so the team can execute without ambiguity.</div></div>
-          <div class="row"><div class="k">Delegate</div><div class="v">Have <strong>Lindsey</strong>/<strong>Erin</strong> drive vendor diligence (Sage Intacct) + pricing, and have sales leads run Tuesday re-start cadence.</div></div>
-        </div>
-      </section>
-
-      <section>
-        <h2>2) 1 CEO Move Today</h2>
-        <div class="callout">
-          <div class="v"><strong>Send a 3-sentence Monday/Tuesday “restart” note to Sales</strong> (or ask Dawn/Tom to do it) that: (1) names the <strong>Caracaro filly</strong> as the priority, (2) sets a target for Tuesday morning follow-ups, and (3) confirms who owns the “next 10 closes” list.</div>
-          <div class="small" style="margin-top:8px;">Why this move: #sales-made shows real conversion momentum on the Caracaro filly and other pieces—this keeps urgency through Memorial Day.</div>
-        </div>
-      </section>
-
-      <section>
-        <h2>3) Schedule (Today + Next 2 Days)</h2>
-        <div class="small">All times shown in <strong>ET</strong>.</div>
-        <div class="hr"></div>
-        <div class="twoCol">
-          <div>
-            <div class="tag" style="font-size:12px;color:var(--muted);">Sunday, May 24</div>
-            <table>
-              <thead><tr><th style="width:140px;">Time</th><th>Event</th><th style="width:180px;">Attendees</th></tr></thead>
-              <tbody>
-                <tr>
-                  <td><strong>6:00 PM–6:15 PM</strong></td>
-                  <td><strong>Class. Call</strong></td>
-                  <td class="small">—</td>
-                </tr>
-                <tr>
-                  <td><strong>8:00 PM–8:15 PM</strong></td>
-                  <td><strong>Class call (dial-in)</strong><div class="small">9pm EST dial-in details are in the calendar item.</div></td>
-                  <td class="small">—</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div>
-            <div class="tag" style="font-size:12px;color:var(--muted);">Monday, May 25</div>
-            <table>
-              <thead><tr><th style="width:140px;">Time</th><th>Event</th><th style="width:180px;">Attendees</th></tr></thead>
-              <tbody>
-                <tr>
-                  <td><strong>All day (listed)</strong></td>
-                  <td><strong>Offices Closed: Memorial Day</strong></td>
-                  <td class="small"><strong>Casey</strong>, WPT Team, <strong>Terry</strong></td>
-                </tr>
-                <tr>
-                  <td><strong>5:11 PM</strong></td>
-                  <td><strong>Rhyton at Belmont at the Big A in race 9</strong><div class="small">Join Rhyton in the Claiming 55k NW2L (per calendar note).</div></td>
-                  <td class="small"><strong>Jeff Lowe</strong>, WPT Team, Terry, Ryan</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="hr"></div>
-        <div class="tag" style="font-size:12px;color:var(--muted);">Tuesday, May 26</div>
-        <table>
-          <thead><tr><th style="width:160px;">Time</th><th>Event</th><th style="width:240px;">Links / Location</th></tr></thead>
-          <tbody>
-            <tr>
-              <td><strong>9:30 AM–9:45 AM</strong></td>
-              <td><strong>Call joe and Steve c</strong></td>
-              <td class="small">—</td>
-            </tr>
-            <tr>
-              <td><strong>9:45 AM–10:00 AM</strong></td>
-              <td><strong>Call gagliano</strong></td>
-              <td class="small">—</td>
-            </tr>
-            <tr>
-              <td><strong>10:30 AM–11:00 AM</strong></td>
-              <td><strong>Terry &lt;&gt; TJC</strong><div class="small">Attendees: Jim Gagliano, Charlotte Clement.</div></td>
-              <td class="small">Microsoft Teams Meeting (see calendar for link + passcode)</td>
-            </tr>
-            <tr>
-              <td><strong>11:00 AM–11:30 AM</strong></td>
-              <td><strong>Weekly AI/Tech Sync</strong><div class="small">Attendees: Dawn, Lindsey, Ali, Terry.</div></td>
-              <td class="small"><span class="mono">https://us02web.zoom.us/j/6096367204</span></td>
-            </tr>
-            <tr>
-              <td><strong class="gold">11:00 AM–12:00 PM</strong></td>
-              <td><strong class="gold">Meeting (with Erin)</strong><div class="small gold">Potential overlap with Weekly AI/Tech Sync.</div></td>
-              <td class="small">—</td>
-            </tr>
-            <tr>
-              <td><strong>11:30 AM–1:00 PM</strong></td>
-              <td><strong>WPT AI Modernization Project</strong><div class="small">Attendees: Lindsey, Terry, Joey.</div></td>
-              <td class="small">Zoom meeting (see calendar for link, meeting ID, passcode)</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="small" style="margin-top:10px;">Notes: <span class="gold"><strong>Flag:</strong></span> Tuesday 11:00 AM conflict (AI/Tech Sync vs Meeting w/ Erin).</div>
-      </section>
-
-      <section>
-        <h2>4) Alerts</h2>
-        <ul>
-          <li class="gold"><strong>Schedule conflict Tuesday 11:00 AM:</strong> Weekly AI/Tech Sync overlaps with “Meeting” (Erin) for 30 minutes.</li>
-          <li class="gold"><strong>Holiday execution risk:</strong> Memorial Day closure can slow follow-ups; ensure Tuesday morning outreach plan is pre-set.</li>
-          <li><strong>Racing visibility:</strong> Rhyton race reminder set for Monday; coordinate partner comms if needed.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>5) Team Pulse (Slack • last 2 days)</h2>
-        <div class="callout" style="margin-bottom:10px;">
-          <div class="tag" style="margin-bottom:6px;">Executive Team Pulse Summary</div>
+    <!-- 1. CEO Snapshot -->
+    <section>
+      <div class="sec-title"><h2>1) CEO Snapshot</h2></div>
+      <div class="kpi">
+        <div class="card">
+          <div class="small"><span class="tag gold">Top 3 priorities</span></div>
           <ul>
-            <li><span class="green"><strong>Sales wins:</strong></span> multiple closes (Caracaro filly, Practical Joke filly, Cairo Prince filly) and at least one <strong>new partner</strong> added.</li>
-            <li><span class="gold"><strong>Decision pressure:</strong></span> Lindsey pushing to migrate financials from <strong>QuickBooks → Sage Intacct</strong> (stress + support issues), with possible tax-prep invoice relief.</li>
-            <li><span class="gold"><strong>Org/process:</strong></span> Terry asked to discuss having <strong>Casey</strong> on exec calls; also asked about an <strong>AI class for Casey</strong>.</li>
-            <li><span class="green"><strong>Horse updates:</strong></span> multiple shipping/training updates (Statesman, Superpower, Tiz the Law filly to Shug, Cajun Gold improving, etc.).</li>
+            <li>Protect the day: <strong>Office closed (Memorial Day)</strong> — confirm essential coverage only.</li>
+            <li>Racing focus: be ready for <strong>Rhyton</strong> running at <strong>Belmont at the Big A</strong> (Race 9).</li>
+            <li>Prep Tuesday: align for <strong>TJC</strong> call + <strong>AI/Tech</strong> + <strong>AI Modernization</strong> blocks.</li>
           </ul>
         </div>
+        <div class="card">
+          <div class="small"><span class="tag red">Biggest risk</span></div>
+          <ul>
+            <li>Operational drift on a holiday: urgent items get missed unless one owner is assigned.</li>
+          </ul>
+          <div class="hr"></div>
+          <div class="small"><span class="tag green">Biggest opportunity</span></div>
+          <ul>
+            <li>Use the lighter calendar to set up <strong>two high-leverage outreach calls</strong> for Tuesday’s schedule (Joe/Steve + Gagliano).</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="small"><span class="tag gold">Needs your direct involvement</span></div>
+          <ul>
+            <li><strong>Rhyton</strong> — short pre-race touchpoint with <strong>Jeff Lowe</strong> on expectations/communication.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="small"><span class="tag green">Delegate</span></div>
+          <ul>
+            <li>Ask <strong>Casey</strong> to confirm any holiday-critical coverage and communications to partners.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <div class="tag" style="font-size:12px;color:var(--muted);">#sales-made</div>
+    <!-- 2. 1 CEO Move Today -->
+    <section>
+      <div class="sec-title"><h2>2) 1 CEO Move Today</h2></div>
+      <div class="card">
+        <div class="small"><span class="tag gold">One move</span></div>
         <ul>
-          <li><strong>Tyler Simmons</strong> — <strong>5%</strong> of <strong>Caracaro filly</strong>.</li>
-          <li><strong>New partner Peter Higgins</strong> — <strong>5%</strong> of <strong>Caracaro filly</strong>.</li>
-          <li><strong>Jerry Regina</strong> — <strong>0.50%</strong> of the <strong>Charlatan filly</strong> (outside of the LLC).</li>
-          <li><strong>Paul Lissy</strong> — <strong>5%</strong> of the <strong>Practical Joke filly</strong> (outside the LLC; blessed by TPF).</li>
-          <li><strong>Spencer Ingaldson</strong> — move forward with the last <strong>5%</strong> of the <strong>Cairo Prince filly</strong>.</li>
+          <li>Text/call <strong>Jeff Lowe</strong> this morning: confirm the <strong>partner-facing plan</strong> for <strong>Rhyton</strong> (Belmont at the Big A, Race 9) — who posts the update, what the message is, and timing.</li>
         </ul>
+      </div>
+    </section>
 
-        <div class="hr"></div>
-        <div class="tag" style="font-size:12px;color:var(--muted);">#exec-team</div>
-        <ul>
-          <li><strong>Lindsey</strong>: wants to migrate financials from <strong>QuickBooks to Sage Intacct</strong>; cites QBS file size/support issues and desire to consolidate billing/reporting; asks for Terry’s initial thoughts.</li>
-          <li><strong>Terry</strong>: OK moving to more sophisticated system; notes need to drive home <strong>discounts on tax prep</strong> given prep work done internally.</li>
-          <li><strong>Commission / economics:</strong> Erin suggests commission split is right choice; “David” disagrees; asks Terry to step in or pay Joe directly.</li>
-          <li><strong>Terry</strong>: “Let’s chat about having Casey on the exec calls.”</li>
-        </ul>
-
-        <div class="hr"></div>
-        <div class="tag" style="font-size:12px;color:var(--muted);">#horse-comms</div>
-        <ul>
-          <li><strong>Statesman</strong> shipping to Belmont.</li>
-          <li><strong>Superpower</strong> shipping to KY.</li>
-          <li><strong>Tiz the Law filly</strong> shipping to Shug at Belmont; two Cherie fillies heading to Keeneland next week.</li>
-          <li><strong>Cajun Gold</strong> progressing; likely back on worktab next week.</li>
-          <li><strong>Determined Ace</strong> named (Practical Joke filly).</li>
-          <li><strong>Jaxon</strong> under contract at <strong>$60k</strong>; EVA test expected by next Friday; deal completion early first week of June.</li>
-        </ul>
-
-        <div class="hr"></div>
-        <div class="tag" style="font-size:12px;color:var(--muted);">Terry DMs (notes)</div>
-        <ul>
-          <li>Terry: “how about a class for ai for casey”</li>
-          <li>Terry: “Look at customgpt.ai”</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>6) Racing</h2>
-        <div class="tag" style="font-size:12px;color:var(--muted);">Upcoming races (from WPT site)</div>
+    <!-- 3. Schedule -->
+    <section>
+      <div class="sec-title"><h2>3) Schedule (ET)</h2><div class="small">Includes all events pulled from Google Calendar.</div></div>
+      <div class="card">
+        <div class="small"><strong>Today — Monday, May 25</strong></div>
         <table>
-          <thead><tr><th style="width:180px;">Horse</th><th style="width:120px;">Date</th><th style="width:220px;">Track</th><th>Race</th></tr></thead>
+          <thead><tr><th>Time (ET)</th><th>Event</th><th>Attendees / Notes</th></tr></thead>
           <tbody>
-            <tr><td><strong>Reagan’s Wit</strong></td><td>05/30/26</td><td>Churchill Downs</td><td>Arlington S. (G3T)</td></tr>
-            <tr><td><strong>Brightline Bullet</strong></td><td>06/06/26</td><td>Saratoga</td><td>NW1X Allowance</td></tr>
-            <tr><td><strong>Pascaline</strong></td><td>06/13/26</td><td>Charles Town</td><td>Confucius Say S.</td></tr>
+            <tr>
+              <td><strong>8:00 AM–5:00 PM</strong></td>
+              <td><strong>Offices Closed: Memorial Day</strong></td>
+              <td><strong>Casey Clemmons</strong>, <strong>WPT Team</strong>, <strong>Terry</strong></td>
+            </tr>
+            <tr>
+              <td><strong>5:11 PM</strong></td>
+              <td><strong>Rhyton</strong> at <strong>Belmont at the Big A</strong> (Race 9)</td>
+              <td>Organizer: <strong>Jeff Lowe</strong>. Note: “Claiming 55k NW2L.”</td>
+            </tr>
           </tbody>
         </table>
-        <div class="small" style="margin-top:8px;">Note: the WPT upcoming-races page also lists earlier May entries; the most forward-looking items currently visible are above.</div>
 
         <div class="hr"></div>
-        <div class="tag" style="font-size:12px;color:var(--muted);">Recent spotlight (WPT article)</div>
+        <div class="small"><strong>Tomorrow — Tuesday, May 26</strong></div>
+        <table>
+          <thead><tr><th>Time (ET)</th><th>Event</th><th>Attendees / Notes</th></tr></thead>
+          <tbody>
+            <tr><td><strong>9:30–9:45 AM</strong></td><td>Call joe and Steve c</td><td></td></tr>
+            <tr><td><strong>9:45–10:00 AM</strong></td><td>Call gagliano</td><td></td></tr>
+            <tr><td><strong>10:30–11:00 AM</strong></td><td><strong>Terry &lt;&gt; TJC</strong> (Microsoft Teams)</td><td><strong>Jim Gagliano</strong>, <strong>Charlotte Clement</strong></td></tr>
+            <tr><td><strong>11:00–11:30 AM</strong></td><td>Weekly <strong>AI/Tech Sync</strong> (Zoom)</td><td><strong>Dawn</strong>, <strong>Lindsey</strong>, <strong>Ali</strong></td></tr>
+            <tr><td><strong>11:00 AM–12:00 PM</strong></td><td>Meeting</td><td><strong>Erin Birkenhauer</strong> (conflicts with AI/Tech Sync)</td></tr>
+            <tr><td><strong>11:30 AM–1:00 PM</strong></td><td><strong>WPT AI Modernization Project</strong> (Zoom)</td><td><strong>Lindsey</strong>, <strong>joeyavioli@gmail.com</strong></td></tr>
+            <tr><td><strong>1:15–1:30 PM</strong></td><td>Do. Perplexity medical</td><td></td></tr>
+            <tr><td><strong>2:00–3:00 PM</strong></td><td>Tuesdays at Two: Dale</td><td><strong>Erin</strong>, <strong>WPT Team</strong></td></tr>
+            <tr><td><strong>2:00–2:15 PM</strong></td><td>Doctor appt</td><td><span class="tag red">Overlaps Tuesdays at Two</span></td></tr>
+            <tr><td><strong>2:00–3:00 PM</strong></td><td>Tuesdays at Two: Spring/Summer 2026 (Zoom)</td><td><span class="tag red">Duplicate/overlap — confirm which is real</span></td></tr>
+          </tbody>
+        </table>
+
+        <div class="hr"></div>
+        <div class="small"><strong>Wednesday, May 27</strong></div>
+        <div class="small">(No events returned in the next-2-days pull for 5/27.)</div>
+      </div>
+    </section>
+
+    <!-- 4. Alerts -->
+    <section>
+      <div class="sec-title"><h2>4) Alerts</h2></div>
+      <div class="card">
         <ul>
-          <li><strong>Intricate Spirit</strong> returns in the <strong>$150,000 Paradise Creek Stakes</strong> at <strong>Belmont at the Big A</strong>; listed as <strong>3-to-1 morning-line favorite</strong>, with <strong>Miguel Clement</strong> adding blinkers and <strong>Manny Franco</strong> riding.</li>
-          <li class="small">Source: WPT article “Intricate Spirit Favored Back in New York for Paradise Creek” (Jeff Lowe, May 22, 2026).</li>
+          <li><span class="tag red">Calendar conflicts</span> Tuesday 11:00 AM ET: <strong>Weekly AI/Tech Sync</strong> overlaps with <strong>Meeting</strong> (Erin).</li>
+          <li><span class="tag red">Calendar conflicts</span> Tuesday 2:00 PM ET: <strong>Tuesdays at Two</strong> overlaps with <strong>Doctor appt</strong> and a second <strong>Tuesdays at Two</strong> webinar entry — confirm which meeting you’re actually attending.</li>
+          <li><span class="tag gold">Racing comms</span> Ensure clean partner update cadence for <strong>Rhyton</strong> today (Belmont at the Big A, Race 9).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. Team Pulse -->
+    <section>
+      <div class="sec-title"><h2>5) Team Pulse (Slack — last 2 days)</h2></div>
+      <div class="card">
+        <div class="small"><strong>Executive Team Pulse Summary</strong></div>
+        <ul>
+          <li><span class="tag green">Wins</span> Sales-made posted: <strong>Peter Higgins</strong> — <strong>5%</strong> of <strong>Caracaro filly</strong>; <strong>Tyler Simmons</strong> — <strong>5%</strong> of <strong>Caracaro filly</strong>; <strong>Jerry Regina</strong> — <strong>0.50%</strong> of the <strong>Charlatan filly</strong> (outside LLC).</li>
+          <li><span class="tag gold">Watch</span> Horse updates: <strong>Driftinganddreaming</strong> ramping back up for June ship; multiple shipping notes (Belmont/KY).</li>
+          <li><span class="tag gold">Follow-up</span> Exec-team: Terry flagged discussing <strong>Casey</strong> joining exec calls.</li>
         </ul>
 
-        <div class="small" style="margin-top:10px;">Sources: <a href="https://www.westpointtb.com/racing/upcoming-races/">WPT Upcoming Races</a> • <a href="https://www.westpointtb.com/intricate-spirit-favored-back-in-new-york-for-paradise-creek/">WPT: Intricate Spirit article</a></div>
-      </section>
+        <div class="channel">
+          <h3>#sales-made</h3>
+          <div class="msg">
+            <div class="top"><div><strong>Tom Murphy</strong></div><div>May 23 • 6:18 PM CDT</div></div>
+            <div class="text"><strong>Tyler Simmons</strong> 5% <strong>Caracaro filly</strong></div>
+          </div>
+          <div class="msg">
+            <div class="top"><div><strong>Joe Bianca</strong></div><div>May 23 • 4:47 PM CDT</div></div>
+            <div class="text">New partner <strong>Peter Higgins</strong> — 5% of <strong>Caracaro filly</strong></div>
+          </div>
+          <div class="msg">
+            <div class="top"><div><strong>Tom Bellhouse</strong></div><div>May 23 • 4:28 PM CDT</div></div>
+            <div class="text"><strong>Jerry Regina</strong> — <strong>.50%</strong> of the <strong>Charlatan filly</strong> (outside of LLC)</div>
+          </div>
+        </div>
 
-      <section>
-        <h2>7) Decisions Needed</h2>
+        <div class="channel">
+          <h3>#horse-comms</h3>
+          <div class="msg">
+            <div class="top"><div><strong>Jeff Lowe</strong></div><div>May 23 • 12:16 PM CDT</div></div>
+            <div class="text"><strong>Driftinganddreaming</strong> jogging after shin time; ramping back up at farm; should be ready to ship out in <strong>June</strong>.</div>
+          </div>
+          <div class="msg">
+            <div class="top"><div><strong>Jason Blewitt</strong></div><div>May 23 • 7:59 AM CDT</div></div>
+            <div class="text"><strong>Statesman</strong> shipping to <strong>Belmont</strong> today.</div>
+          </div>
+          <div class="msg">
+            <div class="top"><div><strong>Tom Bellhouse</strong></div><div>May 23 • 7:18 AM CDT</div></div>
+            <div class="text"><strong>Superpower</strong> shipping to <strong>KY</strong> today.</div>
+          </div>
+        </div>
+
+        <div class="channel">
+          <h3>#exec-team</h3>
+          <div class="msg">
+            <div class="top"><div><strong>Terry Finley</strong></div><div>May 23 • 12:29 PM CDT</div></div>
+            <div class="text">“Let’s chat about having <strong>Casey</strong> on the exec calls.”</div>
+          </div>
+        </div>
+
+        <div class="channel">
+          <h3>Terry DMs (self)</h3>
+          <div class="msg">
+            <div class="top"><div><strong>Terry Finley</strong></div><div>May 24 • 9:24 AM CDT</div></div>
+            <div class="text">“Take a look at <a href="https://www.perplexity.ai/">perplexity.ai</a>”</div>
+          </div>
+          <div class="msg">
+            <div class="top"><div><strong>Terry Finley</strong></div><div>May 23 • 8:55 PM CDT</div></div>
+            <div class="text">“how about a class for ai for <strong>Casey</strong>”</div>
+          </div>
+        </div>
+
+        <div class="small" style="margin-top:10px;">Note: #sales and #prospectcomms returned no messages in this window.</div>
+      </div>
+    </section>
+
+    <!-- 6. Racing -->
+    <section>
+      <div class="sec-title"><h2>6) Racing</h2></div>
+      <div class="card">
+        <div class="small"><strong>Upcoming / Notable (from WPT site)</strong></div>
         <ul>
-          <li><strong>Sage Intacct migration:</strong> Decide whether to proceed to formal scoping + pricing (and target timing) this week. <span class="gold"><strong>Recommended:</strong></span> greenlight vendor diligence + request tax-prep invoice relief in writing.</li>
-          <li><strong>Commission split / economics (“beau Liam”):</strong> Confirm whether to enforce a split (or authorize a one-off payment) so it doesn’t linger. <span class="gold"><strong>Recommended:</strong></span> decide within 72 hours.</li>
-          <li><strong>Casey on exec calls:</strong> Decide yes/no and start date. <span class="green"><strong>Recommended:</strong></span> pilot for 2 weeks with a clear agenda/role.</li>
-          <li><strong>AI class for Casey:</strong> Decide format (30–45 min weekly, or 1-hour crash course) and owner (Lindsey/Dawn + Perplexity tool). <span class="green"><strong>Recommended:</strong></span> schedule first session this week.</li>
+          <li><strong>Reagan’s Wit</strong> — <strong>05/30/26</strong> — <strong>Churchill Downs</strong>.</li>
+          <li><strong>Brightline Bullet</strong> — <strong>06/06/26</strong> — <strong>Saratoga</strong>.</li>
+          <li><strong>Pascaline</strong> — <strong>06/13/26</strong> — <strong>Charles Town</strong>.</li>
         </ul>
-      </section>
+        <div class="hr"></div>
+        <div class="small"><strong>Context / storytelling angle</strong></div>
+        <ul>
+          <li><strong>Intricate Spirit</strong> — featured as <strong>3-to-1</strong> morning-line favorite in the <strong>$150,000 Paradise Creek Stakes</strong> at <strong>Belmont at the Big A</strong>; rain may move the race surface; blinkers being added.</li>
+        </ul>
+        <div class="hr"></div>
+        <div class="small">Sources: <a href="https://www.westpointtb.com/racing/upcoming-races/">WPT Upcoming Races</a> • <a href="https://www.westpointtb.com/intricate-spirit-favored-back-in-new-york-for-paradise-creek/">Intricate Spirit preview</a></div>
+      </div>
+    </section>
 
-      <section>
-        <h2>8) Perplexity Computer Slack Activity</h2>
-        <div class="small">No Slack messages mentioning “Perplexity” were found in the last 2 days window.</div>
-      </section>
-    </div>
+    <!-- 7. Decisions Needed -->
+    <section>
+      <div class="sec-title"><h2>7) Decisions Needed</h2></div>
+      <div class="card">
+        <ul>
+          <li><strong>Tuesday 11:00 AM conflict</strong>: keep <strong>AI/Tech Sync</strong> or the <strong>Meeting</strong> with Erin? <span class="tag red">Today</span><br><span class="small">Recommendation: keep AI/Tech Sync (recurring, multi-stakeholder), ask Erin to move the 1:1 or send agenda + delegate attendance.</span></li>
+          <li><strong>Tuesdays at Two overlap</strong>: Which 2:00 PM entry is correct, and does the <strong>Doctor appt</strong> need rescheduling? <span class="tag red">Today</span><br><span class="small">Recommendation: confirm the real “Tuesdays at Two” invite (Dale vs webinar) and move the appointment or join late with a delegate covering first 10–15 minutes.</span></li>
+          <li><strong>Exec-team composition</strong>: Add <strong>Casey</strong> to exec calls? <span class="tag gold">This week</span><br><span class="small">Recommendation: yes for a 30-day trial with clear agenda items (ops coverage, partner comms cadence, risk register).</span></li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="small" style="margin-top:14px;">
-      Data sources used: Google Calendar + Slack + westpointtb.com racing pages.
-    </div>
+    <!-- 8. Perplexity Computer Slack Activity -->
+    <section>
+      <div class="sec-title"><h2>8) Perplexity Computer Slack Activity</h2></div>
+      <div class="card">
+        <ul>
+          <li>No Perplexity/Computer mentions were returned in the last-2-days Slack search window.</li>
+          <li>In Terry’s DMs, Terry shared <a href="https://www.perplexity.ai/">perplexity.ai</a> and asked about an <strong>AI class for Casey</strong>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="foot">Generated automatically for West Point Thoroughbreds. If something looks off (duplicate invites, missing attendees), reply to the email and we’ll correct the underlying source.</div>
   </div>
 </body>
 </html>
