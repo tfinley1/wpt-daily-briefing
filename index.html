@@ -1,176 +1,228 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WPT CEO Daily Briefing — Tuesday, May 26, 2026</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#FFFFFF; --ink:#28251D; --teal:#01696F;
-      --muted:#6B665C; --line:#E7E4DC;
-      --red:#B42318; --gold:#B54708; --green:#067647;
-      --card:#FBFAF7;
-    }
-    html,body{background:var(--bg); color:var(--ink); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;}
-    a{color:var(--teal); text-decoration:none;} a:hover{text-decoration:underline;}
-    .wrap{max-width:980px; margin:24px auto; padding:0 16px;}
-    header{display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:12px; border-bottom:1px solid var(--line); padding-bottom:14px;}
-    h1{font-size:22px; margin:0;}
-    .meta{color:var(--muted); font-size:13px;}
-    .grid{display:grid; grid-template-columns: 1.2fr .8fr; gap:14px; margin-top:14px;}
-    @media (max-width: 860px){.grid{grid-template-columns:1fr;}}
-    section{border:1px solid var(--line); border-radius:12px; background:var(--card); padding:14px 14px 10px;}
-    section h2{font-size:15px; margin:0 0 10px; color:var(--teal); letter-spacing:.2px;}
-    ul{margin:8px 0 10px 18px; padding:0;}
-    li{margin:6px 0;}
-    .pill{display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; font-weight:600; background:#F1F0EB; color:var(--ink); border:1px solid var(--line);}
-    .pill.red{background:#FFF1F0; border-color:#FEE4E2; color:var(--red);} 
-    .pill.gold{background:#FFF6ED; border-color:#FFEDD5; color:var(--gold);} 
-    .pill.green{background:#ECFDF3; border-color:#D1FADF; color:var(--green);} 
-    .k{font-weight:700;}
-    table{width:100%; border-collapse:collapse; font-size:13px;}
-    th,td{padding:8px 8px; border-bottom:1px solid var(--line); vertical-align:top;}
-    th{color:var(--muted); font-weight:600; text-align:left; font-size:12px; text-transform:uppercase; letter-spacing:.4px;}
-    .small{font-size:12px; color:var(--muted);} 
-    .callout{border-left:4px solid var(--teal); padding:10px 12px; background:#FFFFFF; border-radius:10px;}
-    .two-col{display:grid; grid-template-columns: 1fr 1fr; gap:12px;}
-    @media (max-width: 640px){.two-col{grid-template-columns:1fr;}}
-    @media print{.wrap{max-width:100%;} section{break-inside:avoid;}}
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WPT CEO Daily Briefing — Tue, May 26, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --ink: #28251D;
+    --teal: #01696F;
+    --teal-soft: #E6F1F2;
+    --gold: #C9A227;
+    --gold-soft: #FBF4DA;
+    --red: #B3261E;
+    --red-soft: #FDECEA;
+    --green: #1E7A4D;
+    --green-soft: #E6F4EC;
+    --line: #E5E2D9;
+    --muted: #6B665A;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background: var(--bg); color: var(--ink); font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.45; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 28px 22px 80px; }
+  header.top { border-bottom: 2px solid var(--teal); padding-bottom: 14px; margin-bottom: 22px; }
+  header.top h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.01em; color: var(--teal); }
+  header.top .sub { font-size: 14px; color: var(--muted); margin-top: 4px; }
+  section { margin-bottom: 26px; }
+  h2 { font-size: 16px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--teal); margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  h3 { font-size: 14px; margin: 14px 0 6px; color: var(--ink); }
+  ul { margin: 6px 0 10px 20px; padding: 0; }
+  li { margin-bottom: 4px; }
+  .card { background: #FAFAF7; border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+  .card.gold { background: var(--gold-soft); border-color: var(--gold); }
+  .card.red  { background: var(--red-soft); border-color: var(--red); }
+  .card.green { background: var(--green-soft); border-color: var(--green); }
+  .card.teal { background: var(--teal-soft); border-color: var(--teal); }
+  .pill { display: inline-block; padding: 2px 8px; font-size: 11px; font-weight: 600; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.05em; margin-right: 6px; }
+  .pill.red { background: var(--red); color: #fff; }
+  .pill.gold { background: var(--gold); color: #fff; }
+  .pill.green { background: var(--green); color: #fff; }
+  .pill.teal { background: var(--teal); color: #fff; }
+  .pill.muted { background: var(--muted); color: #fff; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 6px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+  .time { white-space: nowrap; font-weight: 600; color: var(--teal); }
+  .muted { color: var(--muted); font-size: 13px; }
+  .move { font-size: 17px; font-weight: 700; }
+  .conflict { color: var(--red); font-weight: 600; }
+  @media print { .wrap { padding: 10px; } .card { break-inside: avoid; } }
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div>
-        <h1>WPT CEO Daily Briefing</h1>
-        <div class="meta">For <span class="k">Terry Finley</span> • Tuesday, May 26, 2026 • Updated 10:01 AM CT</div>
-      </div>
-      <div class="meta">Live page: <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a></div>
-    </header>
+<div class="wrap">
 
-    <div class="grid">
-      <section>
-        <h2>1) CEO Snapshot</h2>
-        <div class="callout">
-          <ul>
-            <li><span class="k">Top priorities today:</span> (1) Lock in a <span class="k">4th golfer</span> for the <span class="k">Johnny Mac Golf Tournament</span> group, (2) Align on next steps in <span class="k">WPT AI Modernization</span>, (3) Keep an eye on <span class="k">schedule collisions</span> around 11:00 AM ET.</li>
-            <li><span class="k">Biggest risk:</span> <span class="pill red">Conflict</span> 11:00 AM ET has overlapping meetings (AI/Tech Sync + Meeting with Erin).</li>
-            <li><span class="k">Biggest opportunity:</span> Convert the <span class="k">Johnny Mac</span> outreach into partner momentum (Kevin Hughes / Joe Applebaum + your group) while it’s fresh.</li>
-            <li><span class="k">Needs your direct touch:</span> The quick call block starting <span class="k">9:00 AM ET</span> (Kevin Hughes + Joe Applebaum; Ryan; Joe + Steve C; Gagliano) — use it to drive outcomes, not updates.</li>
-            <li><span class="k">Delegate:</span> Ask <span class="k">Lindsey</span> to confirm/run point on meeting logistics + next steps for the modernization session so you can stay decision-focused.</li>
-          </ul>
-        </div>
-      </section>
+<header class="top">
+  <h1>WPT CEO Daily Briefing</h1>
+  <div class="sub">Tuesday, May 26, 2026 · Memorial Day week · For Terry Finley + Lindsey Heumann</div>
+</header>
 
-      <section>
-        <h2>2) 1 CEO Move Today</h2>
-        <div class="callout">
-          <div><span class="pill gold">Do this first</span></div>
-          <ul>
-            <li>During the <span class="k">9:00–10:00 AM ET call block</span>, close the loop on the <span class="k">Johnny Mac Golf 4th spot</span>: call <span class="k">Kevin Hughes</span> + <span class="k">Joe Applebaum</span> and confirm a “yes/no” by end of the morning; if neither can play, immediately route to a backup invite so the group is set by EOD.</li>
-          </ul>
-          <div class="small">Source: your calendar event “Call Kevin Hughes + Joe Applebaum — Johnny Mac Golf 4th spot”.</div>
-        </div>
-      </section>
-    </div>
-
-    <section style="margin-top:14px;">
-      <h2>3) Schedule (ET) — Today + Next 2 Days</h2>
-      <div class="two-col">
-        <div>
-          <div class="pill">Today (Tue)</div>
-          <table>
-            <thead><tr><th>Time</th><th>Event</th><th>People / Location</th></tr></thead>
-            <tbody>
-              <tr><td><span class="k">9:00–9:15 AM</span></td><td>Call <span class="k">Kevin Hughes</span> + <span class="k">Joe Applebaum</span> — Johnny Mac Golf 4th spot</td><td>Notes: Need a 4th (June 1) • West Point Golf Course</td></tr>
-              <tr><td><span class="k">9:15–9:30 AM</span></td><td>Call <span class="k">Ryan</span></td><td>—</td></tr>
-              <tr><td><span class="k">9:30–9:45 AM</span></td><td>Call <span class="k">Joe</span> + <span class="k">Steve C</span></td><td>—</td></tr>
-              <tr><td><span class="k">9:45–10:00 AM</span></td><td>Call <span class="k">Gagliano</span></td><td>—</td></tr>
-              <tr><td><span class="k">10:30–11:00 AM</span></td><td>Terry &lt;&gt; <span class="k">TJC</span></td><td><span class="k">Jim Gagliano</span>, <span class="k">Charlotte Clement</span> • Microsoft Teams</td></tr>
-              <tr><td><span class="k">11:00–11:30 AM</span></td><td>Weekly <span class="k">AI/Tech Sync</span></td><td><span class="k">Dawn</span>, <span class="k">Lindsey</span>, <span class="k">Ali</span> • Zoom</td></tr>
-              <tr><td><span class="k">11:00 AM–12:00 PM</span></td><td><span class="k">Meeting</span></td><td><span class="k">Erin</span> • <span class="pill red">Overlaps AI/Tech Sync</span></td></tr>
-              <tr><td><span class="k">11:30 AM–1:00 PM</span></td><td><span class="k">WPT AI Modernization Project</span></td><td><span class="k">Lindsey</span>, Joey Avioli • Zoom</td></tr>
-              <tr><td><span class="k">1:15–1:30 PM</span></td><td>Do. <span class="k">Perplexity medical</span></td><td>—</td></tr>
-              <tr><td><span class="k">2:00–3:00 PM</span></td><td>Tuesdays at Two: <span class="k">Dale</span></td><td><span class="k">Erin</span> + WPT Team • —</td></tr>
-              <tr><td><span class="k">2:00–2:15 PM</span></td><td><span class="k">Doctor appt</span></td><td><span class="pill red">Overlaps Tuesdays at Two</span></td></tr>
-            </tbody>
-          </table>
-          <div class="small">Times converted from calendar timestamps; verify any all-day items.</div>
-        </div>
-        <div>
-          <div class="pill">Next 2 days (Wed–Thu)</div>
-          <div class="small">Calendar events for Wed–Thu are included on the live page; if you want this box expanded into a full table like “Today,” tell me and I’ll render it that way going forward.</div>
-        </div>
-      </div>
-    </section>
-
-    <section style="margin-top:14px;">
-      <h2>4) Alerts</h2>
-      <ul>
-        <li><span class="pill red">Schedule conflict</span> <span class="k">11:00 AM ET</span>: Weekly AI/Tech Sync overlaps with “Meeting” (Erin).</li>
-        <li><span class="pill red">Schedule conflict</span> <span class="k">2:00 PM ET</span>: “Tuesdays at Two: Dale” overlaps with “Doctor appt”.</li>
-        <li><span class="pill gold">Action needed</span> Johnny Mac Golf: need a confirmed <span class="k">4th player</span> (June 1) — close today.</li>
-      </ul>
-    </section>
-
-    <section style="margin-top:14px;">
-      <h2>5) Team Pulse (Slack — last 2 days)</h2>
-      <div class="callout">
-        <div class="k">Executive Team Pulse Summary</div>
-        <ul>
-          <li><span class="k">Wins:</span> <span class="k">Vince Tuminello</span> — <span class="k">2.5%</span> in <span class="k">Carocara</span> posted in <span class="k">#sales-made</span>.</li>
-          <li><span class="k">Horse updates:</span> Note on <span class="k">Walking in Memphis</span> shared in <span class="k">#horse-comms</span>.</li>
-          <li><span class="k">Gaps:</span> No new items surfaced in <span class="k">#sales</span>, <span class="k">#prospectcomms</span>, or <span class="k">#exec-team</span> in the last 2 days.</li>
-        </ul>
-      </div>
-      <h3 class="small" style="margin:12px 0 6px;">#sales-made</h3>
-      <ul>
-        <li><span class="k">Jason Blewitt</span>: “<span class="k">Vince Tuminello</span> <span class="k">2.5%</span> <span class="k">Carocara</span>”</li>
-      </ul>
-      <h3 class="small" style="margin:12px 0 6px;">#horse-comms</h3>
-      <ul>
-        <li><span class="k">Tom Murphy</span>: “Walking in Memphis, from Mark’s assistant Caden.”</li>
-      </ul>
-      <div class="small">Note: Slack window = last 2 days; only channels specified in the runbook are queried.</div>
-    </section>
-
-    <section style="margin-top:14px;">
-      <h2>6) Racing</h2>
-      <ul>
-        <li><span class="k">Intricate Spirit</span>: Returning to New York as the <span class="k">3-to-1 morning-line favorite</span> in the <span class="k">$150,000 Paradise Creek Stakes</span> at <span class="k">Belmont at the Big A</span>; scheduled for <span class="k">6 furlongs</span> with weather potentially moving the race off turf. (<a href="https://www.westpointtb.com/intricate-spirit-favored-back-in-new-york-for-paradise-creek/">West Point Thoroughbreds</a>)</li>
-      </ul>
-      <div class="small">Source: West Point Thoroughbreds news post (Jeff Lowe, May 22, 2026).</div>
-    </section>
-
-    <section style="margin-top:14px;">
-      <h2>7) Decisions Needed</h2>
-      <ul>
-        <li><span class="k">Decision:</span> Who is the <span class="k">backup invite</span> if Kevin Hughes/Joe Applebaum cannot play Johnny Mac (4th spot)?<br/>
-            <span class="k">Why it matters:</span> Partner optics + logistics (June 1).<br/>
-            <span class="k">Recommendation:</span> Pick 1–2 backups now; if no “yes” by noon, shift to backup immediately.<br/>
-            <span class="pill gold">Time sensitivity: today</span>
-        </li>
-        <li><span class="k">Decision:</span> Resolve the <span class="k">11:00 AM ET overlap</span> (AI/Tech Sync vs Erin meeting).<br/>
-            <span class="k">Why it matters:</span> You’re double-booked; one will slip or become low-value multitasking.<br/>
-            <span class="k">Recommendation:</span> Attend the higher-leverage one live; have Lindsey/Dawn send a 3-bullet recap for the other.<br/>
-            <span class="pill red">Time sensitivity: today</span>
-        </li>
-      </ul>
-    </section>
-
-    <section style="margin-top:14px;">
-      <h2>8) Perplexity Computer Slack Activity</h2>
-      <ul>
-        <li>No Perplexity-related Slack mentions surfaced in the last 2 days.</li>
-      </ul>
-    </section>
-
-    <div class="small" style="margin:14px 2px 0; color:var(--muted);">
-      Sources used today: Google Calendar (Terry Finley calendar), Slack (WPT workspace channels), West Point Thoroughbreds website article (linked above).
-    </div>
+<section>
+  <h2>CEO Snapshot</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Top 3 today:</strong> (1) <strong>TJC call at 10:30 ET</strong> with Jim Gagliano + Charlotte Clement. (2) <strong>WPT AI Modernization</strong> deep-work block 11:30–1:00 with Lindsey + Joey. (3) <strong>Tuesdays at Two — Dale</strong> 2:00 ET partner call.</li>
+      <li><strong>Biggest risk:</strong> Triple-booked at <strong>2:00 PM ET</strong> — Tuesdays at Two (Dale), the Spring/Summer 2026 Zoom, and a doctor's appointment all collide. Needs a decision before noon.</li>
+      <li><strong>Biggest opportunity:</strong> <strong>Vibe pointing for the Metropolitan H. (G1)</strong> instead of Blame (per Jason in #horse-comms). Major partner-comms upgrade — frame it for the partner group this week.</li>
+      <li><strong>Terry must do:</strong> Resolve the 2:00 PM ET stack and confirm the Johnny Mac Golf 4th (call Kevin/Joe at 9:00 ET — Jimmy Burke is out).</li>
+      <li><strong>Delegate:</strong> Find No Fault entry change (Dale is moving him off the 5/30 1-1/8 spot to a 7F race on the 7th with Albaughs in attendance) — Tom Murphy already on it; just acknowledge.</li>
+    </ul>
   </div>
+</section>
+
+<section>
+  <h2>1 CEO Move Today</h2>
+  <div class="card gold">
+    <div class="move">📞 Personally call <strong>Mark Sigona</strong> (top score 130.78 on this week's Top 10) before the AI Modernization block at 11:30 ET.</div>
+    <div class="muted" style="margin-top:8px;">He led the call list emailed Monday and is the highest-leverage warm relationship. A 10-minute CEO touch today — anchored around <strong>Vibe</strong>'s Met Mile pivot and the <strong>5/29 entries</strong> (Bandiagara in the Penn Oaks, Band On the Run at Laurel) — converts the score into an outcome. Slot it in the 10:00–10:30 ET window before the TJC meeting.</div>
+  </div>
+</section>
+
+<section>
+  <h2>Schedule</h2>
+
+  <h3>Today — Tuesday, May 26</h3>
+  <div class="card">
+    <table>
+      <tr><th>Time (ET)</th><th>Item</th></tr>
+      <tr><td class="time">9:00–9:15a</td><td>Call Kevin Hughes + Joe Applebaum — <strong>Johnny Mac Golf 4th spot</strong> (Jimmy Burke is out; Jun 1 at West Point GC)</td></tr>
+      <tr><td class="time">9:15–9:30a</td><td>Call Ryan</td></tr>
+      <tr><td class="time">9:30–9:45a</td><td>Call Joe and Steve C</td></tr>
+      <tr><td class="time">9:45–10:00a</td><td>Call Gagliano (warm-up before TJC)</td></tr>
+      <tr><td class="time">10:30–11:00a</td><td><strong>Terry &lt;&gt; TJC</strong> — Jim Gagliano, Charlotte Clement · MS Teams</td></tr>
+      <tr><td class="time">11:00–11:30a</td><td>Weekly AI/Tech Sync — Dawn, Lindsey, Ali · Zoom</td></tr>
+      <tr><td class="time">11:30a–1:00p</td><td><strong>WPT AI Modernization Project</strong> — Lindsey, Joey Avioli · Zoom (90 min deep work)</td></tr>
+      <tr><td class="time">1:15–1:30p</td><td>Perplexity medical (personal)</td></tr>
+      <tr><td class="time" style="color:var(--red);">2:00–3:00p ⚠️</td><td><span class="conflict">CONFLICT (3 events stacked):</span><br>• <strong>Tuesdays at Two — Dale</strong> (Erin + WPT Team 2025)<br>• Tuesdays at Two: Spring/Summer 2026 · Zoom<br>• Doctor appt (2:00–2:15p)</td></tr>
+      <tr><td class="time">2:45–3:45p</td><td>Review Aftercare AI SOW — Atlas AI (Norma, Sri), Max Wittenberg</td></tr>
+      <tr><td class="time">4:00–7:00p</td><td>Swim (3:20p) — with Debbie</td></tr>
+    </table>
+  </div>
+
+  <h3>Tomorrow — Wednesday, May 27</h3>
+  <div class="card">
+    <table>
+      <tr><td class="time">8:00–8:15a</td><td>Wes</td></tr>
+      <tr><td class="time">8:30–8:45a</td><td>"Cancel the paste"</td></tr>
+      <tr><td class="time">9:00–10:00a</td><td>Jeff Litwin + Terry session · Zoom</td></tr>
+      <tr><td class="time">11:00a–12:00p</td><td><strong>Exec Meeting</strong> — Lindsey · Zoom</td></tr>
+      <tr><td class="time">3:00–4:15p</td><td>📍 201 Park St, 3rd floor — Dr. Emma Stokes</td></tr>
+      <tr><td class="time">5:00–6:00p</td><td>Kids Golf — with Debbie</td></tr>
+      <tr><td class="time">6:45–7:45p</td><td>Baseball Game (5:45p Basil Griffin 5)</td></tr>
+    </table>
+  </div>
+
+  <h3>Thursday — May 28</h3>
+  <div class="card">
+    <table>
+      <tr><td class="time">10:00–11:00a</td><td>Meeting — Erin</td></tr>
+      <tr><td class="time">11:00–11:30a</td><td><strong>WPT Weekly Sales Call</strong> (new Zoom link) — Ali, Danielle, Dawn, Erin</td></tr>
+      <tr><td class="time">11:30a–12:30p</td><td><strong>Horse Call</strong> — Jeff Lowe, Team 2023</td></tr>
+      <tr><td class="time">2:00–3:00p</td><td>CH Check-in — Humberto Chavez, Michelle Borisenok, Eleanor Chaplain</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>Alerts</h2>
+  <div class="card red">
+    <ul>
+      <li><span class="pill red">Conflict</span> <strong>2:00 PM ET triple-book</strong> — Tuesdays at Two (Dale), Tuesdays at Two: Spring/Summer 2026 Zoom, and doctor appt all collide. Decide which to take live.</li>
+      <li><span class="pill gold">Decision</span> <strong>Find No Fault — race change.</strong> Dale doesn't want a 1-1/8 yet; targeting a 7F spot on June 7 (Albaughs will be on-track). Acknowledge with Tom Murphy.</li>
+      <li><span class="pill teal">Heads-up</span> <strong>Vibe → Met Mile</strong> (not Blame). Partner-comms opportunity; coordinate the announcement framing.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Team Pulse</h2>
+  <div class="card">
+    <p><strong>Executive summary:</strong> Quiet Memorial Day window (Mon was a holiday — light Slack traffic). The live conversation is <strong>training/race-day strategy in #horse-comms</strong> — Vibe's Met Mile pivot, Find No Fault's spot change, and rider/connections decisions Jeff Lowe is working through. <strong>#sales-made</strong>, <strong>#sales</strong>, and <strong>#prospectcomms</strong> were silent in the last 48 hours — expected for the long weekend, but worth a nudge after the Weekly Sales Call Thursday.</p>
+
+    <h3>#horse-comms (9 msgs)</h3>
+    <ul>
+      <li><strong>Tom Murphy</strong> (7:23a CDT today): "Dale decided against entering <strong>Find No Fault</strong> on the 30th, doesn't want to go a mile 1/8 with him just yet. Looking at a 7F spot on the 7th — Albaughs want to run him there because they'll be there that day."</li>
+      <li><strong>Jason Blewitt</strong> (Sun): "<strong>Vibe</strong> is doing super and is going to point for the <strong>Metropolitan</strong> instead of Blame." (Tom B: "Wow")</li>
+      <li><strong>Jeff Lowe</strong> (Sun eve): Shared TDN piece — "<a href="https://www.thoroughbreddailynews.com/one-horse-show-in-california-as-early-encore-dazzles-on-debut-earns-rising-star-nod/">Early Voting again</a>" (Early Encore Rising Star).</li>
+      <li><strong>Jeff Lowe / Tom Murphy / Terry</strong> thread on rider change: Jeff — "if she had won obviously keep him on, but finishing third and being a Saratoga novice, need to make a change especially when you can get a rider like that." Terry: "Also he's looked at as the best rider (second at worst) in the world."</li>
+    </ul>
+
+    <h3>#exec-team (3 msgs — all Terry, Sunday)</h3>
+    <ul>
+      <li>Website banners — push back on paying $300–$400 / 2PM to make them; check internal options.</li>
+      <li>Race-day attendance reporting needs <strong>grade + spouse name</strong>, plus Salesforce summary. ("I'll explain.")</li>
+      <li>Notion as the home for a company playbook.</li>
+    </ul>
+
+    <h3>#sales-made / #sales / #prospectcomms</h3>
+    <ul>
+      <li>No new messages 5/24–5/26 (Memorial Day window).</li>
+    </ul>
+
+    <h3>Terry DMs</h3>
+    <ul>
+      <li><strong>Joey Avioli</strong> (Sun eve): Proposing a meeting next week to align the team on a structured update format (horse update, jockey update, etc.) so updates land in a warehouse-ready schema. Tees up nicely against today's <strong>AI Modernization</strong> block.</li>
+      <li><strong>Jason Blewitt</strong> (Mon): Sent the Flightline PPs shot Terry asked for.</li>
+      <li><strong>Debbie</strong> (group DM Sun w/ Lindsey): "Am I to receive a doc to sign from BPAS?" — Lindsey to follow up.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Racing</h2>
+  <div class="card teal">
+    <p><strong>Today (5/26):</strong> No WPT entries.<br>
+    <strong>Wed 5/27 &amp; Thu 5/28:</strong> No WPT entries.</p>
+
+    <h3>Next entries — Friday, May 29 (from <a href="https://westpointtb.com/racing/daily-entries/">WPT Daily Entries</a>)</h3>
+    <table>
+      <tr><th>Horse</th><th>Track</th><th>Race</th><th>Post (ET)</th><th>Type</th></tr>
+      <tr><td><strong>Bandiagara (GB)</strong></td><td>Penn National</td><td>R5 · PP 6 of 7 · 8F</td><td>7:12p</td><td><strong>Penn Oaks</strong></td></tr>
+      <tr><td><strong>Band On the Run</strong></td><td>Laurel Park</td><td>R6 · PP 8 of 10 · 8.5F</td><td>2:23p</td><td>Maiden Claiming $35k</td></tr>
+    </table>
+
+    <h3>Partner-facing notes</h3>
+    <ul>
+      <li><strong>Bandiagara (GB)</strong> in a <strong>stakes spot</strong> Friday — Penn Oaks is the partner-comms anchor for the week.</li>
+      <li><strong>Vibe</strong> redirected to the <strong>Metropolitan H. (G1)</strong> — a meaningful upgrade in target. Surface in the next partner update.</li>
+      <li><strong>Find No Fault</strong> moved off 5/30 → targeting 6/7 at 7F (Albaughs on-track that day).</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Decisions Needed</h2>
+  <div class="card">
+    <ol>
+      <li><strong>2:00 PM ET conflict</strong> — pick one of: Tuesdays at Two (Dale), Spring/Summer 2026 Zoom, or doctor appt. <span class="muted">When: <strong>before noon today</strong>.</span></li>
+      <li><strong>Johnny Mac Golf 4th</strong> — confirm Kevin Hughes or Joe Applebaum on the 9:00a call. <span class="muted">When: <strong>today.</strong></span></li>
+      <li><strong>Vibe → Met Mile messaging</strong> — decide whether to lead the next partner email with the target change or pair it with Bandiagara's Penn Oaks. <span class="muted">When: <strong>this week.</strong></span></li>
+      <li><strong>Website banners</strong> — confirm internal owner; stop the $300–400 per-banner external spend. <span class="muted">When: <strong>this week</strong> (raised in #exec-team Sun).</span></li>
+      <li><strong>Joey's structured-updates proposal</strong> — green-light a team session next week. <span class="muted">When: <strong>watch — fits today's AI Modernization block.</strong></span></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2>Perplexity Computer Slack Activity</h2>
+  <div class="card">
+    <ul>
+      <li>Mon 5/25 07:51a CDT — Top 10 Clients to Call delivered (Sigona #1 at 130.78; Cornick HOT; Murphy URGENT $0-YTD; Barker URGENT opp due 5/31).</li>
+      <li>Mon 5/25 06:03a–07:07a — CEO Daily v2 scheduled run executed.</li>
+      <li>Tue 5/26 06:07a–07:22a — Today's CEO Daily v2 + Daily Entries fix conversation (this run patches the skill to read the JS-rendered Daily Entries page directly).</li>
+    </ul>
+  </div>
+</section>
+
+<footer style="margin-top:30px; padding-top:14px; border-top:1px solid var(--line); font-size:12px; color:var(--muted);">
+  Generated <span id="now"></span> · Sources: Google Calendar, Slack (#horse-comms, #exec-team, DMs), <a href="https://westpointtb.com/racing/daily-entries/">WPT Daily Entries</a>.
+  <script>document.getElementById('now').textContent = new Date().toLocaleString('en-US',{timeZone:'America/New_York', dateStyle:'medium', timeStyle:'short'}) + ' ET';</script>
+</footer>
+
+</div>
 </body>
 </html>
