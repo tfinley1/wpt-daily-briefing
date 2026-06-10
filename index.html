@@ -3,54 +3,57 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WPT CEO Daily Briefing — Tuesday, June 9, 2026</title>
+  <title>WPT CEO Daily Briefing — Wed, June 10, 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#ffffff; --ink:#28251D; --muted:#6b6b6b; --teal:#01696F;
-      --red:#B42318; --gold:#B54708; --green:#027A48; --card:#F7F7F6; --line:#E7E5E4;
+      --bg:#ffffff;
+      --text:#28251D;
+      --muted:#6b675d;
+      --teal:#01696F;
+      --red:#B00020;
+      --gold:#B78628;
+      --green:#1B7F4B;
+      --card:#f7f6f3;
+      --line:#e7e4dc;
     }
     *{box-sizing:border-box}
-    body{margin:0; background:var(--bg); color:var(--ink); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
-    .wrap{max-width:980px; margin:0 auto; padding:24px 18px 56px;}
-    header{display:flex; gap:12px; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; border-bottom:2px solid var(--line); padding-bottom:14px; margin-bottom:18px;}
-    h1{font-size:20px; margin:0; letter-spacing:-0.02em;}
-    .sub{font-size:12px; color:var(--muted); margin-top:4px;}
-    .pill{display:inline-flex; align-items:center; gap:8px; padding:7px 10px; border:1px solid var(--line); border-radius:999px; font-size:12px; color:var(--muted)}
-    .pill b{color:var(--ink)}
-    section{margin-top:18px;}
-    .card{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 14px;}
-    h2{font-size:14px; margin:0 0 10px; color:var(--teal); letter-spacing:-0.01em;}
-    h3{font-size:13px; margin:12px 0 6px;}
-    ul{margin:8px 0 0 18px; padding:0}
-    li{margin:6px 0; line-height:1.25rem}
-    .kpi{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px;}
-    .kpi .item{background:#fff; border:1px solid var(--line); border-radius:12px; padding:10px;}
-    .label{font-size:11px; color:var(--muted);}
-    .value{margin-top:4px; font-size:13px; font-weight:600;}
-    .tag{display:inline-block; padding:2px 8px; border-radius:999px; font-size:11px; font-weight:600; border:1px solid var(--line); background:#fff;}
-    .tag.red{color:var(--red); border-color:rgba(180,35,24,.25); background:rgba(180,35,24,.06)}
-    .tag.gold{color:var(--gold); border-color:rgba(181,71,8,.25); background:rgba(181,71,8,.06)}
-    .tag.green{color:var(--green); border-color:rgba(2,122,72,.25); background:rgba(2,122,72,.06)}
-    table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border:1px solid var(--line); border-radius:12px; background:#fff;}
-    th,td{padding:9px 10px; border-bottom:1px solid var(--line); vertical-align:top; font-size:12px;}
-    th{background:#FBFBFA; text-align:left; color:var(--muted); font-weight:600;}
-    tr:last-child td{border-bottom:none}
-    .time{white-space:nowrap; font-weight:600}
-    .small{font-size:12px; color:var(--muted)}
-    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
-    a{color:var(--teal); text-decoration:none}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
+    a{color:var(--teal);text-decoration:none}
     a:hover{text-decoration:underline}
-    @media (max-width:700px){
-      .kpi{grid-template-columns:1fr}
-      header{align-items:flex-start}
+    .wrap{max-width:980px;margin:0 auto;padding:22px 16px 60px}
+    header{display:flex;gap:14px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;border-bottom:2px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+    h1{font-size:20px;margin:0;letter-spacing:-0.01em}
+    .sub{color:var(--muted);font-size:13px}
+    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 10px;font-size:12px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+    .card{grid-column:span 12;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px}
+    .card h2{margin:0 0 8px;font-size:14px;letter-spacing:-0.01em}
+    .kpi{display:flex;gap:10px;flex-wrap:wrap}
+    .k{flex:1 1 200px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}
+    .k .l{font-size:12px;color:var(--muted)}
+    .k .v{font-weight:700;margin-top:4px}
+    .tag{display:inline-block;border-radius:999px;padding:3px 8px;font-size:11px;font-weight:600;border:1px solid var(--line);background:#fff;color:var(--muted)}
+    .tag.red{border-color:rgba(176,0,32,.25);color:var(--red);background:rgba(176,0,32,.06)}
+    .tag.gold{border-color:rgba(183,134,40,.25);color:var(--gold);background:rgba(183,134,40,.08)}
+    .tag.green{border-color:rgba(27,127,75,.25);color:var(--green);background:rgba(27,127,75,.07)}
+    ul{margin:8px 0 0 18px;padding:0}
+    li{margin:6px 0}
+    table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:12px;border:1px solid var(--line);background:#fff}
+    th,td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13px}
+    th{background:#fbfaf8;text-align:left;color:var(--muted);font-weight:600}
+    tr:last-child td{border-bottom:none}
+    .small{font-size:12px;color:var(--muted)}
+    .two{grid-column:span 12}
+    @media (min-width:880px){
+      .two{grid-column:span 6}
     }
     @media print{
-      .wrap{padding:0}
+      header{position:static}
+      a{color:var(--text);text-decoration:none}
       .card{break-inside:avoid}
-      a{color:inherit; text-decoration:none}
     }
   </style>
 </head>
@@ -59,212 +62,334 @@
     <header>
       <div>
         <h1>WPT CEO Daily Briefing</h1>
-        <div class="sub">Tuesday, June 9, 2026</div>
+        <div class="sub">Terry Finley • Wed, June 10, 2026 • Published: 10:03 AM CDT</div>
       </div>
-      <div class="pill"><b>Link</b> <span class="mono">tfinley1.github.io/wpt-daily-briefing</span></div>
+      <div class="pill">Public page: <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a></div>
     </header>
 
     <!-- 1. CEO Snapshot -->
-    <section>
+    <section class="grid">
       <div class="card">
         <h2>1) CEO Snapshot</h2>
         <div class="kpi">
-          <div class="item">
-            <div class="label">Top priorities today</div>
-            <div class="value">1) Prep for <b>KHRG Board Meeting</b> • 1:30–3:00pm ET</div>
-            <div class="small">Confirm agenda / any votes; send any talking points to yourself + Lindsey.</div>
+          <div class="k">
+            <div class="l">Top priorities today</div>
+            <div class="v">(1) Lock the agenda + outcomes for <strong>TPF/LH Weekly Exec</strong> • (2) Ensure today’s racing logistics are tight for <strong>Bullard</strong> • (3) Protect schedule around cardiology appointment.</div>
           </div>
-          <div class="item">
-            <div class="label">Top priorities today</div>
-            <div class="value">2) <b>Brad/George</b> check-in • 2:00–3:00pm ET</div>
-            <div class="small">Align on near-term actions and key partner communications.</div>
+          <div class="k">
+            <div class="l">Biggest risk</div>
+            <div class="v"><span class="tag red">Schedule conflict</span> Two simultaneous items at <strong>12:45 PM ET</strong> (Echo cardio note vs. Graves Gilbert appointment) could cause confusion or missed prep.</div>
           </div>
-          <div class="item">
-            <div class="label">Top priorities today</div>
-            <div class="value">3) Racing: <b>Band On the Run</b> runs today (Presque Isle Downs)</div>
-            <div class="small">Quick pre-race check-in with team if any last-minute notes.</div>
+          <div class="k">
+            <div class="l">Biggest opportunity</div>
+            <div class="v"><span class="tag green">Racing moment</span> <strong>Bullard</strong> runs today at <strong>Churchill Downs</strong> — partner-facing touchpoint and momentum builder.</div>
           </div>
-          <div class="item">
-            <div class="label">Biggest risk</div>
-            <div class="value"><span class="tag red">Urgent</span> Suspicious “invoice/renewal” calendar item</div>
-            <div class="small">Likely spam; avoid calling numbers in description; delete/mark as spam.</div>
+          <div class="k">
+            <div class="l">Needs Terry directly</div>
+            <div class="v">Show up with a crisp decision list for <strong>WPT AI Modernization — Horse Updates</strong> (scope, owner, next deliverable).</div>
           </div>
-          <div class="item">
-            <div class="label">Biggest opportunity</div>
-            <div class="value"><span class="tag green">Win</span> Momentum: <b>Anthony Prisco</b> closed last 7.5% of <b>Caracaro filly</b></div>
-            <div class="small">Use as proof-point in outreach this week.</div>
-          </div>
-          <div class="item">
-            <div class="label">Direct involvement / delegate</div>
-            <div class="value">Direct: <b>KHRG</b> prep • Delegate: ask <b>Casey/TPF</b> for follow-up plan on Prisco</div>
-            <div class="small">Make sure next steps are assigned and time-boxed.</div>
+          <div class="k">
+            <div class="l">Delegate</div>
+            <div class="v">Have ops/team confirm <strong>today’s race-time comms</strong> + partner outreach plan for <strong>Bullard</strong> (pre/post update cadence).</div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- 2. 1 CEO Move Today -->
-    <section>
+      <!-- 2. 1 CEO Move Today -->
       <div class="card">
         <h2>2) 1 CEO Move Today</h2>
-        <p style="margin:0; font-size:13px; line-height:1.35rem;">
-          <b>Send a 3-line follow-up to Anthony Prisco</b> (today) thanking him for closing the final <b>7.5%</b> of the <b>Caracaro filly</b> and asking for <b>1 referral intro</b> (name + warm handoff) to replicate the win this week.
-        </p>
+        <ul>
+          <li><strong>Before the Weekly Exec</strong>: text/call <strong>Erin</strong> to confirm a single, consistent <strong>partner update plan</strong> for <strong>Bullard</strong> (race-time reminder + post-race recap) and ask her to own it end-to-end today.</li>
+        </ul>
       </div>
-    </section>
 
-    <!-- 3. Schedule -->
-    <section>
+      <!-- 3. Schedule -->
       <div class="card">
-        <h2>3) Schedule (ET)</h2>
+        <h2>3) Schedule (Today + Next 2 Days)</h2>
+        <div class="small">Times shown in <strong>ET</strong>. Includes all calendar events (no filtering).</div>
+        <h3 style="margin:10px 0 6px;font-size:13px;">Today — Wed, Jun 10</h3>
         <table>
           <thead>
-            <tr><th style="width:92px;">When</th><th>Event</th><th style="width:220px;">Where / Link</th></tr>
+            <tr>
+              <th style="width:120px;">Time (ET)</th>
+              <th>Event</th>
+              <th style="width:210px;">People / Notes</th>
+            </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="time">All day</td>
-              <td><b>Invoice:Four Year Plan Renewed Successfully</b> <span class="tag red">likely spam</span><div class="small">Organizer: akbarizanfardino@swchou.com</div></td>
-              <td class="small">Google Calendar event link</td>
+              <td>10:15–10:30 AM</td>
+              <td>Check last few week calender - do succession stuff</td>
+              <td class="small">Solo</td>
             </tr>
             <tr>
-              <td class="time">1:30–3:00pm</td>
-              <td><b>KHRG Board Meeting</b><div class="small">Attendees include: <b>Charlie O’Connor</b> (Coolmore), <b>Dale Romans</b>, and others.</div></td>
-              <td class="small">📍 KHRC Conference Room 75<br/>Zoom in invite</td>
+              <td>11:00 AM–12:00 PM</td>
+              <td><strong>TPF/LH Weekly Exec</strong> • <a href="https://us06web.zoom.us/j/86598367628?pwd=hsfDNIaLtsAdwyhe0bzbQabdDgmnTr.1">Zoom</a></td>
+              <td class="small">Lindsey, Terry</td>
             </tr>
             <tr>
-              <td class="time">2:00–3:00pm</td>
-              <td><b>Tuesdays at Two: Brad/George</b></td>
-              <td class="small">—</td>
+              <td>12:00–1:00 PM</td>
+              <td><strong>WPT AI Modernization - Horse Updates</strong> • <a href="https://us06web.zoom.us/j/87212585919?pwd=s2QxlBmPSQBoj8ui3P81oF0JpoPF4m.1">Zoom</a></td>
+              <td class="small">Lindsey, Jeff Lowe (needsAction), Joey Avioli, others</td>
+            </tr>
+            <tr>
+              <td><span class="tag red">12:45 PM</span></td>
+              <td><strong>Echo cardio - stress test</strong> (note) • “201 Park Avenue, 3rd floor”</td>
+              <td class="small">Potential conflict with appointment below</td>
+            </tr>
+            <tr>
+              <td><span class="tag red">12:45–1:45 PM</span></td>
+              <td><strong>Appointment at Graves Gilbert Clinic Cardiology</strong> <span class="small">📍201 Park St, Bowling Green, KY</span></td>
+              <td class="small">Auto-created from email</td>
+            </tr>
+            <tr>
+              <td>2:00–2:15 PM</td>
+              <td>Discuss Kylie &amp; Samantha</td>
+              <td class="small">Tom Bellhouse, Terry</td>
+            </tr>
+            <tr>
+              <td>3:00–3:30 PM</td>
+              <td>Terry / Phil / Atlas - Bi-Monthly • <a href="https://meet.google.com/rbp-gpfk-eri">Google Meet</a></td>
+              <td class="small">Max Wittenberg + others; some needsAction/tentative</td>
+            </tr>
+            <tr>
+              <td>4:22 PM</td>
+              <td><strong>Bullard</strong> at <strong>Churchill Downs</strong> (Race 8)</td>
+              <td class="small">Erin organizer; WPT Team 2026 invited</td>
+            </tr>
+            <tr>
+              <td>4:30–5:00 PM</td>
+              <td>Swim 320PM</td>
+              <td class="small">Debbie organizer</td>
             </tr>
           </tbody>
         </table>
 
-        <h3>Next 2 days (ET)</h3>
+        <h3 style="margin:14px 0 6px;font-size:13px;">Tomorrow — Thu, Jun 11</h3>
         <table>
           <thead>
-            <tr><th style="width:110px;">Day</th><th style="width:92px;">When</th><th>Event</th></tr>
+            <tr>
+              <th style="width:120px;">Time (ET)</th>
+              <th>Event</th>
+              <th style="width:210px;">People / Notes</th>
+            </tr>
           </thead>
           <tbody>
-            <tr><td><b>Wed 6/10</b></td><td class="time">11:00am</td><td><b>TPF/LH Weekly Exec</b> (Zoom)</td></tr>
-            <tr><td><b>Wed 6/10</b></td><td class="time">12:00pm</td><td><b>WPT AI Modernization - Horse Updates</b> (Zoom)</td></tr>
-            <tr><td><b>Wed 6/10</b></td><td class="time">12:45pm</td><td><b>Echo cardio - stress test</b> (201 Park Ave, 3rd floor)</td></tr>
-            <tr><td><b>Wed 6/10</b></td><td class="time">12:45–1:45pm</td><td><b>Appointment at Graves Gilbert Clinic Cardiology</b> (201 Park St, Bowling Green)</td></tr>
-            <tr><td><b>Wed 6/10</b></td><td class="time">3:00–3:30pm</td><td><b>Terry / Phil / Atlas - Bi-Monthly</b> (Google Meet)</td></tr>
-            <tr><td><b>Wed 6/10</b></td><td class="time">4:00–7:00pm</td><td><b>Swim 320PM</b></td></tr>
-            <tr><td><b>Wed 6/10</b></td><td class="time">4:22pm</td><td><b>Bullard</b> at Churchill Downs (Race 8)</td></tr>
-            <tr><td><b>Wed 6/10</b></td><td class="time">8:15–9:15pm</td><td><b>Baseball Game 7:15</b></td></tr>
-            <tr><td><b>Thu 6/11</b></td><td class="time">10:00–11:00am</td><td><b>TB/TPF/LH Meeting - Use this Zoom link</b> (Zoom)</td></tr>
-            <tr><td><b>Thu 6/11</b></td><td class="time">10:00–11:00am</td><td><b>TPF LINDS TommyB. Zoom- 2027</b></td></tr>
-            <tr><td><b>Thu 6/11</b></td><td class="time">11:00–11:30am</td><td><b>WPT Weekly Sales Call</b> (Zoom)</td></tr>
-            <tr><td><b>Thu 6/11</b></td><td class="time">11:30am–12:30pm</td><td><b>Horse Call</b> (Zoom)</td></tr>
-            <tr><td><b>Thu 6/11</b></td><td class="time">6:56pm</td><td><b>Absolutely Hot</b> at Churchill Downs (Race 5)</td></tr>
-            <tr><td><b>Thu 6/11</b></td><td class="time">7:25pm</td><td><b>Abrigado</b> at Churchill Downs (Race 6)</td></tr>
+            <tr>
+              <td><span class="tag red">10:00–11:00 AM</span></td>
+              <td><strong>TB/TPF/LH Meeting</strong> (duplicate) / <strong>TPF LINDS TommyB. Zoom- 2027</strong></td>
+              <td class="small">Same time appears twice — confirm which invite is “source of truth.”</td>
+            </tr>
+            <tr>
+              <td>11:00–11:30 AM</td>
+              <td>WPT Weekly Sales Call - New Zoom Link** • <a href="https://us06web.zoom.us/j/82010607819?pwd=ONbHH2Y7WplU8Aj3nhJ3WhSdQPACkN.1">Zoom</a></td>
+              <td class="small">Large attendee list; Jason declined</td>
+            </tr>
+            <tr>
+              <td>11:30 AM–12:30 PM</td>
+              <td>Horse Call • <a href="https://us02web.zoom.us/j/6092381009">Zoom</a></td>
+              <td class="small">Jeff Lowe organizer</td>
+            </tr>
+            <tr>
+              <td>6:56 PM</td>
+              <td><strong>Absolutely Hot</strong> at <strong>Churchill Downs</strong> (Race 5)</td>
+              <td class="small">Erin organizer</td>
+            </tr>
+            <tr>
+              <td>7:25 PM</td>
+              <td><strong>Abrigado</strong> at <strong>Churchill Downs</strong> (Race 6)</td>
+              <td class="small">Erin organizer</td>
+            </tr>
           </tbody>
         </table>
 
-        <p class="small" style="margin:10px 0 0;">
-          <b>Conflicts:</b> Tue 2:00–3:00pm overlaps with Tue 1:30–3:00pm (KHRG).<br/>
-          <b>Conflicts:</b> Wed 12:45pm “Echo cardio - stress test” overlaps with Wed 12:45–1:45pm “Graves Gilbert Clinic Cardiology”.<br/>
-          <b>Conflicts:</b> Thu 10:00–11:00am has two events scheduled (duplicate meetings).
-        </p>
+        <h3 style="margin:14px 0 6px;font-size:13px;">Fri, Jun 12</h3>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:120px;">Time (ET)</th>
+              <th>Event</th>
+              <th style="width:210px;">People / Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10:00–10:30 AM</td>
+              <td>Terry / Tim - Touch Base <span class="small">📍Tim to call Terry's cell</span></td>
+              <td class="small">Timothy Buff</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </section>
 
-    <!-- 4. Alerts -->
-    <section>
+      <!-- 4. Alerts -->
       <div class="card">
         <h2>4) Alerts</h2>
         <ul>
-          <li><span class="tag red">Urgent</span> Calendar spam risk: <b>“Invoice:Four Year Plan Renewed Successfully”</b> with phone numbers in description — treat as malicious; delete/ignore.</li>
-          <li><span class="tag gold">Attention</span> Schedule overlaps today (KHRG vs Brad/George). Decide which is primary and delegate coverage.</li>
-          <li><span class="tag gold">Attention</span> Two overlapping cardiology items Wed 12:45pm; confirm correct appointment timing/location.</li>
+          <li><span class="tag red">Conflict</span> Two items at <strong>12:45 PM ET</strong> (Echo cardio note vs. Graves Gilbert cardiology appointment). Confirm the correct appointment details and remove/clarify the duplicate.</li>
+          <li><span class="tag gold">Duplicate tomorrow</span> Two separate events appear for <strong>10:00–11:00 AM ET Thu</strong> (TB/TPF/LH Meeting + TPF LINDS TommyB. Zoom- 2027). Decide which one to keep to avoid confusion.</li>
+          <li><span class="tag gold">Racing comms</span> Ensure a single owner for pre/post partner updates for <strong>Bullard</strong> today and <strong>Absolutely Hot</strong>/<strong>Abrigado</strong> tomorrow.</li>
         </ul>
       </div>
-    </section>
 
-    <!-- 5. Team Pulse -->
-    <section>
+      <!-- 5. Team Pulse -->
       <div class="card">
-        <h2>5) Team Pulse (Slack • last 2 days)</h2>
-        <h3>Executive pulse summary</h3>
+        <h2>5) Team Pulse (Slack — last ~48h)</h2>
+        <div class="small">Window: Mon Jun 8 → Wed Jun 10 (approx). Highlighting wins, risks, and follow-ups.</div>
+
+        <h3 style="margin:10px 0 6px;font-size:13px;">Executive Team Pulse Summary</h3>
         <ul>
-          <li><span class="tag green">Win</span> <b>Anthony Prisco</b> closed last <b>7.5%</b> of the <b>Caracaro filly</b> (credit to <b>Casey</b> + <b>TPF</b>).</li>
-          <li><span class="tag gold">Attention</span> Horse pipeline chatter: <b>Mila Rose</b> shifted to a Churchill allowance; <b>Combatant filly</b> shipping to Weaver.</li>
-          <li><span class="tag gold">Attention</span> Medical update: <b>Sorcerer’s Silver</b> status remains day-by-day; infection risk appears contained but still monitoring.</li>
+          <li><span class="tag gold">Horse health</span> Multiple horses on stall rest / rehab; one update notes ongoing lameness but improving swelling and good bloodwork.</li>
+          <li><span class="tag green">Progress</span> Training progression noted for <strong>Willpowered</strong> (3/8 breeze; exploring turf breeze later this week).</li>
+          <li><span class="tag gold">Sales</span> Reminder posted to add agenda items for Thursday’s weekly sales call.</li>
         </ul>
 
-        <h3>#sales-made</h3>
+        <h3 style="margin:12px 0 6px;font-size:13px;">#horse-comms</h3>
         <ul>
-          <li><b>Anthony Prisco</b> — last <b>7.5%</b> of the <b>Caracaro filly</b> <span class="small">(posted by Tom Bellhouse)</span></li>
+          <li><strong>Erin</strong>: “The Charlatan/Chubby Star filly is named <strong>Feeling Groovy</strong>.”</li>
+          <li><strong>Erin</strong> (Bruce updates): <strong>Kyla’s Kause</strong> had filling/degenerative changes; treated with Prostride; back under tack tomorrow. <strong>Creed’s Vision</strong>, <strong>Vibe</strong> on stall rest/hand grazing post surgery/fracture; <strong>Willpowered</strong> breezed 3/8 and may breeze on grass later this week (video link in Slack).</li>
+          <li><strong>Erin</strong> (Doc): walking still more lame than desired; swelling improved; bloodwork good; limited hand grazing to encourage movement.</li>
+          <li><strong>Jeff Lowe</strong>: <strong>Horseshoe</strong> has an Indiana-bred allowance (8.5f turf) Saturday; rain risk so “Dallas is putting <strong>Rojo</strong> in.”</li>
+          <li><strong>Jason</strong>: “<strong>Cugino</strong> race brought back for Sunday.”</li>
         </ul>
 
-        <h3>#horse-comms</h3>
+        <h3 style="margin:12px 0 6px;font-size:13px;">#sales</h3>
         <ul>
-          <li><b>Cugino</b> race brought back for Sunday. <span class="small">(Jason Blewitt)</span></li>
-          <li><b>Mila Rose</b> entered for next Saturday at Churchill (NW3 3yo filly allowance) instead of Woodbine stake: “More money, less travel.” <span class="small">(Jeff Lowe)</span></li>
-          <li><b>Combatant filly</b> shipping out to Weaver. <span class="small">(Jeff Lowe)</span></li>
-          <li><b>Sorcerer’s Silver</b> update from Dr. B: cast off; culture negative; tendon injury adds complexity; monitoring for infection/laminitis; implants stable but next month critical. <span class="small">(Erin Birkenhauer sharing Dr. B note)</span></li>
+          <li><strong>Sales bot</strong>: request to post agenda items for Thursday’s 11 AM weekly sales call by noon ET Tuesday.</li>
         </ul>
 
-        <h3>Other monitored channels</h3>
-        <p class="small" style="margin:0;">No messages returned in the last 2 days for #sales, #prospectcomms, or #exec-team in this run.</p>
+        <h3 style="margin:12px 0 6px;font-size:13px;">#sales-made</h3>
+        <div class="small">No messages found in this window.</div>
+
+        <h3 style="margin:12px 0 6px;font-size:13px;">#prospectcomms</h3>
+        <div class="small">No messages found in this window.</div>
+
+        <h3 style="margin:12px 0 6px;font-size:13px;">#exec-team</h3>
+        <div class="small">No messages found in this window.</div>
       </div>
-    </section>
 
-    <!-- 6. Racing -->
-    <section>
+      <!-- 6. Racing -->
       <div class="card">
         <h2>6) Racing (WPT Daily Entries)</h2>
-        <table>
+        <div class="small">Source of truth: <a href="https://westpointtb.com/racing/daily-entries/">westpointtb.com/racing/daily-entries</a></div>
+        <table style="margin-top:10px;">
           <thead>
             <tr>
-              <th style="width:92px;">Date</th>
+              <th style="width:100px;">Date</th>
               <th>Horse</th>
-              <th style="width:60px;">Race</th>
-              <th style="width:86px;">Post (ET)</th>
-              <th style="width:70px;">Post Pos.</th>
-              <th>Track</th>
-              <th>Type</th>
+              <th style="width:70px;">Race</th>
+              <th style="width:90px;">Post (ET)</th>
+              <th style="width:90px;">Post Pos.</th>
+              <th style="width:70px;">Dist.</th>
+              <th style="width:150px;">Track</th>
+              <th>Name/Type</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td><b>06/09</b></td><td><b>Band On the Run</b></td><td>4</td><td class="time">4:51</td><td>2 of 6</td><td>Presque Isle Downs</td><td>Maiden Claiming 15k</td></tr>
-            <tr><td><b>06/10</b></td><td><b>Bullard</b></td><td>8</td><td class="time">4:22</td><td>9 of 10</td><td>Churchill Downs</td><td>NW2X Allowance</td></tr>
-            <tr><td><b>06/11</b></td><td><b>Absolutely Hot</b></td><td>5</td><td class="time">6:56</td><td>4 of 9</td><td>Churchill Downs</td><td>NW1X Allowance</td></tr>
-            <tr><td><b>06/11</b></td><td><b>Abrigado</b></td><td>6</td><td class="time">7:25</td><td>5 of 9</td><td>Churchill Downs</td><td>Maiden Claiming 100k</td></tr>
-            <tr><td><b>06/12</b></td><td><b>Reagan's Wit</b></td><td>6</td><td class="time">3:18</td><td>4 of 9</td><td>Churchill Downs</td><td>NW3X Allowance</td></tr>
-            <tr><td><b>06/13</b></td><td><b>Epic Fashionista</b></td><td>6</td><td class="time">3:19</td><td>7 of 10</td><td>Churchill Downs</td><td>Maiden Special Weight</td></tr>
-            <tr><td><b>06/13</b></td><td><b>Tiz the Lady</b></td><td>8</td><td class="time">4:45</td><td>8 of 10</td><td>Belmont at the Big A</td><td>Maiden Claiming 90k</td></tr>
-            <tr><td><b>06/13</b></td><td><b>Run Away Rojo</b></td><td>7</td><td class="time">7:46</td><td>3 of 9</td><td>Horseshoe Indianapolis</td><td>Indiana-bred Allowance</td></tr>
+            <tr>
+              <td>06/10/26</td>
+              <td><strong>Bullard</strong></td>
+              <td>8</td>
+              <td><strong>4:22</strong></td>
+              <td>9 of 10</td>
+              <td>8F</td>
+              <td>Churchill Downs</td>
+              <td>NW2X Allowance</td>
+            </tr>
+            <tr>
+              <td>06/11/26</td>
+              <td><strong>Absolutely Hot</strong></td>
+              <td>5</td>
+              <td>6:56</td>
+              <td>4 of 9</td>
+              <td>5F</td>
+              <td>Churchill Downs</td>
+              <td>NW1X Allowance</td>
+            </tr>
+            <tr>
+              <td>06/11/26</td>
+              <td><strong>Abrigado</strong></td>
+              <td>6</td>
+              <td>7:25</td>
+              <td>5 of 9</td>
+              <td>6F</td>
+              <td>Churchill Downs</td>
+              <td>Maiden Claiming 100k</td>
+            </tr>
+            <tr>
+              <td>06/12/26</td>
+              <td><strong>Reagan’s Wit</strong></td>
+              <td>6</td>
+              <td>3:18</td>
+              <td>4 of 9</td>
+              <td>8.5F</td>
+              <td>Churchill Downs</td>
+              <td>NW3X Allowance</td>
+            </tr>
+            <tr>
+              <td>06/13/26</td>
+              <td><strong>Epic Fashionista</strong></td>
+              <td>6</td>
+              <td>3:19</td>
+              <td>7 of 10</td>
+              <td>5F</td>
+              <td>Churchill Downs</td>
+              <td>Maiden Special Weight</td>
+            </tr>
+            <tr>
+              <td>06/13/26</td>
+              <td><strong>Tiz the Lady</strong></td>
+              <td>8</td>
+              <td>4:45</td>
+              <td>8 of 10</td>
+              <td>8F</td>
+              <td>Belmont at the Big A</td>
+              <td>Maiden Claiming 90k</td>
+            </tr>
+            <tr>
+              <td>06/13/26</td>
+              <td><strong>Run Away Rojo</strong></td>
+              <td>7</td>
+              <td>7:46</td>
+              <td>3 of 9</td>
+              <td>8F</td>
+              <td>Horseshoe Indianapolis</td>
+              <td>Indiana-bred Allowance</td>
+            </tr>
           </tbody>
         </table>
-        <p class="small" style="margin:10px 0 0;">
-          Source: <a href="https://westpointtb.com/racing/daily-entries/">westpointtb.com/racing/daily-entries</a> (rendered view).
-        </p>
+        <div class="small" style="margin-top:8px;">Rendered capture used for extraction: <a href="https://westpointtb.com/racing/daily-entries/">Daily Entries page</a> (screenshot recorded in run state).</div>
       </div>
-    </section>
 
-    <!-- 7. Decisions Needed -->
-    <section>
+      <!-- 7. Decisions Needed -->
       <div class="card">
         <h2>7) Decisions Needed</h2>
         <ul>
-          <li><b>Today conflict (1:30–3:00 vs 2:00–3:00)</b> — Which meeting gets priority? <b>Recommend:</b> stay on KHRG; ask Erin/Lindsey to cover Brad/George or reschedule.</li>
-          <li><b>Spam event handling</b> — Delete/decline the suspicious invoice event and mark sender as spam to avoid future calendar injection.</li>
-          <li><b>Medical scheduling (Wed 12:45)</b> — Confirm whether stress test and clinic appointment are separate steps or duplicate bookings.</li>
+          <li><strong>Which meeting invite is the “real” one for Thu 10–11 AM ET?</strong><br>
+            <span class="small">Why it matters: duplicated TB/TPF/LH meeting blocks time and confuses attendees. Recommended action: choose the correct invite + delete/decline the other. <strong>Timing:</strong> today.</span>
+          </li>
+          <li><strong>Cardiology appointment details — confirm and reconcile.</strong><br>
+            <span class="small">Why it matters: two entries at 12:45 PM ET with different notes/locations. Recommended action: confirm location/time, keep one canonical event. <strong>Timing:</strong> today.</span>
+          </li>
         </ul>
       </div>
-    </section>
 
-    <!-- 8. Perplexity Computer Slack Activity -->
-    <section>
+      <!-- 8. Perplexity Computer Slack Activity -->
       <div class="card">
         <h2>8) Perplexity Computer Slack Activity</h2>
-        <p class="small" style="margin:0;">No Slack messages matched “perplexity / computer / briefing” in the last 2 days for this run.</p>
+        <div class="small">No Slack messages mentioning “Perplexity” found in the last ~48h search window.</div>
       </div>
-    </section>
 
+      <div class="card">
+        <h2>Sources</h2>
+        <ul class="small">
+          <li>Calendar data: Google Calendar (gcal connector).</li>
+          <li>Slack Team Pulse: westpointtb Slack (slack_direct connector).</li>
+          <li>Racing entries: <a href="https://westpointtb.com/racing/daily-entries/">https://westpointtb.com/racing/daily-entries/</a></li>
+        </ul>
+      </div>
+
+    </section>
   </div>
 </body>
 </html>
