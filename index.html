@@ -3,283 +3,316 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WPT CEO Daily Briefing — Thu, June 11, 2026</title>
+  <title>WPT CEO Daily Briefing — Friday, June 12, 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#ffffff;
-      --ink:#28251D;
-      --teal:#01696F;
-      --muted:#6b6b6b;
-      --card:#f7f7f7;
-      --red:#b42318;
-      --gold:#b76e00;
-      --green:#067647;
-      --border:#e7e7e7;
+      --bg:#FFFFFF; --ink:#28251D; --teal:#01696F;
+      --red:#B42318; --gold:#B8820A; --green:#067647;
+      --muted:#6B6B6B; --card:#F7F7F7; --line:#E7E7E7;
     }
     *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.35}
-    a{color:var(--teal);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1100px;margin:0 auto;padding:22px}
-    header{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;border-bottom:1px solid var(--border);padding-bottom:14px;margin-bottom:18px}
-    h1{font-size:22px;margin:0}
-    .meta{font-size:13px;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:1fr;gap:14px}
-    @media(min-width:920px){.grid.two{grid-template-columns:1.15fr .85fr}}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px}
-    .card h2{font-size:15px;margin:0 0 10px 0;color:var(--teal)}
-    .kpi-row{display:grid;grid-template-columns:1fr;gap:10px}
-    @media(min-width:720px){.kpi-row{grid-template-columns:repeat(3,1fr)}}
-    .kpi{background:#fff;border:1px solid var(--border);border-radius:10px;padding:10px}
-    .kpi .label{font-size:12px;color:var(--muted)}
-    .kpi .val{font-size:14px;font-weight:700;margin-top:3px}
-    ul{margin:8px 0 0 18px;padding:0}
-    li{margin:6px 0}
-    .pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:700;border:1px solid var(--border);background:#fff}
-    .pill.red{color:var(--red);border-color:#f2c2be;background:#fff5f5}
-    .pill.gold{color:var(--gold);border-color:#f4d6a3;background:#fff8ec}
-    .pill.green{color:var(--green);border-color:#bfe8d5;background:#f0fdf4}
-    .tbl{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border:1px solid var(--border);border-radius:12px;background:#fff}
-    .tbl th,.tbl td{padding:10px 10px;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px}
-    .tbl th{background:#fbfbfb;color:var(--muted);font-weight:600;text-align:left}
-    .tbl tr:last-child td{border-bottom:none}
-    .small{font-size:12px;color:var(--muted)}
-    .section{margin-top:14px}
-    .callout{border-left:4px solid var(--teal);padding:10px 12px;background:#fff;border-radius:10px;border:1px solid var(--border)}
-    .channel{margin-top:10px}
-    .channel h3{margin:0 0 6px 0;font-size:13px;color:#1f2937}
-    .msg{background:#fff;border:1px solid var(--border);border-radius:10px;padding:10px;margin:8px 0}
-    .msg .top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-    .msg .who{font-weight:700;font-size:13px}
-    .msg .when{font-size:12px;color:var(--muted)}
-    .footer{margin:18px 0 6px 0;color:var(--muted);font-size:12px}
-    @media print{.wrap{max-width:none} a{text-decoration:none;color:var(--ink)}}
+    body{margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--ink);}
+    .wrap{max-width:980px; margin:0 auto; padding:18px 16px 48px;}
+    header{display:flex; align-items:flex-end; justify-content:space-between; gap:16px; padding:8px 0 14px; border-bottom:2px solid var(--line);}
+    h1{font-size:20px; margin:0; letter-spacing:-0.02em;}
+    .sub{font-size:12px; color:var(--muted)}
+    .pill{display:inline-flex; gap:8px; flex-wrap:wrap; align-items:center;}
+    .tag{font-size:12px; padding:6px 10px; border-radius:999px; border:1px solid var(--line); background:#fff;}
+    .tag b{font-weight:700}
+    .grid{display:grid; grid-template-columns:1fr; gap:14px; margin-top:14px;}
+    @media (min-width:900px){ .grid{grid-template-columns:1fr 1fr;} }
+    .card{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 14px 12px;}
+    .card h2{margin:0 0 10px; font-size:14px; letter-spacing:-0.01em; color:var(--teal)}
+    .card h3{margin:12px 0 6px; font-size:13px;}
+    ul{margin:0; padding-left:18px}
+    li{margin:6px 0; line-height:1.25rem}
+    .kpi{display:flex; flex-wrap:wrap; gap:8px}
+    .kpi .tag{background:#fff}
+    .sev{font-weight:700}
+    .sev.red{color:var(--red)}
+    .sev.gold{color:var(--gold)}
+    .sev.green{color:var(--green)}
+    .section{margin-top:16px;}
+    .section h2{font-size:15px; color:var(--teal); margin:0 0 10px;}
+    table{width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden;}
+    th,td{padding:10px 10px; border-bottom:1px solid var(--line); vertical-align:top; font-size:13px;}
+    th{background:#FAFAFA; text-align:left; font-size:12px; color:var(--muted);}
+    tr:last-child td{border-bottom:none}
+    .mono{font-variant-numeric:tabular-nums;}
+    .muted{color:var(--muted)}
+    .small{font-size:12px}
+    .hr{height:1px; background:var(--line); margin:12px 0}
+    .print-note{display:none}
+    @media print{
+      header{border-bottom:1px solid #ccc}
+      .card{break-inside:avoid}
+      .print-note{display:block; font-size:11px; color:#444; margin-top:6px}
+    }
+    a{color:var(--teal)}
+    .two-col{display:grid; grid-template-columns:1fr; gap:12px;}
+    @media (min-width:900px){ .two-col{grid-template-columns:1fr 1fr;} }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
       <div>
-        <h1>WPT CEO Daily Briefing</h1>
-        <div class="meta">For <b>Terry Finley</b> • Thu, June 11, 2026 • Times shown in <b>ET</b></div>
+        <h1>WPT CEO Daily Briefing — Friday, June 12, 2026</h1>
+        <div class="sub">Timezone: <b>ET</b> • Published to GitHub Pages</div>
+        <div class="print-note">Print-friendly view. Public page: https://tfinley1.github.io/wpt-daily-briefing/</div>
       </div>
-      <div class="meta">Published at <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a></div>
+      <div class="pill">
+        <span class="tag"><span class="sev red">Urgent</span>: <b>0</b></span>
+        <span class="tag"><span class="sev gold">Watch</span>: <b>2</b></span>
+        <span class="tag"><span class="sev green">Wins</span>: <b>1</b></span>
+      </div>
     </header>
 
     <!-- 1. CEO Snapshot -->
-    <div class="grid two">
+    <div class="grid">
       <div class="card">
         <h2>1) CEO Snapshot</h2>
-        <div class="kpi-row">
-          <div class="kpi"><div class="label">Top priority</div><div class="val">Lock the story + next steps for today’s <b>Sales Call</b> (11:00–11:30) and convert momentum from <b>#sales-made</b>.</div></div>
-          <div class="kpi"><div class="label">Second priority</div><div class="val">Run a tight <b>Horse Call</b> (11:30–12:30) with clear owner-facing comms on key horses (Integration / Honoree / Epic Fashionista).</div></div>
-          <div class="kpi"><div class="label">Third priority</div><div class="val">Prepare for <b>TB/TPF/LH</b> meeting (10:00–11:00): align on 2027 planning + immediate actions.</div></div>
-        </div>
+        <h3>Top priorities (today)</h3>
         <ul>
-          <li><span class="pill red">Biggest risk</span> Back-to-back morning meetings (10:00–12:30) create decision fatigue and follow-up slippage—capture owners/partners action items live.</li>
-          <li><span class="pill green">Biggest opportunity</span> Multiple runners at <b>Churchill Downs</b> this week—use the excitement to convert warm leads (mass text appears to be working).</li>
-          <li><span class="pill gold">Needs Terry</span> Lead the close: personally reach out to new/returning partner leads tied to the <b>Early Voting colt</b> momentum.</li>
-          <li><span class="pill">Delegate</span> Ask Lindsey/Tom to own the follow-ups from the sales call (who, what, by when) and send a same-day summary.</li>
+          <li>Use the <b>WPT AI Modernization</b> check-in to lock <b>next 2-week deliverables</b> (one owner-facing, one internal). (<a href="https://www.google.com/calendar/event?eid=M2Y1OWt1M2NrdmJhY2VoNTFnaW1nYzJsanMgdGVycnlAd2VzdHBvaW50dGIuY29t">Calendar</a>)</li>
+          <li>Clear two execution items: <b>(1)</b> Kip / vet-invoice confusion and <b>(2)</b> sales-team prep for the <b>Thursday sales call</b>. (<a href="https://westpointtb.slack.com/archives/C0702F2JWBD/p1749654850134099">Slack</a>, <a href="https://westpointtb.slack.com/archives/C02NXCN650B/p1749676523816149">Slack</a>)</li>
+          <li>Prep partner-facing notes for tomorrow’s WPT runners: <b>Pascaline</b>, <b>Epic Fashionista</b>, <b>Tiz the Lady</b>, <b>Run Away Rojo</b>. (<a href="https://westpointtb.com/racing/daily-entries/">WPT Daily Entries</a>)</li>
+        </ul>
+        <h3>Biggest risk</h3>
+        <ul>
+          <li><span class="sev gold">WATCH</span> Billing/vendor noise creates distraction: <b>extra vet invoice (~$1,250)</b> + mismatch vs prior paid invoice (<b>$3,400</b>). (<a href="https://westpointtb.slack.com/archives/C0702F2JWBD/p1749654850134099">Slack</a>)</li>
+        </ul>
+        <h3>Biggest opportunity</h3>
+        <ul>
+          <li><span class="sev green">WIN</span> Flightline partner expectations: proactively explain why distro differs (fee change + <b>46</b> vs <b>34</b> stud fees collected through 3/31) and set August “catch-up” expectation. (<a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1749662669337809">Slack</a>)</li>
+        </ul>
+        <h3>Terry direct involvement</h3>
+        <ul>
+          <li>During/after <b>TDN / Atlas</b>, push for one concrete output (pilot, article angle, distribution plan) and a firm next-step date. (<a href="https://www.google.com/calendar/event?eid=aXJldTlkZDhsajc4Nm83bWcyY2NraWhva2cgdGVycnlAd2VzdHBvaW50dGIuY29t">Calendar</a>)</li>
+        </ul>
+        <h3>Delegate</h3>
+        <ul>
+          <li>Assign Lindsey/Erin to resolve the Kip invoice trail and confirm whether Kip was asked to look at another European sale. (<a href="https://westpointtb.slack.com/archives/C0702F2JWBD/p1749654850134099">Slack</a>)</li>
         </ul>
       </div>
 
       <!-- 2. 1 CEO Move Today -->
       <div class="card">
         <h2>2) 1 CEO Move Today</h2>
-        <div class="callout">
-          <div style="font-weight:700;margin-bottom:6px;">Call <b>Jeff Mango</b> and <b>Michael “Mick” Okrzesik</b> today and ask for <b>one introduction each</b> (while the Early Voting colt momentum is fresh).</div>
-          <div class="small">Context: New partner wins are showing up in <b>#sales-made</b> and the mass text is driving response—convert that energy into 2 warm intros by end of day.</div>
+        <p style="margin:0 0 10px; line-height:1.35rem;">
+          <b>Make one 10-minute call to Lindsey</b> right after the <b>WPT AI Modernization</b> check-in: confirm a single owner-facing output to ship in the next <b>2 weeks</b>, and have her send a quick note to Flightline partners explaining the distro delta (<b>46</b> vs <b>34</b> fees collected through 3/31; fee down from <b>$200k</b> to <b>$125k</b>). (<a href="https://www.google.com/calendar/event?eid=M2Y1OWt1M2NrdmJhY2VoNTFnaW1nYzJsanMgdGVycnlAd2VzdHBvaW50dGIuY29t">Calendar</a>, <a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1749662669337809">Slack</a>)
+        </p>
+        <div class="hr"></div>
+        <div class="kpi">
+          <span class="tag"><b>Outcome</b>: ship + partner-confidence</span>
+          <span class="tag"><b>Time</b>: 10–15 min</span>
+          <span class="tag"><b>Owner</b>: Terry → Lindsey</span>
         </div>
       </div>
     </div>
 
     <!-- 3. Schedule -->
-    <div class="card section">
-      <h2>3) Schedule (All events)</h2>
-      <table class="tbl">
+    <div class="section">
+      <h2>3) Schedule (Today + next 2 days)</h2>
+      <table>
         <thead>
-          <tr>
-            <th style="width:155px;">When (ET)</th>
-            <th>Event</th>
-            <th style="width:290px;">Where / Attendees</th>
-          </tr>
+          <tr><th style="width:110px">Day</th><th style="width:140px">Time (ET)</th><th>Event</th><th style="width:210px">Where / Link</th></tr>
         </thead>
         <tbody>
           <tr>
-            <td><b>10:00–11:00</b></td>
-            <td><b>TB/TPF/LH Meeting - Use this Zoom link</b><div class="small"><a href="https://us06web.zoom.us/j/89045572139?pwd=Qsd1xL4E5PSLVmGlNjTszkIQaGtzbx.1">Zoom link</a></div></td>
-            <td>Tom Bellhouse • Lindsey Heumann • Terry Finley</td>
+            <td><b>Fri 6/12</b></td>
+            <td class="mono">10:00–10:30 AM</td>
+            <td><b>Terry / Tim – Touch Base</b><div class="small muted">Attendees: Terry Finley; Buff, Timothy</div></td>
+            <td>📍 Tim to call Terry's cell</td>
           </tr>
           <tr>
-            <td><b>10:00–11:00</b></td>
-            <td><b>TPF LINDS TommyB. Zoom- 2027</b></td>
-            <td>Tom Bellhouse • Lindsey Heumann • Terry Finley</td>
+            <td><b>Fri 6/12</b></td>
+            <td class="mono">11:00 AM–12:00 PM</td>
+            <td><b>WPT AI Modernization – Check in</b><div class="small muted">Attendees: Joey Avioli; Lindsey Heumann; Terry Finley</div></td>
+            <td><a href="https://us06web.zoom.us/j/86737972031?pwd=oIBbCuAMmakNbEpIdEuiv0bcWwGoGp.1&jst=3">Zoom</a></td>
           </tr>
           <tr>
-            <td><b>11:00–11:30</b></td>
-            <td><b>WPT Weekly Sales Call - New Zoom Link**</b><div class="small"><a href="https://us06web.zoom.us/j/82010607819?pwd=ONbHH2Y7WplU8Aj3nhJ3WhSdQPACkN.1">Zoom link</a></div></td>
-            <td>WPT Sales team + Terry (many attendees)</td>
+            <td><b>Fri 6/12</b></td>
+            <td class="mono">1:00–2:00 PM</td>
+            <td><b>TDN / Atlas</b><div class="small muted">Attendees: Max Wittenberg; Sri; Sue Finley; Terry Finley</div></td>
+            <td><a href="https://meet.google.com/wkh-eegk-vyv">Google Meet</a></td>
           </tr>
           <tr>
-            <td><b>11:30–12:30</b></td>
-            <td><b>Horse Call</b><div class="small"><a href="https://us02web.zoom.us/j/6092381009">Zoom link</a></div></td>
-            <td>Jeff Lowe • WPT Team • Terry</td>
+            <td><b>Fri 6/12</b></td>
+            <td class="mono">2:30–2:45 PM</td>
+            <td><b>Do the stuff for Erin work</b></td>
+            <td class="muted">—</td>
           </tr>
           <tr>
-            <td><b>6:56 PM</b></td>
-            <td><b>Absolutely Hot</b> at <b>Churchill Downs</b> (Race 5) <div class="small">NW1X Allowance</div></td>
-            <td>Owner watch / partner activation</td>
+            <td><b>Sat 6/13</b></td>
+            <td class="mono">10:32 AM</td>
+            <td><b>Pascaline at Charles Town (Race 8)</b><div class="small muted">Confucius Say Stakes</div></td>
+            <td class="muted">—</td>
           </tr>
           <tr>
-            <td><b>7:25 PM</b></td>
-            <td><b>Abrigado</b> at <b>Churchill Downs</b> (Race 6) <div class="small">Maiden Claiming 100k</div></td>
-            <td>Owner watch / partner activation</td>
+            <td><b>Sat 6/13</b></td>
+            <td class="mono">3:19 PM</td>
+            <td><b>Epic Fashionista at Churchill Downs (Race 6)</b><div class="small muted">Maiden Special Weight</div></td>
+            <td class="muted">—</td>
+          </tr>
+          <tr>
+            <td><b>Sat 6/13</b></td>
+            <td class="mono">4:45 PM</td>
+            <td><b>Tiz the Lady at Belmont at the Big A (Race 8)</b><div class="small muted">Maiden Claiming 90k</div></td>
+            <td class="muted">—</td>
+          </tr>
+          <tr>
+            <td><b>Sat 6/13</b></td>
+            <td class="mono">7:46 PM</td>
+            <td><b>Run Away Rojo at Horseshoe Indianapolis (Race 7)</b><div class="small muted">Indiana-bred Allowance</div></td>
+            <td class="muted">—</td>
+          </tr>
+          <tr>
+            <td><b>Sun 6/14</b></td>
+            <td class="mono">7:00–7:15 AM</td>
+            <td><b>Evaluate getting a spa for Saratoga.</b></td>
+            <td class="muted">—</td>
           </tr>
         </tbody>
       </table>
-      <div class="small" style="margin-top:10px;">
-        <b>Tomorrow + Sat (preview):</b> Fri — <b>Terry/Tim Touch Base</b> 10:00–10:30 (Tim to call Terry’s cell) • <b>WPT AI Modernization</b> 11:00–12:00 • <b>TDN / Atlas</b> 1:00–2:00 (Google Meet) • <b>Reagan’s Wit</b> (Churchill R6 3:18 PM). Sat — <b>Pascaline</b> (Charles Town R8 10:32 AM) • <b>Epic Fashionista</b> (Churchill R6 3:19 PM) • <b>Tiz the Lady</b> (Belmont at the Big A R8 4:45 PM) • <b>Run Away Rojo</b> (Horseshoe Indianapolis R7 7:46 PM).
-      </div>
+      <div class="small muted" style="margin-top:8px;">Notes: No same-time conflicts detected today; back-to-back window from 1:00–2:45 PM is tight but workable. (Calendar: <a href="https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2OG80Y2UxbTg5MzNpZGExOG9zNDhncGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNnAxMzZjMW02ZDE0NmdpNjZ0MjRhaGhrNzRzNGNjcTQ4Y3NqNmhhNjcwc2plZ3BvNm9zMCB0ZXJyeUB3ZXN0cG9pbnR0Yi5jb20">Touch Base</a>)</div>
     </div>
 
     <!-- 4. Alerts -->
-    <div class="card section">
+    <div class="section">
       <h2>4) Alerts</h2>
-      <ul>
-        <li><span class="pill gold">Attention</span> Duplicate/overlapping 10:00–11:00 meetings (two events appear scheduled at the same time) — ensure there is one clear agenda + single Zoom to avoid confusion.</li>
-        <li><span class="pill red">Horse health</span> From <b>#horse-comms</b>: <b>Lost in the Sauce</b> arrived “skinny/defeated looking” and will be held to recover before placement; <b>Final Boss</b> foot sore post-trip; fracture still needs time; gelding this week (Bruce Jackson).</li>
-        <li><span class="pill gold">Horse monitoring</span> <b>Combine</b> mild juvenile tendonitis (3-week jog); <b>Sandman</b> hind end concerns and potential coffin bone injections; <b>Ewing</b> ongoing bleeding issue treatment.</li>
-      </ul>
+      <div class="two-col">
+        <div class="card">
+          <h2 style="margin:0 0 8px;">Watch</h2>
+          <ul>
+            <li><span class="sev gold">Vendor / billing</span>: Kip’s office sent an additional vet invoice (~<b>$1,250</b>) for mid-May hips not purchased; Lindsey notes no overlap with the invoice already paid (<b>$3,400</b>) and one hip number wasn’t even in the sale. (<a href="https://westpointtb.slack.com/archives/C0702F2JWBD/p1749654850134099">Slack</a>)</li>
+            <li><span class="sev gold">Sales readiness</span>: Low comment rate on the rep survey sheet is a risk for the Thursday sales call; ensure reps review and add notes. (<a href="https://westpointtb.slack.com/archives/C02NXCN650B/p1749676523816149">Slack</a>)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2 style="margin:0 0 8px;">No urgent items surfaced</h2>
+          <div class="small muted">If something becomes urgent today, add it here (conflicts, partner escalation, horse status changes).</div>
+        </div>
+      </div>
     </div>
 
-    <!-- 5. Team Pulse (Slack) -->
-    <div class="card section">
-      <h2>5) Team Pulse</h2>
-      <div class="callout">
-        <b>Executive Team Pulse Summary</b>
+    <!-- 5. Team Pulse -->
+    <div class="section">
+      <h2>5) Team Pulse (last ~48 hours)</h2>
+      <div class="card">
+        <h2 style="margin:0 0 8px;">Executive summary</h2>
         <ul>
-          <li><b>Momentum:</b> New partner wins in <b>#sales-made</b>; “mass text message did its job.”</li>
-          <li><b>Friction / watchouts:</b> Owner experience logistics for <b>Counting Stars</b> “CC Day” — seating almost fully booked; pricing confirmation pending.</li>
-          <li><b>Racing/horse updates:</b> High volume of actionable horse notes (entries, future targets, health flags) — ensure quick owner-facing messaging cadence.</li>
-          <li><b>Follow-ups needed:</b> Clarify the “Jeff Lowe mentioning David” context note in #exec-team (to avoid internal confusion).</li>
+          <li><b>Momentum</b>: strong operational tightening (sales admin cadence, onboarding flows) and clear appetite to expand Melinda’s finance role. (<a href="https://westpointtb.slack.com/archives/C0702F2JWBD/p1749676620765699">Slack</a>)</li>
+          <li><b>Friction</b>: vendor invoice confusion (Kip) and a commission dispute narrative that could sour counterparties if not handled crisply. (<a href="https://westpointtb.slack.com/archives/C0702F2JWBD/p1749676620765699">Slack</a>)</li>
+          <li><b>Wins</b>: Flightline comms framing ready; keep partners calm about distro variance and set expectations for August catch-up. (<a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1749662669337809">Slack</a>)</li>
+          <li><b>Follow-ups</b>: sales reps must add comments on survey sheet; confirm client coverage while Tommy is out. (<a href="https://westpointtb.slack.com/archives/C02NXCN650B/p1749676523816149">Slack</a>)</li>
         </ul>
       </div>
 
-      <div class="channel">
-        <h3>#sales-made (wins)</h3>
-        <div class="msg">
-          <div class="top"><div class="who">Joe Bianca</div><div class="when">Tue 6/10 8:25 AM ET</div></div>
-          <div>New partner <b>Jeff Mango</b> (RedCMM LLC) — <b>2.5%</b> of <b>Early Voting colt</b>.</div>
+      <div class="two-col">
+        <div class="card">
+          <h2 style="margin:0 0 8px;">#exec-team</h2>
+          <ul>
+            <li><b>Billing / accounting</b>: plan to move <b>Melinda</b> full-time; Lindsey considering wage increase to <b>$55–$60/hr</b> (Terry approved direction). (<a href="https://westpointtb.slack.com/archives/C0702F2JWBD/p1749676620765699">Slack</a>)</li>
+            <li><b>Vendor invoices</b>: Kip’s office invoice mismatch; needs clarification on scope + whether additional European sale work was requested. (<a href="https://westpointtb.slack.com/archives/C0702F2JWBD/p1749654850134099">Slack</a>)</li>
+            <li><b>Del Mar planning</b>: decide whether to send reps after reviewing sales call + race schedules. (<a href="https://westpointtb.slack.com/archives/C0702F2JWBD/p1749676620765699">Slack</a>)</li>
+          </ul>
         </div>
-        <div class="msg">
-          <div class="top"><div class="who">Tom Bellhouse</div><div class="when">Tue 6/10 4:53 PM ET</div></div>
-          <div><b>Michael “Mick” Okrzesik</b> (son of old investor Bob O) — <b>2.5% Early Voting Euro colt</b>.</div>
-        </div>
-        <div class="msg">
-          <div class="top"><div class="who">Erin Birkenhauer</div><div class="when">Tue 6/10 5:09 PM ET</div></div>
-          <div>“The <b>mass text message</b> today did its job!”</div>
-        </div>
-      </div>
 
-      <div class="channel">
-        <h3>#exec-team</h3>
-        <div class="msg">
-          <div class="top"><div class="who">Lindsey Heumann</div><div class="when">Tue 6/10 1:36 PM ET</div></div>
-          <div>Counting Stars CC Day: all area seating booked except “easy goer” (hard no) and the <b>rail</b>; Danielle confirming <b>$190/pp</b> includes food/drinks.</div>
+        <div class="card">
+          <h2 style="margin:0 0 8px;">#horse-comms</h2>
+          <ul>
+            <li><b>Flightline distro framing</b>: fee down <b>$200k → $125k</b>; stud fees collected through 3/31: <b>46 (’24)</b> vs <b>34 (’25)</b>; expectation of August catch-up. (<a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1749662669337809">Slack</a>)</li>
+            <li><b>Horse ops updates</b>: Peak Performer heading to Belmont; Battle of Normandy good news. (<a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1749642343139199">Slack</a>)</li>
+            <li><b>Trainer notes</b> (Weaver): Careless Whisper progressing (gate breezes; Spa starter), Garden of Grace target Aqu NYB MSW turf, She’s Country arriving Saratoga. (<a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1749644136765889">Slack</a>)</li>
+          </ul>
         </div>
-        <div class="msg">
-          <div class="top"><div class="who">Terry Finley</div><div class="when">Tue 6/10 2:08 PM ET</div></div>
-          <div>“Thought about Jeff Lowe mentioning David so much. I’ll explain.”</div>
-        </div>
-      </div>
 
-      <div class="channel">
-        <h3>#horse-comms (high-signal excerpts)</h3>
-        <div class="msg">
-          <div class="top"><div class="who">Jason Blewitt</div><div class="when">Tue 6/10 9:35 AM ET</div></div>
-          <div><b>Integration</b>: tough trip; will point to <b>Arlington Million (8/1)</b>. <b>Honoree</b>: excellent effort; next NYB N1X. <b>Cugino</b>: pointing to July 5 allowance at CNL (9F). <b>Battle</b>: bled 2/5; looking for easier next time. <b>Peak Performer</b>: entering Presque Isle.</div>
+        <div class="card">
+          <h2 style="margin:0 0 8px;">#sales</h2>
+          <ul>
+            <li><b>Thursday sales call readiness</b>: Dawn asking reps to review survey responses and add comments; link shared in channel. (<a href="https://westpointtb.slack.com/archives/C02NXCN650B/p1749676523816149">Slack</a>)</li>
+            <li><b>Coverage while Tommy is out</b>: splitting Tommy’s clients between Jason and Joe for email releases; Erin handling trainer comms. (<a href="https://westpointtb.slack.com/archives/C02NXCN650B/p1749585180194329">Slack</a>)</li>
+          </ul>
         </div>
-        <div class="msg">
-          <div class="top"><div class="who">Tom Murphy</div><div class="when">Tue 6/10 3:19 PM ET</div></div>
-          <div><b>Just Vote</b>: worked 1/2 in <b>47.4</b> (3/58) last Friday; working again Friday at Churchill.</div>
-        </div>
-        <div class="msg">
-          <div class="top"><div class="who">Joe Bianca</div><div class="when">Tue 6/10 1:27 PM ET</div></div>
-          <div><b>Epic Fashionista</b>: all set for Saturday. <b>Counting Stars</b>: plan to run in <b>CCA Oaks (7/25)</b>. <b>Sandman</b>: hind end concerns; trying coffin bone injections. <b>Ewing</b>: ongoing bleeding issue treatment.</div>
+
+        <div class="card">
+          <h2 style="margin:0 0 8px;">#sales-made / #prospectcomms / Terry DMs</h2>
+          <div class="small muted">No messages returned in the last ~48 hours in these views for this run.</div>
         </div>
       </div>
     </div>
 
     <!-- 6. Racing -->
-    <div class="card section">
+    <div class="section">
       <h2>6) Racing</h2>
-      <table class="tbl">
-        <thead>
-          <tr>
-            <th style="width:105px;">Date</th>
-            <th>Horse</th>
-            <th style="width:70px;">Race</th>
-            <th style="width:95px;">Post (ET)</th>
-            <th style="width:90px;">Post Pos.</th>
-            <th style="width:90px;">Distance</th>
-            <th style="width:170px;">Track</th>
-            <th>Name/Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>06/11/26</td><td><b>Absolutely Hot</b></td><td>5</td><td>6:56</td><td>4 of 9</td><td>5F</td><td>Churchill Downs</td><td>NW1X Allowance</td></tr>
-          <tr><td>06/11/26</td><td><b>Abrigado</b></td><td>6</td><td>7:25</td><td>5 of 9</td><td>6F</td><td>Churchill Downs</td><td>Maiden Claiming 100k</td></tr>
-          <tr><td>06/12/26</td><td><b>Reagan’s Wit</b></td><td>6</td><td>3:18</td><td>4 of 9</td><td>8.5F</td><td>Churchill Downs</td><td>NW3X Allowance</td></tr>
-          <tr><td>06/13/26</td><td><b>Pascaline</b></td><td>8</td><td>10:32</td><td>10 of 10</td><td>7F</td><td>Charles Town</td><td>Confucius Say Stakes</td></tr>
-          <tr><td>06/13/26</td><td><b>Epic Fashionista</b></td><td>6</td><td>3:19</td><td>7 of 10</td><td>5F</td><td>Churchill Downs</td><td>Maiden Special Weight</td></tr>
-          <tr><td>06/13/26</td><td><b>Tiz the Lady</b></td><td>8</td><td>4:45</td><td>8 of 10</td><td>8F</td><td>Belmont at the Big A</td><td>Maiden Claiming 90k</td></tr>
-          <tr><td>06/13/26</td><td><b>Run Away Rojo</b></td><td>7</td><td>7:46</td><td>3 of 9</td><td>8F</td><td>Horseshoe Indianapolis</td><td>Indiana-bred Allowance</td></tr>
-        </tbody>
-      </table>
-      <div class="small" style="margin-top:10px;">Source: West Point Thoroughbreds Daily Entries page (rendered) — <a href="https://westpointtb.com/racing/daily-entries/">westpointtb.com/racing/daily-entries</a>.</div>
-    </div>
-
-    <!-- 7. Decisions Needed -->
-    <div class="card section">
-      <h2>7) Decisions Needed</h2>
-      <table class="tbl">
-        <thead><tr><th style="width:220px;">Decision</th><th>Why it matters</th><th style="width:280px;">Recommendation</th><th style="width:120px;">Timing</th></tr></thead>
-        <tbody>
-          <tr>
-            <td><b>Counting Stars “CC Day” seating plan</b></td>
-            <td>Owner experience quality risk: only rail seating appears available; need clarity on value vs. expectations.</td>
-            <td>Confirm if <b>$190/pp</b> includes food/drinks; if rail is the only acceptable option, decide whether to cap RSVPs or find alternative hospitality.</td>
-            <td><span class="pill gold">This week</span></td>
-          </tr>
-          <tr>
-            <td><b>Sales follow-up ownership post-call</b></td>
-            <td>Momentum from mass text + new partner wins can decay quickly without immediate outreach and asks.</td>
-            <td>Assign a single owner (Tom/Lindsey) to send 1-page recap + next actions within 2 hours; Terry makes 2 high-leverage calls (CEO Move).</td>
-            <td><span class="pill red">Today</span></td>
-          </tr>
-          <tr>
-            <td><b>Owner comms cadence for horse health updates</b></td>
-            <td>Items like Lost in the Sauce / Final Boss can trigger owner concern; proactive framing reduces inbound churn.</td>
-            <td>Greenlight Erin to send a concise owner update emphasizing plan + timeline; include “what’s next” bullet.</td>
-            <td><span class="pill gold">Today</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- 8. Perplexity Computer Slack Activity -->
-    <div class="card section">
-      <h2>8) Perplexity Computer Slack Activity</h2>
-      <div class="msg">
-        <div class="top"><div class="who">Computer (bot)</div><div class="when">Tue 6/10 8:21 AM ET</div></div>
-        <div>Posted prior day briefing recap in the Perplexity DM thread (no action required; Slack delivery is disabled for today’s run).</div>
+      <div class="card">
+        <h2 style="margin:0 0 8px;">Upcoming WPT entries (from Daily Entries)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:90px">Date</th>
+              <th>Horse</th>
+              <th style="width:80px">Race</th>
+              <th style="width:95px">Post (ET)</th>
+              <th style="width:95px">Post Pos.</th>
+              <th style="width:80px">Dist.</th>
+              <th style="width:160px">Track</th>
+              <th>Name / Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="mono">06/13/26</td><td><b>Pascaline</b></td><td class="mono">8</td><td class="mono">10:32</td><td class="mono">10 of 10</td><td class="mono">7F</td><td>Charles Town</td><td>Confucius Say Stakes</td></tr>
+            <tr><td class="mono">06/13/26</td><td><b>Epic Fashionista</b></td><td class="mono">6</td><td class="mono">3:19</td><td class="mono">7 of 10</td><td class="mono">5F</td><td>Churchill Downs</td><td>Maiden Special Weight</td></tr>
+            <tr><td class="mono">06/13/26</td><td><b>Tiz the Lady</b></td><td class="mono">8</td><td class="mono">4:45</td><td class="mono">8 of 10</td><td class="mono">8F</td><td>Belmont at the Big A</td><td>Maiden Claiming 90k</td></tr>
+            <tr><td class="mono">06/13/26</td><td><b>Run Away Rojo</b></td><td class="mono">7</td><td class="mono">7:46</td><td class="mono">3 of 9</td><td class="mono">8F</td><td>Horseshoe Indianapolis</td><td>Indiana-bred Allowance</td></tr>
+            <tr><td class="mono">06/15/26</td><td><b>Grunge</b></td><td class="mono">7</td><td class="mono">6:12</td><td class="mono">3 of 12</td><td class="mono">6F</td><td>Presque Isle Downs</td><td>Tom Ridge Stakes</td></tr>
+          </tbody>
+        </table>
+        <div class="small muted" style="margin-top:8px;">Source: <a href="https://westpointtb.com/racing/daily-entries/">westpointtb.com/racing/daily-entries/</a> (rendered view).</div>
       </div>
     </div>
 
-    <div class="footer">Generated automatically for WPT. If something looks off (especially schedule), reply to the email and we’ll correct tomorrow’s run.</div>
+    <!-- 7. Decisions Needed -->
+    <div class="section">
+      <h2>7) Decisions Needed</h2>
+      <div class="two-col">
+        <div class="card">
+          <h2 style="margin:0 0 8px;">Decision 1</h2>
+          <ul>
+            <li><b>Decision</b>: Approve Lindsey’s plan to move <b>Melinda</b> full-time and set target comp band.</li>
+            <li><b>Why it matters</b>: reduces billing friction + increases close/financial cadence reliability.</li>
+            <li><b>Recommendation</b>: proceed; cap at <b>$55/hr</b> initially and revisit after 60 days with defined outputs.</li>
+            <li><b>When</b>: <span class="sev gold">This week</span>. (<a href="https://westpointtb.slack.com/archives/C0702F2JWBD/p1749676620765699">Slack</a>)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2 style="margin:0 0 8px;">Decision 2</h2>
+          <ul>
+            <li><b>Decision</b>: Whether to send reps to <b>Del Mar opening weekend</b>.</li>
+            <li><b>Why it matters</b>: opportunity cost vs sales coverage and upcoming sale commitments.</li>
+            <li><b>Recommendation</b>: decide after Thursday sales call + confirm next runner/sale calendar.</li>
+            <li><b>When</b>: <span class="sev gold">This week</span>. (<a href="https://westpointtb.slack.com/archives/C0702F2JWBD/p1749676620765699">Slack</a>)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Perplexity Computer Slack Activity -->
+    <div class="section">
+      <h2>8) Perplexity Computer Slack Activity</h2>
+      <div class="card">
+        <div class="small muted">No Perplexity/Computer-related Slack messages returned in the last ~48 hours for this run.</div>
+      </div>
+    </div>
+
+    <div class="hr"></div>
+    <div class="small muted">
+      Built from: Google Calendar + Slack + WPT Daily Entries. Page URL: <a href="https://tfinley1.github.io/wpt-daily-briefing/">https://tfinley1.github.io/wpt-daily-briefing/</a>
+    </div>
   </div>
 </body>
 </html>
