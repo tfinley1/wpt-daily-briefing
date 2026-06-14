@@ -3,281 +3,254 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WPT CEO Daily Briefing — Saturday, June 13, 2026</title>
+  <title>WPT CEO Daily Briefing — Sun, Jun 14, 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#FFFFFF;
+      --bg:#ffffff;
       --ink:#28251D;
-      --teal:#01696F;
       --muted:#6b6b6b;
-      --card:#f6f7f7;
-      --red:#b42318;
-      --gold:#b98900;
-      --green:#067647;
-      --line:#e7e7e7;
+      --teal:#01696F;
+      --red:#b00020;
+      --gold:#b07b00;
+      --green:#0b7a3b;
+      --card:#f7f7f6;
+      --border:#e6e3dd;
     }
     *{box-sizing:border-box}
-    body{margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background:var(--bg); color:var(--ink);}
-    a{color:var(--teal); text-decoration:none}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.35}
+    a{color:var(--teal);text-decoration:none}
     a:hover{text-decoration:underline}
-    .wrap{max-width:980px; margin:0 auto; padding:20px 16px 56px}
-    header{display:flex; flex-direction:column; gap:8px; margin-bottom:14px}
-    .kicker{color:var(--muted); font-size:13px}
-    h1{font-size:22px; margin:0}
-    .grid{display:grid; grid-template-columns:1fr; gap:12px}
-    @media (min-width: 860px){.grid{grid-template-columns:1fr 1fr}}
-    .card{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px}
-    .section{margin-top:14px}
-    .section h2{margin:0 0 10px; font-size:16px; color:var(--teal)}
-    ul{margin:0; padding-left:18px}
+    .wrap{max-width:1040px;margin:0 auto;padding:18px}
+    header{display:flex;gap:12px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;border-bottom:2px solid var(--border);padding-bottom:12px;margin-bottom:14px}
+    h1{font-size:20px;margin:0}
+    .sub{color:var(--muted);font-size:12px}
+    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:var(--card);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    @media(min-width:960px){.grid{grid-template-columns:1fr 1fr}}
+    section{border:1px solid var(--border);background:#fff;border-radius:12px;overflow:hidden}
+    .hd{padding:12px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .hd h2{font-size:14px;margin:0;color:var(--teal)}
+    .bd{padding:12px 14px}
+    .kpi{display:flex;gap:10px;flex-wrap:wrap}
+    .kpi .box{flex:1 1 220px;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px}
+    .kpi .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+    .kpi .val{margin-top:6px;font-weight:700}
+    ul{margin:8px 0 0 18px}
     li{margin:6px 0}
-    .pill{display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; border:1px solid var(--line); background:#fff; margin-right:6px}
-    .pill.red{border-color:#fbd3d0; background:#fff5f5; color:var(--red)}
-    .pill.gold{border-color:#f6e2b8; background:#fff9e6; color:var(--gold)}
-    .pill.green{border-color:#b7e4c7; background:#ecfdf3; color:var(--green)}
-    .table{width:100%; border-collapse:collapse; font-size:13px}
-    .table th,.table td{border-top:1px solid var(--line); padding:10px 8px; vertical-align:top}
-    .table th{color:var(--muted); font-weight:600; text-align:left; border-top:none}
-    .small{font-size:12px; color:var(--muted)}
-    .tight li{margin:4px 0}
-    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
-    @media print{
-      .card{break-inside:avoid}
-      a{text-decoration:underline}
-    }
+    .flag{font-weight:700}
+    .red{color:var(--red)}
+    .gold{color:var(--gold)}
+    .green{color:var(--green)}
+    table{width:100%;border-collapse:collapse;margin-top:8px}
+    th,td{padding:8px 8px;border-bottom:1px solid var(--border);vertical-align:top;text-align:left}
+    th{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+    .small{font-size:12px;color:var(--muted)}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:12px}
+    @media print{.pill{display:none} a{color:inherit;text-decoration:none}}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="kicker">West Point Thoroughbreds · CEO Daily Briefing</div>
-      <h1>Saturday, June 13, 2026</h1>
-      <div class="small">Primary link: <a href="https://tfinley1.github.io/wpt-daily-briefing/">https://tfinley1.github.io/wpt-daily-briefing/</a></div>
+      <div>
+        <h1>WPT CEO Daily Briefing — <span class="mono">Sun, Jun 14, 2026</span></h1>
+        <div class="sub">Prepared for Terry Finley • West Point Thoroughbreds</div>
+      </div>
+      <div class="pill">Primary link: <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a></div>
     </header>
 
-    <div class="grid">
-      <div class="card">
-        <div class="section" style="margin-top:0">
-          <h2>1) CEO Snapshot</h2>
-          <ul class="tight">
-            <li><b>Top priorities (today)</b>: (1) Prep for today’s WPT runners (<b>Epic Fashionista</b>, <b>Tiz the Lady</b>, <b>Run Away Rojo</b>, <b>Pascaline</b>) and align comms timing; (2) Close out quick outbound: <b>Rick (Ocean Palms)</b> call; (3) Keep sales momentum rolling into Monday with <b>EV colt</b> follow-ups.</li>
-            <li><span class="pill red">Biggest risk</span> Horse comms accuracy: Slack notes Run Away Rojo race listing mismatch (verify internal + partner-facing comms).</li>
-            <li><span class="pill green">Biggest opportunity</span> Convert weekend heat into Monday closes: <b>Joe Nolan</b> hold + <b>Bob Dilla</b> pending for the <b>Early Voting colt</b>.</li>
-            <li><span class="pill gold">Needs Terry</span> Be the closer on key prospects/owners (Joe Nolan / Bob Dilla) and reinforce pricing discipline (discount requests).</li>
-            <li><span class="pill">Delegate</span> Have team confirm race details & post times (esp. Run Away Rojo) and draft partner updates for Parden/Vibe.</li>
-          </ul>
+    <!-- 1. CEO Snapshot -->
+    <section>
+      <div class="hd"><h2>1) CEO Snapshot</h2><div class="small">Today focus (ET)</div></div>
+      <div class="bd">
+        <div class="kpi">
+          <div class="box">
+            <div class="lbl">Top priorities</div>
+            <div class="val">
+              <ul>
+                <li>Protect Monday’s <b>Q2 tax deadline</b>—ensure you have the exact amount + execution plan ready.</li>
+                <li>Close one high-leverage revenue item: <b>Bob Dilla — final 5%</b> on the <b>Early Voting colt</b> (set up for Monday follow-up).</li>
+                <li>Prep for tomorrow’s <b>EquiTrack go/no-go (12:30 ET)</b>—decide scope + ownership (you + Lindsey).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="lbl">Biggest risk</div>
+            <div class="val"><span class="red">Duplicate/overlapping critical Monday actions</span> (taxes + admin items) creating execution slippage.</div>
+          </div>
+          <div class="box">
+            <div class="lbl">Biggest opportunity</div>
+            <div class="val"><span class="green">Make Monday a “close + decide” day</span>: Dilla 5% + EquiTrack decision.</div>
+          </div>
+          <div class="box">
+            <div class="lbl">Direct involvement / delegate</div>
+            <div class="val">
+              <ul>
+                <li><b>Direct:</b> personally handle the <b>Dilla</b> close + <b>EquiTrack go/no-go</b>.</li>
+                <li><b>Delegate:</b> have Lindsey drive the <b>Churchill $25,505 clawback</b> resolution details + next steps (you approve).</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <div class="section" style="margin-top:0">
-          <h2>2) 1 CEO Move Today</h2>
-          <ul class="tight">
-            <li><b>Call / text Joe Nolan</b> to personally confirm he’s “good to go” on the <b>last 4% of the Early Voting colt</b> and set the Monday close cadence; reinforce that WPT is holding the allocation pending final confirmation.</li>
+    <!-- 2. 1 CEO Move Today -->
+    <section style="margin-top:12px">
+      <div class="hd"><h2>2) 1 CEO Move Today</h2><div class="small">One high-leverage action</div></div>
+      <div class="bd">
+        <p style="margin:0"><b>Text/call Bob Dilla today</b> and set a <b>10-minute close window for Monday morning</b> to finalize the <b>last 5% of the Early Voting colt</b> (align on paperwork + payment logistics now so Monday is frictionless).</p>
+      </div>
+    </section>
+
+    <div class="grid" style="margin-top:12px">
+
+      <!-- 3. Schedule -->
+      <section>
+        <div class="hd"><h2>3) Schedule</h2><div class="small">All events (ET)</div></div>
+        <div class="bd">
+          <div class="small"><b>Today (Sun 6/14)</b></div>
+          <table>
+            <thead><tr><th>Time</th><th>Event</th><th>Notes</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><b>7:00–7:15 AM</b></td>
+                <td><b>Evaluate getting a spa for Saratoga.</b></td>
+                <td class="small">Personal admin.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="small" style="margin-top:10px"><b>Tomorrow (Mon 6/15)</b> — highlights</div>
+          <ul>
+            <li><span class="red flag">RED:</span> <b>Pay Q2 taxes</b> / confirm <b>Goldman–Schwab transfer</b> cleared (multiple all-day reminders).</li>
+            <li><span class="red flag">RED:</span> <b>Resolve Churchill $25,505 clawback</b> (with Lindsey).</li>
+            <li><b>EquiTrack go/no-go</b> (call <b>12:30 ET</b>) — Lindsey joining.</li>
+            <li><b>Call Adam Nonn</b> (largest investor; reconnect).</li>
+            <li><b>Close Bob Dilla</b> — Early Voting colt <b>5%</b>.</li>
+            <li><b>Reply to Brian Domenick</b> — partnership expansion interest.</li>
+          </ul>
+
+          <div class="small" style="margin-top:10px"><b>Tue 6/16</b></div>
+          <div class="small">No specific time-blocked events were visible in the pulled window beyond carry-over all-day items; verify as needed.</div>
+        </div>
+      </section>
+
+      <!-- 4. Alerts -->
+      <section>
+        <div class="hd"><h2>4) Alerts</h2><div class="small">Only high-priority</div></div>
+        <div class="bd">
+          <ul>
+            <li><span class="red flag">Urgent:</span> <b>Q2 estimated taxes due Monday (6/15)</b> — multiple duplicate reminders signal this is mission-critical.</li>
+            <li><span class="red flag">Urgent:</span> <b>Churchill $25,505 clawback</b> — needs closure (financial + partner optics).</li>
+            <li><span class="gold flag">Attention:</span> <b>EquiTrack go/no-go</b> Monday 12:30 ET — clarify “is this our lane?” and decision owner.</li>
           </ul>
         </div>
-      </div>
+      </section>
+
     </div>
 
-    <div class="section card">
-      <h2>3) Schedule (ET) — Today + Next 2 Days</h2>
-      <div class="small">All events shown; times are converted to <b>America/New_York</b> (ET). Source: Google Calendar.</div>
-      <h3 style="margin:12px 0 8px; font-size:14px">Today — Sat, Jun 13</h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th style="width:120px">Time (ET)</th>
-            <th>Event</th>
-            <th style="width:240px">Attendees / Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><b>10:30–10:45</b></td>
-            <td>ccall <b>rick</b> from ocean palms</td>
-            <td class="small">Quick outbound.</td>
-          </tr>
-          <tr>
-            <td><b>3:19</b></td>
-            <td><b>Epic Fashionista</b> at <b>Churchill Downs</b> (race 6)</td>
-            <td class="small">MSW · Invite list includes Jeff Lowe + WPT Team.</td>
-          </tr>
-          <tr>
-            <td><b>4:45</b></td>
-            <td><b>Tiz the Lady</b> at <b>Belmont at the Big A</b> (race 8)</td>
-            <td class="small">Maiden Claiming 90k · Jeff Lowe + WPT Team.</td>
-          </tr>
-          <tr>
-            <td><b>7:46</b></td>
-            <td><b>Run Away Rojo</b> at <b>Horseshoe Indianapolis</b> (race 7)</td>
-            <td class="small">Indiana-bred Allowance · verify race # (Slack note indicates mismatch).</td>
-          </tr>
-          <tr>
-            <td><b>10:32</b></td>
-            <td><b>Pascaline</b> at <b>Charles Town</b> (race 8)</td>
-            <td class="small">Confucius Say Stakes · Erin B. organizer.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3 style="margin:14px 0 8px; font-size:14px">Tomorrow — Sun, Jun 14</h3>
-      <table class="table">
-        <thead><tr><th style="width:120px">Time (ET)</th><th>Event</th><th style="width:240px">Attendees / Notes</th></tr></thead>
-        <tbody>
-          <tr>
-            <td><b>7:00–7:15</b></td>
-            <td>Evaluate getting a spa for Saratoga.</td>
-            <td class="small">Note-to-self.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3 style="margin:14px 0 8px; font-size:14px">Next — Mon, Jun 15</h3>
-      <div class="small" style="margin-bottom:8px">Multiple all-day reminders present (taxes + follow-ups). Treat as <b>hard deadlines</b>.</div>
-      <table class="table">
-        <thead><tr><th style="width:120px">Time (ET)</th><th>Event</th><th style="width:240px">Attendees / Notes</th></tr></thead>
-        <tbody>
-          <tr>
-            <td><b>All day</b></td>
-            <td><b>Quarterly Taxes Due</b> / <b>Pay Q2 estimated taxes — due today</b> / <b>Q2 taxes due</b></td>
-            <td class="small"><span class="pill red">Hard date</span> Tim Buff mentioned on one reminder.</td>
-          </tr>
-          <tr>
-            <td><b>All day</b></td>
-            <td><b>Close Bob Dilla — EV colt 5%</b> (and follow-up reminder)</td>
-            <td class="small">He indicated he’d revert Monday.</td>
-          </tr>
-          <tr>
-            <td><b>All day</b></td>
-            <td><b>EquiTrack go/no-go</b> (call 12:30 ET)</td>
-            <td class="small">Zoom w/ Paynter/Palmer; Lindsey joining; decide if controller/accounting/partner-reporting support is WPT lane.</td>
-          </tr>
-          <tr>
-            <td><b>All day</b></td>
-            <td>Reply to <b>Brian Domenick</b> — partnership expansion</td>
-            <td class="small">He wants to expand position after Belmont weekend.</td>
-          </tr>
-          <tr>
-            <td><b>All day</b></td>
-            <td>Reply to partner on <b>Honoree</b> race plan</td>
-            <td class="small">Get Jeff/Murphy read; respond re: NW1 vs NYB stake July 24.</td>
-          </tr>
-          <tr>
-            <td><b>9:00–9:30</b></td>
-            <td>Debbie and Terry Weekly Look Ahead</td>
-            <td class="small">Debbie + Terry.</td>
-          </tr>
-          <tr>
-            <td><b>9:00–12:00</b></td>
-            <td>Doctor Appt: Annual Check Up <span class="pill gold">Out of Office</span></td>
-            <td class="small">External attendees listed; location: Out of Office.</td>
-          </tr>
-          <tr>
-            <td><b>11:00–11:30</b></td>
-            <td>Call Kenny Kuska</td>
-            <td class="small">Outbound.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="small" style="margin-top:10px">
-        Conflict scan: Sun 6/14 minimal. Mon 6/15 has overlapping 9:00–9:30 weekly look-ahead with 9:00–12:00 OOO block.
-      </div>
-    </div>
-
-    <div class="section card">
-      <h2>4) Alerts</h2>
-      <ul class="tight">
-        <li><span class="pill red">Today</span> <b>Run Away Rojo</b> race listing discrepancy flagged in Slack (verify correct race # before any partner send).</li>
-        <li><span class="pill red">Mon 6/15</span> <b>Q2 estimated taxes due</b> (multiple reminders). Confirm amount + submission plan.</li>
-        <li><span class="pill gold">Horse health</span> <b>Parden</b> kept another week; placed in bandage cast as preventative; <b>Vibe</b> noted anemic blood count (monitor updates).</li>
-      </ul>
-    </div>
-
-    <div class="section card">
-      <h2>5) Team Pulse (Slack — last 2 days)</h2>
-      <div class="grid">
-        <div class="card" style="background:#fff">
-          <div class="small"><b>Executive Team Pulse Summary</b></div>
-          <ul class="tight">
-            <li><span class="pill green">Wins</span> Sales momentum: <b>Marc Ferrandino</b> 5% EV colt (discount arranged), <b>Mike Sheedy</b> 2.5% EV Casse, and hold for <b>Joe Nolan</b> last 4% EV colt raising stake to 6.5%.</li>
-            <li><span class="pill gold">Friction</span> Pricing/discount pressure from prospects asking for incentives; maintain discipline while protecting close probability.</li>
-            <li><span class="pill gold">Follow-ups</span> <b>Bob Dilla</b> expected back Monday on 5% EV colt; leadership thread in #exec-team suggests a personnel coaching/standards conversation (“Ali”).</li>
-            <li><span class="pill red">Risk</span> Horse comms accuracy (race listing mismatch) + health monitoring (Parden fracture precautions; Vibe blood count).</li>
-          </ul>
+    <!-- 5. Team Pulse -->
+    <section style="margin-top:12px">
+      <div class="hd"><h2>5) Team Pulse (Slack)</h2><div class="small">Last ~2 days</div></div>
+      <div class="bd">
+        <div class="kpi">
+          <div class="box">
+            <div class="lbl">Executive summary</div>
+            <div class="val">
+              <ul>
+                <li><b>Signal:</b> Slack channel search returned <span class="gold">no recent messages</span> for the key operating channels in the last ~2 days (may be low posting volume or search query constraints).</li>
+                <li><b>Action:</b> Use Monday touchpoints to pull status verbally (especially horse updates + sales closes).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="lbl">Wins / momentum</div>
+            <div class="val"><span class="small">No channel wins surfaced in this run.</span></div>
+          </div>
+          <div class="box">
+            <div class="lbl">Friction / risks</div>
+            <div class="val"><span class="small">No channel friction surfaced in this run.</span></div>
+          </div>
+          <div class="box">
+            <div class="lbl">Follow-ups</div>
+            <div class="val"><span class="small">No channel follow-ups surfaced in this run.</span></div>
+          </div>
         </div>
-        <div class="card" style="background:#fff">
-          <div class="small"><b>#sales-made highlights</b></div>
-          <ul class="tight">
-            <li><b>HOLD</b>: <b>Joe Nolan (Nolan Stables LLC)</b> — <b>last 4%</b> of the <b>Early Voting colt</b> (raising stake to <b>6.5%</b>).</li>
-            <li><b>Marc Ferrandino</b> — <b>5%</b> Early Voting colt (discount arranged).</li>
-            <li><b>Mike Sheedy</b> — <b>2.5%</b> EV Casse.</li>
-          </ul>
+        <div style="margin-top:10px" class="small">
+          <b>Note:</b> This section is based on Slack search results for <span class="mono">#horse-comms, #sales, #sales-made, #prospectcomms, #exec-team</span> over the last ~2 days.
         </div>
       </div>
+    </section>
 
-      <h3 style="margin:14px 0 8px; font-size:14px">Channel notes</h3>
-      <ul class="tight">
-        <li><b>#horse-comms</b>: Run Away Rojo race mismatch; <b>Parden</b> fracture precaution (bandage cast, staying another week); <b>Vibe</b> anemic blood count noted post-race.</li>
-        <li><b>#sales</b>: Focus request on a California horse (<b>Army Man</b> price point for June OBS); discount request declined; suggestion for Terry to touch base with <b>Joe Nolan</b>; Walt Shea passed on EV colt again.</li>
-        <li><b>#exec-team</b>: Brief leadership discussion thread; reminder: <b>Erin</b> anniversary (16 years) this month.</li>
-        <li><b>#prospectcomms</b>: No messages in the last 2 days.</li>
-      </ul>
-    </div>
+    <!-- 6. Racing -->
+    <section style="margin-top:12px">
+      <div class="hd"><h2>6) Racing</h2><div class="small">Source of truth: Daily Entries</div></div>
+      <div class="bd">
+        <div class="small"><b>Today (Sun 6/14)</b></div>
+        <ul>
+          <li><b>No WPT entries shown for today</b> on the Daily Entries page in this run.</li>
+        </ul>
 
-    <div class="section card">
-      <h2>6) Racing — Daily Entries (WPT)</h2>
-      <div class="small">Source of truth: WPT Daily Entries (rendered page screenshot). Times shown are ET.</div>
-      <table class="table">
-        <thead>
-          <tr>
-            <th style="width:90px">Date</th>
-            <th>Horse</th>
-            <th style="width:70px">Race</th>
-            <th style="width:90px">Post</th>
-            <th style="width:90px">Post Pos</th>
-            <th style="width:90px">Dist</th>
-            <th style="width:170px">Track</th>
-            <th>Name/Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>06/13/26</td><td><b>Epic Fashionista</b></td><td>6</td><td>3:19</td><td>7 of 10</td><td>5F</td><td>Churchill Downs</td><td>Maiden Special Weight</td></tr>
-          <tr><td>06/13/26</td><td><b>Tiz the Lady</b></td><td>8</td><td>4:45</td><td>8 of 10</td><td>8F</td><td>Belmont at the Big A</td><td>Maiden Claiming 90k</td></tr>
-          <tr><td>06/13/26</td><td><b>Run Away Rojo</b></td><td>7</td><td>7:46</td><td>3 of 9</td><td>8F</td><td>Horseshoe Indianapolis</td><td>Indiana-bred Allowance</td></tr>
-          <tr><td>06/13/26</td><td><b>Pascaline</b></td><td>8</td><td>10:32</td><td>10 of 10</td><td>7F</td><td>Charles Town</td><td>Confucius Say Stakes</td></tr>
-          <tr><td>06/15/26</td><td><b>Grunge</b></td><td>7</td><td>6:12</td><td>3 of 12</td><td>6F</td><td>Presque Isle Downs</td><td>Tom Ridge Stakes</td></tr>
-        </tbody>
-      </table>
-      <div class="small" style="margin-top:10px">Partner opportunity: If any of the above are first-time starters / stakes runners, use post-time windows to schedule quick partner check-ins and ensure photos/social are queued.</div>
-    </div>
+        <div class="small" style="margin-top:8px"><b>Next entry</b></div>
+        <table>
+          <thead><tr><th>Date</th><th>Horse</th><th>Track</th><th>Race</th><th>Post (ET)</th><th>Type</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><b>06/15/26</b></td>
+              <td><b>Grunge</b></td>
+              <td>Presque Isle Downs</td>
+              <td>Race <b>7</b> (Post Pos. 3 of 12)</td>
+              <td><b>6:12 ET</b></td>
+              <td>Tom Ridge Stakes (6F)</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="small" style="margin-top:8px">Daily Entries URL: <a href="https://westpointtb.com/racing/daily-entries/">westpointtb.com/racing/daily-entries</a></div>
+      </div>
+    </section>
 
-    <div class="section card">
-      <h2>7) Decisions Needed</h2>
-      <ul class="tight">
-        <li><b>EV colt allocation strategy (Joe Nolan + Bob Dilla)</b> — Hold periods vs. releasing inventory.
-          <div class="small">Why it matters: sales velocity + fairness to other buyers. Recommended: confirm Joe Nolan today; keep Bob Dilla hold through Monday midday, then release if no firm yes. Time sensitivity: <b>today–Mon</b>.</div>
-        </li>
-        <li><b>Pricing/discount posture for larger % buyers</b> — when (if ever) to approve structured incentives.
-          <div class="small">Why it matters: protects brand + margin, avoids setting precedent. Recommended: keep firm baseline; only offer value-adds (experience/visibility) rather than price cuts. Time sensitivity: <b>this week</b>.</div>
-        </li>
-        <li><b>EquiTrack go/no-go (Mon call)</b> — decide whether controller/accounting/partner-reporting support is WPT lane.
-          <div class="small">Why it matters: focus vs. distraction. Recommended: define success criteria + resourcing before call; align with Lindsey. Time sensitivity: <b>Mon</b>.</div>
-        </li>
-      </ul>
-    </div>
+    <!-- 7. Decisions Needed -->
+    <section style="margin-top:12px">
+      <div class="hd"><h2>7) Decisions Needed</h2><div class="small">Real decisions only</div></div>
+      <div class="bd">
+        <table>
+          <thead><tr><th>Decision</th><th>Why it matters</th><th>Recommended action</th><th>When</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><b>EquiTrack go/no-go</b> (and scope)</td>
+              <td>Could become a recurring ops/partner-reporting workload if you say yes; needs clear ownership and boundaries.</td>
+              <td>Go in with a 2-sentence scope: what WPT will do, what it won’t; decide owner (likely Lindsey ops lead, you sponsor).</td>
+              <td><b>Mon (call 12:30 ET)</b></td>
+            </tr>
+            <tr>
+              <td><b>Honoree race-plan reply</b> (Allowance NW1 vs NYB stake)</td>
+              <td>Partner confidence depends on a crisp explanation grounded in trainer intent and long-term placement.</td>
+              <td>Get Jeff/Murphy’s rationale, then reply with 3 bullets: condition fit, timing, and upside/downsides.</td>
+              <td><b>This week</b></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-    <div class="section card">
-      <h2>8) Perplexity Computer Slack Activity</h2>
-      <div class="small">No Slack search results returned for “perplexity” in the last 2 days.</div>
-    </div>
+    <!-- 8. Perplexity Computer Slack Activity -->
+    <section style="margin-top:12px">
+      <div class="hd"><h2>8) Perplexity Computer Slack Activity</h2><div class="small">Operational chatter</div></div>
+      <div class="bd">
+        <ul>
+          <li>Recent Perplexity/Computer items in Slack were primarily <b>prior daily briefing posts</b> and an earlier discussion of why the <b>Daily Entries</b> page can appear empty when not rendered.</li>
+          <li><b>No new operational requests</b> from Terry surfaced in the last ~2 days in this run.</li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="small" style="margin-top:14px">
-      Sources: Google Calendar (gcal), Slack (slack_direct), WPT Daily Entries page render (<a href="https://westpointtb.com/racing/daily-entries/">westpointtb.com/racing/daily-entries/</a>).
-    </div>
+    <footer class="small" style="margin:14px 2px 0 2px;color:var(--muted)">
+      Sources: Google Calendar (gcal) and West Point Thoroughbreds Daily Entries page.
+    </footer>
   </div>
 </body>
 </html>
