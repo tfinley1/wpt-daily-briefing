@@ -1,231 +1,163 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WPT CEO Daily Briefing — Sunday, June 21, 2026</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#FFFFFF; --ink:#28251D; --teal:#01696F;
-      --muted:#6b6b6b; --card:#f7f7f7; --line:#e7e7e7;
-      --red:#b42318; --gold:#b54708; --green:#067647;
-    }
-    html,body{background:var(--bg); color:var(--ink); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; margin:0;}
-    .wrap{max-width:980px; margin:0 auto; padding:24px 18px 60px;}
-    .top{display:flex; gap:14px; align-items:baseline; justify-content:space-between; flex-wrap:wrap;}
-    h1{font-size:22px; margin:0; letter-spacing:-0.02em;}
-    .stamp{color:var(--muted); font-size:13px;}
-    .grid{display:grid; grid-template-columns:1fr; gap:12px; margin-top:14px;}
-    .card{border:1px solid var(--line); background:var(--card); border-radius:12px; padding:14px 14px 12px;}
-    h2{font-size:14px; margin:0 0 8px; text-transform:uppercase; letter-spacing:0.08em; color:var(--teal);}
-    h3{font-size:13px; margin:12px 0 6px; color:var(--ink);}
-    ul{margin:6px 0 0 18px; padding:0;}
-    li{margin:4px 0;}
-    .pill{display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; border:1px solid var(--line); background:#fff; margin-left:8px; color:var(--muted);}
-    .flag{font-weight:700;}
-    .red{color:var(--red);} .gold{color:var(--gold);} .green{color:var(--green);} .muted{color:var(--muted);}
-    table{width:100%; border-collapse:collapse; font-size:13px; background:#fff; border-radius:10px; overflow:hidden; border:1px solid var(--line);}
-    th,td{padding:10px 10px; border-bottom:1px solid var(--line); vertical-align:top;}
-    th{background:#fbfbfb; text-align:left; font-size:12px; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted);}
-    tr:last-child td{border-bottom:none;}
-    .kpi{display:flex; gap:10px; flex-wrap:wrap; margin-top:8px;}
-    .k{background:#fff; border:1px solid var(--line); border-radius:10px; padding:10px 12px; min-width:210px; flex:1;}
-    .k .t{font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em;}
-    .k .v{margin-top:6px; font-size:13px;}
-    .small{font-size:12px; color:var(--muted);}
-    @media print{
-      .card{break-inside:avoid;}
-      a{color:inherit; text-decoration:none;}
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WPT CEO Daily Briefing — Monday, June 22, 2026</title>
+<style>
+  :root{--ink:#0e1a2b;--muted:#5a6677;--card:#ffffff;--bg:#f4f6fa;--accent:#0a3b6c;--accent2:#b88a2a;--good:#1f7a3a;--warn:#9a3b14;}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);}
+  .wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:24px}
+  h1{margin:0 0 4px;font-size:26px;letter-spacing:-.01em;color:var(--accent)}
+  .sub{color:var(--muted);font-size:14px}
+  section{background:var(--card);border:1px solid #e5e9f0;border-radius:12px;padding:18px 20px;margin:16px 0;box-shadow:0 1px 2px rgba(14,26,43,.04)}
+  h2{margin:0 0 10px;font-size:18px;color:var(--accent)}
+  h3{margin:14px 0 6px;font-size:15px;color:var(--accent2)}
+  ul{margin:6px 0 6px 18px;padding:0}
+  li{margin:4px 0}
+  .move{background:#fffaf0;border:1px solid #f1d99a}
+  .move h2{color:#7a4f10}
+  .alert{background:#fdf3ee;border-color:#f0c7b4}
+  .alert h2{color:var(--warn)}
+  .pill{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;background:#eaf0f7;color:var(--accent);margin-right:6px}
+  .pill.good{background:#e6f4ec;color:var(--good)}
+  .pill.warn{background:#fbe9df;color:var(--warn)}
+  .meta{color:var(--muted);font-size:13px}
+  a{color:var(--accent)}
+  footer{margin-top:28px;color:var(--muted);font-size:12px;text-align:center}
+  .grid{display:grid;grid-template-columns:100px 1fr;gap:6px 14px}
+  .grid .t{color:var(--muted);font-variant-numeric:tabular-nums}
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="top">
-      <h1>WPT CEO Daily Briefing</h1>
-      <div class="stamp">Sunday, June 21, 2026</div>
-    </div>
+<div class="wrap">
 
-    <!-- 1. CEO Snapshot -->
-    <section class="card">
-      <h2>1) CEO Snapshot</h2>
-      <div class="kpi">
-        <div class="k">
-          <div class="t">Top 3 priorities (today)</div>
-          <div class="v">
-            <ol style="margin:6px 0 0 18px; padding:0;">
-              <li><span class="flag">Own the day’s racing touchpoints</span>: make sure partner-facing comms are ready for <b>Relaxx (FR)</b> and <b>Castle Run</b>.</li>
-              <li><span class="flag">Keep sales momentum moving</span>: protect/close the remaining high-demand inventory (PJ colt + Cairo Prince filly updates from Slack).</li>
-              <li><span class="flag">Clarify this week’s decision stack</span>: pre-block Monday decisions so they don’t spill into execution time.</li>
-            </ol>
-          </div>
-        </div>
-        <div class="k">
-          <div class="t">Biggest risk</div>
-          <div class="v"><span class="red flag">Information lag</span> on horse status calls (e.g., “stop vs step back” questions) turning into repeated relitigation and partner confusion.</div>
-        </div>
-        <div class="k">
-          <div class="t">Biggest opportunity</div>
-          <div class="v"><span class="green flag">Sales pace</span>: multiple partner adds / holds posted in <b>#sales-made</b> — keep closing while momentum is high.</div>
-        </div>
-        <div class="k">
-          <div class="t">Needs Terry directly</div>
-          <div class="v">High-touch prospect/partner nudges referenced in Slack (TPF texts helping close) — replicate for 1–2 key names today.</div>
-        </div>
-        <div class="k">
-          <div class="t">Delegate</div>
-          <div class="v">Have team draft the partner-ready racing blurb + post-time reminders for today’s entries; you just approve and send.</div>
-        </div>
-      </div>
-    </section>
+<header>
+  <h1>WPT CEO Daily Briefing</h1>
+  <div class="sub">Monday, June 22, 2026 · Run #65 · Saratoga build-up week</div>
+</header>
 
-    <!-- 2. 1 CEO Move Today -->
-    <section class="card">
-      <h2>2) 1 CEO Move Today</h2>
-      <p style="margin:0; font-size:14px;">
-        <b>Send 2 short texts</b> before noon ET: (1) to <b>Ben Shapiro</b> (Army Man) and (2) to <b>Chris Happel</b> (Collected filly) — sales team flagged that a <b>TPF text</b> materially helps convert. <span class="pill">10 minutes</span>
-      </p>
-      <div class="small" style="margin-top:8px;">Context: requested in #sales; recent closes/holds show strong demand.</div>
-    </section>
+<section>
+  <h2>1. CEO Snapshot</h2>
+  <ul>
+    <li><strong>Big picture:</strong> Weekend produced a wave of book sales — PJ colt closed (Brandon Ellis took the final 5%), Cairo Prince filly gained Eddie Lampert 2.5% and Anthony Sisti 5%, Army Man picked up 15% from Jeff Levinson plus 5% from David Imschweiler, and Joe Laird took 4.5% of the Collected filly.</li>
+    <li><strong>Inventory note:</strong> 10% of Cairo Prince filly back in inventory — Michael Roth non-responsive, Lindsey sending the adios.</li>
+    <li>Today is a heavy decision day: <strong>5 month-level all-day items</strong> (Trainer Data go/no-go with Lindsey, Jason title/org chart, WPT earnings base confirmation, OBS close-out, Joe Nolan named-owner policy) plus a Walt 5 PM ET call.</li>
+    <li>You head to PA tomorrow (6/23) through Wed; Oakmont golf Wed 6/24.</li>
+  </ul>
+</section>
 
-    <!-- 3. Schedule -->
-    <section class="card">
-      <h2>3) Schedule</h2>
-      <h3>Today (Sun, Jun 21) — ET</h3>
-      <table>
-        <thead>
-          <tr><th style="width:120px;">Time</th><th>Event</th><th style="width:220px;">Attendees</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><b>1:38 PM</b></td>
-            <td><b>Relaxx (FR)</b> at Belmont at the Big A — race 2 <span class="pill">NW2X Allowance</span></td>
-            <td class="muted">Jeff Lowe; WPT team; Terry Finley</td>
-          </tr>
-          <tr>
-            <td><b>4:25 PM</b></td>
-            <td><b>Castle Run</b> at Churchill Downs — race 8 <span class="pill">Maiden Claiming 30k</span></td>
-            <td class="muted">Jeff Lowe; WPT team; Terry Finley</td>
-          </tr>
-        </tbody>
-      </table>
+<section class="move">
+  <h2>2. 1 CEO Move Today</h2>
+  <p><strong>Lock the Trainer Data go/no-go with Lindsey before you leave for PA.</strong> The Friday call with Ed Tucker and Ryan Smith is in the rearview — you leaned "too early," Lindsey says it feeds the master Salesforce database. Don't carry this open another week. Pick a scope (race results + works + entries to start), decide go or no-go, and tell Lindsey by end of day so she can move.</p>
+  <p class="meta">Backup move if Trainer Data is settled: with Colman + Lindsey, confirm whether the ~$3.2M owner profit in the WPT valuation is before or after your comp. It is the single biggest swing in the Erin buy-in math.</p>
+</section>
 
-      <h3>Next 2 days (Mon–Tue) — ET</h3>
-      <div class="small">Calendar shows a heavy stack of all-day decision reminders on Monday; block 60–90 minutes early day to close the loop on the highest-impact items.</div>
-    </section>
-
-    <!-- 4. Alerts -->
-    <section class="card">
-      <h2>4) Alerts</h2>
-      <ul>
-        <li><span class="gold flag">Attention</span>: Multiple training / status decision points in horse updates (e.g., <b>Battle of Normandy</b> question; <b>Major Tac</b> being stopped; <b>Rhyton</b> being monitored) — ensure partner comms align with the latest vet/trainer calls.</li>
-        <li><span class="green flag">Win</span>: <b>Pillar of Beauty</b> most recent win in results feed (06/05 at Saratoga).</li>
-      </ul>
-    </section>
-
-    <!-- 5. Team Pulse -->
-    <section class="card">
-      <h2>5) Team Pulse (Slack — last 48 hours)</h2>
-      <h3>Executive summary</h3>
-      <ul>
-        <li><span class="green flag">Momentum</span>: #sales-made shows multiple closes/holds across Army Man, Practical Joke colt, Collected filly, Cairo Prince filly.</li>
-        <li><span class="gold flag">Friction</span>: horse-status items need crisp “go/no-go” framing to reduce repeated loops (e.g., step back vs stop decisions).</li>
-        <li><span class="gold flag">Follow-ups</span>: vendor payment pressure mentioned (Asmussen owes April/May per exec-team) — keep an eye on cash collection cadence.</li>
-      </ul>
-
-      <h3>#sales-made highlights</h3>
-      <ul>
-        <li><b>Eddie Lampert</b> — <b>2.5%</b> of Cairo Prince filly</li>
-        <li><b>James Politano</b> — <b>25%</b> of Collected filly (outside LLC)</li>
-        <li><b>Adam Nonn</b> — <b>10%</b> Army Man; <b>David Imschweiler</b> — <b>5%</b> Army Man; <b>John Sola</b> — <b>5%</b> Army Man; <b>Duane Killbride</b> — <b>2.5%</b> Army Man</li>
-        <li><b>Practical Joke colt</b>: holds/moves referenced for <b>Andrew Reeder (5%)</b> and <b>Brandon Ellis (last 5%)</b></li>
-        <li><span class="gold flag">Inventory note</span>: <b>10%</b> Cairo Prince filly expected back to inventory due to nonresponsive outreach.</li>
-      </ul>
-
-      <h3>#sales (asks)</h3>
-      <ul>
-        <li><b>Ben Shapiro</b> (Army Man) wants larger % — team requested a <b>TPF text</b> to support a call.</li>
-        <li><b>Chris Happel</b> (Collected filly) “wishy washy” — team believes a <b>TPF note</b> helps close.</li>
-      </ul>
-
-      <h3>#horse-comms (horse status / ops)</h3>
-      <ul>
-        <li><b>Ohana</b> shipping to Belmont; <b>Langdon</b> to breeze in Ocala before shipping.</li>
-        <li><b>Battle of Normandy</b>: trainer wanted clarity whether to stop completely vs step back in training.</li>
-        <li><b>Major Tac</b>: left front suspensory thickening — recommendation to <b>stop</b> and give time.</li>
-        <li><b>Rhyton</b>: reportedly fine; internal note about possible left hind vs left front; state vet + CC vet meeting.</li>
-        <li><b>Absolutely Hot</b> visit at WinStar (media/prospect visibility).</li>
-      </ul>
-
-      <h3>#exec-team</h3>
-      <ul>
-        <li>Vendor collections: Asmussen owed April/May; paid after pressure (per Jamie).</li>
-        <li>Yearlings: strong spot; <b>Flightline/Salty as Can Be</b> filly projected <b>$750k+</b> (Book 1 Keeneland).</li>
-      </ul>
-    </section>
-
-    <!-- 6. Racing -->
-    <section class="card">
-      <h2>6) Racing</h2>
-      <h3>Today’s WPT entries (from Daily Entries)</h3>
-      <table>
-        <thead>
-          <tr><th style="width:110px;">Date</th><th>Horse</th><th style="width:70px;">Race</th><th style="width:90px;">Post (ET)</th><th style="width:160px;">Track</th><th>Name/Type</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>06/21/26</td><td><b>Relaxx (FR)</b></td><td>2</td><td><b>1:38</b></td><td>Belmont at the Big A</td><td>NW2X Allowance</td></tr>
-          <tr><td>06/21/26</td><td><b>Castle Run</b></td><td>8</td><td><b>4:25</b></td><td>Churchill Downs</td><td>Maiden Claiming 30k</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Next listed entries (preview)</h3>
-      <ul>
-        <li><b>06/25/26</b>: <b>Les Reys (FR)</b> (Belmont Park, race 4, 2:43 ET) — NW3X Allowance</li>
-        <li><b>06/25/26</b>: <b>Statesman</b> (Colonial Downs, race 6, 2:54 ET) — NW2X Allowance</li>
-        <li><b>06/25/26</b>: <b>Maui Strong</b> (Churchill Downs, race 3, 5:58 ET) — NW1X Allowance</li>
-      </ul>
-
-      <h3>Recent notable results (site feed)</h3>
-      <ul>
-        <li><span class="green flag">Win</span>: <b>Pillar of Beauty</b> — 1st at Saratoga (06/05) — <b>$66,000</b></li>
-        <li>Also in the last 10 results: <b>Band On the Run</b> 2nd (06/09), <b>Find No Fault</b> 3rd (06/07), <b>Keep It Easy</b> 3rd (06/06).</li>
-      </ul>
-      <div class="small">Primary source: https://westpointtb.com/racing/daily-entries/ (rendered table). Results feed: https://www.westpointtb.com/racing/all-race-results/.</div>
-    </section>
-
-    <!-- 7. Decisions Needed -->
-    <section class="card">
-      <h2>7) Decisions Needed</h2>
-      <table>
-        <thead>
-          <tr><th style="width:240px;">Decision</th><th>Why it matters</th><th style="width:260px;">Recommendation</th><th style="width:110px;">Timing</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><b>Clarify Battle of Normandy plan</b> (stop vs step back)</td>
-            <td>Reduces recurring uncertainty and keeps partner messaging consistent.</td>
-            <td>Ask Jason/Jeff for a one-sentence status + next checkpoint date; align comms.</td>
-            <td><b>This week</b></td>
-          </tr>
-          <tr>
-            <td><b>Inventory push: PJ colt + Cairo Prince filly</b></td>
-            <td>Momentum is high; holds/returns can create confusion if not managed tightly.</td>
-            <td>Confirm who owns “final allocation” decisions and lock the next 24-hour follow-ups.</td>
-            <td><b>Today</b></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- 8. Perplexity Computer Slack Activity -->
-    <section class="card">
-      <h2>8) Perplexity Computer Slack Activity</h2>
-      <p class="muted" style="margin:0;">No Perplexity-specific Slack activity surfaced in the last 48 hours via search.</p>
-    </section>
-
+<section>
+  <h2>3. Schedule — Monday, June 22 (ET)</h2>
+  <div class="grid">
+    <div class="t">8:00 AM</div><div>Wes Session (1h)</div>
+    <div class="t">8:00 AM</div><div>Call Tim Buff (15 min) <span class="pill warn">conflict w/ Wes</span></div>
+    <div class="t">9:00 AM</div><div>Debbie + Terry Weekly Look Ahead (30 min)</div>
+    <div class="t">10:00 AM</div><div>Order M4 Mac Mini for WPT AI Hub (30 min) — Apple, 16GB/256GB min</div>
+    <div class="t">10:30 AM</div><div>Ocean Palms — Facade Scope Gap Schedule w/ Power 10 (Zoom, 1h)</div>
+    <div class="t">3:00 PM</div><div>Terry Finley Estate Planning (Teams, 30 min)</div>
+    <div class="t">5:00 PM</div><div>Call with Walt (15 min)</div>
   </div>
+  <h3>All-day / monthly loops on today</h3>
+  <ul>
+    <li>Trainer Data go/no-go + data scope (w/ Lindsey) — see CEO Move above</li>
+    <li>Decide Jason's title / exec exposure; refresh org chart (last refreshed 7/1/25, pre-Casey, pre-Lindsey/Erin moves)</li>
+    <li>Confirm WPT earnings base: ~$3.2M owner profit before or after Terry comp (w/ Colman + Lindsey)</li>
+    <li>Close June OBS go/no-go (add 1-2 horses) — reps were to name goal-line candidates by Wed; no list, no buy</li>
+    <li>Decide Joe Nolan named-owner terms (7.5% threshold) — Tom Bellhouse looped in, respond before Saratoga</li>
+    <li>Reply to partner texts: Honoree race-spot, Saratoga visit dinner, Lake George boat day</li>
+    <li>Reply to Stephen Panus on opportunities</li>
+    <li>Hand personal-ops backlog to Debbie (saunas, USAA, FedEx/Ocean Palms, parking ticket, cabana B2)</li>
+    <li>Set standing succession working session with Erin (stop running it solo)</li>
+    <li>Get Sandman written stop/go trigger from Jeff (4+ wks Ocala eval, no findings)</li>
+  </ul>
+</section>
+
+<section class="alert">
+  <h2>4. Alerts</h2>
+  <ul>
+    <li><strong>Calendar conflict:</strong> Wes Session and "Call Tim Buff" both start at 8:00 AM ET. Move Tim Buff to 8:15 or after Debbie at 9:30.</li>
+    <li><strong>Battle of Normandy:</strong> Shug's doc not happy — Shug asked whether you are stopping completely or just stepping back. Needs an answer this morning.</li>
+    <li><strong>Rhyton:</strong> State vet + CC vet were meeting at the barn yesterday morning. Miguel says slight issue with left hind (not left front per outside read), not lame. Confirm clean by mid-morning.</li>
+    <li><strong>Cairo Prince filly inventory:</strong> 10% back in inventory as of Saturday — Lindsey adios'd Michael Roth. Have Jason and Tom seed candidates before Saratoga noise starts.</li>
+    <li><strong>Sal Lecesse referral — Phil Wegman</strong> called Jason directly wanting 5% PJ colt (now closed). Get him into something else this week or you lose the referral momentum.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>5. Team Pulse — Slack (last 72 hours)</h2>
+
+  <h3>#sales-made — heavy weekend</h3>
+  <ul>
+    <li><strong>PJ colt CLOSED:</strong> Brandon Ellis took the final 5% (held from Jonathan Simmons release); Andrew Reeder 5%; Ross Nguyen good; Sal Lecesse buddy Phil Wegman wants 5% but is past close — Jason told him "reach back out if something opens up."</li>
+    <li><strong>Cairo Prince filly:</strong> Eddie Lampert 2.5% (via Joe Bianca); Anthony Sisti 5% via Jason; Michael Roth's 10% back in inventory (Lindsey adios).</li>
+    <li><strong>Army Man:</strong> TPF closed Jeff Levinson at 15% — name on program; David Imschweiler 5%.</li>
+    <li><strong>Collected filly:</strong> Joe Laird 4.5%; Grant Tyson 5%; Ali Finley 5% (released hold on PJ to move to Collected).</li>
+  </ul>
+
+  <h3>#horse-comms — trainer reports (Jason / Jeff Lowe / Danielle)</h3>
+  <ul>
+    <li><strong>Shug:</strong> Ohana on next van north to Belmont. Langdon ready but Shug wants to breeze him a couple of times in Ocala before shipping. Battle of Normandy — doc not happy, asking if we are stopping completely or just pulling back.</li>
+    <li><strong>Rhyton:</strong> Miguel — not off or lame, slight left hind concern; state vet + CC vet were doing barn visit Saturday AM.</li>
+    <li><strong>Aqueduct:</strong> Dontlookbackatall pulled from next-week Aqueduct race, pointing to Saratoga. Leonora's Secret race is a go.</li>
+    <li><strong>Absolutely Hot</strong> at WinStar — Rachel + Greg from ABR went out Saturday to see him.</li>
+  </ul>
+
+  <h3>#exec-team</h3>
+  <ul>
+    <li>You shared the Patrick Leonconi YouTube video Saturday night and a follow-up note Sunday morning — no team response yet. If you want a discussion, post a one-liner with what you want them to take from it.</li>
+  </ul>
+
+  <h3>Terry DMs</h3>
+  <ul>
+    <li>Casey Clemmons (Sat 6/21): "We talked about this one yesterday! Will text him this weekend on your behalf." Confirm he closed the loop.</li>
+    <li>Daily Update bot reminders firing twice a day; Salesforce legacy bot generating notification spam Saturday morning (15+ pings). Worth a 60-second mute.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>6. Racing — Web</h2>
+  <ul>
+    <li><strong>Garden of Grace</strong> ran Saturday 6/20 at Belmont at the Big A, Race 10 (MCL NY-Bred F&M, 6f turf, $48k): finished <strong>2nd</strong> behind Tuthilltown (Brisset). George Weaver / Jaime Rodriguez. <a href="https://www.westpointtb.com/racing/all-race-results/" target="_blank">WPT results</a> · <a href="https://www.youtube.com/watch?v=ruZU9BNUSho" target="_blank">Race 10 replay context</a></li>
+    <li><strong>Relaxx (FR)</strong> ran Sunday 6/21 at the Big A — Miguel Clement / Flavien Prat. Ownership listed as West Point Thoroughbreds, Madaket Stables, LJSS Thoroughbreds and Kisber, M. <a href="https://www.nyra.com/aqueduct/racing/entries/?day=2026-06-21&limit=entries&race=2" target="_blank">Aqueduct entry</a></li>
+    <li><strong>Castle Run</strong> also entered Sunday 6/21.</li>
+    <li><strong>Upcoming entries (6/25–6/28):</strong> Les Reys (FR), Statesman, Maui Strong, British Invasion (IRE), Willpowered, Band On the Run, Powerline, Preside, Keep It Easy, Miss Enchanted. Source: <a href="https://westpointtb.com/racing/daily-entries/" target="_blank">WPT Daily Entries</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>7. Decisions Needed</h2>
+  <ul>
+    <li><strong>Trainer Data go/no-go</strong> — your call by EOD so Lindsey can move.</li>
+    <li><strong>Jason's title / org-chart refresh</strong> — Year-in-Review action #10, yellow. Decide before Saratoga.</li>
+    <li><strong>WPT earnings base</strong> — pre or post Terry comp. Biggest single swing in valuation.</li>
+    <li><strong>OBS June</strong> — close it. Reps did not deliver a goal-line list; either name horse(s) or formally pass.</li>
+    <li><strong>Battle of Normandy</strong> — stop completely or just step back. Shug is waiting.</li>
+    <li><strong>Joe Nolan named-owner policy</strong> — set the 7.5% threshold policy, then respond.</li>
+    <li><strong>EA backfill</strong> (Casey seat 8+ weeks open) — sourcing plan from Lindsey this week or formally accept the void.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>8. Perplexity Computer Slack Activity</h2>
+  <ul>
+    <li>No new #perplexity-computer channel activity in the last 60 hours.</li>
+    <li>Daily briefing automation continues to deliver to both you and Lindsey at 5 AM CDT.</li>
+  </ul>
+</section>
+
+<footer>
+  Generated by Perplexity Computer · Live at <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a>
+</footer>
+
+</div>
 </body>
 </html>
