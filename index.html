@@ -3,421 +3,360 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WPT CEO Daily Briefing — Wednesday, July 1, 2026</title>
+  <title>WPT CEO Daily Briefing — Thursday, July 2, 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#ffffff;
+      --bg:#FFFFFF;
       --ink:#28251D;
-      --muted:#6b6b6b;
       --teal:#01696F;
-      --teal-2:#0b858c;
-      --red:#b42318;
-      --gold:#b58500;
-      --green:#067647;
-      --card:#f7f7f6;
-      --border:#e7e5e0;
+      --muted:#6B665A;
+      --line:#E8E5DD;
+      --red:#B42318;
+      --gold:#B76E00;
+      --green:#027A48;
+      --card:#FAF9F6;
     }
     html,body{background:var(--bg); color:var(--ink); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; margin:0; padding:0;}
-    .wrap{max-width:980px; margin:0 auto; padding:20px 16px 56px;}
-    header{display:flex; gap:12px; align-items:flex-end; justify-content:space-between; padding:6px 0 14px; border-bottom:1px solid var(--border);} 
-    .title{font-size:18px; font-weight:700; letter-spacing:-0.02em; margin:0;}
-    .subtitle{margin:0; font-size:12px; color:var(--muted);} 
+    .wrap{max-width:1060px; margin:0 auto; padding:28px 18px 48px;}
+    header{display:flex; flex-wrap:wrap; gap:12px; align-items:flex-end; justify-content:space-between; border-bottom:2px solid var(--line); padding-bottom:14px; margin-bottom:18px;}
+    h1{font-size:22px; margin:0; letter-spacing:-0.02em;}
+    .sub{color:var(--muted); font-size:13px;}
+    .pill{display:inline-block; border:1px solid var(--line); background:var(--card); padding:6px 10px; border-radius:999px; font-size:12px; color:var(--muted);}
 
-    .grid{display:grid; grid-template-columns:1fr; gap:12px; margin-top:14px;}
-    @media(min-width:860px){.grid{grid-template-columns:1.15fr 0.85fr;}}
+    section{margin:18px 0 0;}
+    .section-title{display:flex; align-items:center; justify-content:space-between; gap:10px; border-left:6px solid var(--teal); padding:8px 10px; background:linear-gradient(90deg, rgba(1,105,111,0.08), rgba(1,105,111,0));}
+    .section-title h2{margin:0; font-size:15px; letter-spacing:-0.01em;}
+    .section-title .meta{font-size:12px; color:var(--muted);}
 
-    .card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px 14px 12px;}
-    .card h2{margin:0 0 10px; font-size:14px; letter-spacing:-0.01em;}
-    .card h3{margin:14px 0 8px; font-size:13px;}
+    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:12px; margin-top:12px;}
+    .card{grid-column:span 12; border:1px solid var(--line); background:var(--card); border-radius:12px; padding:12px;}
+    @media (min-width:900px){
+      .card.half{grid-column:span 6;}
+      .card.third{grid-column:span 4;}
+    }
 
-    .kpi{display:grid; grid-template-columns:1fr; gap:10px;}
-    @media(min-width:560px){.kpi{grid-template-columns:1fr 1fr;}}
+    ul{margin:8px 0 0 18px; padding:0;}
+    li{margin:6px 0;}
+    .kpi{font-weight:700;}
 
-    .pill{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:600; background:#fff; border:1px solid var(--border);} 
-    .dot{width:8px; height:8px; border-radius:99px; display:inline-block;}
-    .dot.red{background:var(--red);} .dot.gold{background:var(--gold);} .dot.green{background:var(--green);} .dot.teal{background:var(--teal);} 
+    table{width:100%; border-collapse:collapse;}
+    th,td{padding:8px 8px; border-bottom:1px solid var(--line); vertical-align:top; font-size:13px;}
+    th{font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted); text-align:left;}
 
-    ul{margin:0; padding-left:18px;}
-    li{margin:6px 0; line-height:1.35;}
+    .tag{display:inline-block; font-size:11px; padding:2px 8px; border-radius:999px; border:1px solid var(--line); background:#fff; color:var(--muted);}
+    .tag.red{border-color:rgba(180,35,24,0.35); color:var(--red);}
+    .tag.gold{border-color:rgba(183,110,0,0.35); color:var(--gold);}
+    .tag.green{border-color:rgba(2,122,72,0.35); color:var(--green);}
 
-    table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:10px; border:1px solid var(--border); background:#fff;}
-    th,td{font-size:12px; padding:10px 10px; border-bottom:1px solid var(--border); vertical-align:top;}
-    th{background:#fbfbfa; text-align:left; font-weight:700; color:#36322b;}
-    tr:last-child td{border-bottom:none;}
-    .muted{color:var(--muted);} 
-    .tag{font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; border:1px solid var(--border); background:#fff; display:inline-block;}
-    .tag.red{border-color:#f3b7b2; background:#fff4f4; color:var(--red);} 
-    .tag.gold{border-color:#f1deab; background:#fff9e6; color:var(--gold);} 
-    .tag.green{border-color:#bfe8d6; background:#ecfdf3; color:var(--green);} 
-
-    .section{margin-top:14px;}
-    .section > h2{font-size:14px; margin:0 0 10px;}
-
-    a{color:var(--teal); text-decoration:none;}
-    a:hover{text-decoration:underline;}
-    .small{font-size:12px;}
+    .small{font-size:12px; color:var(--muted);}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;}
 
     @media print{
-      header{border-bottom:1px solid #ccc;}
+      .wrap{max-width:none; padding:0;}
+      header{position:sticky; top:0; background:#fff;}
+      a{color:inherit; text-decoration:none;}
       .card{break-inside:avoid;}
-      a{color:#000; text-decoration:underline;}
-      .wrap{max-width:none;}
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div>
-        <p class="title">WPT CEO Daily Briefing</p>
-        <p class="subtitle">For Terry Finley · Wednesday, July 1, 2026</p>
-      </div>
-      <div class="subtitle">Primary link: <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a></div>
-    </header>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>WPT CEO Daily Briefing</h1>
+      <div class="sub">For <strong>Terry Finley</strong> • Thursday, July 2, 2026 • Generated 8:36 AM CT</div>
+    </div>
+    <div class="pill">Primary delivery: this page • Backup: email</div>
+  </header>
 
-    <!-- 1) CEO Snapshot -->
+  <!-- 1. CEO Snapshot -->
+  <section>
+    <div class="section-title"><h2>1) CEO Snapshot</h2><div class="meta">Tight executive scan</div></div>
     <div class="grid">
-      <div class="card">
-        <h2>1) CEO Snapshot</h2>
-        <div class="kpi">
-          <div>
-            <div class="pill"><span class="dot teal"></span>Top 3 priorities</div>
-            <ul>
-              <li>Lock a clear plan for the <b>Ayco meeting</b> (structured-note strategy + <b>$800K</b> deployment, GS Private Credit redemption, fee push).</li>
-              <li>Get the <b>broad investor update</b> moving (first since <b>Sept 2025</b>) and align with <b>Jeff Lowe</b> on a monthly cadence.</li>
-              <li>Unblock AI workflows with the team: <b>Spa seating alerts</b> + refine <b>TPF daily client visit digest</b>.</li>
-            </ul>
-          </div>
-          <div>
-            <div class="pill"><span class="dot red"></span>Biggest risk</div>
-            <ul>
-              <li>Ayco meeting happens without a tight agenda and clear asks (missing briefing doc / last-touch summary / talking points).</li>
-            </ul>
-            <div style="height:10px"></div>
-            <div class="pill"><span class="dot green"></span>Biggest opportunity</div>
-            <ul>
-              <li>Use the Ayco session to extract <b>2 concrete next actions</b> (including fee improvement) and set owners/timelines.</li>
-            </ul>
-          </div>
-        </div>
-
-        <h3>Where Terry must personally engage</h3>
+      <div class="card half">
+        <div class="kpi">Top 3 priorities today</div>
         <ul>
-          <li><b>T. Finley / T. Buff (Ayco)</b> — confirm meeting outcome list before leaving the table.</li>
-        </ul>
-
-        <h3>Delegate</h3>
-        <ul>
-          <li>Ask <b>Jeff Lowe</b> to draft the investor-update outline + first distribution list cut; you approve/send.</li>
+          <li>Protect execution block (8:00–11:30 ET): <strong>tax extension fix</strong> + <strong>racing/bloodstock goal hold</strong> + prep for <strong>Atlas Problem Solving</strong>.</li>
+          <li>Sales leadership: drive outcomes from <strong>WPT Weekly Sales Call</strong> and confirm next steps on <strong>new partner momentum</strong> (see #sales-made).</li>
+          <li>Horse decisions: align on near-term <strong>scratches / placement</strong> and rehab/ship timelines coming from the horse updates.</li>
         </ul>
       </div>
-
-      <!-- 2) 1 CEO Move Today -->
-      <div class="card">
-        <h2>2) 1 CEO Move Today</h2>
-        <p style="margin:0 0 10px;" class="small"><span class="tag gold">High leverage</span></p>
+      <div class="card half">
+        <div class="kpi">Risk / Opportunity / Direct involvement</div>
         <ul>
-          <li><b>Before the Ayco meeting</b>, send Tim Buff a 3-bullet agenda + your 2 asks: (1) recommendation on structured-note strategy for the <b>$800K</b>, and (2) a firm plan/timing for the <b>$250K</b> GS Private Credit redemption + push on <b>0.60% fee</b>.</li>
+          <li><span class="tag red">Risk</span> Schedule collisions 9:00 ET hour: overlapping <strong>Call Chris Giordano</strong> + <strong>Goal: Racing & Bloodstock Decisions</strong>, plus prep stacked into that window.</li>
+          <li><span class="tag gold">Opportunity</span> Convert current sales energy: <strong>two Collected filly closes</strong> logged in #sales-made.</li>
+          <li><span class="tag gold">Needs you</span> Decide direction on <strong>Revolutionnaire</strong> (scratch Manila → allowance) and confirm next-step follow-up for the <strong>Georgiandancer23</strong> vet recommendation.</li>
+          <li><span class="tag green">Delegate</span> Have Ops/CoS route the <strong>New Partner Survey AI summary</strong> into 3–5 actionable bullets + owners for follow-up.</li>
         </ul>
-        <p class="small muted" style="margin:10px 0 0;">Why: you’ll control the meeting narrative and leave with decisions, not “good discussion.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. 1 CEO Move Today -->
+  <section>
+    <div class="section-title"><h2>2) 1 CEO Move Today</h2><div class="meta">One high-leverage action</div></div>
+    <div class="card">
+      <div class="kpi">Make one proactive sales call to lock the momentum</div>
+      <ul>
+        <li>Before the <strong>WPT Weekly Sales Call</strong>, call <strong>Joe Bianca</strong> + <strong>Jason Blewitt</strong> (10 minutes total): confirm the two #sales-made closes (<strong>Chris Dill 5% Collected filly</strong> and <strong>Mike Bruestle 5% Collected</strong>) are fully documented and schedule the next “welcome + upsell” touch for each within 72 hours.</li>
+      </ul>
+      <div class="small">Why this matters: converts “deal logged” into cash collected + a predictable new-partner onboarding experience.</div>
+    </div>
+  </section>
+
+  <!-- 3. Schedule -->
+  <section>
+    <div class="section-title"><h2>3) Schedule (ET)</h2><div class="meta">Today + next 2 days</div></div>
+
+    <div class="card">
+      <div class="kpi">Today — Thu, Jul 2</div>
+      <table>
+        <thead>
+          <tr><th>Time (ET)</th><th>Event</th><th>Attendees / Notes</th><th>Where</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>9:00–9:30</strong></td>
+            <td><strong>Call Chris Giordano – 2025 extension fix</strong> <span class="tag red">conflict</span></td>
+            <td>Goal: move April extension payments from tax year 2026 to 2025; sign POA so team can act (per Ayco recap).</td>
+            <td class="small">—</td>
+          </tr>
+          <tr>
+            <td><strong>9:00–10:30</strong></td>
+            <td><strong>🎯 Goal: Racing & Bloodstock Decisions</strong> <span class="tag red">conflict</span></td>
+            <td>Weekly goal hold (CoS-managed). Highest-leverage move: advance <strong>Delfiner/Barton 2027</strong> opportunity (not yet contacted).</td>
+            <td class="small">—</td>
+          </tr>
+          <tr>
+            <td><strong>9:30–10:00</strong></td>
+            <td><strong>Prep · Atlas Problem Solving</strong></td>
+            <td>Prep block; external attendees listed; talking points currently missing.</td>
+            <td class="small">—</td>
+          </tr>
+          <tr>
+            <td><strong>10:00–11:00</strong></td>
+            <td><strong>Atlas Problem Solving</strong></td>
+            <td>Microsoft Teams meeting; multi-party (Jockey Club + AtlasAI + Thorobid).</td>
+            <td>Microsoft Teams</td>
+          </tr>
+          <tr>
+            <td><strong>11:00–11:30</strong></td>
+            <td><strong>WPT Weekly Sales Call - New Zoom Link**</strong></td>
+            <td>WPT sales team + Lindsey + Terry; note: Jeff Lowe marked needsAction.</td>
+            <td><a href="https://us06web.zoom.us/j/82010607819?pwd=ONbHH2Y7WplU8Aj3nhJ3WhSdQPACkN.1">Zoom link</a></td>
+          </tr>
+          <tr>
+            <td><strong>11:00–11:15</strong></td>
+            <td><strong>text pcomign starters and new partners</strong> <span class="tag red">conflict</span></td>
+            <td>Short task block scheduled during sales call.</td>
+            <td class="small">—</td>
+          </tr>
+          <tr>
+            <td><strong>11:30–12:30</strong></td>
+            <td><strong>Horse Call</strong></td>
+            <td>With <strong>Jeff Lowe</strong> + WPT Team list.</td>
+            <td><a href="https://us02web.zoom.us/j/6092381009">Zoom link</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid">
+      <div class="card half">
+        <div class="kpi">Tomorrow — Fri, Jul 3</div>
+        <ul>
+          <li><strong>12:00–5:00 ET</strong> — <strong>Offices Closed at Noon: Day Before Fourth of July</strong>.</li>
+          <li><strong>3:44 PM ET</strong> — <strong>Kingsport</strong> at <strong>Ellis Park</strong> (Race 5).</li>
+          <li><strong>5:07 PM ET</strong> — <strong>Pillar of Beauty</strong> at <strong>Saratoga</strong> (Race 8, <strong>Wild Applause Stakes</strong>).</li>
+        </ul>
+      </div>
+      <div class="card half">
+        <div class="kpi">Day after — Sat, Jul 4</div>
+        <ul>
+          <li><strong>All day</strong> — <strong>Offices Closed: Fourth of July</strong>.</li>
+          <li><strong>9:00–10:00 ET</strong> — <strong>Reading Room Rich & Phyllis Lefrois</strong>.</li>
+          <li><strong>2:24 PM ET</strong> — <strong>Creed’s Vision</strong> + <strong>If Ever</strong> at <strong>Colonial Downs</strong> (Race 5, <strong>NW1X Allowance</strong>).</li>
+        </ul>
       </div>
     </div>
 
-    <!-- 3) Schedule -->
-    <div class="section card">
-      <h2>3) Schedule (ET)</h2>
-      <p class="muted small" style="margin-top:-4px;">All events shown; times converted to America/New_York.</p>
+    <div class="card">
+      <div class="kpi">Conflict / flow flags</div>
+      <ul>
+        <li><span class="tag red">Back-to-back conflict</span> 9:00 ET start: two events stacked (tax call + goal hold), with prep also in the same hour. Pick one primary owner; delegate the other.</li>
+        <li><span class="tag gold">Prep gap</span> Atlas prep notes missing (talking points / last-touch summary). Assign someone to populate 3 bullets before the call.</li>
+      </ul>
+    </div>
+  </section>
 
-      <h3>Today — Wed, Jul 1</h3>
+  <!-- 4. Alerts -->
+  <section>
+    <div class="section-title"><h2>4) Alerts</h2><div class="meta">Only items needing attention</div></div>
+    <div class="card">
+      <ul>
+        <li><span class="tag red">Schedule</span> Resolve 9:00 ET collision (Giordano call vs. weekly goal hold) to avoid a dropped commitment.</li>
+        <li><span class="tag gold">Racing</span> Upcoming runners begin <strong>Fri Jul 3</strong> (Pillar of Beauty, Kingsport) and <strong>Sat Jul 4</strong> (Creed’s Vision, If Ever, Rhyton) — ensure comms plan and partner touchpoints are queued.</li>
+        <li><span class="tag gold">Horse decision</span> Message suggests likely scratch: <strong>Revolutionnaire</strong> out of the Manila → point to allowance.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5. Team Pulse -->
+  <section>
+    <div class="section-title"><h2>5) Team Pulse (Slack, last 2 days)</h2><div class="meta">Grouped by channel</div></div>
+
+    <div class="card">
+      <div class="kpi">Executive Team Pulse Summary</div>
+      <ul>
+        <li><span class="tag green">Wins</span> Two sales logged: <strong>Chris Dill</strong> (new partner) <strong>5% Collected filly</strong>; <strong>Mike Bruestle</strong> <strong>5% Collected</strong>.</li>
+        <li><span class="tag gold">Momentum</span> Deep horse status reporting; clear next actions on rehabs, shipping, and race placement.</li>
+        <li><span class="tag gold">Follow-ups</span> Align on <strong>Revolutionnaire</strong> placement; confirm next steps for <strong>Georgiandancer23</strong> vet plan; translate survey summary into actions.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="kpi">#sales-made</div>
+      <ul>
+        <li><strong>Mike Bruestle</strong> — <strong>5% Collected</strong>.</li>
+        <li><strong>New partner Chris Dill</strong> — <strong>5% of Collected filly</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="kpi">#sales</div>
+      <ul>
+        <li><strong>Dawn</strong> shared a <strong>Google AI + Response Summary</strong> of the New Partner Survey (includes key findings + link to raw responses). Assign an owner to extract 3–5 actions + timeline.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="kpi">#horse-comms</div>
+      <ul>
+        <li><strong>Spendthrift named the Yaupon colt</strong> <strong>Abrigado</strong>.</li>
+        <li><strong>Training / vet updates</strong> posted across multiple horses (highlights):
+          <ul>
+            <li><strong>Creed's Vision</strong>: increasing hand-walking program after surgery.</li>
+            <li><strong>Kyla's Kause</strong>: progressing; plan one more breeze then ship-in if holding.</li>
+            <li><strong>Into the Beast</strong>: first quarter-mile work; strong gallop-out note (“think he is a runner”).</li>
+            <li><strong>Ivory and Ebony</strong>: worked 1/2; shipping to Saratoga for the summer.</li>
+            <li><strong>Georgiandancer23</strong>: moderate sesamoiditis at suspensory branch attachment; recommend 60 days + shockwave series.</li>
+            <li><strong>Revolutionnaire</strong>: likely scratch out of the Manila; point to allowance for a confidence-building win.</li>
+          </ul>
+        </li>
+        <li><strong>Cabaret Starlet ‘23</strong> note: small P1 flake/tiny condylar issue; recommendation to scope + clean up (no screw).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="kpi">#prospectcomms</div>
+      <ul>
+        <li><strong>Erin</strong>: drafting a “last call on 2yos” email to prospects before Saratoga; will send a test.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="kpi">#exec-team</div>
+      <ul>
+        <li><strong>Terry</strong>: shared Salesforce <strong>Agentforce</strong> demo link; potential future capability as Tommy B transitions.</li>
+        <li><strong>Lindsey</strong>: discussion about “TPF/Casey setup” and how Erin/Lindsey could benefit from similar workflow.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="kpi">Terry DMs (personal)</div>
+      <ul>
+        <li>Reminder: <strong>get porsche key</strong>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. Racing -->
+  <section>
+    <div class="section-title"><h2>6) Racing</h2><div class="meta">From WPT Daily Entries</div></div>
+
+    <div class="card">
+      <div class="kpi">No WPT entries today (Thu, Jul 2)</div>
+      <div class="small">Next entries are below (times as listed on the WPT Daily Entries page).</div>
+    </div>
+
+    <div class="card">
+      <div class="kpi">Upcoming entries</div>
       <table>
         <thead>
-          <tr>
-            <th style="width:120px;">Time (ET)</th>
-            <th>Event</th>
-            <th style="width:230px;">Attendees / Notes</th>
-            <th style="width:220px;">Location / Link</th>
-          </tr>
+          <tr><th>Date</th><th>Horse</th><th>Track</th><th>Race</th><th>Post time</th><th>Post pos.</th><th>Distance</th><th>Type</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td><span class="tag gold">All day</span></td>
-            <td><b>Send broad investor update</b> (first since Sept 2025); set monthly cadence</td>
-            <td class="muted">With <b>Jeff Lowe</b>. (Year-in-Review action #14)</td>
-            <td class="muted"><a href="https://www.google.com/calendar/event?eid=MXMzbnJiOWtkYzBiNGNrbWRtZnMwMDFrZzggdGVycnlAd2VzdHBvaW50dGIuY29t">Calendar link</a></td>
-          </tr>
-          <tr>
-            <td><span class="tag gold">All day</span></td>
-            <td>Meeting – <b>Tim Buff (Ayco)</b>, Saratoga (time TBD)</td>
-            <td class="muted">Quarterly check-in. Confirm exact time.</td>
-            <td class="muted"><a href="https://www.google.com/calendar/event?eid=cGNtZ3N1dTlzOTA2OThiM2ZzdTU4b2JlOGcgdGVycnlAd2VzdHBvaW50dGIuY29t">Calendar link</a></td>
-          </tr>
-          <tr>
-            <td>8:30–9:00 AM</td>
-            <td><b>Prep</b> · T. Finley / T. Buff (Ayco)</td>
-            <td class="muted">Attendee: timothy.buff@ny.email.gs.com. Missing: briefing doc / last-touch summary / talking points.</td>
-            <td class="muted"><a href="https://www.google.com/calendar/event?eid=cGEzODJlcHY5MXRzNXJzbjkzZzNpczY4bWcgdGVycnlAd2VzdHBvaW50dGIuY29t">Calendar link</a></td>
-          </tr>
-          <tr>
-            <td>9:00–10:00 AM</td>
-            <td><b>T. Finley / T. Buff (Ayco)</b></td>
-            <td class="muted"><span class="tag gold">Back-to-back risk</span> conflicts with 11:00 AM exec (see below).</td>
-            <td>📍 <b>Uncommon Grounds - Saratoga</b></td>
-          </tr>
-          <tr>
-            <td>10:30–11:30 AM</td>
-            <td>AI help: w/<b>Danielle</b> Spa Seating/Daily digest</td>
-            <td class="muted">Agenda includes “red alert” rule for 1863 Club seating + refine TPF daily reporting.</td>
-            <td class="muted"><a href="https://us02web.zoom.us/j/4342955455?omn=85666041476">Zoom</a></td>
-          </tr>
-          <tr>
-            <td>11:00 AM–12:00 PM</td>
-            <td><span class="tag red">Conflict</span> TPF/LH Weekly Exec</td>
-            <td class="muted">Overlaps with the 10:30–11:30 meeting and near the Ayco block.</td>
-            <td class="muted"><a href="https://us06web.zoom.us/j/86598367628?pwd=hsfDNIaLtsAdwyhe0bzbQabdDgmnTr.1">Zoom</a></td>
-          </tr>
-          <tr>
-            <td>11:00 AM–12:00 PM</td>
-            <td class="muted">RESHOWING NOW: The 7-Step Sales Process… (optional webinar)</td>
-            <td class="muted">Likely promotional.</td>
-            <td class="muted"><a href="https://zoom.us/j/94966080410">Zoom</a></td>
-          </tr>
+          <tr><td><strong>07/03/26</strong></td><td><strong>Pillar of Beauty</strong></td><td>Saratoga</td><td>8</td><td>5:07 ET</td><td>11 of 11</td><td>8F</td><td>Wild Applause Stakes</td></tr>
+          <tr><td><strong>07/04/26</strong></td><td><strong>Creed’s Vision</strong></td><td>Colonial Downs</td><td>5</td><td>12:37 ET</td><td>2 of 9</td><td>5.5F</td><td>NW1X Allowance</td></tr>
+          <tr><td><strong>07/04/26</strong></td><td><strong>If Ever</strong></td><td>Colonial Downs</td><td>5</td><td>12:37 ET</td><td>3 of 9</td><td>5.5F</td><td>NW1X Allowance</td></tr>
+          <tr><td><strong>07/04/26</strong></td><td><strong>Rhyton</strong></td><td>Saratoga</td><td>6</td><td>3:29 ET</td><td>5 of 12</td><td>5.5F</td><td>NY-Bred NW1X Allowance</td></tr>
+          <tr><td><strong>07/05/26</strong></td><td><strong>Castiglione</strong></td><td>Ellis Park</td><td>4</td><td>1:16 CT</td><td>3 of 12</td><td>8F</td><td>Maiden Special Weight</td></tr>
+          <tr><td><strong>07/05/26</strong></td><td><strong>Cugino</strong></td><td>Colonial Downs</td><td>6</td><td>2:55 ET</td><td>6 of 10</td><td>9F</td><td>Allowance</td></tr>
+          <tr><td><strong>07/09/26</strong></td><td><strong>Kingsport</strong></td><td>Ellis Park</td><td>5</td><td>1:44 CT</td><td>7 of 9</td><td>8.5F</td><td>Maiden Special Weight</td></tr>
         </tbody>
       </table>
+      <div class="small">Source: <a href="https://westpointtb.com/racing/daily-entries/">westpointtb.com/racing/daily-entries</a></div>
+    </div>
 
-      <h3>Tomorrow + next day — Thu, Jul 2 to Fri, Jul 3</h3>
+    <div class="card">
+      <div class="kpi">Partner-facing opportunities</div>
+      <ul>
+        <li><span class="tag gold">Stakes spotlight</span> <strong>Pillar of Beauty</strong> runs in the <strong>Wild Applause Stakes</strong> at Saratoga (Fri).</li>
+        <li><span class="tag gold">Multi-entry day</span> Sat includes <strong>two in one race</strong> at Colonial Downs (<strong>Creed’s Vision</strong> + <strong>If Ever</strong>).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7. Decisions Needed -->
+  <section>
+    <div class="section-title"><h2>7) Decisions Needed</h2><div class="meta">Only real decisions</div></div>
+    <div class="card">
       <table>
         <thead>
-          <tr>
-            <th style="width:120px;">Time (ET)</th>
-            <th>Event</th>
-            <th style="width:230px;">Attendees / Notes</th>
-            <th style="width:220px;">Location / Link</th>
-          </tr>
+          <tr><th>Decision</th><th>Why it matters</th><th>Recommended action</th><th>Timing</th></tr>
         </thead>
         <tbody>
           <tr>
-            <td>9:00–9:30 AM</td>
-            <td><b>Call Chris Giordano</b> – 2025 extension fix</td>
-            <td class="muted">Move April extension payments from tax year 2026 to 2025; sign POA.</td>
-            <td class="muted"><a href="https://www.google.com/calendar/event?eid=ZGh0cmZzYTJxaWE3am41aThtcGZhM2ttdWMgdGVycnlAd2VzdHBvaW50dGIuY29t">Calendar link</a></td>
+            <td><strong>Revolutionnaire placement</strong></td>
+            <td>Team leaning to scratch Manila and aim for an allowance to secure a win; impacts partner comms and trainer plan.</td>
+            <td>Confirm go/no-go on scratch and target allowance; set a comms note for partners once decided.</td>
+            <td><span class="tag gold">Today/This week</span></td>
           </tr>
           <tr>
-            <td>9:00–10:30 AM</td>
-            <td>🎯 Goal: <b>Racing & Bloodstock Decisions</b></td>
-            <td class="muted">Highest-leverage move: advance <b>Delfiner/Barton 2027</b> opp (<b>$20K</b>).</td>
-            <td class="muted"><a href="https://www.google.com/calendar/event?eid=cmFocWI2aWQ1Z3Q0MnA3c2U0cWdyOHRkdTggdGVycnlAd2VzdHBvaW50dGIuY29t">Calendar link</a></td>
-          </tr>
-          <tr>
-            <td>10:00–11:00 AM</td>
-            <td>Atlas Problem Solving</td>
-            <td class="muted">Teams meeting w/ Jockey Club + Atlas.</td>
-            <td class="muted">Microsoft Teams</td>
-          </tr>
-          <tr>
-            <td>11:00–11:30 AM</td>
-            <td>WPT Weekly Sales Call (new Zoom link)</td>
-            <td class="muted">Full sales team + Jeff Lowe.</td>
-            <td class="muted"><a href="https://us06web.zoom.us/j/82010607819?pwd=ONbHH2Y7WplU8Aj3nhJ3WhSdQPACkN.1">Zoom</a></td>
-          </tr>
-          <tr>
-            <td>11:30 AM–12:30 PM</td>
-            <td><b>Horse Call</b></td>
-            <td class="muted">Organizer: Jeff Lowe.</td>
-            <td class="muted"><a href="https://us02web.zoom.us/j/6092381009">Zoom</a></td>
-          </tr>
-          <tr>
-            <td>2:00–3:00 PM</td>
-            <td>Discussion w/ WPT</td>
-            <td class="muted">Lindsey + Tom Murphy + guests.</td>
-            <td class="muted"><a href="https://us06web.zoom.us/j/81025406020?pwd=tSXXd6DcUqIYHm3ygdUDcFSTVp5zlz.1">Zoom</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- 4) Alerts -->
-    <div class="section card">
-      <h2>4) Alerts</h2>
-      <ul>
-        <li><span class="tag red">Schedule conflict</span> <b>11:00 AM–12:00 PM</b> has overlap: <b>TPF/LH Weekly Exec</b> vs <b>AI help</b> (10:30–11:30) and near the <b>Ayco</b> block.</li>
-        <li><span class="tag gold">Prep gap</span> Ayco prep note flags missing briefing doc / last-touch summary / talking points — risk of an unfocused meeting.</li>
-        <li><span class="tag gold">Racing note</span> Internal chatter suggests <b>Revolutionnaire</b> may scratch from the Manila and target an allowance instead (see Team Pulse).</li>
-      </ul>
-    </div>
-
-    <!-- 5) Team Pulse -->
-    <div class="section card">
-      <h2>5) Team Pulse (Slack · last 48h)</h2>
-
-      <h3>Executive Team Pulse Summary</h3>
-      <ul>
-        <li><b>Horse management</b>: potential tactical shift for <b>Revolutionnaire</b> (aim for a confidence-building win before a later-meet stake).</li>
-        <li><b>Horse health/conditioning</b>: <b>Bullard</b> reportedly +<b>80 lbs</b> since arrival; continued treatment for desmitis; plan to add Marquis.</li>
-        <li><b>Pipeline / outreach</b>: <b>Erin</b> preparing a “last call on 2yos” prospect email before Saratoga.</li>
-      </ul>
-
-      <h3>#horse-comms</h3>
-      <ul>
-        <li><b>Tom Bellhouse</b>: “Pretty sure (75%) we’re going to scratch <b>Revolutionnaire</b> out of the Manila and will point to the allowance race… prefer to get a win under his belt and go for a stake at end of the meet.” (<a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1751322822257069">permalink</a>)</li>
-        <li><b>Jeff Lowe</b> relaying Doug Cauthen on <b>Bullard</b>: gained <b>80 pounds</b>, 12+ hours turnout daily; recent shockwave + injection for desmitis; wants to run Marquis to help bloom/weight. (<a href="https://westpointtb.slack.com/archives/C02Q17HRHMW/p1751306704632279">permalink</a>)</li>
-      </ul>
-
-      <h3>#sales-made</h3>
-      <ul>
-        <li><b>Lindsey</b> asked <b>Jason Blewitt</b> to create an opportunity for “<b>10% outside the LLC</b> w/ a <b>12.5% discount</b>,” and Terry replied “<b>jason</b>.” (<a href="https://westpointtb.slack.com/archives/C0334BG31D3/p1751300450378779?thread_ts=1750975764.506809&cid=C0334BG31D3">thread</a>)</li>
-      </ul>
-
-      <h3>#prospectcomms</h3>
-      <ul>
-        <li><b>Erin</b>: will draft a “<b>last call</b> on <b>2yos</b>” email to prospects before Saratoga; will send a test. (<a href="https://westpointtb.slack.com/archives/C030WCUDEVB/p1751291402221099">permalink</a>)</li>
-      </ul>
-
-      <h3>#exec-team</h3>
-      <ul>
-        <li><b>Terry</b>: “Tracey Attfield pinged me… take a look” (context not included in the message snippet). (<a href="https://westpointtb.slack.com/archives/C0702F2JWBD/p1751310178522099">permalink</a>)</li>
-        <li><b>Erin</b>: suggests <b>Casey</b> could become the in-house social media person (curate content, monitor analytics, meet with Griffin; avoid end-of-summer gap). (<a href="https://westpointtb.slack.com/archives/C0702F2JWBD/p1751205146515149?thread_ts=1751205146.515149&cid=C0702F2JWBD">thread</a>)</li>
-      </ul>
-
-      <h3>#sales</h3>
-      <p class="muted small">No messages returned in the last 48 hours window.</p>
-    </div>
-
-    <!-- 6) Racing -->
-    <div class="section card">
-      <h2>6) Racing (WPT Daily Entries)</h2>
-      <p class="muted small">Source: WPT Daily Entries page (rendered). (<a href="https://westpointtb.com/racing/daily-entries/">westpointtb.com</a>)</p>
-
-      <h3>Today</h3>
-      <p class="small muted" style="margin:0;">No entries dated 07/01/26 were visible on the Daily Entries table at time of capture.</p>
-
-      <h3>Next entries on the calendar</h3>
-      <table>
-        <thead>
-          <tr>
-            <th style="width:110px;">Date</th>
-            <th>Horse</th>
-            <th style="width:70px;">Race</th>
-            <th style="width:110px;">Post time</th>
-            <th style="width:90px;">Post pos.</th>
-            <th style="width:110px;">Track</th>
-            <th>Name / Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>07/03/26</td>
-            <td><b>Kingsport</b></td>
-            <td>5</td>
-            <td>2:44 <b>CT</b></td>
-            <td>7 of 9</td>
-            <td>Ellis Park</td>
-            <td>Maiden Special Weight</td>
-          </tr>
-          <tr>
-            <td>07/03/26</td>
-            <td><b>Pillar of Beauty</b></td>
-            <td>8</td>
-            <td>5:07 <b>ET</b></td>
-            <td>11 of 11</td>
-            <td>Saratoga</td>
-            <td>Wild Applause Stakes</td>
-          </tr>
-          <tr>
-            <td>07/04/26</td>
-            <td><b>Creed’s Vision</b></td>
-            <td>5</td>
-            <td>12:37 <b>ET</b></td>
-            <td>2 of 9</td>
-            <td>Colonial Downs</td>
-            <td>NW1X Allowance</td>
-          </tr>
-          <tr>
-            <td>07/04/26</td>
-            <td><b>If Ever</b></td>
-            <td>5</td>
-            <td>12:37 <b>ET</b></td>
-            <td>3 of 9</td>
-            <td>Colonial Downs</td>
-            <td>NW1X Allowance</td>
-          </tr>
-          <tr>
-            <td>07/04/26</td>
-            <td><b>Rhyton</b></td>
-            <td>6</td>
-            <td>3:29 <b>ET</b></td>
-            <td>5 of 12</td>
-            <td>Saratoga</td>
-            <td>NY-Bred NW1X Allowance</td>
-          </tr>
-          <tr>
-            <td>07/05/26</td>
-            <td><b>Castiglione</b></td>
-            <td>4</td>
-            <td>1:16 <b>CT</b></td>
-            <td>3 of 12</td>
-            <td>Ellis Park</td>
-            <td>Maiden Special Weight</td>
-          </tr>
-          <tr>
-            <td>07/05/26</td>
-            <td><b>Cugino</b></td>
-            <td>6</td>
-            <td>2:55 <b>ET</b></td>
-            <td>6 of 10</td>
-            <td>Colonial Downs</td>
-            <td>Allowance</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p class="small muted" style="margin:10px 0 0;">Tip: verify CT entries and convert to ET when communicating externally.</p>
-    </div>
-
-    <!-- 7) Decisions Needed -->
-    <div class="section card">
-      <h2>7) Decisions Needed</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Decision</th>
-            <th>Why it matters</th>
-            <th>Recommendation</th>
-            <th style="width:120px;">Timing</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Confirm <b>Ayco</b> desired outcomes + 2 asks</td>
-            <td class="muted">Ensures you leave with decisions on capital deployment, redemption timing, and fee concessions.</td>
-            <td>Send Tim Buff a short agenda + your asks before the meeting; open with them.</td>
+            <td><strong>Schedule owner for 9:00 ET block</strong></td>
+            <td>Two overlapping commitments create drop-risk on either tax fix or weekly goal session.</td>
+            <td>Pick primary; delegate the other (e.g., CoS covers Goal hold start, you join at 9:20).</td>
             <td><span class="tag red">Today</span></td>
           </tr>
           <tr>
-            <td><b>Revolutionnaire</b>: scratch Manila vs run</td>
-            <td class="muted">Impacts near-term stakes placement and confidence-building path.</td>
-            <td>Confirm with Miguel/Tom; if scratch, set target allowance and next stakes at end of meet.</td>
-            <td><span class="tag gold">This week</span></td>
-          </tr>
-          <tr>
-            <td>Owner for <b>2yos “last call”</b> prospect push</td>
-            <td class="muted">Maintains Saratoga momentum and reduces “we meant to…” before travel.</td>
-            <td>Have Erin send test; approve quickly; set send date/time and follow-up assignments.</td>
-            <td><span class="tag gold">This week</span></td>
+            <td><strong>Atlas meeting talking points</strong></td>
+            <td>Prep notes currently missing; meeting has many stakeholders and can drift without structure.</td>
+            <td>Ask someone to produce 3 bullets: objective, desired decision, next-step owner list.</td>
+            <td><span class="tag red">Before 10:00 ET</span></td>
           </tr>
         </tbody>
       </table>
     </div>
+  </section>
 
-    <!-- 8) Perplexity Computer Slack Activity -->
-    <div class="section card">
-      <h2>8) Perplexity Computer Slack Activity</h2>
-      <p class="muted small" style="margin:0;">No Slack messages matching “Perplexity” were returned in the last 48 hours window.</p>
+  <!-- 8. Perplexity Computer Slack Activity -->
+  <section>
+    <div class="section-title"><h2>8) Perplexity Computer Slack Activity</h2><div class="meta">Last 2 days</div></div>
+    <div class="card">
+      <ul>
+        <li>Terry shared a Perplexity link: <a href="https://www.perplexity.ai/search/how-to-use-the-projects-tab-in-VrsIU2A5SeK1Tp6ZH_YQQA#2">How to use the Projects tab</a>.</li>
+      </ul>
     </div>
+  </section>
 
-    <p class="muted small" style="margin-top:14px;">Generated: 2026-07-01 · Data sources: Google Calendar + Slack + WPT Daily Entries.</p>
-  </div>
+  <section>
+    <div class="small">Build notes: times shown in <strong>ET</strong> unless explicitly labeled CT. Slack items reflect last ~2 days. Racing entries are from the WPT Daily Entries page render.</div>
+  </section>
+
+</div>
 </body>
 </html>
