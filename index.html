@@ -1,272 +1,164 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>WPT CEO Daily Briefing — Monday, July 6, 2026</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#FFFFFF;
-      --text:#28251D;
-      --muted:#6b665b;
-      --teal:#01696F;
-      --line:#e8e5df;
-      --chip:#f6f5f2;
-      --red:#b42318;
-      --gold:#b7791f;
-      --green:#067647;
-    }
-    html,body{background:var(--bg); color:var(--text); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; margin:0;}
-    a{color:var(--teal); text-decoration:none;} a:hover{text-decoration:underline;}
-    .wrap{max-width:1100px; margin:0 auto; padding:22px 18px 60px;}
-    header{display:flex; gap:14px; align-items:flex-end; justify-content:space-between; border-bottom:2px solid var(--line); padding-bottom:14px;}
-    h1{font-size:22px; margin:0; letter-spacing:-0.02em;}
-    .sub{color:var(--muted); font-size:13px; margin-top:6px;}
-    .badge{font-size:12px; background:var(--chip); border:1px solid var(--line); padding:6px 10px; border-radius:999px; color:var(--muted);}
-    section{margin-top:20px;}
-    h2{font-size:15px; margin:0 0 10px; padding:10px 12px; background:linear-gradient(90deg, rgba(1,105,111,0.12), rgba(1,105,111,0.00)); border-left:4px solid var(--teal);}
-    .grid{display:grid; grid-template-columns:1fr; gap:12px;}
-    @media (min-width: 860px){ .grid.two{grid-template-columns:1fr 1fr;} }
-    .card{border:1px solid var(--line); border-radius:12px; padding:12px; background:#fff;}
-    .kpi{display:flex; flex-direction:column; gap:6px;}
-    .kpi .label{color:var(--muted); font-size:12px;}
-    .kpi .value{font-size:14px; font-weight:700;}
-    ul{margin:8px 0 0 18px; padding:0;}
-    li{margin:6px 0;}
-    .pill{display:inline-block; font-size:12px; padding:3px 8px; border-radius:999px; border:1px solid var(--line); background:var(--chip); color:var(--muted);}
-    .flag{font-weight:700;}
-    .red{color:var(--red);} .gold{color:var(--gold);} .green{color:var(--green);} 
-    table{width:100%; border-collapse:collapse; font-size:13px;}
-    th,td{padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top;}
-    th{color:var(--muted); font-weight:600; text-align:left; font-size:12px;}
-    .tight td{padding:8px 8px;}
-    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace; font-size:12px;}
-    .small{font-size:12px; color:var(--muted);}
-    .hr{height:1px; background:var(--line); margin:12px 0;}
-    .print-note{display:none;}
-    @media print{ .badge{display:none;} a{text-decoration:none;} .print-note{display:block; color:var(--muted); font-size:11px; margin-top:6px;} }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WPT CEO Daily Briefing — Tuesday, July 7, 2026</title>
+<style>
+  :root{--ink:#0e1a2b;--muted:#5a6677;--card:#ffffff;--bg:#f4f6fa;--accent:#0a3b6c;--accent2:#b88a2a;--good:#1f7a3a;--warn:#9a3b14;--red:#b3261e;}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);}
+  .wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:24px}
+  h1{margin:0 0 4px;font-size:26px;letter-spacing:-.01em;color:var(--accent)}
+  .sub{color:var(--muted);font-size:14px}
+  section{background:var(--card);border:1px solid #e5e9f0;border-radius:12px;padding:18px 20px;margin:16px 0;box-shadow:0 1px 2px rgba(14,26,43,.04)}
+  h2{margin:0 0 10px;font-size:18px;color:var(--accent)}
+  h3{margin:14px 0 6px;font-size:15px;color:var(--accent2)}
+  ul{margin:6px 0 6px 18px;padding:0}
+  li{margin:4px 0}
+  .move{background:#fffaf0;border:1px solid #f1d99a}
+  .move h2{color:#7a4f10}
+  .alert{background:#fdf3ee;border-color:#f0c7b4}
+  .alert h2{color:var(--warn)}
+  .critical{background:#fff2f1;border:2px solid var(--red)}
+  .critical h2{color:var(--red)}
+  .pill{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;background:#eaf0f7;color:var(--accent);margin-right:6px}
+  .pill.good{background:#e6f4ec;color:var(--good)}
+  .pill.warn{background:#fbe9df;color:var(--warn)}
+  .pill.red{background:#fbe1de;color:var(--red)}
+  .meta{color:var(--muted);font-size:13px}
+  a{color:var(--accent)}
+  footer{margin-top:28px;color:var(--muted);font-size:12px;text-align:center}
+  .grid{display:grid;grid-template-columns:100px 1fr;gap:6px 14px}
+  .grid .t{color:var(--muted);font-variant-numeric:tabular-nums}
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div>
-        <h1>WPT CEO Daily Briefing</h1>
-        <div class="sub">For <strong>Terry Finley</strong> · Monday, July 6, 2026 · Generated 5:00 AM CT</div>
-        <div class="print-note">Print-friendly view. Link: https://tfinley1.github.io/wpt-daily-briefing/</div>
-      </div>
-      <div class="badge">Primary link: <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a></div>
-    </header>
+<div class="wrap">
 
-    <!-- 1. CEO Snapshot -->
-    <section>
-      <h2>1) CEO Snapshot</h2>
-      <div class="grid two">
-        <div class="card">
-          <div class="kpi"><div class="label">Top 3 priorities (today)</div>
-            <div class="value">1) Lock the <span class="flag gold">$295K distro</span> answer + wire date · 2) Commission the <span class="flag gold">WPT business appraisal</span> · 3) Close key comms: <strong>Kevin McKelvy</strong> + <strong>Bill Finley</strong></div>
-          </div>
-          <ul>
-            <li><strong>Direct involvement:</strong> decide SiriusXM commercial creative/greenlight for Saratoga.</li>
-            <li><strong>Delegate:</strong> ask team to pre-list 3 qualified appraisers + proposed outreach email for valuation memo.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="kpi"><div class="label">Risk / Opportunity</div>
-            <div class="value"><span class="red">Risk:</span> travel day + multiple open loops = slip risk on time-sensitive asks.</div>
-          </div>
-          <div class="hr"></div>
-          <div class="kpi">
-            <div class="value"><span class="green">Opportunity:</span> Saratoga momentum—team already teeing up entries (<strong>Harpoon</strong>, <strong>Yinzer</strong>, <strong>Grunge</strong>) and partner-facing comms can be prebuilt early this week.</div>
-          </div>
-        </div>
-      </div>
-    </section>
+<header>
+  <h1>WPT CEO Daily Briefing</h1>
+  <div class="sub">Tuesday, July 7, 2026 · Run #80 · Nashville · Jeff Lowe birthday</div>
+</header>
 
-    <!-- 2. 1 CEO Move Today -->
-    <section>
-      <h2>2) 1 CEO Move Today</h2>
-      <div class="card">
-        <div class="value"><strong>Call / text Lindsey Heumann</strong> and get a clean “yes/no + date” on the <span class="flag gold">$295,000 distro</span> for the capital call—then immediately delegate wire logistics (so it’s done before your flight).</div>
-        <div class="small">Why this is the move: it prevents a capital-call scramble and removes the biggest financial uncertainty on today’s list.</div>
-      </div>
-    </section>
+<section class="critical">
+  <h2>🚨 Security — Change Your Google Password Today</h2>
+  <p>On Monday 7/6 at 4:45 PM CDT, you posted your Google password in a Slack DM to Joey Avioli (message text visible in this morning's Slack search). Even though Joey is trusted, Slack DMs are not a safe channel for credentials — the password is now in Slack history, in indexed search, and reachable by anyone with your Slack session or org admin access.</p>
+  <p><strong>Do all four before your first meeting today:</strong></p>
+  <ul>
+    <li>Change the Google account password (<a href="https://myaccount.google.com/security" target="_blank">myaccount.google.com/security</a>).</li>
+    <li>Confirm 2-Step Verification is on and review active sessions/devices.</li>
+    <li>Delete the Slack DM message from your side (Joey should also delete on his).</li>
+    <li>Rotate anything that shared that password (personal or WPT).</li>
+  </ul>
+  <p class="meta">Send Joey the new credentials through 1Password share or a proper secret manager going forward.</p>
+</section>
 
-    <!-- 3. Schedule -->
-    <section>
-      <h2>3) Schedule (ET)</h2>
-      <div class="card">
-        <table class="tight">
-          <thead>
-            <tr><th style="width:140px">When (ET)</th><th>Event</th><th style="width:220px">Notes</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="pill">All day</span></td>
-              <td><strong>Commission qualified WPT business appraisal</strong></td>
-              <td class="small">Engage independent appraiser; brief with valuation memo.</td>
-            </tr>
-            <tr>
-              <td><span class="pill">All day</span></td>
-              <td><strong>Reply to Kevin McKelvy</strong> — AOG support letter</td>
-              <td class="small">Quick note/call to close.</td>
-            </tr>
-            <tr>
-              <td><span class="pill">All day</span></td>
-              <td><strong>Answer Bill Finley</strong> — Sirius XM commercials</td>
-              <td class="small">Say yes or provide creative; invoice already requested.</td>
-            </tr>
-            <tr>
-              <td><span class="pill">All day</span></td>
-              <td><strong>Dawn Lenert</strong> — Perplexity scheduler sheet review</td>
-              <td class="small">Her answer is in Slack (#ai-matters) from Thursday.</td>
-            </tr>
-            <tr>
-              <td><span class="pill">All day</span></td>
-              <td><strong>Confirm $295K distro</strong> w/ <strong>Lindsey Heumann</strong> — fund capital call</td>
-              <td class="small"><span class="flag gold">Must lock today</span>: availability + wire date.</td>
-            </tr>
-            <tr>
-              <td><strong>9:00–10:30 AM</strong></td>
-              <td><strong>🎯 Goal: CEO Operating System Buildout</strong></td>
-              <td class="small">Pick an MVP and ship a first commit (recommended: partner-touch tracker).</td>
-            </tr>
-            <tr>
-              <td><strong>12:55–2:15 PM</strong></td>
-              <td><strong>Flight to Nashville (WN 155)</strong></td>
-              <td class="small">Travel buffer: protect pre-flight decision items.</td>
-            </tr>
-            <tr>
-              <td class="small" colspan="3"><strong>Tomorrow preview (Tue, Jul 7):</strong> Jeff Lowe’s Birthday (all day) · “Get Conceiage work done?” 7:45–8:00 AM ET · “Full workup — race-day text routine for reps” 9:00–10:30 AM ET · Atlanta World Cup Game 10:00 AM–5:00 PM ET · “Mac Mini Setup — Phase 3: iMessage MCP” 10:00–11:00 AM ET · “Summer Meets Weekly” 10:00–10:30 AM ET (multi-attendee).</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+<section>
+  <h2>1. CEO Snapshot</h2>
+  <ul>
+    <li><strong>Big picture:</strong> Nashville day. Morning is dense (5 events converge on 8:00–9:30 AM CDT), then Atlanta World Cup 12 PM local takes 9 AM–4 PM CDT. Nothing on the calendar today would carry more downstream damage than an unrotated password (see above).</li>
+    <li><strong>Racing:</strong> No WPT runners today. Next entries: Kingsport 7/9, Lion of Justice + Epic Fashionista 7/10, Harpoon + Find No Fault + Bullard (G3) 7/11.</li>
+    <li><strong>Book:</strong> Erin OK'd taking Army Man down but keeping the "sold-out" message up for the month.</li>
+    <li>Jeff Lowe birthday today — one-line acknowledgment costs 15 seconds.</li>
+  </ul>
+</section>
 
-    <!-- 4. Alerts -->
-    <section>
-      <h2>4) Alerts</h2>
-      <div class="card">
-        <ul>
-          <li><span class="flag gold">Financial timing:</span> confirm the <strong>$295,000</strong> distro + wire date before travel.</li>
-          <li><span class="flag gold">Execution risk:</span> several all-day action items + flight—set a 20-minute “close-the-loop” block before departure.</li>
-          <li><span class="flag green">Horse health positive:</span> <strong>Parden</strong> is improving; backing down support and pain meds per Dr. Janik update.</li>
-        </ul>
-      </div>
-    </section>
+<section class="move">
+  <h2>2. 1 CEO Move Today</h2>
+  <p><strong>Rotate your Google password before 8:00 AM CDT.</strong> Everything else — Nashville, meetings, Atlanta World Cup — can absorb a 20-minute delay. Credential exposure cannot. Do it, verify 2SV, then delete the Slack DM.</p>
+  <p class="meta">Second move if that is done: text Jeff Lowe a happy birthday. Small partnership moves like that get missed on travel days.</p>
+</section>
 
-    <!-- 5. Team Pulse -->
-    <section>
-      <h2>5) Team Pulse (Slack — last 2 days)</h2>
-      <div class="grid two">
-        <div class="card">
-          <div class="kpi"><div class="label">Executive Team Pulse Summary</div>
-            <div class="value">Momentum: <span class="green">steady</span> · Focus: Saratoga execution + partner comms + operational tooling</div>
-          </div>
-          <ul>
-            <li><strong>Win:</strong> Saratoga entries shaping up (Harpoon/Yinzer/Grunge) and jockey assignments (Jose Ortiz) already lined up.</li>
-            <li><strong>Watch:</strong> ownership-name ordering issue with NYRA being handled (Kelly contacted).</li>
-            <li><strong>Follow-up:</strong> align on Perplexity scheduler / Saratoga ground report workflow.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="kpi"><div class="label">Notable items surfaced</div>
-            <div class="value">Partner-facing comms + racing ops coordination</div>
-          </div>
-          <ul>
-            <li><strong>#sales:</strong> “Green/Casse” horse in FT Digital sale that RNA’d flagged as possible opportunity; plus internal admin/doc review on the 7/2 sales call.</li>
-            <li><strong>#sales-made:</strong> add <strong>Russell Smith</strong> to the Speakers Corner shutout list if a spot opens.</li>
-            <li><strong>#horse-comms:</strong> Parden update trending positively; Saratoga entries noted: <strong>Yinzer</strong> (2X, 1 mile, Jose Ortiz), <strong>Harpoon</strong> (Race 2, post 6/8, Jose Ortiz), <strong>Grunge</strong> (NW1X 5.5f turf).</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card" style="margin-top:12px;">
-        <div class="small"><span class="pill">#horse-comms</span> highlights</div>
-        <ul>
-          <li><strong>Joe Bianca:</strong> Asmussen entered <strong>Yinzer</strong> for next Saturday at Saratoga (2X, 1 mile, <strong>Jose Ortiz</strong>); <strong>Harpoon</strong> also entered (Race 2, post 6/8, Jose also).</li>
-          <li><strong>Tom Bellhouse:</strong> Entering <strong>Grunge</strong> for NW1X next Saturday at Saratoga (5.5f turf).</li>
-          <li><strong>Jeff Lowe (vet):</strong> <strong>Parden</strong> holding strong; walking well; backing down support and pain meds; delaying radiographs until pickup timing.</li>
-        </ul>
-        <div class="hr"></div>
-        <div class="small"><span class="pill">#exec-team</span> highlights</div>
-        <ul>
-          <li><strong>Lindsey:</strong> “Kelly at NYRA” emailed re: order of names on ownership.</li>
-          <li><strong>Terry:</strong> shared/update cadence around executive dashboard (wpt-static.vercel.app).</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- 6. Racing -->
-    <section>
-      <h2>6) Racing (West Point Thoroughbreds — Daily Entries)</h2>
-      <div class="card">
-        <div class="kpi"><div class="label">Today</div>
-          <div class="value"><span class="pill">No WPT entries shown for Mon, 07/06/26</span></div>
-        </div>
-        <div class="hr"></div>
-        <div class="kpi"><div class="label">Next listed entries</div>
-          <div class="value">Thu <strong>07/09/26</strong>: <strong>Kingsport</strong> — Ellis Park, Race <strong>5</strong>, Post <strong>1:44 CT</strong> (8.5F) · Maiden Special Weight</div>
-        </div>
-        <ul>
-          <li>Fri <strong>07/10/26</strong>: <strong>Creed’s Vision</strong> — Colonial Downs, Race <strong>6</strong>, Post <strong>2:55 ET</strong> (7F) · NW1X Allowance</li>
-          <li>Fri <strong>07/10/26</strong>: <strong>Lion of Justice</strong> — Colonial Downs, Race <strong>6</strong>, Post <strong>2:55 ET</strong> (7F) · NW1X Allowance</li>
-          <li>Fri <strong>07/10/26</strong>: <strong>Epic Fashionista</strong> — Ellis Park, Race <strong>6</strong>, Post <strong>2:12 CT</strong> (5.5F) · Maiden Special Weight</li>
-          <li>Sat <strong>07/11/26</strong>: <strong>Find No Fault</strong> — Ellis Park, Race <strong>7</strong>, Post <strong>2:42 CT</strong> (8F) · Maiden Special Weight</li>
-          <li>Sat <strong>07/11/26</strong>: <strong>Bullard</strong> — Prairie Meadows, Race <strong>8</strong>, Post <strong>9:20 CT</strong> (9F) · Cornhusker Handicap (G3)</li>
-        </ul>
-        <div class="small">Source: WPT Daily Entries page (captured 2026-07-06).</div>
-      </div>
-    </section>
-
-    <!-- 7. Decisions Needed -->
-    <section>
-      <h2>7) Decisions Needed</h2>
-      <div class="card">
-        <table>
-          <thead><tr><th>Decision</th><th>Why it matters</th><th>Recommendation</th><th>Timing</th></tr></thead>
-          <tbody>
-            <tr>
-              <td><strong>Approve SiriusXM Saratoga commercials</strong> (Bill Finley)</td>
-              <td>Gets WPT message in-market during Saratoga; avoids delays after invoice request.</td>
-              <td>Reply “yes—go ahead” + send 3 bullets for creative (brand line, CTA, URL).</td>
-              <td><span class="flag gold">Today</span></td>
-            </tr>
-            <tr>
-              <td><strong>Choose & commission appraiser shortlist</strong> for WPT valuation</td>
-              <td>Supports Erin’s buy-in price + estate defense; lead time matters.</td>
-              <td>Ask team for 3 candidates + fee range; select one and schedule kickoff this week.</td>
-              <td><span class="flag gold">Today/This week</span></td>
-            </tr>
-            <tr>
-              <td><strong>Lock $295K distro feasibility + wire date</strong> (Lindsey)</td>
-              <td>Direct impact on unexpected capital call and travel timing.</td>
-              <td>Get yes/no + date, then delegate wire execution immediately.</td>
-              <td><span class="flag red">Today</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- 8. Perplexity Computer Slack Activity -->
-    <section>
-      <h2>8) Perplexity Computer Slack Activity</h2>
-      <div class="card">
-        <ul>
-          <li><strong>Dawn Lenert</strong> posted progress on Saratoga Ground Report + Meet Dashboard corrections, and linked multiple Perplexity Computer task threads for review.</li>
-          <li>Note: the “1863 club task is empty” Slack alert fired, but was handled with an automatic correction (per Dawn’s update).</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <div class="small">Built for West Point Thoroughbreds CEO daily workflow. Delivery channels: web page + email.</div>
-    </section>
+<section>
+  <h2>3. Schedule — Tuesday, July 7 (CDT)</h2>
+  <div class="grid">
+    <div class="t">All day</div><div>Jeff Lowe's Birthday</div>
+    <div class="t">6:45 AM</div><div>Get Concierge work done (15 min)</div>
+    <div class="t">8:00 AM</div><div>Full workup — race-day text routine for reps (1h30) — build the automation for pulling entries, splitting partners by rep, generating tap-to-send SMS links</div>
+    <div class="t">9:00 AM</div><div>Atlanta World Cup Game 12 PM — 7-hour block (until 4:00 PM)</div>
+    <div class="t">9:00 AM</div><div>Mac Mini Setup — Phase 3: iMessage MCP (1h) <span class="pill red">3-way conflict</span></div>
+    <div class="t">9:00 AM</div><div>Summer Meets Weekly on Zoom (30 min) — Lindsey organizer</div>
+    <div class="t">9:30 AM</div><div>Engineering Committee Meeting — Ocean Palms Boardroom (1h) <span class="pill warn">overlaps World Cup + Summer Meets tail</span></div>
+    <div class="t">3:00 PM</div><div>Swim 320PM — you and Debbie both declined</div>
   </div>
+</section>
+
+<section class="alert">
+  <h2>4. Alerts</h2>
+  <ul>
+    <li><span class="pill red">3-way conflict 9:00 AM CDT</span> — Atlanta World Cup viewing block + Mac Mini iMessage MCP setup + Summer Meets Weekly Zoom all stacked on top of each other. Pick one: Summer Meets is the one with your sales leadership team; Mac Mini can slip to tomorrow.</li>
+    <li><span class="pill warn">9:30 AM CDT</span> Engineering Committee overlaps the World Cup block. If the game is priority, decline or send a proxy.</li>
+    <li><strong>Race-day text routine</strong> — the 8:00 AM workup event has a specific spec in the description (pull WPT entries, split by Account Owner in the 3s campaign sheet, per-rep Slack DMs with tap-to-send SMS links, handle 2yos not in the sheet). Confirm who owns the daily-run mechanism before the block starts.</li>
+    <li><strong>Creed's Vision:</strong> Delacour going with the turf race on 7/13, will scratch from the dirt against Lion of Justice (Jeff Lowe, #horse-comms Mon 12:30 PM).</li>
+    <li><strong>Parden:</strong> Dr. Janik update from Sun — holding strong, walking in aisle, backing down pain meds. No action.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>5. Team Pulse — Slack (last ~60 hours)</h2>
+
+  <h3>#horse-comms — Saratoga build-up</h3>
+  <ul>
+    <li><strong>Weaver (Tom Bellhouse, Mon 12:51 PM):</strong> Careless Whisper worked well with Manny Franco today; entering today for next week's NY Oaks at Finger Lakes; NW1X at Spa draws Friday. Nystateofmind — nice half on the main over the weekend, needs more gate work but Weaver happy.</li>
+    <li><strong>Creed's Vision (Jeff Lowe, Mon 12:30 PM):</strong> Delacour going with the turf race 7/13; scratching from the dirt against Lion of Justice.</li>
+    <li><strong>Golden Joker (Jeff Lowe → Joe Bianca, Mon 11:22 AM):</strong> Tom said Golden Joker entering for Sunday at Saratoga, $55k MCL. Joe: "Think it's the $50k NYB MCL. There's an open $55k but it's for fillies."</li>
+    <li><strong>Miss Enchanted (Erin, Mon 9:33 AM):</strong> The girls 2x short on turf has two MTOs Friday. Miss Enchanted better than both.</li>
+    <li><strong>Asmussen barn (Joe Bianca, Sun 2:51 PM):</strong> Yinzer entered next Saturday at Saratoga, 2X going a mile, Jose Ortiz. Harpoon in too, R2, post 6/8, Jose up as well.</li>
+    <li><strong>Grunge (Tom Bellhouse, Sun 1:47 PM):</strong> Entering today for NW1X next Saturday at Saratoga, 5.5F turf.</li>
+    <li><strong>Parden (Jeff Lowe, Sun 10:30 AM):</strong> Dr. Janik — holding strong, walking in the aisle, sharing weight well; delaying rads until pickup timing; backing down pain meds.</li>
+  </ul>
+
+  <h3>#exec-team</h3>
+  <ul>
+    <li>Your Monday 3:12 PM post: "Gambling and drinking matter with reps." No replies yet. If you want a policy discussion, drop a follow-up with a specific ask.</li>
+  </ul>
+
+  <h3>Terry DMs</h3>
+  <ul>
+    <li><span class="pill red">Joey Avioli 4:45 PM Mon</span> — password shared in DM. See critical section above.</li>
+    <li><strong>Dawn Lenert (Mon 3:08 PM):</strong> Wants to talk ground report if you are around after landing; free until 6 ET.</li>
+    <li><strong>Tom Murphy (Sat 11:26 AM):</strong> Confirmed sent race-day texts for Cugino to his 2 partners (Eric Kammerer, Matthew Ache) — the tap-to-send SMS routine is working for at least one rep.</li>
+    <li><strong>Slack bot cleanup:</strong> the "Computer" bot posted the CEO Daily Briefing to your Slack DM Monday morning despite the no-Slack rule. That is a separate scheduled task leaking through — needs to be paused.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>6. Racing — Web</h2>
+  <ul>
+    <li><strong>Today 7/7:</strong> No WPT entries.</li>
+    <li><strong>Thu 7/9:</strong> Kingsport — Ellis Park R5, 1:44 PM CT, Post 7/9, 8.5F MSW.</li>
+    <li><strong>Fri 7/10:</strong> Lion of Justice — Colonial Downs R6, 2:55 PM ET, Post 8/8, 7F NW1X Allowance. Epic Fashionista — Ellis Park R6, 2:12 PM CT, Post 5/12, 5.5F MSW.</li>
+    <li><strong>Sat 7/11:</strong> Harpoon — Saratoga R2, 1:08 PM ET, Post 6/8, 5.5F MSW. Find No Fault — Ellis Park R7, 2:42 PM CT, Post 1/10, 8F MSW. <strong>Bullard — Prairie Meadows R8, 9:20 PM CT, Post 1/9, 9F Cornhusker Handicap (G3).</strong></li>
+    <li>Source: <a href="https://westpointtb.com/racing/daily-entries/" target="_blank">WPT Daily Entries</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>7. Decisions Needed</h2>
+  <ul>
+    <li><strong>Google password rotation + Slack DM cleanup</strong> — top of list.</li>
+    <li><strong>9:00 AM CDT triple-book</strong> — pick one of Summer Meets / Mac Mini setup / World Cup viewing block.</li>
+    <li><strong>Golden Joker MCL selection</strong> — Tom vs. Joe disagree on $55k vs $50k NYB MCL. Give Weaver's group direction.</li>
+    <li><strong>Miss Enchanted vs. MTOs Friday</strong> — Erin flagged she is better than both. Confirm entry.</li>
+    <li><strong>Slack "Computer" bot daily briefing DM</strong> — turn off the DM post so the no-Slack rule holds cleanly.</li>
+    <li><strong>Race-day text routine ownership</strong> — Tom Murphy's Cugino test worked. Who owns the daily automation going forward?</li>
+  </ul>
+</section>
+
+<section>
+  <h2>8. Perplexity Computer Slack Activity</h2>
+  <ul>
+    <li>Slack "Computer" bot posted CEO Daily Briefing to your DM 7/5 6:01 AM CDT, 7/5 7:03 AM CDT, and 7/6 6:07 AM / 7:18 AM / 7:36 AM CDT (Top 10 clients to call). Also fired a "briefing paused" acknowledgment 7/6 3:23 PM CDT.</li>
+    <li><strong>Rule reminder:</strong> per your 5/22 instruction, only two delivery channels for the daily briefing — this GitHub Pages web page and email to you and Lindsey. Slack DM posts should be off. That bot is a separate task and needs to be shut down.</li>
+  </ul>
+</section>
+
+<footer>
+  Generated by Perplexity Computer · Live at <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a>
+</footer>
+
+</div>
 </body>
 </html>
