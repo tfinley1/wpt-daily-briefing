@@ -1,312 +1,174 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WPT CEO Daily Briefing</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#FFFFFF;
-      --ink:#28251D;
-      --teal:#01696F;
-      --muted:#6B7280;
-      --card:#F7F7F5;
-      --line:#E6E6E1;
-      --good:#0F766E;
-      --warn:#B45309;
-      --bad:#B91C1C;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
-    a{color:var(--teal);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1060px;margin:0 auto;padding:22px;}
-    header{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;margin-bottom:14px}
-    .title{display:flex;flex-direction:column;gap:4px}
-    h1{font-size:22px;line-height:1.2;margin:0}
-    .sub{color:var(--muted);font-size:13px}
-    .pillrow{display:flex;gap:8px;flex-wrap:wrap}
-    .pill{font-size:12px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:1fr;gap:12px}
-    @media (min-width: 880px){
-      .grid-2{grid-template-columns:1fr 1fr}
-    }
-    section{border:1px solid var(--line);background:#fff;border-radius:14px;overflow:hidden}
-    .hd{padding:12px 14px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:10px}
-    .hd h2{margin:0;font-size:14px;letter-spacing:.02em;text-transform:uppercase;color:var(--teal)}
-    .bd{padding:12px 14px}
-    ul{margin:8px 0 0 18px}
-    li{margin:6px 0}
-    .kpi{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
-    .k{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;flex:1;min-width:220px}
-    .k .lbl{color:var(--muted);font-size:12px;margin-bottom:4px}
-    .k .val{font-weight:700}
-    .flag{font-weight:700}
-    .bad{color:var(--bad)}
-    .warn{color:var(--warn)}
-    .good{color:var(--good)}
-    table{width:100%;border-collapse:collapse}
-    th,td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-    th{font-size:12px;color:var(--muted);text-align:left}
-    .small{font-size:12px;color:var(--muted)}
-    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
-    .callout{border-left:4px solid var(--teal);padding:10px 12px;background:var(--card);border-radius:10px}
-    .print-note{display:none}
-    @media print{
-      a{color:var(--ink);text-decoration:none}
-      .pillrow{display:none}
-      .wrap{max-width:none}
-      section{break-inside:avoid}
-      .print-note{display:block;margin-top:6px}
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WPT CEO Daily Briefing — Friday, July 17, 2026</title>
+<style>
+  :root{--ink:#0e1a2b;--muted:#5a6677;--card:#ffffff;--bg:#f4f6fa;--accent:#0a3b6c;--accent2:#b88a2a;--good:#1f7a3a;--warn:#9a3b14;--red:#b3261e;}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);}
+  .wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:24px}
+  h1{margin:0 0 4px;font-size:26px;letter-spacing:-.01em;color:var(--accent)}
+  .sub{color:var(--muted);font-size:14px}
+  section{background:var(--card);border:1px solid #e5e9f0;border-radius:12px;padding:18px 20px;margin:16px 0;box-shadow:0 1px 2px rgba(14,26,43,.04)}
+  h2{margin:0 0 10px;font-size:18px;color:var(--accent)}
+  h3{margin:14px 0 6px;font-size:15px;color:var(--accent2)}
+  ul{margin:6px 0 6px 18px;padding:0}
+  li{margin:4px 0}
+  .move{background:#fffaf0;border:1px solid #f1d99a}
+  .move h2{color:#7a4f10}
+  .alert{background:#fdf3ee;border-color:#f0c7b4}
+  .alert h2{color:var(--warn)}
+  .pill{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;background:#eaf0f7;color:var(--accent);margin-right:6px}
+  .pill.good{background:#e6f4ec;color:var(--good)}
+  .pill.warn{background:#fbe9df;color:var(--warn)}
+  .pill.red{background:#fbe1de;color:var(--red)}
+  .meta{color:var(--muted);font-size:13px}
+  a{color:var(--accent)}
+  footer{margin-top:28px;color:var(--muted);font-size:12px;text-align:center}
+  .grid{display:grid;grid-template-columns:110px 1fr;gap:6px 14px}
+  .grid .t{color:var(--muted);font-variant-numeric:tabular-nums}
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="title">
-        <h1>WPT CEO Daily Briefing</h1>
-        <div class="sub"><strong>Thursday, July 16, 2026</strong> • Generated 5:05 AM CDT</div>
-      </div>
-      <div class="pillrow">
-        <div class="pill">Primary: GitHub Pages</div>
-        <div class="pill">Sources: Calendar + Slack + WPT Daily Entries</div>
-      </div>
-    </header>
+<div class="wrap">
 
-    <!-- 1. CEO Snapshot -->
-    <section>
-      <div class="hd"><h2>1) CEO Snapshot</h2><div class="small">High-signal, action-oriented</div></div>
-      <div class="bd">
-        <div class="kpi">
-          <div class="k">
-            <div class="lbl">Top priorities today</div>
-            <div class="val">
-              <ol style="margin:8px 0 0 18px; padding:0;">
-                <li><strong>Lock in sales execution cadence</strong> ahead of the <strong>WPT Weekly Sales Call</strong> (confirm you’re aligned on outreach + next steps).</li>
-                <li><strong>Horse operations alignment</strong> on the <strong>Horse Call</strong> (ensure any upcoming runners have crisp comms + partner-facing plan).</li>
-                <li><strong>Exec-level alignment</strong> on the <strong>TPF/LH Weekly Exec</strong> (focus: decisions, blockers, and what needs your approval).</li>
-              </ol>
-            </div>
-          </div>
-          <div class="k">
-            <div class="lbl">Biggest risk</div>
-            <div class="val"><span class="bad">Calendar overload / back-to-backs</span> → less time for proactive partner revenue work.</div>
-            <div class="small print-note">Tip: protect a 30–45 min buffer after the Horse Call to convert notes into assignments.</div>
-          </div>
-          <div class="k">
-            <div class="lbl">Biggest opportunity</div>
-            <div class="val"><span class="good">Upcoming WPT runners at Saratoga</span> (e.g., <strong>Powerline</strong>, <strong>Ewing</strong>, <strong>Intricate Spirit</strong>) = high-leverage partner engagement.</div>
-          </div>
-          <div class="k">
-            <div class="lbl">Direct involvement / delegate</div>
-            <div class="val"><strong>You:</strong> Own the narrative for the next Saratoga runners and decide who gets personal outreach.</div>
-            <div class="small"><strong>Delegate:</strong> Have Ops/Comms draft partner note templates for each runner (track/race/post time + storyline).</div>
-          </div>
-        </div>
-      </div>
-    </section>
+<header>
+  <h1>WPT CEO Daily Briefing</h1>
+  <div class="sub">Friday, July 17, 2026 · Run #90 · Big-decision day pre-Saratoga weekend</div>
+</header>
 
-    <!-- 2. 1 CEO Move Today -->
-    <section style="margin-top:12px;">
-      <div class="hd"><h2>2) 1 CEO Move Today</h2><div class="small">One high-leverage action</div></div>
-      <div class="bd">
-        <div class="callout">
-          <div style="font-weight:700;margin-bottom:6px;">Before the <strong>Horse Call</strong>, send a 2-sentence “Saratoga runners” note to the team to trigger partner outreach.</div>
-          <div class="small">Use the WPT Daily Entries list (Powerline 7/18; Intricate Spirit + Ewing 7/19; Cajun Gold 7/20) and assign who calls which top partners.</div>
-        </div>
-      </div>
-    </section>
+<section>
+  <h2>1. CEO Snapshot</h2>
+  <ul>
+    <li><strong>Big picture:</strong> Today is a pileup — 3 back-to-back prep-then-meeting sequences and a hard <strong>3:00 PM CDT triple-book</strong> (Strava discussion + Adam McCabe + WPT Website Map). Weekend has 3 WPT runners starting Saturday, headlined by <strong>Ewing + Intricate Spirit in the Quick Call Stakes (G3T) at Saratoga Sunday 5:45 PM ET</strong>.</li>
+    <li><strong>Health watch:</strong> Northern Invader knee filling again — cartilage spike on x-rays, Bramlage consult in play. Builder's Remedy post-gelding infection under control. Neither reads terminal but both need partner comms.</li>
+    <li><strong>Book note:</strong> Caracaro filly colic-surgery invoices open — Lindsey/Dawn tracking. Powerline partners get their weekend at Saratoga tomorrow — the content plan is worth 60 seconds before you leave.</li>
+  </ul>
+</section>
 
-    <div class="grid grid-2" style="margin-top:12px;">
+<section class="move">
+  <h2>2. 1 CEO Move Today</h2>
+  <p><strong>Before the 9:00 AM CDT Dawn/Joey/Lindsey Prospect/HubSpot call, resolve the 3:00 PM CDT triple-book.</strong> Three separate meetings are all scheduled 3:00–4:00 PM CDT: WPT/Strava, Adam McCabe, and WPT Website Map. Pick one (Adam McCabe is the highest-leverage — external commitment already made), reschedule the other two before your prep windows start at 2:15/2:30/2:45 PM, and tell Debbie so she can hold the line with everyone else.</p>
+  <p class="meta">Backup move: give Erin explicit direction on the Northern Invader Bramlage consult — is that a "get the read and hold" or "get the read and prepare partners for a stop"?</p>
+</section>
 
-      <!-- 3. Schedule -->
-      <section>
-        <div class="hd"><h2>3) Schedule</h2><div class="small">All events • Times shown in Central (from calendar)</div></div>
-        <div class="bd">
-          <div class="small"><strong>Today (Thu 7/16)</strong></div>
-          <table>
-            <thead>
-              <tr><th style="width:120px;">Time</th><th>Event</th><th style="width:140px;">Where</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="mono">8:00–9:30 AM</td>
-                <td><strong>Breakfast with David Ingordo @ Saratoga Arms</strong></td>
-                <td class="small">(location not set)</td>
-              </tr>
-              <tr>
-                <td class="mono">8:00–9:30 AM</td>
-                <td><strong>🎯 Goal: CEO Operating System Buildout</strong><div class="small">Weekly goal hold (CoS-managed).</div></td>
-                <td class="small">(location not set)</td>
-              </tr>
-              <tr>
-                <td class="mono">10:00–10:30 AM</td>
-                <td><strong>WPT Weekly Sales Call - New Zoom Link**</strong></td>
-                <td class="small"><a href="https://us06web.zoom.us/j/82010607819?pwd=ONbHH2Y7WplU8Aj3nhJ3WhSdQPACkN.1&amp;jst=3">Zoom</a></td>
-              </tr>
-              <tr>
-                <td class="mono">10:30–11:30 AM</td>
-                <td><strong>Horse Call</strong><div class="small">Organizer: Jeff Lowe</div></td>
-                <td class="small"><a href="https://us02web.zoom.us/j/6092381009">Zoom</a></td>
-              </tr>
-              <tr>
-                <td class="mono">11:30 AM–12:00 PM</td>
-                <td><strong>Monthly Mandy + Terry Sync on HERF</strong></td>
-                <td class="small"><a href="https://us02web.zoom.us/j/6096367204">Zoom</a></td>
-              </tr>
-              <tr>
-                <td class="mono">1:00–2:00 PM</td>
-                <td><strong>TPF/LH Weekly Exec</strong></td>
-                <td class="small"><a href="https://us06web.zoom.us/j/86598367628?pwd=hsfDNIaLtsAdwyhe0bzbQabdDgmnTr.1&amp;jst=3">Zoom</a></td>
-              </tr>
-              <tr>
-                <td class="mono">5:30–7:30 PM</td>
-                <td><strong>Dinner with Steve &amp; Penny Berg</strong></td>
-                <td class="small">(location not set)</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <div style="height:10px"></div>
-          <div class="small"><strong>Next 2 days (Fri–Sat)</strong></div>
-          <ul>
-            <li><strong>All-day:</strong> <strong>Erin in town 1150PM</strong> (starts Thu 7/16 7:00 PM CDT)</li>
-            <li><strong>All-day:</strong> <strong>Build HNW estate attorney shortlist</strong></li>
-            <li><span class="mono">Fri 9:00–10:00 AM</span> — <strong>Dawn/Joey/LH - Prospect/Hubspot Discussion</strong> (Zoom)</li>
-            <li><span class="mono">Fri 9:15–10:00 AM</span> — <strong>Re: Phone Call with Tim at AYCO</strong> (Microsoft Teams)</li>
-            <li><span class="mono">Fri 1:00–1:30 PM</span> — <strong>WPT/Horse Data Followup</strong> (Zoom)</li>
-            <li><span class="mono">Sat 10:00 AM–1:00 PM</span> — <strong>Pink Paddock Shop to Support the NY Chaplaincy</strong> (Pink Paddock, Saratoga Springs)</li>
-            <li><span class="mono">Sat 11:35 AM</span> — <strong>Powerline at Saratoga in race 1</strong></li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- 4. Alerts -->
-      <section>
-        <div class="hd"><h2>4) Alerts</h2><div class="small">Only what needs attention</div></div>
-        <div class="bd">
-          <ul>
-            <li><span class="bad flag">Conflict:</span> <strong>8:00–9:30 AM</strong> is double-booked (Breakfast with David Ingordo and CEO Operating System Buildout).</li>
-            <li><span class="warn flag">Back-to-back cluster:</span> <strong>10:00 AM</strong> Sales Call → <strong>10:30 AM</strong> Horse Call → <strong>11:30 AM</strong> HERF sync (no buffer).</li>
-            <li><span class="warn flag">Friday overlap risk:</span> <strong>9:00–10:00 AM</strong> Prospect/Hubspot discussion overlaps with <strong>9:15–10:00 AM</strong> AYCO call window.</li>
-          </ul>
-        </div>
-      </section>
-
-    </div>
-
-    <!-- 5. Team Pulse -->
-    <section style="margin-top:12px;">
-      <div class="hd"><h2>5) Team Pulse (Slack)</h2><div class="small">Last ~60 hours</div></div>
-      <div class="bd">
-        <div class="callout" style="margin-bottom:10px;">
-          <div style="font-weight:700;margin-bottom:6px;">Executive Team Pulse Summary</div>
-          <ul>
-            <li><strong>Horse momentum:</strong> heavy operational cadence + clear targets (e.g., <strong>Counting Stars</strong> aiming for <strong>CCA Oaks</strong>; <strong>Integration</strong> pointing to <strong>Arlington Million</strong>).</li>
-            <li><strong>Risk to watch:</strong> injury/diagnostics (e.g., <strong>Epic Fashionista</strong> inflammation; may be sent to <strong>Rood &amp; Riddle</strong> for full workup).</li>
-            <li><strong>Sales execution:</strong> New Partner survey follow-up: <strong>47</strong> texts, <strong>2</strong> responses, both positive; text credits caused undelivereds that need resending.</li>
-            <li><strong>Ops leverage:</strong> exec dashboard link shared; ensure it drives weekly decision-making cadence.</li>
-          </ul>
-        </div>
-
-        <div class="grid grid-2">
-          <div>
-            <div style="font-weight:700;margin-bottom:6px;">#horse-comms</div>
-            <ul>
-              <li><strong>Quick Call Stakes (Sun):</strong> <strong>Ewing</strong> (post 1, Jose) and <strong>Intricate</strong> (post 4, Manny) in race 9; <strong>Cy Fair</strong> also entered (sat/sun). (Robert Lee)</li>
-              <li><strong>Shug / Pletcher / others:</strong> highlights include <strong>Integration</strong> pointing to <strong>Arlington Million</strong>; <strong>Statesman</strong> targeting Spa N1X <strong>Aug 1</strong> (9f); <strong>Flightress</strong> circled for <strong>$115k MSW</strong> (6f) <strong>Aug 1</strong> (Spa). (Jason Blewitt)</li>
-              <li><strong>Casse notes:</strong> <strong>Counting Stars</strong> to enter for <strong>CCA Oaks</strong>; <strong>Epic Fashionista</strong> improving but still inflamed; likely <strong>Rood &amp; Riddle</strong> consult; <strong>Ewing</strong> entered for Quick Call; watch for bleeding risk. (Joe Bianca)</li>
-              <li><strong>Bill Mott:</strong> <strong>Pillar of Beauty</strong> to be nominated to <strong>7F stake at Colonial (8/1)</strong>; <strong>Nyquency</strong> strengthening, debut likely <strong>September</strong>. (Tom Bellhouse)</li>
-            </ul>
-          </div>
-          <div>
-            <div style="font-weight:700;margin-bottom:6px;">#sales</div>
-            <ul>
-              <li>New Partner survey text follow-up: <strong>2 responses</strong> from <strong>47</strong>, both highly satisfied; quote: “<em>The level of communication is great…</em>”. (Dawn Lenert)</li>
-              <li>Action: resend text due to low text credits causing multiple undelivereds. (Erin Birkenhauer)</li>
-              <li>Survey housekeeping: remove Jeff Hebert; do not offer merch credit if already awarded. (Dawn Lenert)</li>
-            </ul>
-            <div style="height:10px"></div>
-            <div style="font-weight:700;margin-bottom:6px;">#exec-team</div>
-            <ul>
-              <li><strong>Executive Dashboard</strong> published: <a href="https://wpt-static.vercel.app">wpt-static.vercel.app</a> (YTD sales, purses, racing stats, payroll horses, inventory, weekly leads).</li>
-              <li>Note: Terry mentioned a call with <strong>Brian Domenick</strong> and “cool stuff” shown; potential follow-up thread with Brian + Joey.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div style="margin-top:10px" class="small">Note: No results returned this window for <strong>#sales-made</strong> or <strong>#prospectcomms</strong> searches.</div>
-      </div>
-    </section>
-
-    <!-- 6. Racing -->
-    <section style="margin-top:12px;">
-      <div class="hd"><h2>6) Racing</h2><div class="small">From WPT Daily Entries</div></div>
-      <div class="bd">
-        <div class="small"><strong>Upcoming WPT entries (ET)</strong></div>
-        <table>
-          <thead>
-            <tr>
-              <th style="width:90px;">Date</th>
-              <th>Horse</th>
-              <th style="width:70px;">Race</th>
-              <th style="width:90px;">Post (ET)</th>
-              <th style="width:120px;">Track</th>
-              <th>Type / Conditions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td class="mono">07/18/26</td><td><strong>Powerline</strong></td><td class="mono">1</td><td class="mono">12:35</td><td>Saratoga</td><td>Maiden Special Weight</td></tr>
-            <tr><td class="mono">07/19/26</td><td><strong>Atlas Major</strong></td><td class="mono">4</td><td class="mono">2:00</td><td>Colonial Downs</td><td>Maiden Special Weight</td></tr>
-            <tr><td class="mono">07/19/26</td><td><strong>Intricate Spirit</strong></td><td class="mono">9</td><td class="mono">5:45</td><td>Saratoga</td><td>Quick Call Stakes (G3T)</td></tr>
-            <tr><td class="mono">07/19/26</td><td><strong>Ewing</strong></td><td class="mono">9</td><td class="mono">5:45</td><td>Saratoga</td><td>Quick Call Stakes (G3)</td></tr>
-            <tr><td class="mono">07/20/26</td><td><strong>Cajun Gold</strong></td><td class="mono">1</td><td class="mono">12:20</td><td>Gulfstream Park</td><td>Claiming 35k NW2L</td></tr>
-          </tbody>
-        </table>
-        <div style="margin-top:10px" class="small">Source: rendered WPT Daily Entries page.</div>
-      </div>
-    </section>
-
-    <!-- 7. Decisions Needed -->
-    <section style="margin-top:12px;">
-      <div class="hd"><h2>7) Decisions Needed</h2><div class="small">Only real decisions</div></div>
-      <div class="bd">
-        <ul>
-          <li><strong>Decision:</strong> Who are the 5–10 partners you personally call ahead of the Saratoga runners (<strong>Powerline</strong>, <strong>Ewing</strong>, <strong>Intricate Spirit</strong>)?<br/>
-              <span class="small"><strong>Why:</strong> converts racing moments into renewals/upgrades + referrals.<br/>
-              <strong>Recommendation:</strong> pick the list today; assign remaining calls to Sales/Ops with a deadline before post time.<br/>
-              <strong>Timing:</strong> <span class="warn flag">Today</span>.</span>
-          </li>
-          <li><strong>Decision:</strong> How do you want the team to handle <strong>Epic Fashionista</strong> updates (tone + timing) if she is sent to <strong>Rood &amp; Riddle</strong>?<br/>
-              <span class="small"><strong>Why:</strong> proactive, consistent messaging reduces inbound anxiety.<br/>
-              <strong>Recommendation:</strong> pre-approve a short partner note template + designate single point of contact.<br/>
-              <strong>Timing:</strong> <span class="warn flag">This week</span>.</span>
-          </li>
-          <li><strong>Decision:</strong> Friday schedule conflict (Prospect/Hubspot vs AYCO): which one is non-negotiable, and who can cover the other?<br/>
-              <span class="small"><strong>Why:</strong> prevents missed stakeholder expectations.<br/>
-              <strong>Recommendation:</strong> keep AYCO call; have Lindsey/Dawn run Prospect/Hubspot and send you a 5-bullet recap.<br/>
-              <strong>Timing:</strong> <span class="warn flag">Today</span>.</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- 8. Perplexity Computer Slack Activity -->
-    <section style="margin-top:12px; margin-bottom:18px;">
-      <div class="hd"><h2>8) Perplexity Computer Slack Activity</h2><div class="small">Last ~60 hours</div></div>
-      <div class="bd">
-        <div class="small">No Slack messages mentioning “Perplexity” returned in this window.</div>
-      </div>
-    </section>
-
-    <div class="small" style="color:var(--muted);padding-bottom:10px;">
-      Public briefing URL: <a href="https://tfinley1.github.io/wpt-daily-briefing/">https://tfinley1.github.io/wpt-daily-briefing/</a>
-    </div>
-
+<section>
+  <h2>3. Schedule — Friday, July 17 (CDT)</h2>
+  <div class="grid">
+    <div class="t">All day</div><div>Build HNW estate attorney shortlist (started 7/16 7 PM CDT)</div>
+    <div class="t">8:00 AM</div><div>Dave &amp; Meg Clark Reading Room <span class="pill warn">overlaps 8:30 &amp; 8:45 prep blocks</span></div>
+    <div class="t">8:30 AM</div><div>Prep · Dawn/Joey/Lindsey Prospect/HubSpot (30 min)</div>
+    <div class="t">8:45 AM</div><div>Prep · Tim @ AYCO call (30 min) <span class="pill warn">overlaps 8:30 prep</span></div>
+    <div class="t">9:00 AM</div><div>Dawn/Joey/Lindsey — Prospect/HubSpot (Zoom, 1h)</div>
+    <div class="t">9:15 AM</div><div>Tim @ AYCO call (Teams, 45 min) <span class="pill red">runs inside HubSpot Zoom</span></div>
+    <div class="t">11:00 AM</div><div>Dale Meeting (1h15m)</div>
+    <div class="t">12:30 PM</div><div>Prep · WPT/Horse Data Followup</div>
+    <div class="t">1:00 PM</div><div>WPT/Horse Data Followup (1h)</div>
+    <div class="t">2:15 PM</div><div>Prep · WPT/Strava</div>
+    <div class="t">2:30 PM</div><div>Prep · Adam McCabe <span class="pill warn">overlaps 2:15 prep</span></div>
+    <div class="t">2:45 PM</div><div>Prep · WPT Website Map <span class="pill warn">overlaps 2:30 prep</span></div>
+    <div class="t">3:00 PM</div><div><span class="pill red">TRIPLE BOOK</span> WPT/Strava · Adam McCabe · WPT Website Map (all 3–4 PM CDT)</div>
   </div>
+
+  <h3>Weekend preview</h3>
+  <ul>
+    <li>Sat 7/18 10:00 AM – 1:00 PM ET: Pink Paddock Shop, NY Chaplaincy fundraiser, Saratoga Springs.</li>
+    <li>Sat 7/18 11:35 AM ET: <strong>Powerline</strong> — Saratoga R1 (post 12:35 PM ET per Daily Entries; calendar shows 11:35 as a prep hold).</li>
+    <li>Sun 7/19 all-day: Duke's Birthday.</li>
+    <li>Sun 7/19 8:00–9:30 AM ET: Richard &amp; Phyllis Lefrois Reading Room.</li>
+    <li>Sun 7/19 1:00 PM ET: <strong>Atlas Major</strong> — Colonial Downs R4.</li>
+    <li>Sun 7/19 4:45 PM ET: <strong>Ewing</strong> (post 1) &amp; <strong>Intricate Spirit</strong> (post 4) — Saratoga R9 Quick Call Stakes.</li>
+  </ul>
+</section>
+
+<section class="alert">
+  <h2>4. Alerts</h2>
+  <ul>
+    <li><span class="pill red">3:00 PM CDT triple-book</span> — three overlapping 3–4 PM meetings. Must be resolved before 2:15 PM CDT so prep isn't wasted.</li>
+    <li><span class="pill warn">9:15 AM CDT AYCO call sits inside the 9:00 AM HubSpot Zoom</span> — you cannot be on both. Pick one and reschedule the other, ideally before the 8:30 prep block starts.</li>
+    <li><strong>Northern Invader:</strong> knee filling again; cartilage spike on x-rays; Bramlage consult pending. Cherie is running vet diagnostics. Erin needs direction today.</li>
+    <li><strong>Builder's Remedy:</strong> post-gelding infection under control, but partners deserve a short "here is where we are" note before the weekend.</li>
+    <li><strong>If Ever:</strong> discussion open on Kentucky Downs 7F N1X vs. alternative — $4k shipping cost is the swing factor. Decide before Saratoga travel.</li>
+    <li><strong>Brightline Bullet:</strong> Delaware race brought back, targeting Friday 7/23.</li>
+    <li><strong>Caracaro filly:</strong> colic-surgery invoices open — get a status from Lindsey during the 1 PM CDT Horse Data block.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>5. Team Pulse — Slack (last ~60 hours)</h2>
+
+  <h3>#horse-comms</h3>
+  <ul>
+    <li><strong>Northern Invader:</strong> knee filling again; x-rays show cartilage spike; Bramlage consult; Cherie running diagnostics. Highest-leverage decision on today's list.</li>
+    <li><strong>Paige Turner:</strong> targeting Saratoga 7/25.</li>
+    <li><strong>Legalize:</strong> targeting Colonial Downs 8/2.</li>
+    <li><strong>Builder's Remedy:</strong> post-gelding infection under control.</li>
+    <li><strong>Quick Call Sunday (Saratoga R9):</strong> Ewing post 1 (Jose), Intricate Spirit post 4 (Manny), 12-horse field.</li>
+    <li><strong>If Ever:</strong> Ky Downs 7F N1X vs. alternative; $4k shipping cost noted.</li>
+    <li><strong>Brightline Bullet:</strong> Delaware race back on, target Fri 7/23.</li>
+  </ul>
+
+  <h3>#sales</h3>
+  <ul>
+    <li>New Partner survey text follow-up going to unopens today.</li>
+    <li>Text-credits issue resolved and resent.</li>
+    <li>Caracaro filly (colic surgery) open invoices being tracked.</li>
+    <li>Powerline attendee content ideas being staged for Saratoga tomorrow.</li>
+    <li>Yearling rep outlook doc queued for next week.</li>
+  </ul>
+
+  <h3>#sales-made · #prospectcomms</h3>
+  <ul>
+    <li>No new activity in the window.</li>
+  </ul>
+
+  <h3>#exec-team</h3>
+  <ul>
+    <li>You posted the Executive Dashboard link — <a href="https://wpt-static.vercel.app" target="_blank">wpt-static.vercel.app</a>. No replies yet; if you want engagement, pin a one-liner asking a specific question.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>6. Racing — Web (WPT Daily Entries)</h2>
+  <ul>
+    <li><strong>Today 7/17:</strong> No WPT entries.</li>
+    <li><strong>Sat 7/18:</strong> Powerline — Saratoga R1, post 4/7, <strong>12:35 PM ET</strong>, 6F, Maiden Special Weight.</li>
+    <li><strong>Sun 7/19:</strong> Atlas Major — Colonial Downs R4, post 3/9, <strong>2:00 PM ET</strong>, 5.5F, Maiden Special Weight.</li>
+    <li><strong>Sun 7/19:</strong> Intricate Spirit — Saratoga R9, post 4/12, <strong>5:45 PM ET</strong>, 5.5F, Quick Call Stakes (G3T).</li>
+    <li><strong>Sun 7/19:</strong> Ewing — Saratoga R9, post 1/12, <strong>5:45 PM ET</strong>, 5.5F, Quick Call Stakes (G3).</li>
+    <li><strong>Mon 7/20:</strong> Cajun Gold — Gulfstream Park R1, post 5/8, 12:20 PM ET, 5F, Claiming $35k NW2L.</li>
+    <li>Source: <a href="https://westpointtb.com/racing/daily-entries/" target="_blank">WPT Daily Entries</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>7. Decisions Needed</h2>
+  <ul>
+    <li><strong>3:00 PM CDT triple-book</strong> — pick one, reschedule two, tell Debbie.</li>
+    <li><strong>9:15 vs 9:00 AM CDT</strong> — AYCO call or HubSpot Zoom, not both.</li>
+    <li><strong>Northern Invader direction to Erin</strong> — "get the Bramlage read and hold" or "get the read and prepare partners."</li>
+    <li><strong>If Ever entry</strong> — Ky Downs 7F N1X vs. alternative; $4k shipping is the swing.</li>
+    <li><strong>HNW estate attorney shortlist</strong> — the all-day project ends today at 7 PM CDT. Names by end of day.</li>
+    <li><strong>Powerline partner content plan</strong> — 60 seconds with the sales team before you leave for Saratoga.</li>
+    <li><strong>Caracaro filly colic invoices</strong> — status check with Lindsey during the 1 PM Horse Data block.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>8. Perplexity Computer Slack Activity</h2>
+  <ul>
+    <li>No new #perplexity-computer channel activity in the last 60 hours.</li>
+    <li>Daily briefing automation continues to deliver to both you and Lindsey at 5 AM CDT.</li>
+  </ul>
+</section>
+
+<footer>
+  Generated by Perplexity Computer · Live at <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a>
+</footer>
+
+</div>
 </body>
 </html>
