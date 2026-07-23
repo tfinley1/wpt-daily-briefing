@@ -1,154 +1,272 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WPT CEO Daily Briefing — Wednesday, July 22, 2026</title>
-<style>
-  :root{--ink:#0e1a2b;--muted:#5a6677;--card:#ffffff;--bg:#f4f6fa;--accent:#0a3b6c;--accent2:#b88a2a;--good:#1f7a3a;--warn:#9a3b14;--red:#b3261e;}
-  *{box-sizing:border-box}
-  body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);}
-  .wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:24px}
-  h1{margin:0 0 4px;font-size:26px;letter-spacing:-.01em;color:var(--accent)}
-  .sub{color:var(--muted);font-size:14px}
-  section{background:var(--card);border:1px solid #e5e9f0;border-radius:12px;padding:18px 20px;margin:16px 0;box-shadow:0 1px 2px rgba(14,26,43,.04)}
-  h2{margin:0 0 10px;font-size:18px;color:var(--accent)}
-  h3{margin:14px 0 6px;font-size:15px;color:var(--accent2)}
-  ul{margin:6px 0 6px 18px;padding:0}
-  li{margin:4px 0}
-  .move{background:#fffaf0;border:1px solid #f1d99a}
-  .move h2{color:#7a4f10}
-  .alert{background:#fdf3ee;border-color:#f0c7b4}
-  .alert h2{color:var(--warn)}
-  .pill{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;background:#eaf0f7;color:var(--accent);margin-right:6px}
-  .pill.good{background:#e6f4ec;color:var(--good)}
-  .pill.warn{background:#fbe9df;color:var(--warn)}
-  .pill.red{background:#fbe1de;color:var(--red)}
-  .meta{color:var(--muted);font-size:13px}
-  a{color:var(--accent)}
-  footer{margin-top:28px;color:var(--muted);font-size:12px;text-align:center}
-  .grid{display:grid;grid-template-columns:110px 1fr;gap:6px 14px}
-  .grid .t{color:var(--muted);font-variant-numeric:tabular-nums}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WPT CEO Daily Briefing — Thursday, July 23, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff; --ink:#28251D; --teal:#01696F;
+      --muted:#6b7280; --line:#e5e7eb;
+      --red:#b42318; --gold:#b45309; --green:#067647;
+      --chip:#f3f4f6;
+    }
+    html,body{background:var(--bg); color:var(--ink); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; margin:0;}
+    a{color:var(--teal); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px; margin:0 auto; padding:20px 16px 56px;}
+    .topbar{display:flex; justify-content:space-between; align-items:flex-end; gap:12px; border-bottom:3px solid var(--teal); padding-bottom:10px;}
+    h1{font-size:22px; margin:0; letter-spacing:-0.02em;}
+    .meta{font-size:12px; color:var(--muted);}
+    .grid{display:grid; grid-template-columns:1fr; gap:14px; margin-top:16px;}
+    @media (min-width: 900px){ .grid{grid-template-columns:1fr 1fr;} }
+    .card{border:1px solid var(--line); border-radius:12px; padding:14px 14px 12px; background:#fff;}
+    .card h2{font-size:14px; margin:0 0 8px; text-transform:uppercase; letter-spacing:0.08em; color:var(--teal);}
+    .kpi{display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 0;}
+    .chip{background:var(--chip); border:1px solid var(--line); border-radius:999px; padding:6px 10px; font-size:12px;}
+    .flag{font-weight:700;}
+    .red{color:var(--red);} .gold{color:var(--gold);} .green{color:var(--green);} 
+    ul{margin:8px 0 0 18px; padding:0;}
+    li{margin:6px 0; line-height:1.25rem;}
+    .section{margin-top:16px;}
+    .section h2{font-size:14px; margin:0 0 10px; text-transform:uppercase; letter-spacing:0.08em; color:var(--teal);}
+    table{width:100%; border-collapse:collapse; font-size:13px;}
+    th,td{border-bottom:1px solid var(--line); padding:10px 8px; vertical-align:top;}
+    th{font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted); text-align:left;}
+    .nowrap{white-space:nowrap;}
+    .small{font-size:12px; color:var(--muted);}
+    .print-note{margin-top:14px; font-size:11px; color:var(--muted);}    
+    @media print{
+      .wrap{max-width:none; padding:0 10px;}
+      a{color:var(--ink); text-decoration:none}
+      .card,.section{break-inside:avoid;}
+    }
+  </style>
 </head>
 <body>
-<div class="wrap">
+  <div class="wrap">
+    <div class="topbar">
+      <div>
+        <h1>WPT CEO Daily Briefing — Thursday, July 23, 2026</h1>
+        <div class="meta">Prepared for <strong>Terry Finley</strong> · West Point Thoroughbreds</div>
+      </div>
+      <div class="meta">Live page: <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a></div>
+    </div>
 
-<header>
-  <h1>WPT CEO Daily Briefing</h1>
-  <div class="sub">Wednesday, July 22, 2026 · Run #95 · Partner comms is the day's throughline</div>
-</header>
+    <!-- 1) CEO Snapshot -->
+    <div class="grid">
+      <div class="card">
+        <h2>1) CEO Snapshot</h2>
+        <ul>
+          <li><span class="flag">Top priorities:</span> (1) Run a tight <strong>Sales Call (10:00–10:30am CT)</strong> and walk out with 1–2 concrete follow-ups per rep; (2) Align <strong>Horse Call (10:30–11:30am CT)</strong> on any owner-facing messaging; (3) Finalize the <strong>Blake/Duke Oaks-day surprise</strong> plan (Irad mention) before the weekend.</li>
+          <li><span class="flag gold">Biggest risk:</span> Back-to-back morning blocks (prep → sales → horse call) compress decision time; keep agenda-focused to avoid spillover.</li>
+          <li><span class="flag green">Biggest opportunity:</span> Saturday features multiple WPT runners including <strong>Counting Stars</strong> in the <strong>Coaching Club American Oaks (G1)</strong> — leverage for partner energy + prospects.</li>
+          <li><span class="flag">Needs Terry directly:</span> Approve/drive the partner communications tone around <strong>Counting Stars</strong> (respecting other owners / barn environment).</li>
+          <li><span class="flag">Delegate:</span> Have <strong>Lindsey</strong> + <strong>Dawn/Danielle</strong> handle production items (sign / FedEx / mockups) and report back with ready-to-send options.</li>
+        </ul>
+        <div class="kpi">
+          <div class="chip"><strong>Today:</strong> 5 calendar items</div>
+          <div class="chip"><strong>Next 2 days:</strong> travel + 3 major race days</div>
+        </div>
+      </div>
 
-<section>
-  <h2>1. CEO Snapshot</h2>
-  <ul>
-    <li><strong>Big picture:</strong> Two health-heavy retirement calls need to be moved through this week (<strong>Builder's Remedy</strong>, <strong>Careless Whisper</strong>), a Counting Stars shedrow-access note has to land Friday-vs-Sunday, and you have a dedicated <strong>1:00–2:30 PM CDT Partner Communications block</strong> to do exactly that work. Use it.</li>
-    <li><strong>Racing swing this weekend:</strong> Vibe is currently in BOTH Saratoga R4 Thursday (MTO, NW3X) and Colonial R7 Friday (<strong>Yorktown Stakes</strong>, post 1/7). One of those needs to come off before draws.</li>
-    <li><strong>Sales system idea from Lindsey:</strong> add 14/30-day automated rep check-ins post Closed-Won, and let AI generate a weekly list of ~10 partners for your outreach. Both worth a 5-min discussion at the 10 AM Weekly Exec.</li>
-  </ul>
-</section>
+      <!-- 2) 1 CEO Move Today -->
+      <div class="card">
+        <h2>2) 1 CEO Move Today</h2>
+        <p style="margin:0; line-height:1.35rem;">
+          <strong>Before the 10:00am CT Sales Call:</strong> send Lindsey a 3-sentence directive for a <strong>Counting Stars / Oaks weekend</strong> partner note (tone, access, and expectations), and ask her to return a final draft by noon.
+        </p>
+        <div class="small" style="margin-top:10px;">Why: it de-risks owner friction, keeps messaging consistent, and turns the weekend into a controlled “moment” you can also use for prospects.</div>
+      </div>
+    </div>
 
-<section class="move">
-  <h2>2. 1 CEO Move Today</h2>
-  <p><strong>In the 10:00 AM CDT TPF/LH Weekly Exec, lock the Counting Stars shedrow-access note.</strong> Lindsey asked yesterday whether Friday morning is confirmed with Mark Casse or if we should just say Sunday morning. You told her "discuss in the am." Take 3 minutes, decide (single Sunday visit is cleaner and lower-risk on Casse's staff), and Lindsey can send the partner note by lunch. Then the 1–2:30 PM Partner Comms block is free to do the Builder's Remedy retirement rep-call sheet.</p>
-  <p class="meta">Backup move: confirm Vibe's weekend engagement — Yorktown Stakes at Colonial (Friday, post 1 of 7) is the higher-leverage spot than the Saratoga R4 MTO. Give trainer direction today so both aren't in draws.</p>
-</section>
+    <!-- 3) Schedule -->
+    <div class="section">
+      <h2>3) Schedule (All events)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th class="nowrap">When (CT)</th>
+            <th>Event</th>
+            <th>Attendees / Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="nowrap"><strong>All day</strong></td>
+            <td><strong>Lock Blake/Duke Oaks-day surprise</strong></td>
+            <td class="small">If <strong>Counting Stars</strong> runs Sat 7/25 (G1), coordinate to get Irad to mention <strong>Blake</strong> and <strong>Duke</strong> on TV. (Calendar note)</td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>8:00–9:00am</strong></td>
+            <td><strong>Reading Room Mike &amp; Emily Neal</strong></td>
+            <td class="small">Organizer: Debbie. RSVP shows Terry = needsAction.</td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>9:55–10:25am</strong></td>
+            <td><strong>Prep · Horse Call</strong></td>
+            <td class="small">Attendees listed in description: Jeff Lowe; wptteam@westpointtb.com. Talking points: confirm agenda + decisions + owner comms follow-ups.</td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>10:00–10:30am</strong></td>
+            <td><strong>WPT Weekly Sales Call — New Zoom Link</strong></td>
+            <td class="small">Zoom in invite description (organizer: Lindsey). Several attendees marked needsAction (incl. Jeff Lowe, Terry).</td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>10:30–11:30am</strong></td>
+            <td><strong>Horse Call</strong></td>
+            <td class="small">Zoom: https://us02web.zoom.us/j/6092381009 (organizer: Jeff Lowe).</td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>1:54pm</strong></td>
+            <td><strong>Vibe MTO at Saratoga in race 4</strong></td>
+            <td class="small">Calendar note: NW3X Allowance (join/track).</td>
+          </tr>
+        </tbody>
+      </table>
 
-<section>
-  <h2>3. Schedule — Wednesday, July 22 (CDT)</h2>
-  <div class="grid">
-    <div class="t">All day</div><div>Interview Nick intern with Debbie</div>
-    <div class="t">All day</div><div>Plan Marc Reiter SPA visit with Danielle</div>
-    <div class="t">10:00 AM</div><div>TPF/LH Weekly Exec (Zoom, 1h) — Lindsey</div>
-    <div class="t">11:30 AM</div><div>Prep · Terry / Phil / Atlas Bi-Monthly (30 min)</div>
-    <div class="t">12:00 PM</div><div>Terry / Phil / Atlas Bi-Monthly (Google Meet, 30 min)</div>
-    <div class="t">1:00 PM</div><div><span class="pill">🎯 Goal</span> Partner Communications (1h30m)</div>
+      <div style="margin-top:10px" class="small">
+        <strong>Next 2 days (CT) — heads up:</strong>
+        <ul>
+          <li><strong>KY</strong> (all-day block starting Thu evening CT through Sun)</li>
+          <li><strong>Fri:</strong> all-day “Draft Lindsey CEO readiness milestones”; <strong>11:15am–2:15pm</strong> Flight to Nashville</li>
+          <li><strong>Sat:</strong> Racing stack — <strong>Honoree</strong>, <strong>Vibe</strong>, <strong>Paige Turner</strong>, <strong>Bandiagara (GB)</strong>, <strong>Counting Stars</strong> + Duke’s birthday party at 3:30pm CT</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 4) Alerts -->
+    <div class="section">
+      <h2>4) Alerts</h2>
+      <ul>
+        <li><span class="flag gold">Back-to-back overlap risk:</span> <strong>Prep · Horse Call</strong> runs into the start of the <strong>Sales Call</strong> (9:55–10:25 vs 10:00–10:30 CT). Keep prep to 10 minutes and push any deep dives into the 10:30 Horse Call.</li>
+        <li><span class="flag gold">RSVP hygiene:</span> Several events show Terry/others as <strong>needsAction</strong> (Reading Room; Sales Call). Quick accept/decline reduces noise.</li>
+        <li><span class="flag gold">Horse health/comms:</span> Slack notes indicate <strong>Northern Invader</strong> check ligaments need ~30 days; partner update may be needed if expectations are out of sync.</li>
+      </ul>
+    </div>
+
+    <!-- 5) Team Pulse -->
+    <div class="section">
+      <h2>5) Team Pulse (Slack — last ~60 hours)</h2>
+      <div class="card" style="margin-bottom:12px;">
+        <h2 style="margin-bottom:6px;">Executive Team Pulse Summary</h2>
+        <ul>
+          <li><span class="flag green">Momentum:</span> Clear focus on weekend execution (Counting Stars environment + racing logistics) and production tasks (mockups / FedEx).</li>
+          <li><span class="flag gold">Friction / watchouts:</span> Racing plan volatility (e.g., <strong>Vibe</strong> Colonial uncertainty in Slack), and scratches (e.g., <strong>La Rascasse scratched</strong>).</li>
+          <li><span class="flag">Follow-ups:</span> Confirm <strong>Counting Stars</strong> training time + partner messaging; align on sign idea ("SW #200" if Bandiagara wins + Counting Stars). </li>
+        </ul>
+      </div>
+
+      <h3 style="margin:10px 0 6px; font-size:13px; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted);">#horse-comms</h3>
+      <ul>
+        <li><strong>Counting Stars</strong> trains at <strong>6:00</strong> on Thursday (Terry note).</li>
+        <li><strong>Northern Invader</strong>: check ligaments bothering him; recommendation is ~<strong>30 days</strong>; team open to one more return (Erin note).</li>
+        <li><strong>Vibe</strong>: Slack suggests <span class="flag gold">"highly unlikely"</span> to head to Colonial; target Whitney Day race if he doesn’t get in tomorrow (Jason note).</li>
+        <li><strong>Scratch:</strong> <strong>La Rascasse</strong> scratched (Terry relayed partner message).</li>
+        <li><strong>Retirement flow:</strong> Cherie certain <strong>Builder's Remedy</strong> should be retired; still lame after layoff; Dawn asked to prep call doc (Erin/Dawn notes).</li>
+      </ul>
+
+      <h3 style="margin:12px 0 6px; font-size:13px; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted);">#exec-team</h3>
+      <ul>
+        <li><strong>Sign idea:</strong> Terry asked about a sign if <strong>Bandiagara</strong> wins in Canada and <strong>Counting Stars</strong> becomes “SW #200” — needs decision on whether to produce.</li>
+        <li><strong>Production:</strong> Lindsey coordinating with Dawn on a mockup; Danielle or Lindsey to take to FedEx to finalize for Friday afternoon.</li>
+        <li><strong>Messaging:</strong> Lindsey asked whether to confirm with Mark about Friday or shift to Sunday; Terry drafted a Counting Stars partner reply for review.</li>
+      </ul>
+
+      <div class="small" style="margin-top:10px;">Note: No new messages returned in the last ~60h for #sales, #sales-made, or #prospectcomms in the Slack search window used.</div>
+    </div>
+
+    <!-- 6) Racing -->
+    <div class="section">
+      <h2>6) Racing (West Point TB — Daily Entries)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th class="nowrap">Date</th>
+            <th>Horse</th>
+            <th class="nowrap">Race / Post</th>
+            <th>Track / Conditions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="nowrap"><strong>07/23/26</strong></td>
+            <td><strong>Vibe</strong></td>
+            <td class="nowrap">Race <strong>4</strong> · <strong>2:54 ET</strong> · Post Pos. <strong>9 of 7 (MTO)</strong></td>
+            <td><strong>Saratoga</strong> · <strong>NW3X Allowance</strong></td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>07/24/26</strong></td>
+            <td><strong>Liberation</strong></td>
+            <td class="nowrap">Race <strong>7</strong> · <strong>5:00 PT</strong> · Post Pos. <strong>11 of 12</strong></td>
+            <td><strong>Del Mar</strong> · <strong>Fleet Treat Stakes (CA)</strong></td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>07/25/26</strong></td>
+            <td><strong>Honoree</strong></td>
+            <td class="nowrap">Race <strong>4</strong> · <strong>2:14 ET</strong> · Post Pos. <strong>3 of 10</strong></td>
+            <td><strong>Saratoga</strong> · <strong>NY-Bred NW1X Allowance</strong></td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>07/25/26</strong></td>
+            <td><strong>Vibe</strong></td>
+            <td class="nowrap">Race <strong>7</strong> · <strong>3:38 ET</strong> · Post Pos. <strong>1 of 7</strong></td>
+            <td><strong>Colonial Downs</strong> · <strong>Yorktown Stakes</strong></td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>07/25/26</strong></td>
+            <td><strong>Paige Turner</strong></td>
+            <td class="nowrap">Race <strong>8</strong> · <strong>4:30 ET</strong> · Post Pos. <strong>5 of 12</strong></td>
+            <td><strong>Saratoga</strong> · <strong>NW1X Allowance</strong></td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>07/25/26</strong></td>
+            <td><strong>Bandiagara (GB)</strong></td>
+            <td class="nowrap">Race <strong>8</strong> · <strong>4:50 ET</strong> · (Post Pos. not visible in screenshot)</td>
+            <td><strong>Woodbine</strong> · <strong>Ontario Colleen Stakes (G3T)</strong></td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>07/25/26</strong></td>
+            <td><strong>Counting Stars</strong></td>
+            <td class="nowrap">(Post time not visible in screenshot)</td>
+            <td><strong>Saratoga</strong> · <strong>Coaching Club American Oaks (G1)</strong></td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>07/26/26</strong></td>
+            <td><strong>Otz</strong></td>
+            <td class="nowrap">Race <strong>7</strong> · <strong>2:42 CT</strong> · Post Pos. <strong>10 of 11</strong></td>
+            <td><strong>Ellis Park</strong> · <strong>6F</strong> · <strong>Maiden Special Weight</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="small" style="margin-top:10px;">
+        Source: WPT Daily Entries page rendered on 2026-07-23.
+        (<a href="https://westpointtb.com/racing/daily-entries/">westpointtb.com/racing/daily-entries</a>)
+      </div>
+    </div>
+
+    <!-- 7) Decisions Needed -->
+    <div class="section">
+      <h2>7) Decisions Needed</h2>
+      <ul>
+        <li><strong>Counting Stars owner access / schedule:</strong> Decide whether you want a controlled owner window (Fri vs Sun) and approve final wording today so the team can ship it.</li>
+        <li><strong>“SW #200” sign:</strong> Decide by end of day whether to proceed with a sign/mockup so it can be produced and ready for the weekend (Lindsey already coordinating mockup + FedEx).</li>
+        <li><strong>Northern Invader update:</strong> Decide if/when to proactively update partners on the 30-day plan to avoid speculation.</li>
+      </ul>
+    </div>
+
+    <!-- 8) Perplexity Computer Slack Activity -->
+    <div class="section">
+      <h2>8) Perplexity Computer Slack Activity</h2>
+      <ul>
+        <li>#horse-comms: Dawn noted Perplexity built and posted the link to the <strong>Builder's Remedy Retirement Rep Call Sheet</strong> (within the last ~60 hours).</li>
+      </ul>
+    </div>
+
+    <div class="print-note">Tip: Print-friendly format enabled. For best results, print with background graphics enabled.</div>
   </div>
-  <p class="meta">Light meeting load — the day is really about clearing the partner-comms backlog. Protect the 1–2:30 PM block.</p>
-</section>
-
-<section class="alert">
-  <h2>4. Alerts</h2>
-  <ul>
-    <li><strong>Vibe double-entered:</strong> Saratoga R4 Thu 7/23 (MTO, NW3X, post 9/7) AND Colonial R7 Fri 7/25 (Yorktown Stakes, post 1/7). Confirm with trainer team which one is real before draws.</li>
-    <li><strong>Builder's Remedy:</strong> Cherie says needs to retire. Keep at Becky's until sounder, then place. Retirement rep-call sheet already shared — get it moving today during the Partner Comms block.</li>
-    <li><strong>Careless Whisper:</strong> off left front, blocks sound to the ankle, being sent to Bruce for workup. Not a decision today but partners will ask — hold a short bench note ready.</li>
-    <li><strong>Florida Sun 24:</strong> sent back to the clinic yesterday, appeared gassy / uncomfortable. Get a Wednesday update before partner questions come in.</li>
-    <li><strong>Atlas Major:</strong> right front ankle pressure. Creed's Vision OK. Pascaline trace blood after breeze but improved — possible state-bred allowance at Charles Town Friday.</li>
-    <li><strong>Powerline HNW push:</strong> Powerline did not win — Joey / prospect team pushing the HNW email to later in the week; webinar reminder going now; drafts for the HNW group expected Tue/Wed. Confirm the drafts land before you leave the day.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>5. Team Pulse — Slack (last ~60 hours)</h2>
-
-  <h3>#exec-team</h3>
-  <ul>
-    <li><strong>Counting Stars shedrow access:</strong> Lindsey drafted a partner note limiting access this week and proposing two planned barn visits — Friday morning and Sunday morning — coordinated with Casse's staff. She asked whether to confirm Friday with Mark or just say Sunday. You said "discuss in the am." This morning is the am.</li>
-    <li><strong>Sales admin (Lindsey):</strong> add 14- and 30-day automated rep check-in tasks after Closed Won to catch new partners going quiet. Explore AI-generated weekly list of ~10 partners for your outreach.</li>
-  </ul>
-
-  <h3>#horse-comms</h3>
-  <ul>
-    <li><strong>Builder's Remedy:</strong> retire per Cherie; stay at Becky's until sounder, then place. Rep-call sheet shared.</li>
-    <li><strong>Les Reys:</strong> skipped Woodbine stake. Four early-August options — Colonial Andy Guest 8/1 ($150k), Monmouth Incredible Revenge 8/1 ($100k), Presque Isle Satin and Lace 8/3 ($100k), Saratoga Smart and Fancy 8/14 ($200k).</li>
-    <li><strong>Careless Whisper:</strong> being sent to Bruce; off LF; blocks sound to ankle.</li>
-    <li><strong>Florida Sun 24:</strong> back to clinic, gassy/uncomfortable.</li>
-    <li><strong>Atlas Major:</strong> RF ankle pressure.</li>
-    <li><strong>Creed's Vision:</strong> OK.</li>
-    <li><strong>Pascaline:</strong> trace blood post-breeze but improved; possible state-bred allowance at CT Friday.</li>
-    <li><strong>Abrigado:</strong> Brad entering for Sunday — maiden $30k after maiden $50k didn't fill.</li>
-  </ul>
-
-  <h3>#prospectcomms</h3>
-  <ul>
-    <li>Powerline did not win — HNW email pushed later in the week; webinar reminder going now; HNW group drafts expected Tue/Wed.</li>
-  </ul>
-
-  <h3>#sales · #sales-made</h3>
-  <ul>
-    <li>No new activity in the window.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>6. Racing — WPT Daily Entries</h2>
-  <ul>
-    <li><strong>Thu 7/23:</strong> Vibe — Saratoga R4, 2:54 PM ET, 9F, NW3X Allowance (MTO). Confirm.</li>
-    <li><strong>Fri 7/24:</strong> Liberation — Del Mar R7, 5:00 PM PT, 7F, Fleet Treat Stakes, post 11/12.</li>
-    <li><strong>Sat 7/25:</strong> Honoree — Saratoga R4, 2:14 PM ET, 8F, NY-Bred NW1X Allowance, post 3/10.</li>
-    <li><strong>Fri 7/25:</strong> Vibe — Colonial Downs R7, 3:38 PM ET, 9F, <strong>Yorktown Stakes</strong>, post 1/7.</li>
-    <li><strong>Sat 7/25:</strong> Paige Turner — Saratoga R8, 4:30 PM ET, 8.5F, NW1X Allowance, post 5/12 (OCR uncertain).</li>
-    <li>Source: <a href="https://westpointtb.com/racing/daily-entries/" target="_blank">WPT Daily Entries</a></li>
-  </ul>
-</section>
-
-<section>
-  <h2>7. Decisions Needed</h2>
-  <ul>
-    <li><strong>Counting Stars — Friday-and-Sunday or Sunday only?</strong> Lock at 10 AM Weekly Exec so Lindsey can send.</li>
-    <li><strong>Vibe — Saratoga R4 Thu or Colonial R7 Yorktown Fri?</strong> Give trainer direction today.</li>
-    <li><strong>Builder's Remedy retirement</strong> — start rep calls today in the 1–2:30 PM block.</li>
-    <li><strong>Les Reys stake selection</strong> — Andy Guest 8/1, Incredible Revenge 8/1, Satin and Lace 8/3, or Smart and Fancy 8/14.</li>
-    <li><strong>Pascaline CT Friday</strong> — go or no-go on the state-bred allowance.</li>
-    <li><strong>Lindsey's sales-admin proposals</strong> — approve the 14/30-day rep check-ins + the AI weekly outreach list.</li>
-    <li><strong>Powerline HNW drafts</strong> — confirm delivery Tue/Wed.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>8. Perplexity Computer Slack Activity</h2>
-  <ul>
-    <li>No new #perplexity-computer channel activity in the last 60 hours.</li>
-    <li>Daily briefing automation continues to deliver to both you and Lindsey at 5 AM CDT.</li>
-  </ul>
-</section>
-
-<footer>
-  Generated by Perplexity Computer · Live at <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a>
-</footer>
-
-</div>
 </body>
 </html>
