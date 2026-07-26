@@ -3,332 +3,330 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WPT CEO Daily Briefing</title>
+  <title>WPT CEO Daily Briefing — Sunday, July 26, 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{
       --bg:#FFFFFF;
       --ink:#28251D;
+      --muted:#6B6B6B;
       --teal:#01696F;
-      --muted:#6b6b6b;
-      --card:#f6f7f7;
-      --line:#e7e7e7;
-      --red:#b00020;
-      --gold:#9a7b00;
-      --green:#0b7a38;
+      --gold:#B38300;
+      --red:#B00020;
+      --green:#1B7F3A;
+      --card:#F7F7F7;
+      --line:#E6E6E6;
     }
     *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
-    a{color:var(--teal);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:980px;margin:0 auto;padding:18px 14px 60px;}
-    header{display:flex;flex-direction:column;gap:8px;padding:8px 0 14px;border-bottom:1px solid var(--line)}
-    .title{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px}
-    h1{font-size:22px;margin:0;letter-spacing:-0.02em}
-    .sub{color:var(--muted);font-size:13px}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.25}
+    .wrap{max-width:1060px;margin:0 auto;padding:18px 16px 40px}
+    header{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;justify-content:space-between;padding:10px 0 14px;border-bottom:2px solid var(--line)}
+    h1{font-size:20px;margin:0;font-weight:800;letter-spacing:.2px}
+    .meta{font-size:12px;color:var(--muted)}
     .grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px}
-    @media(min-width:820px){.grid.two{grid-template-columns:1fr 1fr}}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 12px 10px}
-    .card h2{margin:0 0 10px;font-size:15px;letter-spacing:-0.01em}
-    .kpi{display:flex;flex-direction:column;gap:8px}
-    .kpi .row{display:flex;gap:10px;align-items:flex-start}
-    .pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:600;border:1px solid var(--line);background:#fff}
-    .pill.red{border-color:rgba(176,0,32,.25);color:var(--red)}
-    .pill.gold{border-color:rgba(154,123,0,.25);color:var(--gold)}
-    .pill.green{border-color:rgba(11,122,56,.25);color:var(--green)}
-    ul{margin:0;padding-left:18px}
-    li{margin:4px 0}
-    .section{margin-top:16px}
-    .section h2{font-size:16px;margin:0 0 10px}
-    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
-    th,td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13px}
-    th{background:#fbfbfb;text-align:left;color:#444;font-weight:700}
+    @media(min-width:980px){.grid{grid-template-columns:1.2fr .8fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+    .section{margin-top:14px}
+    .section h2{margin:0 0 10px;font-size:15px;font-weight:800}
+    .pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 10px;font-size:12px;color:var(--muted)}
+    .kpi{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .flag{font-weight:800}
+    .red{color:var(--red)}
+    .gold{color:var(--gold)}
+    .green{color:var(--green)}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+    th,td{padding:10px 10px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13px}
+    th{background:#FAFAFA;text-align:left;font-size:12px;color:var(--muted);font-weight:700}
     tr:last-child td{border-bottom:none}
-    .muted{color:var(--muted)}
-    .badge{display:inline-block;font-size:12px;font-weight:700}
-    .badge.red{color:var(--red)}
-    .badge.gold{color:var(--gold)}
-    .badge.green{color:var(--green)}
-    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
-    .foot{margin-top:16px;color:var(--muted);font-size:12px}
+    .small{font-size:12px;color:var(--muted)}
+    .tight td{padding:8px 10px}
+    .callout{border-left:4px solid var(--teal);padding:10px 12px;background:#fff;border-radius:10px;border:1px solid var(--line)}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+    .footer{margin-top:24px;padding-top:12px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
     @media print{
-      .wrap{max-width:none}
-      a{text-decoration:none;color:var(--ink)}
+      a{color:inherit;text-decoration:none}
       .card{break-inside:avoid}
-      table{break-inside:avoid}
+      header{border-bottom:1px solid #000}
     }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="title">
-        <h1>WPT CEO Daily Briefing</h1>
-        <div class="sub">Saturday, July 25, 2026</div>
+      <div>
+        <h1>WPT CEO Daily Briefing — Sunday, July 26, 2026</h1>
+        <div class="meta">Generated 5:03 AM CDT • Web: <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a></div>
       </div>
-      <div class="sub">Primary channels: this page + email. Times shown in <b>ET</b> unless noted.</div>
+      <div class="kpi">
+        <span class="pill"><span class="flag green">WIN</span> 2 runners today (Ellis Park)</span>
+        <span class="pill"><span class="flag gold">ATTN</span> Partner/Prospect webinar reschedule decision</span>
+        <span class="pill"><span class="flag red">RISK</span> Atlas Major ankle clean-up (6-week window)</span>
+      </div>
     </header>
 
-    <!-- 1) CEO Snapshot -->
-    <div class="grid two">
-      <div class="card">
-        <h2>1) CEO Snapshot</h2>
-        <div class="kpi">
-          <div class="row"><span class="pill gold">Top priorities</span>
-            <div>
-              <ul>
-                <li>Execute a clean <b>Saratoga / Woodbine / Del Mar</b> runner day: <b>Honoree</b> (SAR R4), <b>Paige Turner</b> (SAR R8), <b>Counting Stars</b> (SAR R10, <b>G1 CCA Oaks</b>), <b>Bandiagara (GB)</b> (WO R8, <b>G3T</b>), <b>Indispensable</b> (DM R8).</li>
-                <li>Lock webinar reschedule plan (Partner + Prospect yearling webinars) so comms go out today/early week.</li>
-                <li>Reduce internal drag: settle “video + handicapping data on entries page” direction so team can execute.</li>
-              </ul>
-            </div>
+    <!-- 1. CEO Snapshot -->
+    <section class="section">
+      <h2>1) CEO Snapshot</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="callout">
+            <div><b>Top 3 priorities today</b></div>
+            <ul>
+              <li><b>Racing focus:</b> support today’s Ellis Park runners — <b>Just Vote</b> (Race 5) and <b>Otz</b> (Race 7).</li>
+              <li><b>Lock the webinar reschedule</b> (Partner + Prospect Yearling Webinars) so comms can go out early this week.</li>
+              <li><b>Horse comms alignment:</b> confirm Monday partner-note plan for <b>Atlas Major</b> (ankle clean-up) and any related call tasks.</li>
+            </ul>
           </div>
-          <div class="row"><span class="pill red">Biggest risk</span>
-            <div>Operational distraction during a heavy runner slate; plus <b>Atlas Major</b> ankle clean-up / surgery scheduling (miss ~<b>6 weeks</b>).</div>
-          </div>
-          <div class="row"><span class="pill green">Biggest opportunity</span>
-            <div>High-visibility weekend content + partner excitement (notably <b>Counting Stars</b> in a <b>G1</b>) → convert attention into partner/prospect momentum.</div>
-          </div>
-          <div class="row"><span class="pill gold">Terry must touch</span>
-            <div>Confirm how you want <b>Counting Stars</b> / entries media packaged (videos + handicapping data) and who owns execution.</div>
-          </div>
-          <div class="row"><span class="pill gold">Delegate</span>
-            <div>Have Erin/Jason push a simple “today’s runners” package to Chatter (last 3 races videos + bullet handicapping snapshot) once you confirm format.</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2) 1 CEO Move Today -->
-      <div class="card">
-        <h2>2) 1 CEO Move Today</h2>
-        <div class="kpi">
-          <div class="row"><span class="pill gold">Action</span>
-            <div>
-              Text <b>Erin Birkenhauer</b> to confirm a <b>one-page “Today’s 5 runners” media drop</b> (videos + 3 bullet handicapping notes each) and schedule it to post before <b>Honoree</b> at <b>2:14 ET</b>.
-              <div class="muted" style="margin-top:6px;">Reason: you already flagged the exact need (“more videos on chatter for entries” + “handicapping data on entries page”).</div>
-            </div>
+          <div style="margin-top:10px">
+            <div><b>Biggest risk</b> <span class="flag red">(today/this week)</span></div>
+            <ul>
+              <li><b>Atlas Major</b>: small fragments involving the joint → ankle clean-up; timeline ~<b>6 weeks</b> and avoids an “ambitious” Hopeful path.</li>
+            </ul>
+            <div><b>Biggest opportunity</b> <span class="flag green">(this week)</span></div>
+            <ul>
+              <li>Strong upcoming entries at Saratoga/Colonial: <b>Abrigado</b>, <b>Relaxx (FR)</b>, <b>Preside</b>, <b>Absolutely Hot</b>, <b>Tiz the Lady</b> — use momentum for partner engagement + sales touches.</li>
+            </ul>
+            <div><b>Needs Terry directly</b></div>
+            <ul>
+              <li>Give final go/no-go on the webinar reschedule date/time so the team can announce.</li>
+            </ul>
+            <div><b>Delegate</b></div>
+            <ul>
+              <li>Assign someone to package and send <b>Skip photos</b> (as flagged in #exec-team) and to draft the “entries chatter” video concept into a 1-pager.</li>
+            </ul>
           </div>
         </div>
+
+        <div class="card">
+          <div><b>Quick glance: Today</b></div>
+          <table class="tight" aria-label="Today glance">
+            <thead>
+              <tr><th>Time (CDT)</th><th>Item</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="mono">1:44 PM</td><td><b>Just Vote</b> — Ellis Park <b>Race 5</b> (MSW)</td></tr>
+              <tr><td class="mono">2:00–4:00 PM</td><td><b>Blake’s birthday party</b></td></tr>
+              <tr><td class="mono">2:42 PM</td><td><b>Otz</b> — Ellis Park <b>Race 7</b> (MSW)</td></tr>
+            </tbody>
+          </table>
+          <div class="small" style="margin-top:8px">Calendar times displayed in CDT (calendar data pulled in ET range but rendered local in feed).</div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- 3) Schedule -->
-    <div class="section">
-      <h2>3) Schedule (Calendar)</h2>
-      <div class="muted" style="margin:0 0 10px;">Includes all events from calendar pulls for today + next 2 days.</div>
-      <table>
-        <thead>
-          <tr>
-            <th style="width:120px;">Day</th>
-            <th style="width:120px;">Time</th>
-            <th>Event</th>
-            <th style="width:220px;">Attendees / Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><b>Sat 7/25</b></td>
-            <td class="mono">All-day</td>
-            <td><b>KY</b></td>
-            <td class="muted">With <b>Debbie</b> (trip block)</td>
-          </tr>
-          <tr>
-            <td><b>Sat 7/25</b></td>
-            <td class="mono">9:00 ET</td>
-            <td><b>HRRN</b></td>
-            <td class="muted">—</td>
-          </tr>
-          <tr>
-            <td><b>Sat 7/25</b></td>
-            <td class="mono">10:15 ET</td>
-            <td><b>Bill Finley show</b></td>
-            <td class="muted">—</td>
-          </tr>
-          <tr>
-            <td><b>Sat 7/25</b></td>
-            <td class="mono">3:30 ET</td>
-            <td><b>Honoree</b> at Saratoga (Race <b>4</b>)</td>
-            <td class="muted">NY-bred NW1X Allowance (8F)</td>
-          </tr>
-          <tr>
-            <td><b>Sat 7/25</b></td>
-            <td class="mono">6:30 ET</td>
-            <td><b>Paige Turner</b> at Saratoga (Race <b>8</b>)</td>
-            <td class="muted">NW1X Allowance (8.5F)</td>
-          </tr>
-          <tr>
-            <td><b>Sat 7/25</b></td>
-            <td class="mono">6:50 ET</td>
-            <td><b>Bandiagara (GB)</b> at Woodbine (Race <b>8</b>)</td>
-            <td class="muted">Ontario Colleen S. (<b>G3T</b>)</td>
-          </tr>
-          <tr>
-            <td><b>Sat 7/25</b></td>
-            <td class="mono">8:30–11:00 ET</td>
-            <td><b>Duke’s birthday party</b></td>
-            <td class="muted">Personal</td>
-          </tr>
-          <tr>
-            <td><b>Sat 7/25</b></td>
-            <td class="mono">8:45 ET</td>
-            <td><b>Counting Stars</b> at Saratoga (Race <b>10</b>)</td>
-            <td class="muted">Coaching Club American Oaks (<b>G1</b>) (9F)</td>
-          </tr>
-          <tr>
-            <td><b>Sat 7/25</b></td>
-            <td class="mono">10:30 ET</td>
-            <td><b>Indispensable</b> at Del Mar (Race <b>8</b>)</td>
-            <td class="muted">NW2X Allowance (8F) (posted as <span class="mono">5:30 PT</span>)</td>
-          </tr>
-
-          <tr>
-            <td><b>Sun 7/26</b></td>
-            <td class="mono">3:44 ET</td>
-            <td><b>Just Vote</b> at Ellis Park (Race <b>5</b>)</td>
-            <td class="muted">Maiden Special Weight (6F) (posted as <span class="mono">1:44 CT</span>)</td>
-          </tr>
-          <tr>
-            <td><b>Sun 7/26</b></td>
-            <td class="mono">4:00–6:00 ET</td>
-            <td><b>Blake’s birthday party</b></td>
-            <td class="muted">Personal</td>
-          </tr>
-          <tr>
-            <td><b>Sun 7/26</b></td>
-            <td class="mono">4:42 ET</td>
-            <td><b>Otz</b> at Ellis Park (Race <b>7</b>)</td>
-            <td class="muted">Maiden Special Weight (6F) (posted as <span class="mono">2:42 CT</span>)</td>
-          </tr>
-
-          <tr>
-            <td><b>Mon 7/27</b></td>
-            <td class="mono">9:00–10:30 ET</td>
-            <td><b>🎯 Goal: CEO Operating System — HARD RULE (Week 6)</b></td>
-            <td class="muted">90-min block; includes explicit fallback plan if blocked</td>
-          </tr>
-          <tr>
-            <td><b>Mon 7/27</b></td>
-            <td class="mono">12:15–3:25 ET</td>
-            <td><b>Flight BNA → ALB</b></td>
-            <td class="muted">Travel</td>
-          </tr>
-          <tr>
-            <td><b>Mon 7/27</b></td>
-            <td class="mono">3:00–4:00 ET</td>
-            <td><b>WPT Lead Score Discussion</b> (Zoom)</td>
-            <td class="muted">Attendees: <b>Lindsey</b>, <b>Dawn</b>, <b>Terry</b>, Joey; Ali needsAction</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="foot">
-        <span class="badge gold">Attention:</span> Today’s runners cluster from <b>3:30 ET</b> through late evening; plan content + check-ins so you’re not reactive.
+    <!-- 2. 1 CEO Move Today -->
+    <section class="section">
+      <h2>2) 1 CEO Move Today</h2>
+      <div class="card">
+        <div class="callout">
+          <div><b>Make the reschedule call:</b> decide the new date/time for the Partner + Prospect Yearling Webinars and tell <b>Erin</b> to publish the change today.</div>
+          <div class="small" style="margin-top:6px">Why: the team expects <b>Abrigado</b> to run Wednesday and wants to avoid conflicts with <b>Relaxx</b> and mid-week runners; the earlier the announcement, the better attendance and fewer 1:1 follow-ups.</div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- 4) Alerts -->
-    <div class="section">
+    <!-- 3. Schedule -->
+    <section class="section">
+      <h2>3) Schedule (Today + Next 2 Days)</h2>
+      <div class="card">
+        <table aria-label="Schedule">
+          <thead>
+            <tr>
+              <th>When (local)</th>
+              <th>Event</th>
+              <th>People / Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="mono">All day (ends 7:00 PM CDT)</span></td>
+              <td><b>KY</b></td>
+              <td>Attendees: <b>Terry</b>, Debbie (invite pending for Terry).</td>
+            </tr>
+            <tr>
+              <td><span class="mono">Sun 1:44 PM CDT</span></td>
+              <td><b>Just Vote</b> at Ellis Park in <b>Race 5</b></td>
+              <td>Organizer: Erin. “Join Just Vote… Maiden Special Weight.”</td>
+            </tr>
+            <tr>
+              <td><span class="mono">Sun 2:00–4:00 PM CDT</span></td>
+              <td><b>Blake’s birthday party</b></td>
+              <td>Personal.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">Sun 2:42 PM CDT</span></td>
+              <td><b>Otz</b> at Ellis Park in <b>Race 7</b></td>
+              <td>Organizer: Erin. “Join Otz… Maiden Special Weight.”</td>
+            </tr>
+            <tr>
+              <td><span class="mono">Mon 8:00–9:30 AM CDT</span></td>
+              <td><b>🎯 Goal: CEO Operating System — HARD RULE (Week 6)</b></td>
+              <td>90-min block; includes time-boxed fallback plan.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">Mon 10:15 AM–1:25 PM CDT</span></td>
+              <td><b>Flight BNA → ALB</b></td>
+              <td>Travel.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">Mon 2:00–3:00 PM CDT</span></td>
+              <td><b>WPT Lead Score Discussion</b> (Zoom)</td>
+              <td>Attendees: Joey Avioli, <b>Dawn</b>, <b>Lindsey</b>, <b>Terry</b>, Ali. Zoom link in invite.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">Tue 6:00–7:00 AM CDT</span></td>
+              <td><b>Meeting with Bill Farish on Wednesday?</b></td>
+              <td><span class="flag gold">ATTN</span> Placeholder; confirm/declutter if not real.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">Tue 9:00–10:00 AM CDT</span></td>
+              <td><b>Brian Domenick meeting</b></td>
+              <td>Prep: objectives + ask list.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 4. Alerts -->
+    <section class="section">
       <h2>4) Alerts</h2>
       <div class="card">
         <ul>
-          <li><span class="badge red">Urgent:</span> <b>Atlas Major</b> ankle clean-up: imaging shows small fragments involving joint; surgery being scheduled (miss ~<b>6 weeks</b>).</li>
-          <li><span class="badge gold">Attention:</span> Partner + Prospect webinar reschedule decision needed (conflicts with midweek runner slate; team leaning Aug 3 / Aug 4 options).</li>
-          <li><span class="badge gold">Attention:</span> Multiple <b>needsAction</b> RSVPs for key race blocks (e.g., <b>Paige Turner</b> event shows Terry needsAction) — may want to accept/decline for clarity.</li>
+          <li><span class="flag gold">ATTN</span> <b>Tuesday 2:00 PM UTC slot overlap risk</b>: there are multiple Tuesday events around the same morning block (confirm no conflicts once full week is visible).</li>
+          <li><span class="flag red">RISK</span> <b>Atlas Major</b> ankle clean-up planned; ensure partner comms/call tasks are set for Monday and expectations are clear.</li>
+          <li><span class="flag gold">ATTN</span> Placeholder meeting “<b>Bill Farish on Wednesday?</b>” — confirm if this is real or delete to reduce noise.</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <!-- 5) Team Pulse -->
-    <div class="section">
+    <!-- 5. Team Pulse -->
+    <section class="section">
       <h2>5) Team Pulse (Slack — last ~60 hours)</h2>
-      <div class="grid two">
-        <div class="card">
-          <h2>Executive summary</h2>
+      <div class="card">
+        <div class="callout">
+          <div><b>Executive Team Pulse Summary</b></div>
           <ul>
-            <li><span class="badge green">Momentum:</span> Team is aligned on rescheduling webinars and preparing weekend comms around runners.</li>
-            <li><span class="badge red">Friction / risk:</span> <b>Atlas Major</b> health update + surgery timing; partner comms intentionally delayed until after weekend.</li>
-            <li><span class="badge gold">Follow-ups:</span> Decide your preferred format for entries media (videos + handicapping info) and assign ownership.</li>
+            <li><b>Momentum:</b> strong entry slate and comms cadence; team coordinating around likely mid-week runners.</li>
+            <li><b>Friction:</b> webinar timing vs. race-day conflicts; needs a quick executive decision to announce reschedule.</li>
+            <li><b>Wins:</b> <b>Ella Forte</b> procedure went well; shipped to Becky’s.</li>
+            <li><b>Follow-ups:</b> align on <b>Atlas Major</b> partner note (Monday) and operationalize Terry’s #exec-team ideas (entries videos + handicapping data).</li>
           </ul>
         </div>
-        <div class="card">
-          <h2>Sales-made</h2>
-          <div class="muted">No posts in <b>#sales-made</b> in the last ~60 hours.</div>
-        </div>
-      </div>
 
-      <div class="section" style="margin-top:12px;">
-        <h2 style="font-size:14px;margin:0 0 8px;">Channel notes (selected)</h2>
-        <div class="card">
-          <ul>
-            <li><b>#horse-comms</b>: Update: <b>Atlas Major</b> ankle clean-up recommended; expectation is ~<b>6 weeks</b> down; surgery scheduled for <b>Tuesday</b>. Also note: <b>Cugino</b> breezing after break (training tomorrow <b>7:30am</b>).</li>
-            <li><b>#sales</b>: Team discussing rescheduling Partner/Prospect Yearling Webinars due to runner conflicts; proposed slot: <b>Mon Aug 3</b> (2pm prospects / 3pm partners) with alternates (<b>Aug 4</b>, or Tue <b>7/28</b> afternoon) under discussion.</li>
-            <li><b>#exec-team</b>: You floated (1) putting more <b>videos</b> on Chatter for entries and (2) adding <b>handicapping data</b> on the entries page; also asked about distributing “skip photos.”</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+        <h3 style="margin:12px 0 6px;font-size:13px">#horse-comms</h3>
+        <ul>
+          <li><b>Ella Forte</b> stringhalt procedure went well; shipped to Becky’s.</li>
+          <li><b>Atlas Major</b>: vet call summary — ankle pressure, small fragments involve joint; plan clean-up with Dr. Janik; estimate <b>~6 weeks</b> missed; avoids overreaching into the Hopeful path.</li>
+          <li><b>Epic Fashionista</b> partner note draft shared for review; Builder’s Remedy retire note greenlit (“All set in BR”).</li>
+          <li><b>Cugino</b> set to breeze after break (training tomorrow 7:30am).</li>
+          <li>Entry notes: <b>Relaxx</b> in for Wednesday; <b>Absolutely Hot</b> and <b>Abrigado</b> brought back for Thursday (later clarified Abrigado in for <b>25k</b>).</li>
+        </ul>
 
-    <!-- 6) Racing -->
-    <div class="section">
+        <h3 style="margin:12px 0 6px;font-size:13px">#sales</h3>
+        <ul>
+          <li>Team discussing rescheduling Partner + Prospect Yearling Webinars due to conflicts with <b>Abrigado</b> Wednesday and proximity to <b>Relaxx</b>; initial proposal: <b>Mon Aug 3</b> (2pm prospects / 3pm partners) with alternatives discussed.</li>
+        </ul>
+
+        <h3 style="margin:12px 0 6px;font-size:13px">#sales-made</h3>
+        <div class="small">No notable messages found in the last ~60 hours.</div>
+
+        <h3 style="margin:12px 0 6px;font-size:13px">#prospectcomms</h3>
+        <div class="small">No notable messages found in the last ~60 hours.</div>
+
+        <h3 style="margin:12px 0 6px;font-size:13px">#exec-team</h3>
+        <ul>
+          <li>Terry: “Getting <b>Skip photos</b> to peeps?”</li>
+          <li>Terry: idea — add more videos on chatter for entries (e.g., last three races for <b>Counting Stars</b>).</li>
+          <li>Terry: idea — put all handicapping data on-page (needs discussion/definition).</li>
+        </ul>
+
+        <div class="small" style="margin-top:10px">Slack window: ~60-hour lookback (UTC → local display). DMs and “perplexity” keyword searches returned no results in this window.</div>
+      </div>
+    </section>
+
+    <!-- 6. Racing -->
+    <section class="section">
       <h2>6) Racing (WPT Daily Entries)</h2>
-      <table>
-        <thead>
-          <tr>
-            <th style="width:100px;">Date</th>
-            <th>Horse</th>
-            <th style="width:80px;">Race</th>
-            <th style="width:110px;">Post</th>
-            <th style="width:100px;">Post Pos.</th>
-            <th style="width:90px;">Distance</th>
-            <th style="width:150px;">Track</th>
-            <th>Name / Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td class="mono">07/25/26</td><td><b>Honoree</b></td><td class="mono">4</td><td class="mono">2:14 ET</td><td class="mono">3 of 10</td><td class="mono">8F</td><td><b>Saratoga</b></td><td>NY-Bred NW1X Allowance</td></tr>
-          <tr><td class="mono">07/25/26</td><td><b>Paige Turner</b></td><td class="mono">8</td><td class="mono">4:30 ET</td><td class="mono">5 of 12</td><td class="mono">8.5F</td><td><b>Saratoga</b></td><td>NW1X Allowance</td></tr>
-          <tr><td class="mono">07/25/26</td><td><b>Bandiagara (GB)</b></td><td class="mono">8</td><td class="mono">4:50 ET</td><td class="mono">2 of 9</td><td class="mono">8F</td><td><b>Woodbine</b></td><td>Ontario Colleen Stakes (<b>G3T</b>)</td></tr>
-          <tr><td class="mono">07/25/26</td><td><b>Counting Stars</b></td><td class="mono">10</td><td class="mono">5:45 ET</td><td class="mono">1 of 9</td><td class="mono">9F</td><td><b>Saratoga</b></td><td>Coaching Club American Oaks (<b>G1</b>)</td></tr>
-          <tr><td class="mono">07/25/26</td><td><b>Indispensable</b></td><td class="mono">8</td><td class="mono">5:30 PT</td><td class="mono">7 of 10</td><td class="mono">8F</td><td><b>Del Mar</b></td><td>NW2X Allowance</td></tr>
-          <tr><td class="mono">07/26/26</td><td><b>Just Vote</b></td><td class="mono">5</td><td class="mono">1:44 CT</td><td class="mono">3 of 10</td><td class="mono">6F</td><td><b>Ellis Park</b></td><td>Maiden Special Weight</td></tr>
-          <tr><td class="mono">07/26/26</td><td><b>Otz</b></td><td class="mono">7</td><td class="mono">2:42 CT</td><td class="mono">10 of 11</td><td class="mono">6F</td><td><b>Ellis Park</b></td><td>Maiden Special Weight</td></tr>
-          <tr><td class="mono">07/29/26</td><td><b>Abrigado</b></td><td class="mono">2</td><td class="mono">1:45 ET</td><td class="mono">4 of 8</td><td class="mono">6F</td><td><b>Saratoga</b></td><td>Maiden Claiming 25k</td></tr>
-          <tr><td class="mono">07/29/26</td><td><b>Run Away Rojo</b></td><td class="mono">3</td><td class="mono">3:12 ET</td><td class="mono">5 of 7</td><td class="mono">8.5F</td><td><b>Horseshoe Indianapolis</b></td><td>Indiana-Bred Allowance</td></tr>
-          <tr><td class="mono">07/29/26</td><td><b>Relaxx (FR)</b></td><td class="mono">7</td><td class="mono">4:40 ET</td><td class="mono">4 of 8</td><td class="mono">9F</td><td><b>Saratoga</b></td><td>NW2X Allowance</td></tr>
-        </tbody>
-      </table>
-      <div class="foot">Rendered from WPT’s Daily Entries page: <a href="https://westpointtb.com/racing/daily-entries/">westpointtb.com/racing/daily-entries</a></div>
-    </div>
+      <div class="card">
+        <div class="callout">
+          <div><b>Today’s entries (07/26/26)</b></div>
+          <ul>
+            <li><b>Just Vote</b> — Ellis Park • <b>Race 5</b> • Post <b>1:44 CT</b> • 6F • <b>Maiden Special Weight</b> • Post Pos <b>3 of 10</b></li>
+            <li><b>Otz</b> — Ellis Park • <b>Race 7</b> • Post <b>2:42 CT</b> • 6F • <b>Maiden Special Weight</b> • Post Pos <b>10 of 11</b></li>
+          </ul>
+        </div>
 
-    <!-- 7) Decisions Needed -->
-    <div class="section">
+        <div style="margin-top:10px"><b>Next entries</b></div>
+        <table aria-label="Upcoming entries">
+          <thead>
+            <tr><th>Date</th><th>Horse</th><th>Track</th><th>Race</th><th>Post time</th><th>Type/Conditions</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>07/29/26</td><td><b>Abrigado</b></td><td>Saratoga</td><td>2</td><td>1:45 ET</td><td>Maiden Claiming <b>25k</b></td></tr>
+            <tr><td>07/29/26</td><td><b>Run Away Rojo</b></td><td>Horseshoe Indianapolis</td><td>3</td><td>3:12 ET</td><td>Indiana-Bred Allowance</td></tr>
+            <tr><td>07/29/26</td><td><b>Relaxx (FR)</b></td><td>Saratoga</td><td>7</td><td>4:40 ET</td><td>NW2X Allowance</td></tr>
+            <tr><td>07/30/26</td><td><b>Preside</b></td><td>Saratoga</td><td>4</td><td>2:54 ET</td><td>Maiden Special Weight</td></tr>
+            <tr><td>07/30/26</td><td><b>Absolutely Hot</b></td><td>Saratoga</td><td>9</td><td>5:49 ET</td><td>Claiming 40k NW2L</td></tr>
+            <tr><td>07/31/26</td><td><b>Tiz the Lady</b></td><td>Colonial Downs</td><td>9</td><td>4:30 ET</td><td>NW2L Allowance</td></tr>
+          </tbody>
+        </table>
+
+        <div class="small" style="margin-top:10px">Source: West Point Thoroughbreds “Daily Entries” page (rendered view) — <a href="https://westpointtb.com/racing/daily-entries/">westpointtb.com/racing/daily-entries</a>.</div>
+      </div>
+    </section>
+
+    <!-- 7. Decisions Needed -->
+    <section class="section">
       <h2>7) Decisions Needed</h2>
       <div class="card">
-        <ul>
-          <li><b>Decision:</b> Reschedule Partner + Prospect Yearling Webinars (date/time)
-            <div class="muted">Why it matters: runners midweek will pull the team off calls; you want a clean comms window.</div>
-            <div><b>Recommendation:</b> Approve <b>Mon Aug 3</b> (2pm prospects / 3pm partners) unless you prefer <b>Tue 7/28</b> afternoon.</div>
-            <div class="muted"><b>Time sensitivity:</b> Today / early Monday (so messaging goes out before midweek).</div>
-          </li>
-          <li><b>Decision:</b> Entries media standard (videos + handicapping data)
-            <div class="muted">Why it matters: you’ve identified the lever; clarity lets team ship a repeatable template.</div>
-            <div><b>Recommendation:</b> Greenlight a light template: last <b>3 race replays</b> + <b>3 bullets</b> (pace, surface/distance fit, “why today”) per runner.</div>
-            <div class="muted"><b>Time sensitivity:</b> Today (to capitalize on the big runner slate).</div>
-          </li>
-        </ul>
+        <table aria-label="Decisions">
+          <thead>
+            <tr><th>Decision</th><th>Why it matters</th><th>Recommendation</th><th>Timing</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Reschedule Partner + Prospect Yearling Webinars</b></td>
+              <td>Conflicts with mid-week runners (team expects <b>Abrigado</b> to run Wed; proximity to <b>Relaxx</b>).</td>
+              <td>Pick the new slot (e.g., <b>Mon Aug 3</b> blocks) and direct Erin to announce immediately.</td>
+              <td><span class="flag red">Today</span></td>
+            </tr>
+            <tr>
+              <td><b>Atlas Major partner communication plan</b></td>
+              <td>Sets expectations and reduces inbound; aligns reps on message (timeline ~<b>6 weeks</b>).</td>
+              <td>Confirm Monday partner-note + call-task assignments; keep message factual and forward-looking.</td>
+              <td><span class="flag gold">This week</span></td>
+            </tr>
+            <tr>
+              <td><b>Product/content direction: entries chatter videos + handicapping data on-page</b></td>
+              <td>Could improve partner engagement and conversion; needs scope to avoid distraction.</td>
+              <td>Delegate a 1-page proposal (what data, where it lives, and who owns updates) for quick review.</td>
+              <td><span class="flag gold">This week</span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </div>
+    </section>
 
-    <!-- 8) Perplexity Computer Slack Activity -->
-    <div class="section">
+    <!-- 8. Perplexity Computer Slack Activity -->
+    <section class="section">
       <h2>8) Perplexity Computer Slack Activity</h2>
       <div class="card">
-        <div class="muted">Recent activity noted in Slack searches includes a couple of <b>Computer</b> bot DM messages to Terry with no visible text content in the log.</div>
+        <div class="small">No “perplexity” keyword matches found in Slack for the last ~60 hours.</div>
       </div>
-    </div>
+    </section>
 
+    <div class="footer">
+      <div><b>Notes</b></div>
+      <ul>
+        <li>Calendar pulled via Google Calendar connector for 2026-07-26 through 2026-07-28 (ET range), displayed here in local time as provided by the feed.</li>
+        <li>Slack Team Pulse window computed from current run time (UTC) with a ~60-hour lookback.</li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
