@@ -1,332 +1,171 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WPT CEO Daily Briefing — Sunday, July 26, 2026</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#FFFFFF;
-      --ink:#28251D;
-      --muted:#6B6B6B;
-      --teal:#01696F;
-      --gold:#B38300;
-      --red:#B00020;
-      --green:#1B7F3A;
-      --card:#F7F7F7;
-      --line:#E6E6E6;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.25}
-    .wrap{max-width:1060px;margin:0 auto;padding:18px 16px 40px}
-    header{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;justify-content:space-between;padding:10px 0 14px;border-bottom:2px solid var(--line)}
-    h1{font-size:20px;margin:0;font-weight:800;letter-spacing:.2px}
-    .meta{font-size:12px;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px}
-    @media(min-width:980px){.grid{grid-template-columns:1.2fr .8fr}}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
-    .section{margin-top:14px}
-    .section h2{margin:0 0 10px;font-size:15px;font-weight:800}
-    .pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 10px;font-size:12px;color:var(--muted)}
-    .kpi{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-    .flag{font-weight:800}
-    .red{color:var(--red)}
-    .gold{color:var(--gold)}
-    .green{color:var(--green)}
-    ul{margin:8px 0 0 18px}
-    li{margin:6px 0}
-    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-    th,td{padding:10px 10px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13px}
-    th{background:#FAFAFA;text-align:left;font-size:12px;color:var(--muted);font-weight:700}
-    tr:last-child td{border-bottom:none}
-    .small{font-size:12px;color:var(--muted)}
-    .tight td{padding:8px 10px}
-    .callout{border-left:4px solid var(--teal);padding:10px 12px;background:#fff;border-radius:10px;border:1px solid var(--line)}
-    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
-    .footer{margin-top:24px;padding-top:12px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
-    @media print{
-      a{color:inherit;text-decoration:none}
-      .card{break-inside:avoid}
-      header{border-bottom:1px solid #000}
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WPT CEO Daily Briefing — Monday, July 27, 2026</title>
+<style>
+  :root{--ink:#0e1a2b;--muted:#5a6677;--card:#ffffff;--bg:#f4f6fa;--accent:#0a3b6c;--accent2:#b88a2a;--good:#1f7a3a;--warn:#9a3b14;--red:#b3261e;--gold:#8a6a1a;}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);}
+  .wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:24px}
+  h1{margin:0 0 4px;font-size:26px;letter-spacing:-.01em;color:var(--accent)}
+  .sub{color:var(--muted);font-size:14px}
+  section{background:var(--card);border:1px solid #e5e9f0;border-radius:12px;padding:18px 20px;margin:16px 0;box-shadow:0 1px 2px rgba(14,26,43,.04)}
+  h2{margin:0 0 10px;font-size:18px;color:var(--accent)}
+  h3{margin:14px 0 6px;font-size:15px;color:var(--accent2)}
+  ul{margin:6px 0 6px 18px;padding:0}
+  li{margin:4px 0}
+  .win{background:#fbf6e8;border:2px solid #d4b34c}
+  .win h2{color:var(--gold)}
+  .move{background:#fffaf0;border:1px solid #f1d99a}
+  .move h2{color:#7a4f10}
+  .alert{background:#fdf3ee;border-color:#f0c7b4}
+  .alert h2{color:var(--warn)}
+  .pill{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;background:#eaf0f7;color:var(--accent);margin-right:6px}
+  .pill.good{background:#e6f4ec;color:var(--good)}
+  .pill.warn{background:#fbe9df;color:var(--warn)}
+  .pill.red{background:#fbe1de;color:var(--red)}
+  .pill.gold{background:#f7ebc5;color:var(--gold)}
+  .meta{color:var(--muted);font-size:13px}
+  a{color:var(--accent)}
+  footer{margin-top:28px;color:var(--muted);font-size:12px;text-align:center}
+  .grid{display:grid;grid-template-columns:110px 1fr;gap:6px 14px}
+  .grid .t{color:var(--muted);font-variant-numeric:tabular-nums}
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div>
-        <h1>WPT CEO Daily Briefing — Sunday, July 26, 2026</h1>
-        <div class="meta">Generated 5:03 AM CDT • Web: <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a></div>
-      </div>
-      <div class="kpi">
-        <span class="pill"><span class="flag green">WIN</span> 2 runners today (Ellis Park)</span>
-        <span class="pill"><span class="flag gold">ATTN</span> Partner/Prospect webinar reschedule decision</span>
-        <span class="pill"><span class="flag red">RISK</span> Atlas Major ankle clean-up (6-week window)</span>
-      </div>
-    </header>
+<div class="wrap">
 
-    <!-- 1. CEO Snapshot -->
-    <section class="section">
-      <h2>1) CEO Snapshot</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="callout">
-            <div><b>Top 3 priorities today</b></div>
-            <ul>
-              <li><b>Racing focus:</b> support today’s Ellis Park runners — <b>Just Vote</b> (Race 5) and <b>Otz</b> (Race 7).</li>
-              <li><b>Lock the webinar reschedule</b> (Partner + Prospect Yearling Webinars) so comms can go out early this week.</li>
-              <li><b>Horse comms alignment:</b> confirm Monday partner-note plan for <b>Atlas Major</b> (ankle clean-up) and any related call tasks.</li>
-            </ul>
-          </div>
-          <div style="margin-top:10px">
-            <div><b>Biggest risk</b> <span class="flag red">(today/this week)</span></div>
-            <ul>
-              <li><b>Atlas Major</b>: small fragments involving the joint → ankle clean-up; timeline ~<b>6 weeks</b> and avoids an “ambitious” Hopeful path.</li>
-            </ul>
-            <div><b>Biggest opportunity</b> <span class="flag green">(this week)</span></div>
-            <ul>
-              <li>Strong upcoming entries at Saratoga/Colonial: <b>Abrigado</b>, <b>Relaxx (FR)</b>, <b>Preside</b>, <b>Absolutely Hot</b>, <b>Tiz the Lady</b> — use momentum for partner engagement + sales touches.</li>
-            </ul>
-            <div><b>Needs Terry directly</b></div>
-            <ul>
-              <li>Give final go/no-go on the webinar reschedule date/time so the team can announce.</li>
-            </ul>
-            <div><b>Delegate</b></div>
-            <ul>
-              <li>Assign someone to package and send <b>Skip photos</b> (as flagged in #exec-team) and to draft the “entries chatter” video concept into a 1-pager.</li>
-            </ul>
-          </div>
-        </div>
+<header>
+  <h1>WPT CEO Daily Briefing</h1>
+  <div class="sub">Monday, July 27, 2026 · Run #100 · Post-CCA Oaks Monday · Nashville → Albany</div>
+</header>
 
-        <div class="card">
-          <div><b>Quick glance: Today</b></div>
-          <table class="tight" aria-label="Today glance">
-            <thead>
-              <tr><th>Time (CDT)</th><th>Item</th></tr>
-            </thead>
-            <tbody>
-              <tr><td class="mono">1:44 PM</td><td><b>Just Vote</b> — Ellis Park <b>Race 5</b> (MSW)</td></tr>
-              <tr><td class="mono">2:00–4:00 PM</td><td><b>Blake’s birthday party</b></td></tr>
-              <tr><td class="mono">2:42 PM</td><td><b>Otz</b> — Ellis Park <b>Race 7</b> (MSW)</td></tr>
-            </tbody>
-          </table>
-          <div class="small" style="margin-top:8px">Calendar times displayed in CDT (calendar data pulled in ET range but rendered local in feed).</div>
-        </div>
-      </div>
-    </section>
+<section class="win">
+  <h2>🏆 Counting Stars — G1 CCA Oaks Winner (Saturday)</h2>
+  <p>Counting Stars <strong>won the Grade 1 Coaching Club American Oaks at Saratoga by 4¼ lengths</strong> Saturday under Irad Ortiz Jr. for Mark Casse — a back-to-back G1 after the Acorn. Final time 1:48.98 over 1⅛ miles; even-money favorite; $4.08 payout. Sixth win in ten lifetime starts. She is now the top 3-year-old filly in the country. ([Thoroughbred Daily News](https://www.thoroughbreddailynews.com/head-of-the-class-counting-stars-sensational-in-cca-oaks/) · [Daily Racing Form](https://www.drf.com/news/counting-stars-takes-coaching-club-american-oaks-ortiz-ties-saratoga-record-six-wins-card) · [America's Best Racing](https://www.americasbestracing.net/the-sport/2026-counting-stars-kos-always-runner-heavyweight-rematch-top-3-year-old-fillies))</p>
+  <p class="meta">This is the biggest WPT racing result of the year so far. Partner comms + PR runway starts today.</p>
+</section>
 
-    <!-- 2. 1 CEO Move Today -->
-    <section class="section">
-      <h2>2) 1 CEO Move Today</h2>
-      <div class="card">
-        <div class="callout">
-          <div><b>Make the reschedule call:</b> decide the new date/time for the Partner + Prospect Yearling Webinars and tell <b>Erin</b> to publish the change today.</div>
-          <div class="small" style="margin-top:6px">Why: the team expects <b>Abrigado</b> to run Wednesday and wants to avoid conflicts with <b>Relaxx</b> and mid-week runners; the earlier the announcement, the better attendance and fewer 1:1 follow-ups.</div>
-        </div>
-      </div>
-    </section>
+<section>
+  <h2>1. CEO Snapshot</h2>
+  <ul>
+    <li><strong>Weekend results:</strong> Counting Stars 1st G1 CCA Oaks (see above). Honoree 2nd in Saratoga R4 (turf allowance, beaten 3¼ by Inspeightofcharlie). Paige Turner 6th in Saratoga R8. Indispensable 4th at Del Mar R8 for Sadler.</li>
+    <li><strong>Goals status (from calendar):</strong> <span class="pill red">CEO Operating System — Week 6 hard-rule fires today at 8:00 AM CDT</span> after 6 consecutive weeks of 100% wpt-daily-briefing commits and zero on any other repo. Partner Comms is <span class="pill warn">3-week slide</span> — 2 owner accounts touched in 14 days, SF tasks logged 0.</li>
+    <li><strong>Travel:</strong> Flight BNA → ALB 11:15 AM CDT / 2:25 PM ET arrival. Nashville morning goal block first, then WPT Lead Score Discussion with Lindsey at 2 PM CDT / 3 PM ET (mid-flight — likely needs a reschedule).</li>
+    <li><strong>Racing this week:</strong> Abrigado + Run Away Rojo + Relaxx (FR) Wed 7/29; Preside + Absolutely Hot + Pascaline Thu 7/30; Tiz the Lady Fri 7/31; Rhyton Sat 8/1.</li>
+  </ul>
+</section>
 
-    <!-- 3. Schedule -->
-    <section class="section">
-      <h2>3) Schedule (Today + Next 2 Days)</h2>
-      <div class="card">
-        <table aria-label="Schedule">
-          <thead>
-            <tr>
-              <th>When (local)</th>
-              <th>Event</th>
-              <th>People / Notes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="mono">All day (ends 7:00 PM CDT)</span></td>
-              <td><b>KY</b></td>
-              <td>Attendees: <b>Terry</b>, Debbie (invite pending for Terry).</td>
-            </tr>
-            <tr>
-              <td><span class="mono">Sun 1:44 PM CDT</span></td>
-              <td><b>Just Vote</b> at Ellis Park in <b>Race 5</b></td>
-              <td>Organizer: Erin. “Join Just Vote… Maiden Special Weight.”</td>
-            </tr>
-            <tr>
-              <td><span class="mono">Sun 2:00–4:00 PM CDT</span></td>
-              <td><b>Blake’s birthday party</b></td>
-              <td>Personal.</td>
-            </tr>
-            <tr>
-              <td><span class="mono">Sun 2:42 PM CDT</span></td>
-              <td><b>Otz</b> at Ellis Park in <b>Race 7</b></td>
-              <td>Organizer: Erin. “Join Otz… Maiden Special Weight.”</td>
-            </tr>
-            <tr>
-              <td><span class="mono">Mon 8:00–9:30 AM CDT</span></td>
-              <td><b>🎯 Goal: CEO Operating System — HARD RULE (Week 6)</b></td>
-              <td>90-min block; includes time-boxed fallback plan.</td>
-            </tr>
-            <tr>
-              <td><span class="mono">Mon 10:15 AM–1:25 PM CDT</span></td>
-              <td><b>Flight BNA → ALB</b></td>
-              <td>Travel.</td>
-            </tr>
-            <tr>
-              <td><span class="mono">Mon 2:00–3:00 PM CDT</span></td>
-              <td><b>WPT Lead Score Discussion</b> (Zoom)</td>
-              <td>Attendees: Joey Avioli, <b>Dawn</b>, <b>Lindsey</b>, <b>Terry</b>, Ali. Zoom link in invite.</td>
-            </tr>
-            <tr>
-              <td><span class="mono">Tue 6:00–7:00 AM CDT</span></td>
-              <td><b>Meeting with Bill Farish on Wednesday?</b></td>
-              <td><span class="flag gold">ATTN</span> Placeholder; confirm/declutter if not real.</td>
-            </tr>
-            <tr>
-              <td><span class="mono">Tue 9:00–10:00 AM CDT</span></td>
-              <td><b>Brian Domenick meeting</b></td>
-              <td>Prep: objectives + ask list.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+<section class="move">
+  <h2>2. 1 CEO Move Today</h2>
+  <p><strong>Draft and send the Counting Stars partner + PR note before wheels-up at 11:00 AM CDT.</strong> The G1 win is Saturday's news — by mid-week it's stale. Two versions: (1) a personal partner note to the Counting Stars group (send from your seat), (2) a WPT-branded press hit or social piece that Lindsey / Danielle can push through the network today. Do not let this drift past 24 hours cold.</p>
+  <p class="meta">Backup move if the note is already out: the 1:00 PM CDT CEO Operating System block is a hard-rule trigger — the time-boxed fallback tactic starts today. Actually commit code to a non-briefing repo in that 90-minute window, or admit the goal is dead and reset it.</p>
+</section>
 
-    <!-- 4. Alerts -->
-    <section class="section">
-      <h2>4) Alerts</h2>
-      <div class="card">
-        <ul>
-          <li><span class="flag gold">ATTN</span> <b>Tuesday 2:00 PM UTC slot overlap risk</b>: there are multiple Tuesday events around the same morning block (confirm no conflicts once full week is visible).</li>
-          <li><span class="flag red">RISK</span> <b>Atlas Major</b> ankle clean-up planned; ensure partner comms/call tasks are set for Monday and expectations are clear.</li>
-          <li><span class="flag gold">ATTN</span> Placeholder meeting “<b>Bill Farish on Wednesday?</b>” — confirm if this is real or delete to reduce noise.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- 5. Team Pulse -->
-    <section class="section">
-      <h2>5) Team Pulse (Slack — last ~60 hours)</h2>
-      <div class="card">
-        <div class="callout">
-          <div><b>Executive Team Pulse Summary</b></div>
-          <ul>
-            <li><b>Momentum:</b> strong entry slate and comms cadence; team coordinating around likely mid-week runners.</li>
-            <li><b>Friction:</b> webinar timing vs. race-day conflicts; needs a quick executive decision to announce reschedule.</li>
-            <li><b>Wins:</b> <b>Ella Forte</b> procedure went well; shipped to Becky’s.</li>
-            <li><b>Follow-ups:</b> align on <b>Atlas Major</b> partner note (Monday) and operationalize Terry’s #exec-team ideas (entries videos + handicapping data).</li>
-          </ul>
-        </div>
-
-        <h3 style="margin:12px 0 6px;font-size:13px">#horse-comms</h3>
-        <ul>
-          <li><b>Ella Forte</b> stringhalt procedure went well; shipped to Becky’s.</li>
-          <li><b>Atlas Major</b>: vet call summary — ankle pressure, small fragments involve joint; plan clean-up with Dr. Janik; estimate <b>~6 weeks</b> missed; avoids overreaching into the Hopeful path.</li>
-          <li><b>Epic Fashionista</b> partner note draft shared for review; Builder’s Remedy retire note greenlit (“All set in BR”).</li>
-          <li><b>Cugino</b> set to breeze after break (training tomorrow 7:30am).</li>
-          <li>Entry notes: <b>Relaxx</b> in for Wednesday; <b>Absolutely Hot</b> and <b>Abrigado</b> brought back for Thursday (later clarified Abrigado in for <b>25k</b>).</li>
-        </ul>
-
-        <h3 style="margin:12px 0 6px;font-size:13px">#sales</h3>
-        <ul>
-          <li>Team discussing rescheduling Partner + Prospect Yearling Webinars due to conflicts with <b>Abrigado</b> Wednesday and proximity to <b>Relaxx</b>; initial proposal: <b>Mon Aug 3</b> (2pm prospects / 3pm partners) with alternatives discussed.</li>
-        </ul>
-
-        <h3 style="margin:12px 0 6px;font-size:13px">#sales-made</h3>
-        <div class="small">No notable messages found in the last ~60 hours.</div>
-
-        <h3 style="margin:12px 0 6px;font-size:13px">#prospectcomms</h3>
-        <div class="small">No notable messages found in the last ~60 hours.</div>
-
-        <h3 style="margin:12px 0 6px;font-size:13px">#exec-team</h3>
-        <ul>
-          <li>Terry: “Getting <b>Skip photos</b> to peeps?”</li>
-          <li>Terry: idea — add more videos on chatter for entries (e.g., last three races for <b>Counting Stars</b>).</li>
-          <li>Terry: idea — put all handicapping data on-page (needs discussion/definition).</li>
-        </ul>
-
-        <div class="small" style="margin-top:10px">Slack window: ~60-hour lookback (UTC → local display). DMs and “perplexity” keyword searches returned no results in this window.</div>
-      </div>
-    </section>
-
-    <!-- 6. Racing -->
-    <section class="section">
-      <h2>6) Racing (WPT Daily Entries)</h2>
-      <div class="card">
-        <div class="callout">
-          <div><b>Today’s entries (07/26/26)</b></div>
-          <ul>
-            <li><b>Just Vote</b> — Ellis Park • <b>Race 5</b> • Post <b>1:44 CT</b> • 6F • <b>Maiden Special Weight</b> • Post Pos <b>3 of 10</b></li>
-            <li><b>Otz</b> — Ellis Park • <b>Race 7</b> • Post <b>2:42 CT</b> • 6F • <b>Maiden Special Weight</b> • Post Pos <b>10 of 11</b></li>
-          </ul>
-        </div>
-
-        <div style="margin-top:10px"><b>Next entries</b></div>
-        <table aria-label="Upcoming entries">
-          <thead>
-            <tr><th>Date</th><th>Horse</th><th>Track</th><th>Race</th><th>Post time</th><th>Type/Conditions</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>07/29/26</td><td><b>Abrigado</b></td><td>Saratoga</td><td>2</td><td>1:45 ET</td><td>Maiden Claiming <b>25k</b></td></tr>
-            <tr><td>07/29/26</td><td><b>Run Away Rojo</b></td><td>Horseshoe Indianapolis</td><td>3</td><td>3:12 ET</td><td>Indiana-Bred Allowance</td></tr>
-            <tr><td>07/29/26</td><td><b>Relaxx (FR)</b></td><td>Saratoga</td><td>7</td><td>4:40 ET</td><td>NW2X Allowance</td></tr>
-            <tr><td>07/30/26</td><td><b>Preside</b></td><td>Saratoga</td><td>4</td><td>2:54 ET</td><td>Maiden Special Weight</td></tr>
-            <tr><td>07/30/26</td><td><b>Absolutely Hot</b></td><td>Saratoga</td><td>9</td><td>5:49 ET</td><td>Claiming 40k NW2L</td></tr>
-            <tr><td>07/31/26</td><td><b>Tiz the Lady</b></td><td>Colonial Downs</td><td>9</td><td>4:30 ET</td><td>NW2L Allowance</td></tr>
-          </tbody>
-        </table>
-
-        <div class="small" style="margin-top:10px">Source: West Point Thoroughbreds “Daily Entries” page (rendered view) — <a href="https://westpointtb.com/racing/daily-entries/">westpointtb.com/racing/daily-entries</a>.</div>
-      </div>
-    </section>
-
-    <!-- 7. Decisions Needed -->
-    <section class="section">
-      <h2>7) Decisions Needed</h2>
-      <div class="card">
-        <table aria-label="Decisions">
-          <thead>
-            <tr><th>Decision</th><th>Why it matters</th><th>Recommendation</th><th>Timing</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><b>Reschedule Partner + Prospect Yearling Webinars</b></td>
-              <td>Conflicts with mid-week runners (team expects <b>Abrigado</b> to run Wed; proximity to <b>Relaxx</b>).</td>
-              <td>Pick the new slot (e.g., <b>Mon Aug 3</b> blocks) and direct Erin to announce immediately.</td>
-              <td><span class="flag red">Today</span></td>
-            </tr>
-            <tr>
-              <td><b>Atlas Major partner communication plan</b></td>
-              <td>Sets expectations and reduces inbound; aligns reps on message (timeline ~<b>6 weeks</b>).</td>
-              <td>Confirm Monday partner-note + call-task assignments; keep message factual and forward-looking.</td>
-              <td><span class="flag gold">This week</span></td>
-            </tr>
-            <tr>
-              <td><b>Product/content direction: entries chatter videos + handicapping data on-page</b></td>
-              <td>Could improve partner engagement and conversion; needs scope to avoid distraction.</td>
-              <td>Delegate a 1-page proposal (what data, where it lives, and who owns updates) for quick review.</td>
-              <td><span class="flag gold">This week</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- 8. Perplexity Computer Slack Activity -->
-    <section class="section">
-      <h2>8) Perplexity Computer Slack Activity</h2>
-      <div class="card">
-        <div class="small">No “perplexity” keyword matches found in Slack for the last ~60 hours.</div>
-      </div>
-    </section>
-
-    <div class="footer">
-      <div><b>Notes</b></div>
-      <ul>
-        <li>Calendar pulled via Google Calendar connector for 2026-07-26 through 2026-07-28 (ET range), displayed here in local time as provided by the feed.</li>
-        <li>Slack Team Pulse window computed from current run time (UTC) with a ~60-hour lookback.</li>
-      </ul>
-    </div>
+<section>
+  <h2>3. Schedule — Monday, July 27 (CDT)</h2>
+  <div class="grid">
+    <div class="t">8:00 AM</div><div><span class="pill red">HARD RULE</span> Goal: CEO Operating System — Week 6 (1h30m) · time-boxed fallback tactic starts today</div>
+    <div class="t">11:15 AM</div><div>Flight BNA → ALB (arriving 2:25 PM ET / 1:25 PM CDT)</div>
+    <div class="t">2:00 PM</div><div>WPT Lead Score Discussion (Zoom, Lindsey, 1h) <span class="pill warn">conflicts with in-air arrival window</span></div>
   </div>
+
+  <h3>Week ahead</h3>
+  <ul>
+    <li><strong>Tue 7/28:</strong> Bill Farish meeting 6:00 AM CDT; Brian Domenick 9:00 AM CDT; Summer Meets Weekly 9:00 AM CDT (<span class="pill warn">conflict</span> — same slot as Brian Domenick); Engineering Committee 9:30 AM CDT; Swim 3:00 PM CDT.</li>
+    <li><strong>Wed 7/29:</strong> Chaplaincy Basketball Tournament (all day); Triangle diner with Josh 6:30 AM CDT; Partner Communications goal 8:00 AM CDT (SLIPPING — target 5 owner calls); TPF/LH Weekly Exec 10:00 AM CDT; <strong>Abrigado at Saratoga R2, 1:45 ET</strong>; <strong>Relaxx (FR) at Saratoga R7, 4:40 ET</strong>.</li>
+    <li><strong>Thu 7/30:</strong> Preside SAR R4 2:54 ET (MSW 9F); Absolutely Hot SAR R9 5:49 ET; Pascaline CT R6 9:21 ET.</li>
+    <li><strong>Fri 7/31:</strong> Tiz the Lady SAR R9 4:30 ET.</li>
+    <li><strong>Sat 8/1:</strong> Rhyton SAR R11 6:18 ET (NY-Bred NW1X).</li>
+  </ul>
+</section>
+
+<section class="alert">
+  <h2>4. Alerts</h2>
+  <ul>
+    <li><span class="pill red">Goal hard-rule fires 8 AM CDT</span> — CEO Operating System is 6 straight weeks at zero non-briefing commits. Time-boxed fallback starts today or reset the goal formally.</li>
+    <li><span class="pill warn">2 PM CDT Lead Score Discussion conflicts with landing window</span> — flight lands 1:25 PM CDT; account for cab/rental time before joining Lindsey's Zoom. Consider bumping to 3 PM CDT.</li>
+    <li><span class="pill warn">Partner Comms slippage</span> — 3-week slide. Wednesday's 8 AM block needs 5 owner calls booked before Tuesday close.</li>
+    <li><strong>Ella Forte:</strong> RH stringhalt procedure went well; shipped to Becky's Saturday. Partner note optional; hold for the post-op report.</li>
+    <li><strong>Atlas Major:</strong> ankle clean-up recommended, surgery being scheduled — ~6 weeks down. Partner note + rep tasks need to align this week per Sunday's brief.</li>
+    <li><strong>Vibe entries:</strong> weekend showed no Colonial Yorktown Stakes result yet — confirm whether Vibe ran Friday or was scratched. If scratched, entry for next week needs a target.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>5. Team Pulse — Slack (last ~60 hours)</h2>
+
+  <h3>#horse-comms</h3>
+  <ul>
+    <li><strong>Jason (Sat 11:02 AM CDT):</strong> "Ella Forte stringhalt procedure went well and she shipped to Becky's."</li>
+  </ul>
+
+  <h3>#exec-team</h3>
+  <ul>
+    <li><strong>Your Fri 9:16 PM CDT post:</strong> "Getting skip photos to peeps?" — no replies yet. Team is dispersed for the weekend; nudge Tuesday if it still matters.</li>
+  </ul>
+
+  <h3>Terry DMs</h3>
+  <ul>
+    <li><strong>Tom Murphy (Fri 7:22 PM CDT):</strong> "All good, I reached out to him today" — confirming Glen Gordon outreach on your behalf. Loop closed.</li>
+    <li><strong>Lindsey (Sat 6:30 PM CDT):</strong> "I have the saddle towel for Deb" — CCA Oaks memento secured.</li>
+    <li><strong>Slack "Computer" bot:</strong> continued posting daily briefings to your DM 7/25 and 7/26 despite the no-Slack rule. This is a separate scheduled task leaking through — needs to be shut off (still open).</li>
+  </ul>
+
+  <h3>#sales · #sales-made · #prospectcomms</h3>
+  <ul>
+    <li>No new activity in the window. Sales team was dispersed at Saratoga; expect Monday catch-up traffic.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>6. Racing — Weekend Results + Week Ahead</h2>
+  <h3>Saturday 7/25 results</h3>
+  <ul>
+    <li><strong>Counting Stars — 1st, G1 CCA Oaks (Saratoga R10)</strong> — Ortiz Jr / Casse, 4¼-length win, 1:48.98. ([DRF](https://www.drf.com/news/counting-stars-takes-coaching-club-american-oaks-ortiz-ties-saratoga-record-six-wins-card))</li>
+    <li><strong>Honoree — 2nd, Saratoga R4</strong> — Irad Ortiz Jr / McGaughey III, beaten 3¼ by Inspeightofcharlie. ([NYRA](https://www.nyra.com/saratoga/racing/results/?day=2026-07-25&limit=results&race=4))</li>
+    <li><strong>Paige Turner — 6th, Saratoga R8</strong> — Carmouche / DeVaux, allowance 1M turf.</li>
+    <li><strong>Indispensable — 4th, Del Mar R8</strong> — Rosario / Sadler, allowance optional claiming 1M.</li>
+  </ul>
+
+  <h3>WPT Daily Entries — week ahead</h3>
+  <ul>
+    <li><strong>Wed 7/29:</strong> Abrigado — Saratoga R2, 1:45 ET, 6F, Maiden Claiming $25k. Run Away Rojo — Horseshoe Indianapolis R3, 3:12 ET, 8.5F IN-Bred Allowance. Relaxx (FR) — Saratoga R7, 4:40 ET, 9F NW2X.</li>
+    <li><strong>Thu 7/30:</strong> Preside — Saratoga R4, 2:54 ET, 9F MSW. Absolutely Hot — Saratoga R9, 5:49 ET, 5.5F Claiming $40k NW2L. Pascaline — Charles Town R6, 9:21 ET, 6.5F WV-Bred Allowance.</li>
+    <li><strong>Fri 7/31:</strong> Tiz the Lady — Saratoga R9, 4:30 ET.</li>
+    <li><strong>Sat 8/1:</strong> Rhyton — Saratoga R11, 6:18 ET, 5.5F NY-Bred NW1X.</li>
+    <li>Source: <a href="https://westpointtb.com/racing/daily-entries/" target="_blank">WPT Daily Entries</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>7. Decisions Needed</h2>
+  <ul>
+    <li><strong>Counting Stars partner + PR note</strong> — draft and send before wheels-up.</li>
+    <li><strong>2 PM Lead Score Discussion</strong> — reschedule to 3 PM CDT or push to Tuesday.</li>
+    <li><strong>CEO Operating System hard-rule</strong> — execute the time-boxed fallback tactic today or formally reset the goal.</li>
+    <li><strong>Partner Comms Wednesday block</strong> — book 5 owner calls before Tuesday close.</li>
+    <li><strong>Vibe follow-up</strong> — did Vibe run Friday? If scratched, name next target.</li>
+    <li><strong>Atlas Major surgery timing</strong> — align partner note + rep call tasks this week.</li>
+    <li><strong>Slack "Computer" bot daily briefing DM</strong> — shut it off (still leaking through).</li>
+  </ul>
+</section>
+
+<section>
+  <h2>8. Perplexity Computer Slack Activity</h2>
+  <ul>
+    <li>Slack "Computer" bot posted daily briefings to Terry's DM 7/25 06:06 CDT + 07:10 CDT, and 7/26 06:06 CDT + 07:05 CDT. Per your 5/22 rule, only the GitHub Pages page + email are approved channels. That bot is a separate scheduled task and needs to be turned off.</li>
+    <li>No #perplexity-computer channel activity in the window.</li>
+  </ul>
+</section>
+
+<footer>
+  Generated by Perplexity Computer · Live at <a href="https://tfinley1.github.io/wpt-daily-briefing/">tfinley1.github.io/wpt-daily-briefing</a>
+</footer>
+
+</div>
 </body>
 </html>
